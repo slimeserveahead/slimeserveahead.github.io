@@ -1,0 +1,632 @@
+body {
+    background-color: black;
+    width: 100%;    
+    padding-bottom: 10vw;
+    padding-top: 8vw;
+}
+
+/*----------------------------NAVIGATION BAR--------------------------------------*/
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.selector {
+  border-radius: 2vw;
+  background-color: #9AFF01;
+  width: 3vw;
+  margin-top: 0.5vw;
+  height: 0.5vw;
+  transition: all 0.5s;
+  transform: translateX(3vw);
+}
+.navigation-bar {  
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  padding-right: 2vw;
+  height: 8vw;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}
+
+.h15 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6vw;
+  font-weight: 800;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9cff00;
+  width: 30%;
+}
+
+.text img {
+  left: 4.45%;
+  right: 69.6%;
+  top: 1.37%;
+  bottom: 97.91%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 54vw;
+}
+
+
+.button img {
+  width: 9vw;
+}
+
+/*----------------------------Download SECTION Revised--------------------------------------*/
+.upperSection img {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+.downloadSection {
+  position: absolute;
+  top: 8vw;
+  height: 42vw;
+  width: 100%;
+  display: flex;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 2%;
+  padding-bottom: 9%;
+}
+
+.downloadButton {
+  width: 25%;
+  height: 27%;
+  position: relative;
+}
+
+.downloadButton img {
+  width: 100%;
+  height: 87%;
+  z-index: 1;
+  position: absolute;
+}
+.downloadButton .hover {
+  visibility: hidden;
+}
+.downloadButton:hover .default {
+  visibility: hidden;
+}
+
+.downloadButton:hover .hover {
+  display: block;
+  visibility: visible;
+}
+.move {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 39%;
+  gap: 7%;
+  transition: all 0.5s;
+  transform: translateX(32%);
+}
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.rightText {
+  width: 54%;
+  height: 51%;
+}
+.rightText img {
+  width: 100%;
+  z-index: 1;
+}
+
+.rightLine {
+  background-color: white;
+  height: 61%;
+  width: 0.8%;
+}
+.rightIcons {
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 63%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  row-gap: 10%;
+  z-index: 1100;
+}
+.rightIcon {
+  width: 42%;
+  height: 24%;
+}
+.rightIcon .hover {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rightIcon:hover .default {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rightIcon:hover .hover {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.h14 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4vw;
+  text-align: right;
+  transition: all 0.5s;
+}
+.h14:hover {
+  color:#9AFF01;
+  cursor: pointer;
+}
+.h14:hover .rightLine{
+  background-color: #9AFF01;
+}
+/*----------------------- Core Value Section -----------------------------------*/
+.coreValue {
+  width: 100%;
+  height: 22vw;
+  position: absolute;
+  top: 49vw;
+  display: flex;
+  gap: 1%;
+}
+.coreValueTexts {
+  width: 45%;
+  padding-top: 1%;
+  padding-left: 8%;
+  padding-right: 7%;
+  height: 100%;
+}
+.h12 {
+  box-sizing: border-box;
+  font-size: 3.4vw;
+  color: #9AFF01;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.h13 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+.missionVision {
+  width: 24%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  padding-right: 3%;
+}
+/*---------------------- What is walk club section ------------------------*/
+.info {  
+  top: 71vw;
+  width: 100%;
+  height: 63.5vw;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.phones {
+  width: 70%;
+  display: flex;
+  height: 100%;
+  padding-left: 6%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.phone {
+  height: 29vw;
+  width: 14vw;
+}
+.phone:nth-child(1) {
+  padding-top: 20%;
+}
+.phone:nth-child(2) {
+  padding-top: 27.5%;
+}
+.phone:nth-child(3) {
+  padding-top: 45%;
+}
+.phone img {
+  width: 100%;
+  z-index: 2;
+}
+
+.infoTexts {
+  width: 30%;
+  padding-top: 36%;
+  text-align: end;
+  padding-right: 5%;
+}
+
+/*----------------------- Carousel Section ----------------------------------*/
+.carouselImages {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carouselImages img {
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.arrowCar {
+  position: absolute;
+  top: 28vw;
+  transform: translateY(-9vw);
+  width: 5vw;
+  height: 5vw;
+  background-color: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;  
+}
+.arrowCar img {
+  width: 1.8vw;
+}
+
+.leftArrow,
+.rightArrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: none;  
+}
+
+.left-arrow {
+  padding: 1vw;
+  left: 2vw;
+  opacity: 0.2;
+}
+
+.left-arrow:hover {
+  opacity: 1;
+}
+
+.right-arrow {
+  padding: 1vw;
+  right: 2vw;
+  opacity: 0.2;
+}
+
+.right-arrow:hover {
+  opacity: 1;
+}
+
+/*--------------------------- Shoe Carousel Section -----------------------------*/
+.lineTwo {
+  height: 2vw;
+  width: 0.3vw; 
+  background-color: #9AFF01;
+}
+h16 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  font-weight: 400;
+}
+.shoes img{  
+  height: 27px;
+  width: 93px;
+}
+
+.shoes {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-left: 2vw;
+  align-items: center;
+  gap: 1vw;
+}
+.shoeChoice {  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+  position: relative;
+  margin-top: 5%;
+}
+.stage{
+  height: 29vw;
+  width: 86vw;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.stage img {
+  width: 100%;
+}
+.leftShoe {
+  position: absolute;
+  width: 37vw;
+  height: 21vw;  
+  left: -8vw;
+  transition: all 0.3s ease;
+}
+.leftShoe img{
+  width: 100%;
+}
+.middleShoe {
+  position: absolute;
+  width: 48vw;
+  height: 27vw;
+  left: 19vw;
+  transition: all 0.3s ease;
+}
+.middleShoe img{
+  width: 100%;
+}
+.rightShoe { 
+  position: absolute;
+  width: 27vw;
+  height: 17vw;
+  left: 59vw;
+  transition: all 0.3s ease;
+}
+.rightShoe img{
+  width: 100%;
+}
+.leftShoeArrow{
+  width: 1.4vw;
+  cursor: pointer;
+  z-index: 2;
+}
+.rightShoeArrow{
+  width: 1.4vw;
+  cursor: pointer;
+}
+h11 {
+  font-family: 'Poppins', sans-serif;
+}
+.rightShoeArrow img{
+  width: 100%;
+}
+.leftShoeArrow img{
+  width: 100%;
+}
+
+.shoeDescription {  
+  color: white;
+  padding: 6% 36%;
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+/*----------------------- Gameplay Section ----------------------------------*/
+.gameplay img{
+  width: 100%;
+}
+/*---------------------------- Tutorial Section ------------------------------*/
+.tutorial {
+  padding: 0 5vw;
+}
+.number {  
+  color: #9CFF00;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+.upperTText {
+  display: flex;
+  justify-content: center;
+}
+.tutorialText{
+  margin-top: 1vw;
+  width: 12vw;
+  margin-left: 0.6vw;
+}
+h8 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  color: #9CFF00;
+  font-weight: 700;
+}
+h9 {
+  font-size: 1vw;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.upperTutorial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  align-items: center;
+}
+.lowerTutorial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  margin-bottom: 20vw;
+  margin-top: 10vw;
+}
+.firstPic {
+  height: 27vw;
+}
+.secondPic{
+  height: 27vw;
+}
+.thirdPic {
+  height: 27vw;
+}
+.arrow {
+  width: 2vw;
+}
+.fourthPic{
+  height: 27vw;
+}
+.fifthPic {
+  height: 27vw;
+}
+/*---------------------------- Lifestyle Section ------------------------------*/
+.lifestyle {
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28vw;
+}
+
+.lifestyle .benefits {
+  width: 125%;
+}
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vw;
+  width: 100%;
+  gap: 4vw;
+}
+.pictureContainer {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 26vw;
+}
+.pictureContainer img {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.1vw;
+  width: 21vw;
+  margin-top: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*---------------------------- footer ------------------------------*/
+.footer{
+  background-color: #161f2c;
+  height: 14vw;
+}
+.upFooter {
+  display: flex;
+  padding: 0px 4vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 14vw;
+}
+.center {
+  text-align: center;
+}
+.footerRight {
+  text-align: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.5vw;
+}
+h4 {
+  color: #9CFF00;
+  font-size: 1.3vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+  color: white;
+  font-size: 1vw;
+  line-height: 2.5vw;
+  font-family: 'Poppins', sans-serif;
+}
+h6 {
+  color: white;
+  font-size: 0.8vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 1vw;
+}
+
+h7 {
+  color: #9CFF00;
+  font-size: 1.1vw;
+}
+.footerIconsContainer {
+  width: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.footerIconsContainer img{
+  width: 100%;
+}
+.downFooter img {
+  width: 100%;
+}
+.footerIcons{
+  display: flex;
+}

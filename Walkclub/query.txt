@@ -1,0 +1,7 @@
+const newsBounds = news.getBoundingClientRect();
+const homeBounds = home.getBoundingClientRect();
+const benefitsBounds = benefits.getBoundingClientRect();
+const gameplayBounds = gameplay.getBoundingClientRect();
+
+benefits - transform: translateX(25.6vw);
+gameplay - transform: translateX(36.8vw);

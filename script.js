@@ -275,3 +275,13 @@ rightShoeArrow.addEventListener('click', () => {
 });
 
 
+/* ------------------------- navbar menu -------------------------------------*/ 
+function toggleMenu() {
+    var menu = document.getElementById('menu-icon');
+    var buttons = document.getElementById('buttons');
+
+    menu.classList.toggle('bx-menu');
+    menu.classList.toggle('bx-x');
+
+    buttons.classList.toggle('buttonsShow');
+}

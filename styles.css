@@ -608,8 +608,7 @@ h9 {
 .lowerTutorial {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  
   gap: 10vw;
   margin-bottom: 20vw;
   margin-top: 10vw;

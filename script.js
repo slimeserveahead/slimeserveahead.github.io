@@ -26,7 +26,7 @@ h14.onclick = function() {
             h14.style.color = ''; 
         });
     } else {
-        move.style.transform = 'translateX(0)';
+        move.style.transform = 'translateX(-13%)';
         h14.style.color = '#9cff00';
         rightLine.style.backgroundColor = '#9cff00';
         h14.addEventListener('mouseenter', () => {
@@ -279,9 +279,12 @@ rightShoeArrow.addEventListener('click', () => {
 function toggleMenu() {
     var menu = document.getElementById('menu-icon');
     var buttons = document.getElementById('buttons');
+    var movingBorder = document.getElementById('movingBorder');
 
     menu.classList.toggle('bx-menu');
     menu.classList.toggle('bx-x');
 
     buttons.classList.toggle('buttonsShow');
+
+    movingBorder.classList.toggle('showBorder');
 }

@@ -4,7 +4,9 @@ body {
     padding-bottom: 2vw;
     padding-top: 8vw;
 }
-
+.spaceLeft{
+  display: none;
+}
 /*----------------------------NAVIGATION BAR--------------------------------------*/
 .bx {  
   position: absolute;
@@ -680,6 +682,12 @@ h9 {
   align-items: center;
   width: 26vw;
 }
+.pictureContainerText {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .pictureContainer img {
   width: 100%;
 }
@@ -699,7 +707,8 @@ h2 {
   font-size: 1.1vw;
   width: 21vw;
   margin-top: 1vw;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
+  font-weight: 400;
 }
 
 /*---------------------------- footer ------------------------------*/
@@ -779,6 +788,7 @@ h7 {
 @media screen and (min-width: 900px) and (max-width: 1023px) {
   h2 {
     font-size: 1.4vw;
+    font-weight: 400;
   }
 }
 
@@ -810,6 +820,7 @@ h7 {
   }
   h2 {
     font-size: 1.5vw;
+    font-weight: 400;
   }
   h1 {
     font-size: 3.2vw;
@@ -835,6 +846,102 @@ h7 {
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
+  .coreValueTexts {
+    display: none;
+  }
+  .spaceLeft{
+    display: block;
+    width: 60%;
+  }
+  .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 2%;
+    padding-bottom: 9%;
+    top: 8vw;
+    position: absolute;
+  }
+  .downloadButton {
+    width: 25%;
+    height: 43%;
+    position: relative;
+  }
+  .upperSectionBackground {
+    content: url(images/mobile-background.png);
+  }
+  .pictureContainer{
+    flex-direction: row;
+    width: auto;
+    gap: 6vw;
+    margin-top: 7vw;
+  }
+  .pictureContainer:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .photos {
+    width: 34vw;
+  }
+  .pictures {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* --------------------------------------- MOVING BORDER START -------------------------------------------*/
+  .movingBorder {
+    width: 25.2vw;
+    height: 42.8vw;
+    top: 10.4vw;
+    left: 102.4vw;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease;
+  }
+  .showBorder {
+    left: 73.4vw;
+  }
+  .movingBorder::before{
+    
+    content: "";
+    background-image: conic-gradient(
+        #9AFF01 20deg,
+        transparent 120deg
+    );
+    width: 1000%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+  }
+  .movingBorder::after{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9AFF01;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+  }
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }
+  /* --------------------------------------- MOVING BORDER END -------------------------------------------*/
   .navigation-bar {
     height: 10vw;
   }
@@ -861,6 +968,7 @@ h7 {
     padding-right: 3%;
     margin-left: -4vw;
     margin-top: -2vw;
+    display: none;
   } 
   .shoeDescription {
     font-size: 2vw;
@@ -899,7 +1007,8 @@ h7 {
     padding: 3vw;
     transition: 0.6s ease;
     background: black;
-}
+    z-index: 2;
+  }
   .buttonsShow {
     margin-right: 0;
   }
@@ -922,9 +1031,10 @@ h7 {
     color: white;
     text-align: center;
     font-size: 2vw;
-    width: 24vw;
+    width: 33vw;
     margin-top: 1vw;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
   h1 {
     font-size: 3.2vw;
@@ -953,6 +1063,26 @@ h7 {
 }
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
+  .upperSectionBackground {
+    content: url(images/mobile-background.png);
+  }
+  .pictureContainer{
+    flex-direction: row;
+    width: auto;
+    gap: 6vw;
+    margin-top: 7vw;
+  }
+  .pictureContainer:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .photos {
+    width: 34vw;
+  }
+  .pictures {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .bx {
     visibility: visible;
   }
@@ -965,15 +1095,16 @@ h7 {
     align-items: flex-end;
     row-gap: 3vw;
     margin-bottom: -39vw;
-    margin-top: 5vw;
-    width: 16vw;
-    border-radius: 1vw;
+    margin-top: 14vw;
+    width: 23vw;
+    border-radius: 2vw;
     border: 1px solid green;
     margin-right: -29vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
     padding: 3vw;
     transition: 0.6s ease;
     background: black;
+    z-index: 2;
   }
   .buttonsShow {
     margin-right: 0;
@@ -981,6 +1112,61 @@ h7 {
   .navigation-bar {
     height: 10vw;
   }
+  .button img {
+    width: 16vw;
+  }
+  /* --------------------------------------- MOVING BORDER START -------------------------------------------*/
+  .movingBorder {
+    width: 24.1vw;
+    height: 41.4vw;
+    top: 10.3vw;
+    left: 103.3vw;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease;
+  }
+  .showBorder {
+    left: 74.3vw;
+  }
+  .movingBorder::before{
+    
+    content: "";
+    background-image: conic-gradient(
+        #9AFF01 20deg,
+        transparent 120deg
+    );
+    width: 1000%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+  }
+  .movingBorder::after{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+  }
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }
+  /* --------------------------------------- MOVING BORDER END -------------------------------------------*/
   body {
     padding-top: 10vw;
   }
@@ -1040,9 +1226,10 @@ h7 {
     color: white;
     text-align: center;
     font-size: 2vw;
-    width: 24vw;
+    width: 33vw;
     margin-top: 1vw;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
   h1 {
     font-size: 3vw;
@@ -1068,6 +1255,26 @@ h7 {
 }
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
+  .upperSectionBackground {
+    content: url(images/mobile-background.png);
+  }
+  .pictureContainer{
+    flex-direction: row;
+    width: auto;
+    gap: 6vw;
+    margin-top: 7vw;
+  }
+  .pictureContainer:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .photos {
+    width: 34vw;
+  }
+  .pictures {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .bx {
     visibility: visible;
   }
@@ -1080,16 +1287,72 @@ h7 {
     align-items: flex-end;
     row-gap: 3vw;
     margin-bottom: -39vw;
-    margin-top: 5.4vw;
-    width: 16vw;
-    border-radius: 1vw;
+    margin-top: 20.4vw;
+    width: auto;
+    border-radius: 2vw;
     border: 1px solid green;
     margin-right: -29vw;
     margin-left: 7vw;
     padding: 3vw;
     transition: 0.6s ease;
     background: black;
+    z-index: 2;
   }
+  .button img {
+    width: 20vw;
+  }
+  /* --------------------------------------- MOVING BORDER START -------------------------------------------*/
+  .movingBorder {
+    width: 27.9vw;
+    height: 47.4vw;
+    top: 10.4vw;
+    left: 99.8vw;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease;
+  }
+  .showBorder {
+    left: 70.8vw;
+  }
+  .movingBorder::before{
+    
+    content: "";
+    background-image: conic-gradient(
+        #9AFF01 20deg,
+        transparent 120deg
+    );
+    width: 1000%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+  }
+  .movingBorder::after{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+  }
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }
+  /* --------------------------------------- MOVING BORDER END -------------------------------------------*/
   .buttonsShow {
     margin-right: 0;
   }
@@ -1155,9 +1418,10 @@ h7 {
     color: white;
     text-align: center;
     font-size: 2vw;
-    width: 24vw;
+    width: 33vw;
     margin-top: 1vw;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
   h1 {
     font-size: 3vw;

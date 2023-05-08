@@ -10,6 +10,9 @@ body {
 .walkclub {
   display: none;
 }
+.benefitTexts {
+  display: none;
+}
 /*----------------------------NAVIGATION BAR--------------------------------------*/
 .bx {  
   position: absolute;
@@ -854,7 +857,14 @@ h7 {
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .right {
-    transform: translateY(12vw);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(10vw);
+    z-index: 0;
+    height: 25vw;
   }
   
   .hiddenRight {
@@ -886,6 +896,7 @@ h7 {
   h17 {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 2.5vw;
   }  
   span {
     color: #9AFF01;
@@ -927,23 +938,7 @@ h7 {
   .upperSectionBackground {
     content: url(images/mobile-background.png);
   }
-  .pictureContainer{
-    flex-direction: row;
-    width: auto;
-    gap: 6vw;
-    margin-top: 7vw;
-  }
-  .pictureContainer:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .photos {
-    width: 34vw;
-  }
-  .pictures {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .phones {
     display: none;
   }
@@ -1090,6 +1085,9 @@ h7 {
     background: black;
     z-index: 2;
   }
+  .move {
+    padding-bottom: 0;
+  }
   .buttonsShow {
     margin-right: 0;
   }
@@ -1145,4 +1143,93 @@ h7 {
     transform: translateX(-50%);
   }
   /*----------------------------------------------- GAMEPLAY ANIMATION ---------------------------------------*/
+  /*---------------------------------------------- BENEFIT --------------------------------------------*/
+  
+  
+  .leftClick {
+    background-color: red;
+    width: 30vw;
+    height: 28vw;
+    position: absolute;
+    transform: translate(-30vw, -9vw);
+    opacity: 0.3;
+    z-index: 5;
+  }
+  .rightClick {
+    background-color: red;
+    width: 30vw;
+    height: 28vw;
+    position: absolute;
+    transform: translate(33vw, -9vw);
+    opacity: 0.3;
+    z-index: 5;
+  }
+
+  .pictureContainerText {
+    display: none;
+  }
+  .pictures {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vw;
+  }
+  .photos {
+    width: 100%;
+  }
+  .middleBenefit {
+    position: absolute;
+    width: 46vw;
+    transform: translateX(0);
+    z-index: 3;
+  }
+  .rightBenefit {
+    position: absolute;
+    transform: translateX(32vw);
+    width: 35vw;
+  }
+  .leftBenefit {
+    position: absolute;
+    transform: translateX(-30vw);
+    width: 35vw;
+  }
+  .middleTextB,
+  .rightTextB,
+  .leftTextB {
+    transition: all 0.4s ease;
+  }
+  .middleBenefit,
+  .rightBenefit,
+  .leftBenefit {
+    transition: all 0.4s ease;
+  }
+  .benefitTexts {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 58%;
+    height: 35vw;
+    text-align: center;
+    position: relative;
+    display: block;
+  }
+  .benefitTitle  {
+    font-weight: 800;
+    font-size: 4vw;
+  }
+  .description {
+    font-size: 2.3vw;
+    font-weight: 400;
+    margin-top: 3vw;
+  }
+  .leftTextB {
+    position: absolute;
+    opacity: 0;
+  }
+  .middleTextB {
+    position: absolute;
+  }
+  .rightTextB {
+    position: absolute;
+    opacity: 0;
+  }
 }

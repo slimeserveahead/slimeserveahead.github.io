@@ -305,3 +305,62 @@ const observer = new IntersectionObserver(
 tutorialItems.forEach(tutorialItem => {
     observer.observe(tutorialItem);
 });
+
+/*----------------- Benefits --------------------------------------*/
+const rightClick = document.querySelector('.rightClick');
+const leftClick = document.querySelector('.leftClick');
+
+leftClick.addEventListener('click', () => {
+    const leftBenefit = document.querySelector('.leftBenefit');
+    const middleBenefit = document.querySelector('.middleBenefit');
+    const rightBenefit = document.querySelector('.rightBenefit');
+    const leftTextB = document.querySelector('.leftTextB');
+    const middleTextB = document.querySelector('.middleTextB');
+    const rightTextB = document.querySelector('.rightTextB');
+    
+    leftBenefit.classList.remove('leftBenefit');
+    leftBenefit.classList.add('middleBenefit');
+
+    middleBenefit.classList.remove('middleBenefit');
+    middleBenefit.classList.add('rightBenefit');
+
+    rightBenefit.classList.remove('rightBenefit');
+    rightBenefit.classList.add('leftBenefit');
+
+    leftTextB.classList.remove('leftTextB');
+    leftTextB.classList.add('middleTextB');
+
+    middleTextB.classList.remove('middleTextB');
+    middleTextB.classList.add('rightTextB');
+
+    rightTextB.classList.remove('rightTextB');
+    rightTextB.classList.add('leftTextB');
+});
+
+rightClick.addEventListener('click', () => {
+    const leftBenefit = document.querySelector('.leftBenefit');
+    const middleBenefit = document.querySelector('.middleBenefit');
+    const rightBenefit = document.querySelector('.rightBenefit');
+    const leftTextB = document.querySelector('.leftTextB');
+    const middleTextB = document.querySelector('.middleTextB');
+    const rightTextB = document.querySelector('.rightTextB');
+    
+    leftBenefit.classList.remove('leftBenefit');
+    leftBenefit.classList.add('rightBenefit');
+
+    middleBenefit.classList.remove('middleBenefit');
+    middleBenefit.classList.add('leftBenefit');
+
+    rightBenefit.classList.remove('rightBenefit');
+    rightBenefit.classList.add('middleBenefit');
+
+    leftTextB.classList.remove('leftTextB');
+    leftTextB.classList.add('rightTextB');
+
+    middleTextB.classList.remove('middleTextB');
+    middleTextB.classList.add('leftTextB');
+
+    rightTextB.classList.remove('rightTextB');
+    rightTextB.classList.add('middleTextB');
+
+});

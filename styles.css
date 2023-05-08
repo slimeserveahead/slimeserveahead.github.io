@@ -4,6 +4,7 @@ body {
     padding-bottom: 2vw;
     padding-top: 8vw;
 }
+
 .spaceLeft{
   display: none;
 }
@@ -13,6 +14,13 @@ body {
 .benefitTexts {
   display: none;
 }
+.background-img img{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
 /*----------------------------NAVIGATION BAR--------------------------------------*/
 .bx {  
   position: absolute;
@@ -795,65 +803,6 @@ h7 {
 
 
 /* ------------------------------------- responsiveness ------------------------------------------------*/
-@media screen and (min-width: 900px) and (max-width: 1023px) {
-  h2 {
-    font-size: 1.4vw;
-    font-weight: 400;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 899px) {
-  .h13 {
-    font-size: 1.8vw;
-  }
-  h11 {
-    font-size: 1.8vw;
-  }
-  h9 {
-    font-size: 1.6vw;
-  }
-  .coreValueTexts {
-    width: 45%;
-    padding-top: 0vw;
-  }
-  .tutorialText {
-    width: 15vw;
-  }
-  .number {
-    margin-top: -1.7vw;
-    font-size: 6vw;    
-  }
-  .tutorialText {
-    margin-top: 0vw;
-    width: 15vw;
-    margin-left: 0.6vw;
-  }
-  h2 {
-    font-size: 1.5vw;
-    font-weight: 400;
-  }
-  h1 {
-    font-size: 3.2vw;
-  }
-  h3 {
-    font-size: 3vw;
-  }
-  h4 {
-    font-size: 1.5vw;
-  }
-  h5 {
-    font-size: 1.2vw;
-  }
-  h6 {
-    font-size: 1.2vw;
-  }
-  h7 {
-    font-size: 1.3vw;
-  }
-  .footerIconsContainer {
-    width: 3.5vw;
-  }
-}
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .right {
@@ -866,8 +815,39 @@ h7 {
     z-index: 0;
     height: 25vw;
   }
-  
-  .hiddenRight {
+  .h14 {
+    display: none;
+  }
+  .rightLine {
+    display: none;
+  }
+  .rightText {
+    display: none;
+  }
+  .rightIcon {
+    color: white;
+    width: 70%;
+    height: 32%;
+    font-size: 4vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    transform: translateX(-10vw);
+  }
+  .move {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 39%;
+    gap: 7%;
+    transition: all 0.5s;
+    transform: translate(4vw, 2vw);
+  }
+  .hiddenRight {  
     transform: translateX(90vw);
   }
   .hiddenLeft {
@@ -1152,18 +1132,18 @@ h7 {
     height: 28vw;
     position: absolute;
     transform: translate(-30vw, -9vw);
-    opacity: 0;
+    opacity: 0.3;
     z-index: 5;
   }
   .rightClick {
     background-color: red;
-    width: 30vw;
-    height: 28vw;
+    width: 62vw;
+    height: 41vw;
     position: absolute;
-    transform: translate(33vw, -9vw);
-    opacity: 0;
+    transform: translate(16vw, -9vw);
+    opacity: 0.3;
     z-index: 5;
-  }
+}
 
   .pictureContainerText {
     display: none;
@@ -1231,5 +1211,208 @@ h7 {
   .rightTextB {
     position: absolute;
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  h2 {
+    font-size: 1.4vw;
+    font-weight: 400;
+  }
+  /* ---------------------------------------- BENEFITS ---------------------------------------*/
+  .leftClick {
+    background-color: red;
+    width: 16vw;
+    height: 17vw;
+    position: absolute;
+    transform: translate(-17vw, -11vw);
+    opacity: 0.3;
+    z-index: 5;
+  }
+  .rightClick {
+    background-color: red;
+    width: 37vw;
+    height: 21vw;
+    position: absolute;
+    transform: translate(10vw, -11vw);
+    opacity: 0.3;
+    z-index: 5;
+  }
+
+  .pictureContainerText {
+    display: none;
+  }
+  .pictures {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25vw;
+  }
+  .photos {
+    width: 100%;
+  }
+  .middleBenefit {
+    position: absolute;
+    width: 22vw;
+    transform: translateX(0);
+    z-index: 3;
+  }
+  .rightBenefit {
+    position: absolute;
+    transform: translateX(17vw);
+    width: 18vw;
+  }
+  .leftBenefit {
+    position: absolute;
+    transform: translateX(-17vw);
+    width: 18vw;
+  }
+  .middleTextB,
+  .rightTextB,
+  .leftTextB {
+    transition: all 0.4s ease;
+  }
+  .middleBenefit,
+  .rightBenefit,
+  .leftBenefit {
+    transition: all 0.4s ease;
+  }
+  .benefitTexts {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 36%;    
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 25vw;
+  }
+  .benefitTitle  {
+    font-weight: 800;
+    font-size: 1.4vw;
+  }
+  .description {    
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: 1vw;
+  }
+  .leftTextB {
+    position: absolute;
+    opacity: 0;
+  }
+  .middleTextB {
+    position: absolute;
+  }
+  .rightTextB {
+    position: absolute;
+    opacity: 0;
+  }
+  .navigation-bar {
+    height: 5vw;
+  }
+  .stage {
+    height: 29vw;
+    width: 65vw;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .shoeDescription {
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0vw auto auto;
+    position: relative;
+    width: 30vw;
+    height: 17vw;    
+    transform: translateY(-4vw);
+  }
+  /*------------------------------------ SHOE CAROUSEL ------------------------*/
+  .middleShoe {
+    position: absolute;
+    width: 28vw;
+    height: 32vw;
+    left: 18vw;
+  }
+  .rightShoe {
+    position: absolute;
+    width: 18vw;
+    height: 20vw;
+    left: 46vw;
+  }
+  .leftShoe {
+    position: absolute;
+    width: 18vw;
+    height: 20vw;
+    left: 0vw;
+  }
+  .secondShoe {
+    position: absolute;
+    width: 18vw;
+    height: 20vw;
+    left: -37vw;
+  }
+  .firstShoe {
+    position: absolute;
+    width: 18vw;
+    height: 20vw;
+    left: -37vw;
+  }
+  .sixthShoe {
+    position: absolute;
+    width: 18vw;
+    height: 20vw;
+    left: 85vw;
+  }
+  .shoeChoice {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: -3vw;
+  } 
+  .shoeCarousel {
+    margin-top: 6vw;
+  }
+  /*------------------------------ Navigation bar--------------------------*/
+  .button img {
+    width: 6vw;
+  }
+  .buttons {
+    width: 36vw;
+  }
+  .h15 {
+    font-size: 2.6vw;
+  }
+  .text img {
+    width: 3vw;
+    margin-right: 1vw;
+    margin-left: -5vw;
+  }
+  body {
+    padding-top: 5vw;
+  }
+  .selector {
+    border-radius: 2vw;
+    background-color: #9AFF01;
+    width: 2vw;
+    margin-top: 0.5vw;
+    height: 0.3vw;
+    transition: all 0.5s;
+  }
+  /*------------------------------ End Navigation bar--------------------------*/
+  .lifestyle .benefits {
+    width: 103%;
+  }
+  .lifestyle {
+    margin-bottom: 0;
   }
 }

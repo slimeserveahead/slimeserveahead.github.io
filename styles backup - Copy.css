@@ -115,7 +115,7 @@ body {
 
 .downloadSection {
   position: absolute;
-  top: -3vw;
+  top: 8vw;
   height: 42vw;
   width: 100%;
   display: flex;
@@ -129,7 +129,6 @@ body {
   align-items: end;
   gap: 2%;
   padding-bottom: 9%;
-  transform: translateY(10vw);
 }
 
 .downloadButton {
@@ -178,7 +177,6 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transform: translateY(10vw)
 }
 .rightText {  
   width: 54%;
@@ -192,7 +190,7 @@ body {
 }
 
 .rightLine {
-  background-color: #9AFF01;
+  background-color: white;
   height: 61%;
   width: 0.8%;
   transition: all 0.7s;
@@ -227,7 +225,7 @@ body {
 }
 
 .h14 {
-  color: #9AFF01;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 4vw;
@@ -589,7 +587,6 @@ h11 {
 /*---------------------------- Tutorial Section ------------------------------*/
 .tutorial {
   padding: 0 5vw;
-  overflow: hidden;
 }
 .number {  
   color: #9CFF00;
@@ -853,9 +850,6 @@ h7 {
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .right {
-    transform: translateY(12vw);
-  }
   
   .hiddenRight {
     transform: translateX(90vw);
@@ -916,7 +910,7 @@ h7 {
     align-items: end;
     gap: 2%;
     padding-bottom: 9%;
-    top: 9vw;
+    top: 8vw;
     position: absolute;
   }
   .downloadButton {

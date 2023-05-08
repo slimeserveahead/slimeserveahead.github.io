@@ -16,24 +16,24 @@ let translated = false;
 h14.onclick = function() {
     if (translated) {
         move.style.transform = 'translateX(32%)';
-        h14.style.color = 'white';
-        h14.style.color.hovered = '#9cff00';
-        rightLine.style.backgroundColor = 'white';
-        h14.addEventListener('mouseenter', () => {
-            h14.style.color = '#9cff00';
-        });
-        h14.addEventListener('mouseleave', () => {
-            h14.style.color = ''; 
-        });
-    } else {
-        move.style.transform = 'translateX(-13%)';
         h14.style.color = '#9cff00';
+        h14.style.color.hovered = '#9cff00';
         rightLine.style.backgroundColor = '#9cff00';
         h14.addEventListener('mouseenter', () => {
-            h14.style.color = '#9cff00';
+            h14.style.color = 'white';
         });
         h14.addEventListener('mouseleave', () => {
             h14.style.color = '#9cff00'; 
+        });
+    } else {
+        move.style.transform = 'translateX(-13%)';
+        h14.style.color = 'white';
+        rightLine.style.backgroundColor = 'white';
+        h14.addEventListener('mouseenter', () => {
+            h14.style.color = '#white';
+        });
+        h14.addEventListener('mouseleave', () => {
+            h14.style.color = 'white'; 
         });
     }
     translated = !translated;
@@ -288,3 +288,20 @@ function toggleMenu() {
 
     movingBorder.classList.toggle('showBorder');
 }
+/*----------------- Scroll animation --------------------------------------*/
+const tutorialItems = document.querySelectorAll(".tutorialItems");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show", entry.isIntersecting);
+        })
+    }, 
+    {
+    rootMargin: "1000px 0px -200px 0px"
+    }
+);
+
+tutorialItems.forEach(tutorialItem => {
+    observer.observe(tutorialItem);
+});

@@ -1152,7 +1152,7 @@ h7 {
     height: 28vw;
     position: absolute;
     transform: translate(-30vw, -9vw);
-    opacity: 0.3;
+    opacity: 0;
     z-index: 5;
   }
   .rightClick {
@@ -1161,7 +1161,7 @@ h7 {
     height: 28vw;
     position: absolute;
     transform: translate(33vw, -9vw);
-    opacity: 0.3;
+    opacity: 0;
     z-index: 5;
   }
 

@@ -4,7 +4,12 @@ body {
     padding-bottom: 2vw;
     padding-top: 8vw;
 }
-
+.rightClick:hover {
+  cursor: pointer;
+}
+.leftClick:hover {
+  cursor: pointer;
+}
 .spaceLeft{
   display: none;
 }
@@ -47,6 +52,21 @@ body {
   height: 0.5vw;
   transition: all 0.5s;
   transform: translateX(2vw);
+}
+.middleShoe {
+  animation: move-up-down 2s ease-in-out infinite;
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .navigation-bar {  
   color: white;
@@ -440,7 +460,7 @@ h16 {
   margin-top: 5%;
 }
 .stage{
-  height: 29vw;
+  height: 33vw;
   width: 86vw;
   align-items: center;
   display: flex;
@@ -1452,7 +1472,7 @@ h7 {
     height: 5vw;
   }
   .stage {
-    height: 29vw;
+    height: 33vw;
     width: 65vw;
     align-items: center;
     display: flex;

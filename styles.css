@@ -46,7 +46,7 @@ body {
   margin-top: 0.5vw;
   height: 0.5vw;
   transition: all 0.5s;
-  transform: translateX(3vw);
+  transform: translateX(2vw);
 }
 .navigation-bar {  
   color: white;
@@ -845,7 +845,7 @@ h7 {
     padding-bottom: 39%;
     gap: 7%;
     transition: all 0.5s;
-    transform: translate(4vw, 2vw);
+    transform: translate(4vw, 6vw);
   }
   .hiddenRight {  
     transform: translateX(90vw);
@@ -1117,15 +1117,10 @@ h7 {
   }
   .bx {
     visibility: visible;
-  }
-  /*----------------------------------------------- GAMEPLAY ANIMATION ---------------------------------------*/
+  }  
   .tutorialItems.moveLeft {
     transform: translateX(-50%);
-  }
-  /*----------------------------------------------- GAMEPLAY ANIMATION ---------------------------------------*/
-  /*---------------------------------------------- BENEFIT --------------------------------------------*/
-  
-  
+  }  
   .leftClick {
     background-color: transparent;
     width: 30vw;
@@ -1212,6 +1207,39 @@ h7 {
     position: absolute;
     opacity: 0;
   }
+  .shoeNext {
+    position: absolute;
+    width: 65vw;
+    height: 58vw;;
+    transform: translate(34vw, 3vw);
+    z-index: 3;
+  }
+  .shoePrevious {    
+    position: absolute;
+    width: 33vw;
+    height: 56vw;
+    transform: translate(1vw, 4vw);
+    z-index: 4;
+  }
+  .shoeNext:hover {
+    cursor: pointer;
+  }
+  .shoePrevious:hover {
+    cursor: pointer;
+  }
+  .carousel .shoes{
+    position: absolute;
+    top: 2vw;
+  }
+  h16 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+  }
+  .lineTwo {
+    height: 4vw;
+    width: 0.7vw;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1222,24 +1250,22 @@ h7 {
     position: absolute;
     top: 3vw;    
   }
+  
   @keyframes glowing {
     0% {
-      text-shadow: 0 0 0px #9AFF01;
-    }
-    12.5% {
-      text-shadow: 0 0 25px #9AFF01;
-    }
-    25% {
-      text-shadow: 0 0 50px #9AFF01;
-    }
-    37.5% {
-      text-shadow: 0 0 75px #9AFF01;
-    }
+      text-shadow: 0px 0px 0px #9CFF00;
+    }    
     50% {
       text-shadow: 0 0 100px #9AFF01;
     }
+    75% {
+      text-shadow: 0 0 200px #9AFF01;
+    }
+    90% {
+      text-shadow: 0 0 400px #9AFF01;
+    }
     100% {
-      text-shadow: 1 0 1500px #9AFF01;
+      text-shadow: none;
     }
   }
   
@@ -1249,16 +1275,9 @@ h7 {
   /* Apply the animations to the element */
   .h14 {
     position: relative;
-    animation: glowing 8s ease-in-out infinite;
-  }
-  
-  
-  
-  
-  /* Apply the animation to the text element */
-  .h14 {
-    animation: glowing 1.5s infinite;
-  }
+    animation: glowing 1s ease-in-out infinite;
+  } 
+
   /* ---------------------------------------- DOWNLOAD ---------------------------------------*/
   h2 {
     font-size: 1.4vw;
@@ -1454,6 +1473,26 @@ h7 {
     transform: translateY(-4vw);
   }
   /*------------------------------------ SHOE CAROUSEL ------------------------*/
+  .shoeNext {
+    position: absolute;
+    width: 55vw;
+    height: 30vw;
+    transform: translate(34vw, 3vw);
+    z-index: 3;
+  }
+  .shoePrevious {
+    position: absolute;
+    width: 27vw;
+    height: 29vw;
+    transform: translate(7vw, 4vw);
+    z-index: 4;
+  }
+  .shoeNext:hover {
+    cursor: pointer;
+  }
+  .shoePrevious:hover {
+    cursor: pointer;
+  }
   .middleShoe {
     position: absolute;
     width: 28vw;

@@ -1,8 +1,4 @@
-.h14 {        
-  text-shadow: 0 0 0px #9AFF01;
-}
-/* Define the animation styles */
-@keyframes glwing {
+@keyframes glowing {
   0% {
     text-shadow: 0 0 0px #9AFF01;
   }
@@ -18,16 +14,16 @@
   50% {
     text-shadow: 0 0 100px #9AFF01;
   }
-  62.5% {
-    text-shadow: 0 0 125px #9AFF01;
-  }
-  75% {
-    text-shadow: 0 0 150px #9AFF01;
-  }
-  87.5% {
-    text-shadow: 0 0 175px #9AFF01;
-  }
   100% {
-    text-shadow: 0 0 200px #9AFF01;
+    text-shadow: 1 0 1500px #9AFF01;
   }
 }
+
+/* Define the animation styles for the new glow */
+
+
+/* Apply the animations to the element */
+.h14 {
+  position: relative;
+  animation: glowing 3s ease-in-out infinite;
+} 

@@ -62,13 +62,13 @@ function updateSelectorPosition() {
     const currentScrollPosition = middleOfScreen;    
 
     if (currentScrollPosition < newsBounds.top) {
-        selector.style.transform = 'translateX(3vw)';       
+        selector.style.transform = 'translateX(2vw)';       
     } else if (currentScrollPosition >= newsBounds.top && currentScrollPosition < gameplayBounds.top) {            
-        selector.style.transform = 'translateX(14.3vw)';
+        selector.style.transform = 'translateX(9.5vw)';
     } else if (currentScrollPosition >= gameplayBounds.top && currentScrollPosition < benefitsBounds.top) {
-        selector.style.transform = 'translateX(25.3vw)';
+        selector.style.transform = 'translateX(17vw)';
     } else {
-        selector.style.transform = 'translateX(36.7vw)';
+        selector.style.transform = 'translateX(24.5vw)';
     }
     
 }
@@ -126,8 +126,8 @@ if (scrollPos === 0) {
 // initial check
 checkArrowsVisibility();
 // ------------------------------------------------------ SHOE CAROUSEL ----------------------------------------------- //
-const leftShoeArrow = document.querySelector('.leftShoeArrow');
-const rightShoeArrow = document.querySelector('.rightShoeArrow');
+const leftShoeArrow = document.querySelector('.shoePrevious');
+const rightShoeArrow = document.querySelector('.shoeNext');
 
 let isClickable = true;
 

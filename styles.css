@@ -126,7 +126,7 @@ body {
 
 .downloadSection {
   position: absolute;
-  top: -3vw;
+  top: -8vw;
   height: 42vw;
   width: 100%;
   display: flex;
@@ -1127,7 +1127,7 @@ h7 {
   
   
   .leftClick {
-    background-color: red;
+    background-color: transparent;
     width: 30vw;
     height: 28vw;
     position: absolute;
@@ -1136,14 +1136,14 @@ h7 {
     z-index: 5;
   }
   .rightClick {
-    background-color: red;
-    width: 62vw;
-    height: 41vw;
+    background-color: transparent;
+    width: 94vw;
+    height: 83vw;
     position: absolute;
-    transform: translate(16vw, -9vw);
+    transform: translate(0vw, 8vw);
     opacity: 0.3;
-    z-index: 5;
-}
+    z-index: 4;
+  }
 
   .pictureContainerText {
     display: none;
@@ -1214,29 +1214,152 @@ h7 {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+  .carousel {
+    position: relative;
+  }
+  .carousel .shoes {
+    position: absolute;
+    top: 3vw;    
+  }
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 0px #9AFF01;
+    }
+    12.5% {
+      text-shadow: 0 0 25px #9AFF01;
+    }
+    25% {
+      text-shadow: 0 0 50px #9AFF01;
+    }
+    37.5% {
+      text-shadow: 0 0 75px #9AFF01;
+    }
+    50% {
+      text-shadow: 0 0 100px #9AFF01;
+    }
+    100% {
+      text-shadow: 1 0 1500px #9AFF01;
+    }
+  }
+  
+  /* Define the animation styles for the new glow */
+  
+  
+  /* Apply the animations to the element */
+  .h14 {
+    position: relative;
+    animation: glowing 8s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  /* Apply the animation to the text element */
+  .h14 {
+    animation: glowing 1.5s infinite;
+  }
+  /* ---------------------------------------- DOWNLOAD ---------------------------------------*/
   h2 {
     font-size: 1.4vw;
     font-weight: 400;
   }
+  .h12 {
+    font-size: 2vw;
+  }
+  .h13 {
+    font-size: 1vw;
+  }
+  .coreValueTexts {
+    width: 34%;    
+    padding-right: 6%;    
+  }
+  .missionVision {
+    width: 18%;
+  }
+  .infoTexts {
+    width: 21%;
+    padding-left: 5vw;
+    padding-right: 0%;
+  }
+  .infoTexts .h13 {
+    margin-top: 1vw;
+  }
+  /* ---------------------------------------- GAMEPLAY ---------------------------------------*/
+  .upperTImage img {
+    height: 21vw;
+  }  
+  h8 {
+    font-size: 2vw;
+  }
+  h9 {
+    font-size: 1vw;
+  }
+  .number {
+    font-size: 4vw;
+  }
+  .arrow {
+    width: 1.5vw;
+    margin-top: -6vw;
+  }
+  .lowerTutorial .arrow {
+    margin-top: 9vw;
+  }
+  .upperTutorial {
+    width: 78vw;
+    margin: auto;
+    overflow: hidden;
+  }   
+  .hiddenLeftPC{
+    transform: translateX(-5vw);
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  .bottomRightPC {
+    transform: translateX(5vw);
+    opacity: 0;
+    transition: all 0.8s;
+    transition-delay: 500ms;
+  }
+  .hiddenRightPC{
+    transform: translateX(5vw);
+    opacity: 0;
+    transition: all 0.8s;
+    transition-delay: 1000ms;
+  }
+  .hiddenUpPC{
+    opacity: 0;
+    transform: translateY(-5vw);
+    transition: all 0.8s;
+    transition-delay: 500ms;
+  }
+  .arrow {
+    opacity: 0;
+    transition-delay: 500ms;
+    transition: all 0.5s;
+  }
+  .show {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
   /* ---------------------------------------- BENEFITS ---------------------------------------*/
   .leftClick {
-    background-color: red;
+    background-color: transparent;
     width: 16vw;
     height: 17vw;
     position: absolute;
-    transform: translate(-17vw, -11vw);
+    transform: translate(-17vw, -7vw);
     opacity: 0.3;
     z-index: 5;
   }
   .rightClick {
-    background-color: red;
-    width: 37vw;
-    height: 21vw;
+    background-color: transparent;
+    width: 50vw;
+    height: 35vw;
     position: absolute;
-    transform: translate(10vw, -11vw);
+    transform: translate(0vw, 0vw);
     opacity: 0.3;
-    z-index: 5;
+    z-index: 4;
   }
 
   .pictureContainerText {

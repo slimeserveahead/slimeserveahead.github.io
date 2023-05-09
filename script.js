@@ -291,19 +291,28 @@ function toggleMenu() {
 /*----------------- Scroll animation --------------------------------------*/
 const tutorialItems = document.querySelectorAll(".tutorialItems");
 
+let observerOptions = {
+  rootMargin: "1000px 0px -200px 0px"
+};
+
+// Check screen size and update options if necessary
+if (window.matchMedia("(max-width: 768px)").matches) {
+  observerOptions.rootMargin = "1000px 0px -200px 0px";
+} else {
+  observerOptions.rootMargin = "5000px 0px -500px 0px";
+}
+
 const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show", entry.isIntersecting);
-        })
-    }, 
-    {
-    rootMargin: "1000px 0px -200px 0px"
-    }
+  entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+    })
+  }, 
+  observerOptions
 );
 
 tutorialItems.forEach(tutorialItem => {
-    observer.observe(tutorialItem);
+  observer.observe(tutorialItem);
 });
 
 /*----------------- Benefits --------------------------------------*/
@@ -363,4 +372,17 @@ rightClick.addEventListener('click', () => {
     rightTextB.classList.remove('rightTextB');
     rightTextB.classList.add('middleTextB');
 
+});
+
+/* ---------------------------- SNAP SCROLL --------------------*/
+const upperTutorial = document.querySelector('.upperTutorial');
+
+upperTutorial.addEventListener('scroll', function() {
+  if (upperTutorial.scrollTop + upperTutorial.clientHeight === upperTutorial.scrollHeight) {
+    // Viewer has scrolled to the bottom of the element, disable scrolling
+    document.body.style.overflow = 'hidden';
+  } else {
+    // Viewer has left the bottom of the element, enable scrolling
+    document.body.style.overflow = '';
+  }
 });

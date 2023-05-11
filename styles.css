@@ -991,7 +991,7 @@ h7 {
     position: relative;
   }
   .upperSectionBackground {
-    content: url(images/mobile-background.png);
+    content: url(images/mobile-background.webp);
   }
   
   .phones {

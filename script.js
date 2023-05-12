@@ -441,6 +441,7 @@ function sendMessage() {
 
   chatBox.appendChild(newMessage);
   input.value = '';
+  input.style.height = ''; // reset the textarea height
   toggleSendIcon(input);
 
   chatBox.scrollTop = chatBox.scrollHeight;

@@ -401,3 +401,87 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// ---------------------------- SHOW CHAT SUPPORT ----------------------------------------------- //
+function showChat() {
+  var chat = document.getElementById('chat');
+
+
+  chat.classList.toggle("showChat");
+  console.log("show chat");
+  
+}
+
+
+const chatboxInput = document.getElementById('chatbox__input');
+const sendIcon = document.querySelector('.sendIcon');
+
+function toggleSendIcon(input) {
+  var sendIcon = document.querySelector('.sendIcon');
+  if (input.value.trim() === '') {
+      sendIcon.style.display = 'none';
+  } else {
+      sendIcon.style.display = 'flex';
+  }
+}
+
+
+function sendMessage() {
+  var chatBox = document.querySelector('.chat-box');
+  var input = document.querySelector('textarea');
+  var messageText = input.value;
+  
+  if (messageText.trim() === '') {
+    return;
+  }
+  
+  var newMessage = document.createElement('div');
+  newMessage.classList.add('message-container', 'operator');
+  newMessage.innerHTML = '<div class="message">' + messageText + '</div>';
+
+  chatBox.appendChild(newMessage);
+  input.value = '';
+  toggleSendIcon(input);
+
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function auto_grow(element) {
+  element.style.height = "100%";
+  element.style.height = (element.scrollHeight)+"px";
+}
+
+function checkEnterKey(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    sendMessage();
+  }
+}
+
+/*------------------------------ Learn More ------------------------------------*/
+const options = {
+  rootMargin: '0px',
+  threshold: 0.5 // the percentage of the element visible in the viewport to trigger the callback
+};
+
+const observertwo = new IntersectionObserver((entries, observertwo) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          console.log(entry);
+      } else {
+          console.log('leave');
+      }
+  });
+}, options);
+
+const howToUse = document.querySelector('#howToUse');
+const earn = document.querySelector('#earn');
+const active = document.querySelector('#active');
+const contribution = document.querySelector('#contribution');
+
+observertwo.observe(howToUse);
+observertwo.observe(earn);
+observertwo.observe(active);
+observertwo.observe(contribution);
+
+/*------------------------------ Follower div ------------------------------------*/

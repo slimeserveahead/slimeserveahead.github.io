@@ -54,10 +54,12 @@
                         <img src="images/h4.webp">
                     </div>
                 </a>
-                <div class="button">
-                    <img src="images/navbutton5.webp">
-                    <img src="images/h5.webp">
-                </div>
+                <a href="learnmore.html">
+                    <div class="button">
+                        <img src="images/navbutton5.webp">
+                        <img src="images/h5.webp">
+                    </div>
+                </a>
             </div>
             <div class="selector"></div>
             <div onclick="toggleMenu()" class="bx bx-menu" id="menu-icon"></div>
@@ -153,7 +155,7 @@
     </div>
     
     <!---------------------------------------- CAROUSEL SECTION ------------------------------------>
-    <div id="news" class="carousel">
+    <div class="carousel">
         <div class="shoes">
             <div class="lineTwo"></div>
             <h16>NEWS</h16>
@@ -171,7 +173,7 @@
         <div class="arrowCar right-arrow"><img src="images/cararrow-right.webp"></div>
     </div>
     <!---------------------------------------- REVISED CAROUSEL SECTION ------------------------------------>
-    <div class="container">
+    <div id="news" class="container">
         <div class="shoes">
             <div class="lineTwo"></div>
             <h16>NEWS</h16>
@@ -391,11 +393,36 @@
             </div>
         </div>
     </div>
-    
+    <!---------------------------------------- Chat support  ------------------------------------>
+    <div class="chatSupport">
+        <div class="chathead" onclick="showChat()">
+            <img src="images/logo.webp">
+            <div class="online"></div>
+        </div>
+        <div class="chat" id="chat">
+            <div class="xIcon" onclick="showChat()"><i class="fa-solid fa-xmark"></i></div>
+            <div class="chatbox__header">
+                <div class="headerLogo"><img src="images/logo.webp"></div>    
+                <div class="headerText">WALK CLUB</div>                            
+            </div>
+            <div class="chat-box">
+                <div class="message-container visitor">
+                  <div class="message">How can we help you?</div>
+                </div>
+                <div class="message-container operator">
+                  <div class="message">Hi there!</div>
+                </div>
+            </div>
+            <div class="chatbox__footer">
+                <textarea type="text" oninput="auto_grow(this)" onkeyup="toggleSendIcon(this)" onkeydown="checkEnterKey(event)" placeholder="What's your concern?"></textarea>
+                <div class="sendIcon" onclick="sendMessage()"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
     
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </html>
 
         

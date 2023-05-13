@@ -187,6 +187,12 @@ body {
   border-bottom-right-radius: 2vw;
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
+  background-color: #9CFF00;  
+}
+
+.message-container.visitor .message{
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .message-container.operator {
@@ -199,7 +205,25 @@ body {
   border-top-left-radius: 2vw;
   border-top-right-radius: 2vw;
 }
-
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2vw;
+}
+.choices .message-container{
+  margin-left: 0vw;
+  margin-right: 0.2vw;
+  margin-top: 0.2vw;
+  max-width: 100%;
+}
+.message-container .choice {
+  align-self: flex-start;  
+}
+.message-container.choice:hover {
+  background-color: #0099ff;
+  color: white;
+  cursor: pointer;
+}
 .message {
   margin: 0;
   font-size: 16px;
@@ -208,6 +232,13 @@ body {
   overflow-wrap: anywhere;
   padding: 0.5vw;
   font-family: 'Poppins', sans-serif;
+}
+.choice a{
+  color: black;
+  text-decoration: none;
+}
+.choice:hover a{
+  color: white;
 }
 .messages__item {
   background: orange;

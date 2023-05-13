@@ -1968,7 +1968,7 @@ h7 {
   width: 44.6vw;
   height: 14vw;
   box-shadow: #201d1d 0px 0px 70px -12px;
-  border-radius: 1vw;
+  border-radius: 0.5vw;
   transform: translate(55vw, 32vw);
 }
 .learnMission {
@@ -1981,14 +1981,14 @@ h7 {
 }
 .h18 {
   color: #9AFF01;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 2vw;
   margin-bottom: 2vw;
 }
 .h19{ 
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1vw;
 }
@@ -2092,7 +2092,7 @@ h7 {
   margin-bottom: 2vw;
 }
 .learnmorebg {
-  background-image: url('images/learnmore-bg2.png');
+  background-image: url('images/learnmore-bg2.webp');
   background-size: cover;
 }
 .active img{
@@ -2128,7 +2128,7 @@ h7 {
 }
 .bannerTitle {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 4vw;
   line-height: 4vw;
@@ -2195,14 +2195,14 @@ h7 {
   }
   .h18 {
     color: #9AFF01;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 3vw;
     margin-bottom: 2vw;
   }
   .h19 {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 2vw;
   }

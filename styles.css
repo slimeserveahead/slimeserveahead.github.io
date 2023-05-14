@@ -1197,6 +1197,7 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  
   .right {
     width: 40%;
     display: flex;
@@ -1652,6 +1653,7 @@ h7 {
     top: 3vw;    
   }
   
+  
   @keyframes glowing {
     0% {
       text-shadow: 0px 0px 0px #9CFF00;
@@ -2025,18 +2027,18 @@ h7 {
   font-size: 1vw;
 }
 .followerDiv {
-  width: 5vw;
-  height: 5vw;
-  border-radius: 1vw;
-  background-color: rgb(110, 110, 117);
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0.5vw;
+  background-color: #101a01;
   transition: all 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0vw 0vw 1vw 0.5vw #9AFF01;
+  box-shadow: 0vw 0vw 1vw 0.3vw #9AFF01;
 }
 .followerDiv img {
-  width: 2vw;
+  width: 1vw;
 }
 .follower:hover .followerDiv{
   visibility: hidden;
@@ -2243,5 +2245,35 @@ h7 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 2vw;
+  }
+  .followerDiv {
+    width: 6vw;
+    height: 6vw;
+  }
+  .followerDiv img {
+    width: 2vw;
+  }
+  .chathead {
+    background-color: black;
+    width: 10vw;
+    height: 10vw;
+    position: fixed;
+    bottom: 1vw;
+    right: 2vw;
+    z-index: 2;
+    border-radius: 10vw;
+    border: 0.1vw solid #9AFF01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chathead img{
+    width: 5vw;
+  }
+  .chat {
+    transform: translateY(-4vw);
+  }
+  .showChat {
+    transform: translateY(-7vw);
   }
 }

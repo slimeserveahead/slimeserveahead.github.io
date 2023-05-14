@@ -166,9 +166,10 @@ body {
   width: 100%;
   margin: 0 auto;
   min-height: 22.7vw;
-  overflow-y: scroll; 
+  overflow-y: scroll;   
+  scroll-behavior:smooth;
+  padding: 0 1vw;
   padding-bottom: 1vw;
-  scroll-behavior: smooth;
 }
 
 .message-container {
@@ -178,8 +179,6 @@ body {
   border-radius: 10px;
   max-width: 60%;
   background-color: #f2f2f2;
-  margin-left: 2vw;
-  margin-right: 2vw;
   margin-top: 1vw;
 }
 
@@ -193,7 +192,7 @@ body {
 }
 
 .message-container.visitor .message{
-  font-size: 16px;
+  font-size: 0.7vw;
   font-weight: 500;
 }
 
@@ -210,7 +209,6 @@ body {
 .choices {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 2vw;
 }
 .choices .message-container{
   margin-left: 0vw;
@@ -228,7 +226,7 @@ body {
 }
 .message {
   margin: 0;
-  font-size: 16px;
+  font-size: 0.6vw;
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: anywhere;
@@ -1641,10 +1639,11 @@ h7 {
   }
   .chat-box {    
     min-height: 72.2vw;
+    padding: 0 2vw;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {  
   .carousel {
     position: relative;
   }
@@ -2176,6 +2175,12 @@ h7 {
   text-align: end;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .message-container.visitor .message {
+    font-size: 1.7vw;
+  }
+  .message {
+    font-size: 1.6vw;
+  }
   .howToUse {
     padding: 0 0;
     padding-top: 14vw;

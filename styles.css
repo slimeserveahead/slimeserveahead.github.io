@@ -552,7 +552,6 @@ span {
   left: 6.5vw;
   font-size: 9.14vw;
   z-index: 3;
-  text-shadow: 1px 3px 0 #000, 1px 3px 0 #000, -3px 2px 0 #000, 2px 2px 0 #000;
 }
 .downloadNow:nth-child(2){
   top: 9.95vw;
@@ -2281,6 +2280,46 @@ h7 {
   font-size: 1.6vw;
   line-height: 2.2vw;
 }
+.number8{
+  position: absolute;
+  top: 0vw;
+  left: 61vw;
+  font-size: 2.3vw;
+}
+.text30{
+  position: absolute;
+  top: 6vw;
+  left: 10vw;
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+.text31 {
+  position: absolute;
+  top: 11vw;
+  left: 10vw;
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+.text32{
+  position: absolute;
+  top: 16vw;
+  left: 10vw;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.text33{
+  position: absolute;
+  top: 33.6vw;
+  left: 32vw;
+  font-size: 1.1vw;
+}
+.text34{
+  position: absolute;
+  top: 33.6vw;
+  left: 54vw;
+  font-size: 1.1vw;
+}
 /* --------------------------------------- SIDEBAR  -------------------------------------------*/
 .follower {
   position: fixed;
@@ -2449,9 +2488,12 @@ h7 {
   flex-direction: column;
   padding: 0 15vw;
   margin-top: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 .contribution img{
   margin-bottom: 8vw;
+  width: 100%;
 }
 .banner {
   width: 100%;

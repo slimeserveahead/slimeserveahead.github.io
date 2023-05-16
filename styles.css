@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'American Captain';
+  src: url('Fonts/American\ Captain.ttf') format('truetype');
+}
 body {
     background-color: black;
     width: 100%;    
@@ -24,6 +28,12 @@ body {
   width: 100%;
   height: 100%;
   z-index: -2;
+}
+strong {
+  color: #9CFF00;
+}
+span {
+  color: #9AFF01;
 }
 /* --------------------------------------- CHAT SUPPORT -------------------------------------------*/
 .sendIcon {
@@ -534,7 +544,28 @@ body {
   padding-bottom: 9%;
   transform: translateY(10vw);
 }
-
+.downloadNow {
+  font-family: 'American Captain', sans-serif;
+  color: white;
+  position: absolute;
+  top: 7.75vw;
+  left: 6.5vw;
+  font-size: 9.14vw;
+  z-index: 3;
+  text-shadow: 1px 3px 0 #000, 1px 3px 0 #000, -3px 2px 0 #000, 2px 2px 0 #000;
+}
+.downloadNow:nth-child(2){
+  top: 9.95vw;
+  opacity: 0.3;
+  z-index: 2;
+  text-shadow: none;
+}
+.downloadNow:nth-child(3){
+  top: 12.15vw;
+  opacity: 0.1;
+  z-index: 1;
+  text-shadow: none;
+}
 .downloadButton {
   width: 25%;
   height: 27%;
@@ -1271,9 +1302,8 @@ h7 {
     color: white;
     font-size: 2.5vw;
   }  
-  span {
+  spanTwo {
     color: #9AFF01;
-    font-weight: 700;
   }
   .twoPhonestext{
     width: 35vw;
@@ -1984,7 +2014,273 @@ h7 {
 }
 
 /* -------------------------------------------------------------------------------------------------------- Learn More -------------------------------------------------------------------------------------*/
+.relative {
+  position: relative;
+}
 
+.text1 {
+  position: absolute;
+  font-size: 4vw;
+  width: 18vw;
+  font-weight: 700;
+  top: 8vw;
+  left: 27vw;
+  line-height: 5vw;
+}
+
+.text2 {
+  position: absolute;
+  top: 27.3vw;
+  left: 27vw;
+  font-size: 1.2vw;
+}
+
+.number1 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+
+.text3 {
+  position: absolute;
+  top: 1vw;
+  left: 21vw;
+  width: 32vw;
+  text-align: end;
+  font-size: 1.5vw;
+}
+.text4 {
+  position: absolute;
+  top: 11.5vw;
+  left: 18.5vw;
+  font-size: 1.6vw;
+}
+.text5 {
+  position: absolute;
+  top: 15vw;
+  left: 25.5vw;
+  font-size: 1.6vw;
+}
+.text6 {
+  position: absolute;
+  top: 31vw;
+  font-size: 1.5vw;
+  left: 47vw;
+}
+
+.number2 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+
+.text7 {
+  position: absolute;
+  top: 0vw;
+  left: 4vw;
+  font-size: 1.3vw;
+  width: 50vw;
+  text-align: end;
+}
+.text8 {
+  position: absolute;
+  top: 11.5vw;
+  left: 21.4vw;
+  font-size: 1vw;
+}
+.text9 {
+  position: absolute;
+  top: 29.5vw;
+  left: 15vw;
+  font-size: 1.5vw;
+  width: 17vw;
+  text-align: end;
+}
+.text10 {
+  position: absolute;
+  top: 27vw;
+  left: 46vw;
+  font-size: 1.5vw;
+}
+.text11 {
+  position: absolute;
+  top: 20.5vw;
+  left: 51vw;
+  font-size: 1.1vw;
+}
+
+.number3 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text12 {
+  position: absolute;
+  top: 2.5vw;
+  left: 8vw;
+  font-size: 1.5vw;
+  width: 45vw;
+  text-align: end;
+}
+.text13 {
+  position: absolute;
+  top: 14.5vw;
+  left: 8.7vw;
+  font-weight: 600;
+}
+.text14 {
+  position: absolute;
+  top: 13vw;
+  left: 35.5vw;
+  font-size: 1.6vw;
+}
+.number4 {
+  position: absolute;
+  top: 11.5vw;
+  left: 24vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text15 {
+  position: absolute;
+  top: 8vw;
+  left: 32vw;
+  font-weight: 800;
+}
+.text16 {
+  position: absolute;
+  top: 14vw;
+  left: 31vw;
+  width: 30vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+.number5 {
+  position: absolute;
+  top: -2.5vw;
+  left: 5vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text17 {
+  position: absolute;
+  top: 0vw;
+  left: 11vw;
+  font-size: 1.5vw;
+  width: 47vw;
+}
+.text18 {
+  position: absolute;
+  top: 24vw;
+  left: 20vw;
+  background-color: #70bb00;
+  font-size: 1.3vw;
+  padding: 0vw 1vw;
+  border-radius: 0.6vw;
+  color: black;
+  font-weight: 700;
+}
+.text19 {
+  position: absolute;
+  top: 14vw;
+  left: 35vw;
+  width: 11vw;
+  text-align: center;
+  font-size: 1.4vw;
+}
+.text20 {
+  position: absolute;
+  top: 6vw;
+  left: 22vw;
+  font-size: 4vw;
+  font-weight: 700;
+}
+.text21 {
+  position: absolute;
+  top: 14vw;
+  left: 27vw;
+  width: 36vw;
+  font-size: 1.7vw;
+}
+.text22 {
+  position: absolute;
+  top: 24vw;
+  left: 27vw;
+  width: 38vw;
+  font-size: 1.7vw;
+}
+.number6 {
+  position: absolute;
+  top: 16.5vw;
+  left: 4vw;
+  font-size: 13vw;
+  font-weight: 800;
+}
+.text23 {
+  position: absolute;
+  top: 4vw;
+  left: 4vw;
+  width: 41vw;
+  font-size: 3vw;
+  font-weight: 900;
+  line-height: 3.5vw;
+}
+.text24 {
+  position: absolute;
+  top: 15vw;
+  left: 4vw;
+}
+.text25 {
+  position: absolute;
+  top: 22vw;
+  left: 9vw;
+  width: 28vw;
+  font-size: 1.9vw;
+}
+.number7 {
+  position: absolute;
+  top: 18.5vw;
+  left: 34vw;
+  font-size: 13vw;
+  font-weight: 800;
+}
+.text26{
+  position: absolute;
+  top: 3vw;
+  left: 25vw;
+  width: 39vw;
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: end;
+}
+.text27{
+  position: absolute;
+  top: 17vw;
+  left: 34vw;
+  font-size: 1.6vw;
+}
+.text28{
+  position: absolute;
+  top: 21vw;
+  left: 43vw;
+  width: 22vw;
+  font-size: 1.9vw;
+  line-height: 2.2vw;
+}
+.text29{
+  position: absolute;
+  top: 29vw;
+  left: 43vw;
+  width: 22vw;
+  font-size: 1.6vw;
+  line-height: 2.2vw;
+}
 /* --------------------------------------- SIDEBAR  -------------------------------------------*/
 .follower {
   position: fixed;
@@ -2107,6 +2403,9 @@ h7 {
   padding: 0 19vw;
   padding-top: 12vw;
   padding-bottom: 5vw;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 .howToUse img {
   width: 100%;
@@ -2130,6 +2429,12 @@ h7 {
   padding: 0 15vw;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.active img {
+  width: 100%;
 }
 .learnmorebg {
   background-image: url('images/learnmore-bg2.webp');

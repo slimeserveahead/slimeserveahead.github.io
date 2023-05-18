@@ -582,19 +582,63 @@ a {
   z-index: 1;
   text-shadow: none;
 }
+
 .downloadButton {
   width: 25%;
   height: 27%;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0.2vw solid #9CFF00;
+  border-radius: 1vw;
+  text-align: center;
+  z-index: 3;
+  transition: color 0.8s, background-color 0.8s, box-shadow 1.75s;
 }
 
+.downloadButton a{
+  color: #9CFF00;
+}
+.downloadButton:hover {
+  background-color: #9CFF00;
+  box-shadow: 0vw 0vw 4vw 0vw #9CFF00;
+}
+.downloadButton:hover a{
+  color: black;
+}
 .downloadButton img {
-  width: 100%;
-  height: 87%;
   z-index: 1;
   position: absolute;
 }
-
+.downloadIcon {
+  font-size: 2.8vw;
+  margin-top: 0.5vw;
+}
+.downloadIcon3 {
+  fill: #9CFF00;
+}
+.downloadIcon3 svg{
+  height: 2vw;
+}
+.downloadText {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 2vw;
+  width: 12vw;
+  margin-top: 0.7vw;
+}
+.downloadIcon2 {
+  font-size: 4.1vw;
+}
+.downloadText2 {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 2vw;
+  width: 12vw;
+}
 .downloadButton .hover {
   opacity: 0;
   position: absolute;
@@ -1355,7 +1399,7 @@ h7 {
     position: relative;
   }
   .upperSectionBackground {
-    content: url(images/mobile-background.webp);
+    content: url(images/mobile-background.png);
   }
   
   .phones {
@@ -2770,6 +2814,20 @@ h7 {
   text-align: end;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .downloadNow:nth-child(1) {
+    top: 0.75vw;
+  }
+  .downloadNow:nth-child(2) {
+    top: 2.75vw;
+  }
+  .downloadNow:nth-child(3) {
+    top: 4.75vw;
+  }
+  .button{
+    width: 18.4vw;
+    height: 4.7vw;
+    font-size: 2.4vw;
+  }
   .message-container.visitor .message {
     font-size: 1.7vw;
   }
@@ -3341,6 +3399,22 @@ h7 {
     font-size: 1.8vw;
     width: 45vw;
     text-align: center;
+  }
+  .downloadIcon {
+    font-size: 4.8vw;
+  }
+  .downloadText {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    width: 21vw;
+  }
+  .downloadIcon2 {
+    font-size: 7.1vw;
+  }
+  .downloadText2 {
+    font-size: 3.5vw;
+    line-height: 3vw;
+    width: 17vw;
   }
 }
 .hiddenItemsRight {

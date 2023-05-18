@@ -114,7 +114,7 @@
     
     <div class="learnmorebg">            
         <!--------------------------------- How to use walk club app ----------------------------------------------->        
-        <div class="howToUse" id="howToUse">
+        <div class="howToUse hiddenSections hiddenItemsLeft" id="howToUse">
             <div class="relative">
                 <img src="images/how-to-use-1.png">
                 <div class="text1"><span>HOW TO USE </span>WALKCLUB</div>
@@ -159,7 +159,7 @@
             </div>            
         </div>
         <!--------------------------------- How much can I Earn ----------------------------------------------->
-        <div class="earn"  id="earn" >
+        <div class="earn hiddenSections hiddenItemsRight"  id="earn" >
             <div class="relative">
                 <img src="images/earn1.png">
                 <div class="text45">HOW MUCH CAN I EARN WITH WALK CLUB?</div>
@@ -196,7 +196,7 @@
             </div>
         </div>
         <!--------------------------------- Active Percent ----------------------------------------------->
-        <div class="active"  id="active">
+        <div class="active hiddenSections hiddenItemsLeft"  id="active">
             <div class="relative">
                 <img src="images/active1.png">
                 <div class="text20"><span>WHAT IS ACTIVE %</span></div>
@@ -220,7 +220,7 @@
             </div>
         </div>
         <!--------------------------------- Contribution ----------------------------------------------->
-        <div class="contribution" id="contribution">
+        <div class="contribution hiddenSections hiddenItemsRight" id="contribution">
             <div class="relative">
                 <img src="images/contribution1.png">
                 <div class="number8"><span>#01</span></div>
@@ -300,5 +300,36 @@
         sidebarmover.addEventListener("mouseleave", function() {
             follower.style.display = "block";
         });
+
+    /*----------------- Scroll animation --------------------------------------*/
+    const hiddenSections = document.querySelectorAll(".hiddenSections");
+
+    let observerOptionsTwo = {
+        rootMargin: "1000px 0px -200px 0px"
+    };
+
+    // Check screen size and update options if necessary
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        observerOptionsTwo.rootMargin = "1000px 0px -200px 0px";
+    } else {
+        observerOptionsTwo.rootMargin = "5000px 0px -500px 0px";
+    }
+
+    const observerTwo = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+        console.log("is intersecting");
+        });
+    }, 
+    observerOptionsTwo
+    );
+
+    hiddenSections.forEach(hiddenSection => {
+        observerTwo.observe(hiddenSection);
+    });
+    
     </script>
+
+    
 </html>

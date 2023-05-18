@@ -29,11 +29,14 @@ body {
   height: 100%;
   z-index: -2;
 }
-strong {
-  color: #9CFF00;
-}
 span {
   color: #9AFF01;
+}
+.show {
+  transform: translateX(0);
+}
+a {
+  text-decoration: none;
 }
 /* --------------------------------------- CHAT SUPPORT -------------------------------------------*/
 .sendIcon {
@@ -2132,6 +2135,7 @@ h7 {
   top: 14.5vw;
   left: 8.7vw;
   font-weight: 600;
+  font-size: 1.7vw;
 }
 .text14 {
   position: absolute;
@@ -2151,6 +2155,7 @@ h7 {
   top: 8vw;
   left: 32vw;
   font-weight: 800;
+  font-size: 1.8vw;
 }
 .text16 {
   position: absolute;
@@ -2234,6 +2239,7 @@ h7 {
   position: absolute;
   top: 15vw;
   left: 4vw;
+  font-size: 1.7vw;
 }
 .text25 {
   position: absolute;
@@ -2300,7 +2306,6 @@ h7 {
   font-size: 3vw;
   font-weight: 400;
 }
-
 .text32{
   position: absolute;
   top: 16vw;
@@ -2319,6 +2324,218 @@ h7 {
   top: 33.6vw;
   left: 54vw;
   font-size: 1.1vw;
+}
+.number9{
+  position: absolute;
+  font-size: 2.3vw;
+  top: 32vw;
+  left: 5vw;
+}
+.text35 {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  font-size: 2.3vw;
+  width: 24vw;
+  font-weight: 600;
+}
+.text36 {
+  position: absolute;
+  top: 14vw;
+  left: 5vw;
+  width: 24vw;
+  font-size: 1.4vw;
+}
+.text37 {
+  position: absolute;
+  top: 23vw;
+  left: 5vw;
+  width: 24vw;
+  font-size: 1.4vw;
+}
+.text38 {
+  position: absolute;
+  top: 33vw;
+  left: 41vw;
+  font-size: 0.9vw;
+}
+.number10{
+  position: absolute;
+  top: 2vw;
+  left: 4vw;
+  font-size: 2vw;
+}
+.text39{
+  position: absolute;
+  top: 2vw;
+  left: 23vw;
+  font-size: 2.3vw;
+  font-weight: 600;
+}
+.text40{
+  position: absolute;
+  top: 8vw;
+  left: 20vw;
+  width: 32vw;
+  font-size: 1.3vw;
+}
+.text41{
+  position: absolute;
+  top: 17vw;
+  left: 19vw;
+  font-size: 1.2vw;
+}
+.text42{
+  position: absolute;
+  top: 16vw;
+  left: 36.5vw;
+  font-size: 1.2vw;
+  width: 18vw;
+  text-align: center;
+}
+.number11{
+  position: absolute;
+  top: 32vw;
+  left: 60vw;
+  font-size: 2.4vw;
+}
+.text43{
+  position: absolute;
+  top: 0vw;
+  left: 21vw;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.text44{
+  position: absolute;
+  top: 4vw;
+  left: 17vw;
+  font-size: 1.4vw;
+  width: 34vw;
+  text-align: center;
+}
+.text45 {
+  position: absolute;
+  top: 13vw;
+  left: 5vw;
+  width: 28vw;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 3.4vw;
+}
+.number12{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 2.3vw;
+  left: 1vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text46 {
+  position: absolute;
+  top: 4vw;
+  left: 5vw;
+  font-size: 4vw;
+  font-weight: 700;
+}
+.text47 {
+  position: absolute;
+  top: 9vw;
+  left: 5vw;
+  font-size: 3vw;
+  font-weight: 600;
+}
+.text48 {
+  position: absolute;
+  top: 14vw;
+  left: 5vw;
+  font-size: 2vw;
+}
+.text49 {
+  position: absolute;
+  top: 17vw;
+  left: 5vw;
+  font-size: 2vw;
+}
+.text50 {
+  position: absolute;
+  color: black;
+  top: 24vw;
+  left: 14vw;
+  width: 18vw;
+  font-weight: 800;
+  font-size: 1.7vw;
+  transform: rotate(-21deg);
+}
+.number13{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 2.3vw;
+  left: 1vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text51 {
+  position: absolute;
+  top: 4vw;
+  left: 7vw;
+  width: 37vw;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 3.3vw;
+}
+.text52 {
+  position: absolute;
+  top: 12vw;
+  left: 7vw;
+  width: 37vw;
+  font-size: 2.6vw;
+  font-weight: 600;
+  line-height: 2.6vw;
+}
+.text53 {
+  position: absolute;
+  top: 20vw;
+  left: 7vw;
+  width: 34vw;
+  font-size: 1.85vw;
+  line-height: 2.2vw;
+}
+.text54 {
+  position: absolute;
+  top: 9vw;
+  left: 1vw;
+  width: 34vw;
+  font-size: 1.84vw;
+}
+.text55 {
+  position: absolute;
+  top: 10vw;
+  left: 28vw;
+  width: 39vw;
+  font-size: 1.8vw;
+}
+.number14{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 1vw;
+  left: 6vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text56 {
+  position: absolute;
+  top: 14vw;
+  left: 6vw;
+  font-weight: 900;
+  font-size: 3.4vw;
+}
+.text57 {
+  position: absolute;
+  top: 21vw;
+  left: 6vw;
+  width: 37vw;
+  font-size: 1.4vw;
 }
 /* --------------------------------------- SIDEBAR  -------------------------------------------*/
 .follower {
@@ -2457,9 +2674,13 @@ h7 {
   padding: 0 15vw;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 .earn img{
   margin-bottom: 8vw;
+  width: 100%;
 }
 .active {
   width: 100%;
@@ -2494,6 +2715,9 @@ h7 {
 .contribution img{
   margin-bottom: 8vw;
   width: 100%;
+}
+.last img{
+  margin-bottom: 0;
 }
 .banner {
   width: 100%;
@@ -2634,5 +2858,472 @@ h7 {
     height: 2vw;
     bottom: 1vw;
     right: 3.2vw;
+  }
+  .text1 {
+    position: absolute;
+    font-size: 7vw;
+    width: 27vw;
+    font-weight: 700;
+    top: 15vw;
+    left: 42vw;
+    line-height: 8vw;
+  }
+  .text2 {
+    position: absolute;
+    top: 43.8vw;
+    left: 42vw;
+    font-size: 2vw;
+  }
+  .text3 {
+    position: absolute;
+    top: 9vw;
+    left: 26vw;
+    width: 55vw;
+    text-align: end;
+    font-size: 2.1vw;
+  }
+  .number1 {
+    position: absolute;
+    top: 6.5vw;
+    left: 83vw;
+    font-size: 11vw;
+    font-weight: 800;
+  }
+  .text4 {
+    position: absolute;
+    top: 19.5vw;
+    left: 28.5vw;
+    font-size: 2.3vw;
+  }
+  .text5 {
+    position: absolute;
+    top: 23.5vw;
+    left: 44.5vw;
+    font-size: 2.3vw;
+  }
+  .text6 {
+    position: absolute;
+    top: 50vw;
+    font-size: 2.3vw;
+    left: 75vw;
+  }
+  .number2 {
+    position: absolute;
+    top: -1.5vw;
+    left: 86vw;
+    font-size: 12vw;
+    font-weight: 800;
+  }
+  .text7 {
+    position: absolute;
+    top: 2vw;
+    left: 6vw;
+    font-size: 2vw;
+    width: 77vw;
+    text-align: end;
+  }
+  .text8 {
+    position: absolute;
+    top: 19vw;
+    left: 35.4vw;
+    font-size: 1.7vw;
+  }
+  .text9 {
+    position: absolute;
+    top: 47.5vw;
+    left: 28vw;
+    font-size: 1.8vw;
+    width: 18vw;
+    text-align: end;
+  } 
+  .text10 {
+    position: absolute;
+    top: 43.5vw;
+    left: 70vw;
+    font-size: 1.8vw;
+    width: 18vw;
+    text-align: end;
+  }
+  .text11 {
+    position: absolute;
+    top: 33.5vw;
+    left: 83vw;
+    font-size: 1.7vw;
+  }
+  .number3 {
+    position: absolute;
+    top: -1.5vw;
+    left: 86vw;
+    font-size: 12vw;
+    font-weight: 800;
+  }
+  .text12 {
+    position: absolute;
+    top: 3.5vw;
+    left: 8vw;
+    font-size: 2.5vw;
+    width: 76vw;
+    text-align: end;
+  }
+  .text13 {
+    position: absolute;
+    top: 25.5vw;
+    left: 14vw;
+    font-weight: 600;
+    font-size: 2.7vw;
+  }
+  .text14 {
+    position: absolute;
+    top: 21.5vw;
+    left: 56vw;
+    font-weight: 600;
+    font-size: 2.7vw;
+  }
+  .number4 {
+    position: absolute;
+    top: 20.5vw;
+    left: 40vw;
+    font-size: 14vw;
+    font-weight: 800;
+  }
+  .text15 {
+    position: absolute;
+    top: 13vw;
+    left: 51.5vw;
+    font-weight: 800;
+    font-size: 2.8vw;
+  }
+  .text16 {
+    position: absolute;
+    top: 25vw;
+    left: 52vw;
+    width: 43vw;
+    font-size: 2.6vw;
+    font-weight: 400;
+    line-height: 3.4vw;
+  }
+  .number5 {
+    position: absolute;
+    top: -2.5vw;
+    left: 10vw;
+    font-size: 11vw;
+    font-weight: 800;
+  }
+  .text17 {
+    position: absolute;
+    top: 1vw;
+    left: 19vw;
+    font-size: 2.2vw;
+    width: 70vw;
+  }
+  .text18 {
+    position: absolute;
+    top: 38vw;
+    left: 32vw;
+    background-color: #a0f81d;
+    font-size: 2vw;
+    padding: 0vw 1.3vw;
+    border-radius: 0.9vw;
+    color: black;
+    font-weight: 700;
+  }
+  .text19 {
+    position: absolute;
+    top: 24vw;
+    left: 58vw;
+    width: 16vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+  .text45 {
+    position: absolute;
+    top: 18vw;
+    left: 7vw;
+    width: 47vw;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 5.4vw;
+  }
+  .text49 {
+    position: absolute;
+    top: 26vw;
+    left: 6vw;
+    font-size: 2.9vw;
+  }
+  .text48 {
+    top: 22vw;
+    left: 6vw;
+    font-size: 2.9vw;
+  }
+  .text46 {
+    position: absolute;
+    top: 9vw;
+    left: 6vw;
+    font-size: 6vw;
+    font-weight: 700;
+  }
+  .text47 {
+    position: absolute;
+    top: 17vw;
+    left: 6vw;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .number12 {
+    position: absolute;
+    text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+    top: 7.3vw;
+    left: 1.5vw;
+    font-size: 10vw;
+    font-weight: 900;
+  }
+  .text50 {
+    position: absolute;
+    color: black;
+    top: 36vw;
+    left: 20vw;
+    width: 19vw;
+    font-weight: 800;
+    font-size: 2.5vw;
+    transform: rotate(-21deg);
+  }
+  .number13 {
+    position: absolute;
+    text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+    top: 5vw;
+    left: 1.5vw;
+    font-size: 10vw;
+    font-weight: 900;
+  }
+  .text53 {
+    position: absolute;
+    top: 30vw;
+    left: 8vw;
+    width: 58vw;
+    font-size: 2.6vw;
+  }
+  .text52 {
+    position: absolute;
+    top: 20vw;
+    left: 8vw;
+    width: 53vw;
+    font-size: 3.6vw;
+    font-weight: 600;
+    line-height: 3.6vw;
+  }
+  .text51 {
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+    width: 54vw;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 5.3vw;
+  }
+  .text54 {
+    position: absolute;
+    top: 11vw;
+    left: 2vw;
+    width: 54vw;
+    font-size: 2.8vw;
+  }
+  .text55 {
+    position: absolute;
+    top: 17vw;
+    left: 36vw;
+    width: 57vw;
+    font-size: 2.6vw;
+    line-height: 3vw;
+  }
+  .number14 {
+    top: 3vw;
+  }
+  .text56 {
+    top: 17vw;
+    font-size: 4.4vw;
+  }
+  .text57 {
+    top: 25vw;
+    width: 51vw;
+    font-size: 2.4vw;
+  }
+  .text20 {
+    top: 9vw;
+    left: 32vw;
+    font-size: 6vw;
+  }
+  .text21 {
+    position: absolute;
+    top: 18vw;
+    left: 38vw;
+    width: 50vw;
+    font-size: 2.7vw;
+  }
+  .text22 {
+    position: absolute;
+    top: 32vw;
+    left: 38vw;
+    width: 51vw;
+    font-size: 2.7vw;
+  }
+  .text23 {
+    top: 4vw;
+    left: 4vw;
+    width: 60vw;
+    font-size: 4.5vw;
+    line-height: 4.7vw;
+  }
+  .text24 {
+    top: 18vw;
+    left: 4vw;
+    font-size: 2.5vw;
+  }
+  .number6 {
+    top: 17.5vw;
+    left: 4vw;
+    font-size: 17vw;
+  }
+  .text25 {
+    top: 25vw;
+    left: 12vw;
+    width: 36vw;
+    font-size: 2.8vw;
+    line-height: 3.6vw;
+  }
+  .text26 {
+    top: 3vw;
+    left: 34vw;
+    width: 58vw;
+    font-size: 4.3vw;
+    line-height: 4.5vw;
+  }
+  .text27 {
+    top: 17vw;
+    left: 43vw;
+    font-size: 2.6vw;
+  }
+  .number7 {
+    top: 18.5vw;
+    left: 42vw;
+    font-size: 22vw;
+  }
+  .text28 {
+    top: 26vw;
+    left: 56vw;
+    width: 36vw;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  .text29 {
+    top: 38vw;
+    left: 56vw;
+    width: 32vw;
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+  }
+  .number8 {
+    top: 2vw;
+    left: 87vw;
+    font-size: 3.3vw;
+  }
+  .text30 {
+    top: 9vw;
+    left: 12vw;
+    font-size: 3.5vw;
+  }
+  .text31 {
+    top: 15vw;
+    left: 13vw;
+    font-size: 4.5vw;
+  }
+  .text32 {    
+    top: 21vw;
+    left: 13vw;
+    font-size: 4.5vw;
+  }
+  .text33 {
+    top: 48vw;
+    left: 45vw;
+    font-size: 1.5vw;
+  }
+  .text34 {
+    top: 48vw;
+    left: 78vw;
+    font-size: 1.5vw;
+  }
+  .number9 {
+    top: 43vw;
+    left: 5vw;
+    font-size: 3.3vw;
+  }
+  .text35 {
+    top: 12vw;
+    left: 5vw;
+    font-size: 3.3vw;
+    width: 39vw;
+    line-height: 4vw;
+  }
+  .text36 {
+    top: 24vw;
+    left: 5vw;
+    width: 32vw;
+    font-size: 1.7vw;
+  }
+  .text37 {
+    top: 34vw;
+    left: 5vw;
+    width: 31vw;
+    font-size: 1.7vw;
+  }
+  .text38 {
+    top: 47vw;
+    left: 53vw;
+    font-size: 1.8vw;
+  }
+  .number10 {
+    position: absolute;
+    top: 4vw;
+    left: 6vw;
+    font-size: 3.3vw;
+  }
+  .text42 {
+    top: 22vw;
+    left: 56.5vw;
+    font-size: 1.5vw;
+    width: 18vw;
+  }
+  .text41{
+    top: 24vw;
+    left: 28.5vw;
+    font-size: 1.5vw;
+  }
+  .text39 {
+    top: 4vw;
+    left: 32vw;
+    font-size: 3.3vw;
+    font-weight: 600;
+  }
+  .text40 { 
+    top: 11vw;
+    left: 26vw;
+    width: 50vw;
+    font-size: 2vw;
+  }
+  .number11 {
+    top: 48vw;
+    left: 86vw;
+    font-size: 3.3vw;
+  }
+  .text43 {
+    top: 1vw;
+    left: 29vw;
+    font-size: 3vw;
+  }
+  .text44 {
+    top: 7vw;
+    left: 26vw;
+    font-size: 1.8vw;
+    width: 45vw;
+    text-align: center;
   }
 }

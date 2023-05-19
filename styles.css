@@ -683,7 +683,6 @@ u {
 }
 .downloadIcon {
   font-size: 2.8vw;
-  margin-top: 0.5vw;
 }
 .downloadIcon3 {
   fill: #9CFF00;
@@ -697,7 +696,6 @@ u {
   font-weight: 600;
   line-height: 2vw;
   width: 12vw;
-  margin-top: 0.7vw;
 }
 .downloadIcon2 {
   font-size: 4.1vw;
@@ -708,6 +706,7 @@ u {
   font-weight: 600;
   line-height: 2vw;
   width: 12vw;
+  margin-top: -1.5vw;
 }
 .downloadButton .hover {
   opacity: 0;
@@ -3470,7 +3469,7 @@ h7 {
     text-align: center;
   }
   .downloadIcon {
-    font-size: 4.8vw;
+    font-size: 4.3vw;
   }
   .downloadText {
     font-size: 3.5vw;
@@ -3478,7 +3477,7 @@ h7 {
     width: 21vw;
   }
   .downloadIcon2 {
-    font-size: 7.1vw;
+    font-size: 6.1vw;
   }
   .downloadText2 {
     font-size: 3.5vw;

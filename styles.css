@@ -584,7 +584,7 @@ u {
 .button:hover {
   color:#9CFF00;
   background-color: black;
-  border: 2px solid #9CFF00;
+  border: 0.01vw solid #9CFF00;
 }
 .button img:first-child {
   position: absolute;

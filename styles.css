@@ -36,6 +36,76 @@ span {
 a {
   text-decoration: none;
 }
+.gameplay1 {
+  font-family: 'American Captain', sans-serif;
+  color: white;
+  position: relative;
+  font-size: 9vw;
+}
+.gameplay2 {
+  position: absolute;
+  top: 4.2vw;
+  left: 31vw;
+}
+.gameplay3 {
+  position: absolute;
+  top: 12.2vw;
+  left: 37.6vw;
+}
+em {
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke-width: 0.04vw;
+  -webkit-text-stroke-color: white;
+}
+.benefits1 {
+  font-family: 'American Captain', sans-serif;
+  color: white;
+  font-size: 7vw;
+  text-align: center;
+  width: 105%;
+  height: 5.2vw;
+  display: flex;
+  justify-content: center;
+}
+.benefits2{
+  height: 100%;
+  width: 20.75vw;
+  display: flex;
+  color: #D6D6D6;
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.benefits3{
+  height: 100%;
+  width: 20.75vw;
+  display: flex;
+  color: transparent;
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke-color: #9AFF01;
+  -webkit-text-stroke-width: 0.06vw;
+}
+.benefits4 {
+  height: 100%;
+  width: 20.75vw;
+  display: flex;
+  color: white;
+  font-size: 7vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+u {
+  text-decoration: none;
+  -webkit-text-stroke-width: 0.15vw;
+  -webkit-text-stroke-color: red;
+  color: transparent;
+}
 /* --------------------------------------- CHAT SUPPORT -------------------------------------------*/
 .sendIcon {
   background-color: rgb(75, 202, 75);
@@ -1399,7 +1469,7 @@ h7 {
     position: relative;
   }
   .upperSectionBackground {
-    content: url(images/mobile-background.png);
+    content: url(images/mobile-background.webp);
   }
   
   .phones {
@@ -2168,11 +2238,10 @@ h7 {
 }
 .text11 {
   position: absolute;
-  top: 20.5vw;
-  left: 51vw;
+  top: 20.8vw;
+  left: 52.1vw;
   font-size: 1.1vw;
 }
-
 .number3 {
   position: absolute;
   top: -1.5vw;
@@ -2640,7 +2709,7 @@ h7 {
   width: 3vw;
   height: 3vw;
   border-radius: 0.5vw;
-  background-image: url('Untitled-1.png');
+  background-image: url('Untitled-1.webp');
 
   background-attachment: fixed;
   background-position: center;
@@ -3021,7 +3090,7 @@ h7 {
   .text11 {
     position: absolute;
     top: 33.5vw;
-    left: 83vw;
+    left: 84.3vw;
     font-size: 1.7vw;
   }
   .number3 {
@@ -3427,4 +3496,7 @@ h7 {
 }
 .show {
   transform: translateX(0);
+}
+.learnmoreS{
+  transform: translateX(32vw);
 }

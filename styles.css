@@ -32,7 +32,6 @@ body {
 span {
   color: #9AFF01;
 }
-
 a {
   text-decoration: none;
 }
@@ -135,7 +134,7 @@ u {
   position: fixed;
   bottom: 1vw;
   right: 2vw;
-  z-index: 5;
+  z-index: 10;
   border-radius: 3vw;
   border: 0.1vw solid #9AFF01;
   display: flex;
@@ -1429,7 +1428,7 @@ h7 {
   h17 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }  
   spanTwo {
     color: #9AFF01;
@@ -1555,17 +1554,18 @@ h7 {
     display: none;
   } 
   .shoeDescription {
-    font-size: 2vw;
+    font-size: 3vw;
+    width: 95vw;
   }
   .coreValueTexts {
     width: 48%;
     padding-top: 3vw;
   }
   h9 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   h8 {
-    font-size: 3.3vw;
+    font-size: 4.3vw;
   }
   .number {
     margin-left: 1vw;
@@ -1812,7 +1812,6 @@ h7 {
     top: 3vw;    
   }
   
-  
   @keyframes glowing {
     0% {
       text-shadow: 0px 0px 0px #9CFF00;
@@ -1830,16 +1829,10 @@ h7 {
       text-shadow: none;
     }
   }
-  
-  /* Define the animation styles for the new glow */
-  
-  
-  /* Apply the animations to the element */
   .h14 {
     position: relative;
     animation: glowing 1s ease-in-out infinite;
-  } 
-
+  }
   /* ---------------------------------------- DOWNLOAD ---------------------------------------*/
   h2 {
     font-size: 1.4vw;
@@ -1942,7 +1935,6 @@ h7 {
     opacity: 0.3;
     z-index: 4;
   }
-
   .pictureContainerText {
     display: none;
   }
@@ -2139,9 +2131,7 @@ h7 {
   .lifestyle {
     margin-bottom: 0;
   }
-  
 }
-
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .downloadNow:nth-child(1) {
     top: 0.75vw;
@@ -2151,6 +2141,22 @@ h7 {
   }
   .downloadNow:nth-child(3) {
     top: 4.75vw;
+  }
+  .downloadText {
+    font-size: 4vw;
+    line-height: 3.2vw;
+    width: 21vw;
+  }
+  .downloadText2 {
+    font-size: 4vw;
+    line-height: 3.2vw;
+    width: 25vw;
+  }
+  .downloadIcon {
+    font-size: 4vw;
+  }
+  .downloadIcon2 {
+    font-size: 5.4vw;
   }
   .button{
     width: 18.4vw;
@@ -2171,7 +2177,6 @@ h7 {
     position: fixed;
     bottom: 1vw;
     right: 2vw;
-    z-index: 2;
     border-radius: 10vw;
     border: 0.1vw solid #9AFF01;
     display: flex;
@@ -2193,7 +2198,6 @@ h7 {
     bottom: 1vw;
     right: 3.2vw;
   }
-  
 }
 .show {
   transform: translateX(0);

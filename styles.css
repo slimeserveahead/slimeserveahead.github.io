@@ -3,10 +3,10 @@
   src: url('Fonts/American\ Captain.ttf') format('truetype');
 }
 body {
-    background-color: black;
-    width: 100%;    
-    padding-top: 8vw;
-    overflow-x: hidden;
+  background-color: black;
+  width: 100%;    
+  padding-top: 8vw;
+  overflow-x: hidden;
 }
 .rightClick:hover {
   cursor: pointer;
@@ -611,7 +611,9 @@ u {
   z-index: -1;
   position: relative;
 }
-
+.downloadIcon2 i {
+  transform: translateY(-1vw);
+}
 .downloadSection {
   position: absolute;
   top: -8vw;
@@ -705,7 +707,7 @@ u {
   font-weight: 600;
   line-height: 2vw;
   width: 12vw;
-  margin-top: -1.5vw;
+  margin-top: -1.8vw;
 }
 .downloadButton .hover {
   opacity: 0;
@@ -2197,6 +2199,9 @@ h7 {
     height: 2vw;
     bottom: 1vw;
     right: 3.2vw;
+  }
+  .benefits1{
+    height: 7.2vw;
   }
 }
 .show {

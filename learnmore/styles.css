@@ -990,7 +990,7 @@ h7 {
 .text11 {
   position: absolute;
   top: 20.8vw;
-  left: 52.1vw;
+  left: 51.5vw;
   font-size: 1.1vw;
 }
 .number3 {
@@ -1460,8 +1460,7 @@ h7 {
   width: 3vw;
   height: 3vw;
   border-radius: 0.5vw;
-  background-image: url('Untitled-1.webp');
-
+  background-image: url('images/followerbg.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

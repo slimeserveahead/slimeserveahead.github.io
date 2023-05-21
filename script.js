@@ -62,13 +62,13 @@ function updateSelectorPosition() {
     const currentScrollPosition = middleOfScreen;    
 
     if (currentScrollPosition < newsBounds.top) {
-        selector.style.transform = 'translateX(2vw)';       
+        selector.style.transform = 'translateX(2.2vw)';       
     } else if (currentScrollPosition >= newsBounds.top && currentScrollPosition < gameplayBounds.top) {            
-        selector.style.transform = 'translateX(9.5vw)';
+        selector.style.transform = 'translateX(9.3vw)';
     } else if (currentScrollPosition >= gameplayBounds.top && currentScrollPosition < benefitsBounds.top) {
-        selector.style.transform = 'translateX(17vw)';
+        selector.style.transform = 'translateX(16.4vw)';
     } else {
-        selector.style.transform = 'translateX(24.5vw)';
+        selector.style.transform = 'translateX(23.5vw)';
     }
     
 }
@@ -297,7 +297,7 @@ let observerOptions = {
 
 // Check screen size and update options if necessary
 if (window.matchMedia("(max-width: 768px)").matches) {
-  observerOptions.rootMargin = "1000px 0px -200px 0px";
+  observerOptions.rootMargin = "1000px 0px -100px 0px";
 } else {
   observerOptions.rootMargin = "5000px 0px -500px 0px";
 }

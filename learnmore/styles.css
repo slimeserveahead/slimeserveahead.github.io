@@ -45,7 +45,7 @@ a {
   margin-top: 0.5vw;
   height: 0.5vw;
   transition: all 0.5s;
-  transform: translateX(2vw);
+  transform: translateX(2.2vw);
 }
 .middleShoe {
   animation: move-up-down 2s ease-in-out infinite;
@@ -210,7 +210,7 @@ h7 {
   /* --------------------------------------- MOVING BORDER START -------------------------------------------*/
   .movingBorder {
     width: 25.2vw;
-    height: 42.8vw;
+    height: 50.8vw;
     top: 10.4vw;
     left: 102.4vw;
     box-shadow: 16px 14px 20px #0000008c;
@@ -338,7 +338,7 @@ h7 {
     align-items: flex-end;
     row-gap: 3vw;
     margin-bottom: -39vw;
-    margin-top: 14.5vw;
+    margin-top: 22.5vw;
     width: 24vw;
     border-radius: 1vw;
     border: 1px solid green;
@@ -843,7 +843,7 @@ h7 {
     width: 6vw;
   }
   .buttons {
-    width: 36vw;
+    width: 42vw;
   }
   .h15 {
     font-size: 2.6vw;
@@ -2228,5 +2228,5 @@ h7 {
   transform: translateX(0);
 }
 .learnmoreS{
-  transform: translateX(32vw);
+  transform: translateX(30.7vw);
 }

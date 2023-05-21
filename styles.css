@@ -63,7 +63,7 @@ em {
   font-size: 7vw;
   text-align: center;
   width: 105%;
-  height: 5.2vw;
+  height: 7.2vw;
   display: flex;
   justify-content: center;
 }
@@ -193,7 +193,6 @@ u {
   bottom: 30px;
   right: 30px;
 }
-
 /* CONTENT IS CLOSE */
 .chatbox__support {
   display: flex;
@@ -213,13 +212,10 @@ u {
   opacity: 1;
   
 }
-
 /* BUTTON */
 .chatbox__button {
   text-align: right;
 }
-
-
 /* HEADER */
 .chatbox__header {
   width: 100%;
@@ -231,7 +227,6 @@ u {
   justify-content: center;
   align-items: center;
 }
-
 /* MESSAGES */
 .chatbox__messages {
   margin-top: auto;
@@ -251,7 +246,6 @@ u {
   padding: 0 1vw;
   padding-bottom: 1vw;
 }
-
 .message-container {
   display: flex;
   justify-content: flex-start;  
@@ -261,7 +255,6 @@ u {
   background-color: #f2f2f2;
   margin-top: 1vw;
 }
-
 .message-container.visitor {
   align-self: flex-start;
   border-bottom-left-radius: 0;
@@ -270,12 +263,10 @@ u {
   border-top-right-radius: 2vw;
   background-color: #9CFF00;  
 }
-
 .message-container.visitor .message{
   font-size: 0.7vw;
   font-weight: 500;
 }
-
 .message-container.operator {
   align-self: flex-end;
   justify-content: flex-end;
@@ -325,15 +316,12 @@ u {
   max-width: 60.6%;
   width: fit-content;
 }
-
 .messages__item--operator {
   margin-left: auto;
 }
-
 .messages__item--visitor {
   margin-right: auto;
 }
-
 /* FOOTER */
 .chatbox__footer {
   bottom: 0;
@@ -379,7 +367,6 @@ u {
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
-
 .headerLogo {
   background-color: black;
   width: 3vw;
@@ -406,7 +393,6 @@ u {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
@@ -508,7 +494,6 @@ u {
 .middleShoe {
   animation: move-up-down 2s ease-in-out infinite;
 }
-
 @keyframes move-up-down {
   0% {
     transform: translateY(0);
@@ -533,7 +518,6 @@ u {
   z-index: 9999;
   top: 0;
 }
-
 .h15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.6vw;
@@ -546,25 +530,20 @@ u {
   color: #9cff00;
   width: 38%;
 }
-
 .text img {
   width: 4vw;
   margin-right: 1vw;
   margin-left: 4vw;
 }
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 54vw;
 }
-
-
 .button img {
   width: 9vw;
 }
-
 .button {
   position: relative;
   width: 6.4vw;
@@ -591,20 +570,16 @@ u {
   left: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
 .button img:last-child {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
 .button:hover img:first-child {
   opacity: 0;
 }
-
 .button:hover img:last-child {
   opacity: 1;
 }
-
 /*----------------------------Download SECTION Revised--------------------------------------*/
 .upperSection img {
   width: 100%;
@@ -653,7 +628,6 @@ u {
   z-index: 1;
   text-shadow: none;
 }
-
 .downloadButton {
   width: 25%;
   height: 27%;
@@ -667,7 +641,6 @@ u {
   z-index: 3;
   transition: color 0.8s, background-color 0.8s, box-shadow 1.75s;
 }
-
 .downloadButton a{
   color: #9CFF00;
 }
@@ -716,11 +689,9 @@ u {
   left: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
 .downloadButton:hover .default {
   opacity: 0;
 }
-
 .downloadButton:hover .hover {
   opacity: 1;
 }
@@ -754,7 +725,6 @@ u {
   width: 100%;
   z-index: 1;
 }
-
 .rightLine {
   background-color: #9AFF01;
   height: 61%;
@@ -789,7 +759,6 @@ u {
   color: #9AFF01;
   transform: scale(1.2);
 }
-
 .h14 {
   color: #9AFF01;
   font-family: 'Montserrat', sans-serif;
@@ -799,7 +768,6 @@ u {
   transition: all 0.5s;
   line-height: 4vw;
 }
-
 .h14:hover {
   color:#9AFF01;
   cursor: pointer;
@@ -862,7 +830,6 @@ u {
   flex-direction: row;
   justify-content: space-around;
 }
-
 .phone {
   height: 29vw;
   width: 14vw;
@@ -880,14 +847,12 @@ u {
   width: 100%;
   z-index: 2;
 }
-
 .infoTexts {
   width: 30%;
   padding-top: 36%;
   text-align: end;
   padding-right: 5%;
 }
-
 /*----------------------- Carousel Section ----------------------------------*/
 .carouselImages {
   display: flex;
@@ -897,16 +862,13 @@ u {
   scroll-behavior: smooth; 
   scroll-behavior: 1s; 
 }
-
 .carousel {
   position: relative;
 }
-
 .carouselImages img {
   width: 100%;
   scroll-snap-align: center;
 }
-
 .arrowCar {
   position: absolute;
   top: 28vw;
@@ -924,7 +886,6 @@ u {
 .arrowCar img {
   width: 1.8vw;
 }
-
 .leftArrow,
 .rightArrow {
   position: fixed;
@@ -933,32 +894,26 @@ u {
   z-index: 10;
   display: none;  
 }
-
 .left-arrow {
   padding: 1vw;
   left: 2vw;
   opacity: 0.2;
 }
-
 .left-arrow:hover {
   opacity: 0.6;
 }
-
 .right-arrow {
   padding: 1vw;
   right: 2vw;
   opacity: 0.2;
 }
-
 .right-arrow:hover {
   opacity: 0.6;
 }
-
 /*--------------------------- Shoe Carousel Section -----------------------------*/
 .shoeCarousel {
   overflow: hidden;
 }
-
 .lineTwo {
   height: 2vw;
   width: 0.3vw; 
@@ -973,7 +928,6 @@ h16 {
   height: 27px;
   width: 93px;
 }
-
 .shoes {
   display: flex;
   flex-direction: row;
@@ -1093,7 +1047,6 @@ h11 {
 .leftShoeArrow img{
   width: 100%;
 }
-
 .shoeDescription {
   color: white;
   text-align: center;
@@ -1108,8 +1061,6 @@ h11 {
   height: 31vw;
   margin-top: 3vw;
 }
-
-
 .shoeDescriptionMiddle {              
   transition: opacity 0.5s ease;
   position: absolute;
@@ -1234,7 +1185,6 @@ h9 {
   align-items: center;
   margin-bottom: 28vw;
 }
-
 .lifestyle .benefits {
   width: 125%;
 }
@@ -1262,7 +1212,6 @@ h9 {
 .pictureContainer img {
   width: 100%;
 }
-
 h1 {
   color: white;
   font-size: 2.5vw;
@@ -1281,7 +1230,6 @@ h2 {
   font-family: 'Poppins', sans-serif;  
   font-weight: 400;
 }
-
 /*---------------------------- footer ------------------------------*/
 .footer{
   background-color: #161f2c;
@@ -1316,7 +1264,6 @@ h4 {
   font-size: 1.3vw;
   font-family: 'Poppins', sans-serif;
 }
-
 h5 {
   color: white;
   font-size: 1vw;
@@ -1330,7 +1277,6 @@ h6 {
   font-weight: 600;
   margin-top: 1vw;
 }
-
 h7 {
   color: #9CFF00;
   font-size: 1.1vw;
@@ -1358,7 +1304,6 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  
   .right {
     width: 40%;
     display: flex;
@@ -1402,10 +1347,10 @@ h7 {
     transform: translate(4vw, 6vw);
   }
   .hiddenRight {  
-    transform: translateX(90vw);
+    transform: translateX(100%);
   }
   .hiddenLeft {
-    transform: translateX(-90vw);
+    transform: translateX(-100%);
   }
   .show {
     transform: translateX(0);
@@ -1471,7 +1416,6 @@ h7 {
   .upperSectionBackground {
     content: url(images/mobile-background.webp);
   }
-  
   .phones {
     display: none;
   }
@@ -1693,7 +1637,6 @@ h7 {
     opacity: 0.3;
     z-index: 4;
   }
-
   .pictureContainerText {
     display: none;
   }
@@ -1813,7 +1756,6 @@ h7 {
     position: absolute;
     top: 3vw;    
   }
-  
   @keyframes glowing {
     0% {
       text-shadow: 0px 0px 0px #9CFF00;
@@ -2171,7 +2113,6 @@ h7 {
   .message {
     font-size: 1.6vw;
   }
-  
   .chathead {
     background-color: black;
     width: 10vw;

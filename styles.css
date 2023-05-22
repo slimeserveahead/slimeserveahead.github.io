@@ -1879,9 +1879,9 @@ h7 {
   .rightClick {
     background-color: transparent;
     width: 50vw;
-    height: 35vw;
+    height: 23vw;
     position: absolute;
-    transform: translate(0vw, 0vw);
+    transform: translate(0vw, -6vw);
     opacity: 0.3;
     z-index: 4;
   }

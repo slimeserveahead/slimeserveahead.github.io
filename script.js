@@ -653,3 +653,52 @@ function createChoiceDiv(text, link) {
 
   return newChoiceDiv;
 }
+
+/*--------------------------------------------------- BENEFITS -------------------------------------------------------------*/
+const benefitPics = document.getElementById("benefitPics");
+
+let observerBenefits = {
+  rootMargin: "1000px 0px -200px 0px"
+};
+
+// Check screen size and update options if necessary
+if (window.matchMedia("(max-width: 768px)").matches) {
+  observerBenefits.rootMargin = "1000px 0px -200px 0px";
+} else {
+  observerBenefits.rootMargin = "5000px 0px -500px 0px";
+}
+
+const observerThree = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      console.log("benefits");
+      const leftBenefit = document.querySelector('.leftBenefit');
+      const middleBenefit = document.querySelector('.middleBenefit');
+      const rightBenefit = document.querySelector('.rightBenefit');
+      const leftTextB = document.querySelector('.leftTextB');
+      const middleTextB = document.querySelector('.middleTextB');
+      const rightTextB = document.querySelector('.rightTextB');
+      
+      leftBenefit.classList.remove('leftBenefit');
+      leftBenefit.classList.add('rightBenefit');
+
+      middleBenefit.classList.remove('middleBenefit');
+      middleBenefit.classList.add('leftBenefit');
+
+      rightBenefit.classList.remove('rightBenefit');
+      rightBenefit.classList.add('middleBenefit');
+
+      leftTextB.classList.remove('leftTextB');
+      leftTextB.classList.add('rightTextB');
+
+      middleTextB.classList.remove('middleTextB');
+      middleTextB.classList.add('leftTextB');
+
+      rightTextB.classList.remove('rightTextB');
+      rightTextB.classList.add('middleTextB');
+    })
+  }, 
+  observerBenefits
+);
+
+observerThree.observe(benefitPics);

@@ -57,7 +57,6 @@ const observerTwo = new IntersectionObserver(
 entries => {
     entries.forEach(entry => {
     entry.target.classList.toggle("show", entry.isIntersecting);
-    console.log("is intersecting");
     });
 }, 
 observerOptionsTwo

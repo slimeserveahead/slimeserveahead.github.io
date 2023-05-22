@@ -501,7 +501,7 @@ h7 {
   .shoePrevious {    
     position: absolute;
     width: 33vw;
-    height: 56vw;
+    height: 19vw;
     transform: translate(1vw, 4vw);
     z-index: 4;
   }
@@ -770,7 +770,7 @@ h7 {
   .shoeNext {
     position: absolute;
     width: 55vw;
-    height: 30vw;
+    height: 21vw;
     transform: translate(34vw, 3vw);
     z-index: 3;
   }

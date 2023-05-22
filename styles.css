@@ -1514,7 +1514,7 @@ h7 {
     font-size: 4.3vw;
   }
   .number {
-    margin-left: 1vw;
+    margin-left: 2vw;
     margin-right: 1vw;
     font-size: 11vw;
     margin-top: -2vw;
@@ -1535,10 +1535,11 @@ h7 {
   .tutorialItems {
     display: flex;
     width: 96%;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 10vw;
     align-items: center;
     transition: all 0.8s;
+    gap: 5vw;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -1741,6 +1742,11 @@ h7 {
   .chat {
     height: 85vw;
     width: 54vw;
+  }
+  .xIcon {
+    height: 5vw;
+    width: 5vw;
+    font-size: 3vw;
   }
   .chat-box {    
     min-height: 72.2vw;
@@ -1974,14 +1980,14 @@ h7 {
   .shoeNext {
     position: absolute;
     width: 55vw;
-    height: 30vw;
+    height: 21vw;
     transform: translate(34vw, 3vw);
     z-index: 3;
   }
   .shoePrevious {
     position: absolute;
     width: 27vw;
-    height: 29vw;
+    height: 21vw;
     transform: translate(7vw, 4vw);
     z-index: 4;
   }

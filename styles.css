@@ -1347,10 +1347,10 @@ h7 {
     transform: translate(4vw, 6vw);
   }
   .hiddenRight {  
-    transform: translateX(100%);
+    transform: translateX(120%);
   }
   .hiddenLeft {
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   .show {
     transform: translateX(0);

@@ -671,7 +671,6 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 const observerThree = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-      console.log("benefits");
       const leftBenefit = document.querySelector('.leftBenefit');
       const middleBenefit = document.querySelector('.middleBenefit');
       const rightBenefit = document.querySelector('.rightBenefit');

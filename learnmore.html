@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="//db.onlinewebfonts.com/c/0f9c349da923afea31fae4db7b8094f0?family=Gotham+Black" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="styles.css">
+        <title>Walk Club No.1 Fitness Brand : Walk and Earn</title>
+
+        <link rel="icon" href="images/blackbg-logo.webp" type="image/icon type">
+    </head>
+<body>
+    <div class="background-img">
+        <img src="images/body-background.webp">
+    </div>
+    <div class="navigation-bar">
+        <div class="text">
+            <img src="images/logo.webp">
+            <div class="h15">WALK CLUB</div>
+        </div>
+        <div class="movingBorder" id="movingBorder"></div>
+        <div class="buttonsContainer">
+            <div class="buttons" id="buttons">
+                <a href="index.html#home">
+                    <div class="button">Home</div>
+                </a>
+                <a href="index.html#news">
+                    <div class="button">News</div>
+                </a>
+                <a href="index.html#gameplay">
+                    <div class="button">Gameplay</div>
+                </a>
+                <a href="index.html#benefits">
+                    <div class="button">Benefits</div>
+                </a>
+                <a href="#">
+                    <div class="button">Learn More</div>
+                </a>
+            </div>
+            <div class="selector learnmoreS"></div>
+            <div onclick="toggleMenu()" class="bx bx-menu" id="menu-icon"></div>
+        </div>        
+    </div>
+    <!---------------------------------SIDEBAR----------------------------------------------->
+    <div class="sidebarmover">
+        <div class="sidebar">
+            <div class="sidebarIcons">
+                <div class="rightIcon"><a href="https://t.me/walkclubofficial" target=”_blank”><i class="fa-solid fa-paper-plane"></i></a></div>
+                <div class="rightIcon"><a href="https://twitter.com/_walkclub" target=”_blank”><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="rightIcon"><a href="https://www.instagram.com/_walkclub/" target=”_blank”><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="rightIcon"><a href="https://www.facebook.com/WalkclubOfficial" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a></div>
+                <div class="rightIcon"><a href="https://www.youtube.com/@_walkclubofficial" target=”_blank”><i class="fa-brands fa-youtube"></i></a></div>
+                <div class="rightIcon"><a href="mailto:contact@walkclub.com" target=”_blank”><i class="fa-regular fa-envelope"></i></a></div>
+            </div>
+            <div class="sidebarTitle">HOW TO START</div>
+            <div class="sidebarTexts">
+                <a href="#howToUse"><div class="sidebarText">How to Use the Walk Club App?</div></a>
+                <a href="#earn"><div class="sidebarText">How Much Can I Earn with Walk Club?</div></a>
+                <a href="#active"><div class="sidebarText">What is Active %?</div></a>
+                <a href="#contribution"><div class="sidebarText">How to Get Contribution?</div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="follower">
+        <div class="followerDiv">
+            <img src="images/follower.webp">
+        </div>
+    </div>
+
+    <!--------------------------------- Top banner  ----------------------------------------------->
+    <div class="banner">
+        <img src="images/learnmore-bg.webp">
+        <div class="bannerTexts">
+            <div class="bannerTitle">EVERY STEP COUNTS</div>
+            <div class="bannerDescription">IS A FITNESS APPLICATION THAT INCENTIVIZES USERS FOR THEIR MOVEMENT AND EVERY STEP THEY MAKE.</div>
+        </div>
+        <div class="blackContent">
+            <div class="learnMission">
+                <div class="h18">OUR MISSION</div>
+                <div class="h19">To provide a healthy day for our users with a reward</div>
+            </div>
+            <div class="learnVision">
+                <div class="h18">OUR VISION</div>
+                <div class="h19">To be the most preferred health, fitness, environmental, and earning application</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="learnmorebg">            
+        <!--------------------------------- How to use walk club app ----------------------------------------------->        
+        <div class="howToUse hiddenSections hiddenItemsLeft" id="howToUse">
+            <div class="relative">
+                <img src="images/how-to-use-1.webp">
+                <div class="text1"><span>HOW TO USE </span>WALKCLUB</div>
+                <div class="text2"><span>Guide for new users:</span></div>
+            </div>
+            <div class="relative">
+                <img src="images/how-to-use-2.webp">
+                <div class="number1"><span>1</span></div>
+                <div class="text3">First of all, you need to have a pair of shoes, and <span>walking will generate rewards!</span> Eggs cannot be produced without shoes.</div>
+                <div class="text4">CLICK THE <span>+ BUTTON</span></div>
+                <div class="text5">TO VERIFY</div>
+                <div class="text6">CLICK <span>SCAN</span></div>
+            </div>
+            <div class="relative">
+                <img src="images/how-to-use-3.webp">
+                <div class="number2"><span>2</span></div>
+                <div class="text7">In order to ensure that every user is a real user and maintain a good market environment, you first need to <span>verify your real name.</span> After the real-name verification is completed, Walk Club will send you the first pair of shoes <span>(valid for 35 days).</span></div>
+                <div class="text8">COMPLETED</div>
+                <div class="text9">WALK AND <span>FINISH YOUR STEPS</span></div>
+                <div class="text10"><span>INVITE</span> YOUR FRIENDS</div>
+                <div class="text11">HAVE <span>SHOES</span></div>
+            </div>
+            <div class="relative">
+                <img src="images/how-to-use-4.webp">
+                <div class="number3"><span>3</span></div>
+                <div class="text12">If you <span>complete 2000 steps</span> every day, you will get eggs with <span>( Active% ) x 0.29.</span> Please remember to collect it daily.</div>
+                <div class="text13">REWARD</div>
+                <div class="text14">COMPLETED <span>2000 STEPS</span></div>
+            </div>
+            <div class="relative">
+                <img src="images/how-to-use-5.webp">
+                <div class="number4"><span>4</span></div>
+                <div class="text15">WC EGGS</div>
+                <div class="text16">You can <span>SELL</span> the obtained eggs to other users through exchanges, and you can also <span>BUY EGGS</span> from other users. (A handling fee is deducted for selling eggs, and there is no handling fee for buying eggs)</div>
+            </div>
+            <div class="relative">
+                <img src="images/how-to-use-6.webp">
+                <div class="number5"><span>5</span></div>
+                <div class="text17">(Most important) <span>with 35 days you can get 10.15 eggs.</span> Please make sure to complete, otherwise you will not have enough eggs to redeem the next pair of shoes after 35 days expire.</div>
+                <div class="text18">DURATION TIME</div>
+                <div class="text19"><span>COMPLETE THE 35 DAYS</span></div>
+            </div>            
+        </div>
+        <!--------------------------------- How much can I Earn ----------------------------------------------->
+        <div class="earn hiddenSections hiddenItemsRight"  id="earn" >
+            <div class="relative">
+                <img src="images/earn1.webp">
+                <div class="text45">HOW MUCH CAN I EARN WITH WALK CLUB?</div>
+            </div>
+            <div class="relative">
+                <img src="images/earn2.webp">
+                <div class="number12"><span>1</span></div>
+                <div class="text46">BY MYSELF</div>
+                <div class="text47">WALK 2000 STEPS A DAY</div>
+                <div class="text48">GET EGGS TO BUY NEW SHOES</div>
+                <div class="text49">GET 280 EGGS A YEAR.</div>
+                <div class="text50">CAN PAY FOR HOUSEHOLD UTILITY BILLS</div>
+            </div>
+            <div class="relative">
+                <img src="images/earn3.webp">
+                <div class="number13"><span>2</span></div>
+                <div class="text51">I CONSIDER WALK CLUB AS A CAREER.</div>
+                <div class="text52">INVITE MY FRIENDS TO WALK WITH ME IN A TEAM.</div>
+                <div class="text53">YOU CAN GET EXTRA BONUS ACTIVE VALUE.</div>
+            </div>
+            <div class="relative">
+                <img src="images/earn4.webp">
+                <div class="text54">AFTER COMPLETING 2000 STEPS, YOU CAN GET MORE EGGS.</div>
+            </div>
+            <div class="relative">
+                <img src="images/earn5.webp">
+                <div class="text55">AND AFTER REACHING LEVEL 5, YOU CAN SHARE CURRENT CITY ADVERTISING REVENUE EQUALLY WITH WALKCLUB.</div>
+            </div>
+            <div class="relative">
+                <img src="images/earn6.webp">
+                <div class="number14"><span>3</span></div>
+                <div class="text56">I AM AN INVESTOR</div>
+                <div class="text57">BUY EGGS THAT SOLD BY OTHER USERS IN THE EXCHANGE, BUY HIGHER LEVEL SHOES TO EARN MORE EGGS, AND WAIT FOR THE VALUE OF EGGS TO INCREASE TO ACHIEVE FREE WEALTHINESS.</div>
+            </div>
+        </div>
+        <!--------------------------------- Active Percent ----------------------------------------------->
+        <div class="active hiddenSections hiddenItemsLeft"  id="active">
+            <div class="relative">
+                <img src="images/active1.webp">
+                <div class="text20"><span>WHAT IS ACTIVE %</span></div>
+                <div class="text21">Active % is the one you will get when you verify your account as you claim your free shoe.</div>
+                <div class="text22">This also serves as the multiplier to the user's <span><strong>DAILY REWARDS</strong></span> to gain more eggs.</div>
+            </div>
+            <div class="relative">
+                <img src="images/active2.webp">
+                <div class="number6"><span>1</span></div>
+                <div class="text23"><span>HOW TO INCREASE THE ACTIVE % AND GET MORE EGGS</span></div>
+                <div class="text24">There are two ways to obtain Active %:</div>
+                <div class="text25"><span>Buy</span> higher level shoes in <span><strong>"BUY MORE"</strong></span> page to get more basic active %</div>
+            </div>
+            <div class="relative">
+                <img src="images/active3.webp">
+                <div class="number7"><span>2</span></div>
+                <div class="text26"><span>HOW TO INCREASE THE ACTIVE % AND GET MORE EGGS</span></div>
+                <div class="text27">There are two ways to obtain active %:</div>
+                <div class="text28"><span>Invite</span> users in the <span><strong>TEAM PAGE</strong></span> to get extra bonus active %</div>
+                <div class="text29"><span>BONUS ACTIVE % =</span> base on direct subordinates their *5% (no max limit)</div>
+            </div>
+        </div>
+        <!--------------------------------- Contribution ----------------------------------------------->
+        <div class="contribution hiddenSections hiddenItemsRight" id="contribution">
+            <div class="relative">
+                <img src="images/contribution1.webp">
+                <div class="number8"><span>#01</span></div>
+                <div class="text30"><span>How to get Contribution value and</span></div>
+                <div class="text31"><span>•</span> Upgrade the level.</div>
+                <div class="text32"><span>•</span> Reduce transaction fees.</div>
+                <div class="text33"><span>Note: </span>for new user promotion</div>
+                <div class="text34">New invites</div>
+            </div>
+            <div class="relative">
+                <img src="images/contribution2.webp">
+                <div class="number9"><span>#02</span></div>
+                <div class="text35"><span>How to get contribution value?</span></div>
+                <div class="text36">Every time in <strong>walk club</strong> invites a real-name user, the superior will get <strong>50 contribution points.</strong></div>
+                <div class="text37">The higher the contribution point, the higher the level.</div>
+                <div class="text38"><span><strong>1 invite =</strong> 50 contribution points</span></div>
+            </div>
+            <div class="relative">
+                <img src="images/contribution3.webp">
+                <div class="number10"><span>#03</span></div>
+                <div class="text39"><span>Upgrading the level</span></div>
+                <div class="text40">The more people you invite, the more points you'll get and help you level up.</div>
+                <div class="text41">ZERO INVITE</div>
+                <div class="text42">2 Real-name user successfully invited</div>
+            </div>
+            <div class="relative last">
+                <img src="images/contribution4.webp">
+                <div class="number11"><span>#04</span></div>
+                <div class="text43"><span>Reducing transaction fees</span></div>
+                <div class="text44">Different level has a specific sale fee, the higher the level, will reduce your sale fee and earn more profit.</div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------- Footer ----------------------------------------------->
+    <div class="footer">
+        <div class="upFooter">
+            <div>
+                <h3>WALKCLUB</h3>
+            </div>
+            <div class="center">
+                <a href="https://sites.google.com/view/walkclub-app/1212" target="_blank"><h4>Privacy Policy</h4></a>
+                <h5>All Rights Reserved | Walk Club © 2023</h5>
+            </div>
+            <div class="footerRight">
+                <h6>SOCIAL MEDIA:</h6>
+                <div class="footerIcons">
+                    <div class="footerIconsContainer"><a href="https://t.me/walkclubofficial" target=”_blank”><i class="fa-solid fa-paper-plane"></i></a></div>
+                    <div class="footerIconsContainer"><a href="https://twitter.com/_walkclub" target=”_blank”><i class="fa-brands fa-twitter"></i></a></div>
+                    <div class="footerIconsContainer"><a href="https://www.instagram.com/_walkclub/" target=”_blank”><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="footerIconsContainer"><a href="https://www.facebook.com/WalkclubOfficial" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a></div>
+                    <div class="footerIconsContainer"><a href="https://www.youtube.com/@_walkclubofficial" target=”_blank”><i class="fa-brands fa-youtube"></i></a></div>
+                    <div class="footerIconsContainer"><a href="mailto:contact@walkclub.com" target=”_blank”><i class="fa-regular fa-envelope"></i></a></div>
+                </div>
+                <h6>CONTACT US:</h6>
+                <h7>Contact@walkclub.com</h7>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        //Move follower div when mouse move
+        document.addEventListener("mousemove", function(event) {
+            var follower = document.querySelector(".follower");
+            follower.style.top = (event.clientY - 200) + "px";
+        });
+
+        //Hide follower div when sidebarmover is hovered
+        var sidebarmover = document.querySelector(".sidebarmover");
+        var follower = document.querySelector(".follower");
+
+        sidebarmover.addEventListener("mouseenter", function() {
+            follower.style.display = "none";
+        });
+
+        sidebarmover.addEventListener("mouseleave", function() {
+            follower.style.display = "block";
+        });
+
+    /*----------------- Scroll animation --------------------------------------*/
+    const hiddenSections = document.querySelectorAll(".hiddenSections");
+
+    let observerOptionsTwo = {
+        rootMargin: "1000px 0px -200px 0px"
+    };
+
+    // Check screen size and update options if necessary
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        observerOptionsTwo.rootMargin = "1000px 0px -200px 0px";
+    } else {
+        observerOptionsTwo.rootMargin = "5000px 0px -500px 0px";
+    }
+
+    const observerTwo = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+        console.log("is intersecting");
+        });
+    }, 
+    observerOptionsTwo
+    );
+
+    hiddenSections.forEach(hiddenSection => {
+        observerTwo.observe(hiddenSection);
+    });
+    
+    </script>
+
+    
+</html>

@@ -62,13 +62,13 @@ function updateSelectorPosition() {
     const currentScrollPosition = middleOfScreen;    
 
     if (currentScrollPosition < newsBounds.top) {
-        selector.style.transform = 'translateX(2.2vw)';       
+        selector.style.transform = 'translateX(2vw)';       
     } else if (currentScrollPosition >= newsBounds.top && currentScrollPosition < gameplayBounds.top) {            
-        selector.style.transform = 'translateX(9.3vw)';
+        selector.style.transform = 'translateX(9.5vw)';
     } else if (currentScrollPosition >= gameplayBounds.top && currentScrollPosition < benefitsBounds.top) {
-        selector.style.transform = 'translateX(16.4vw)';
+        selector.style.transform = 'translateX(17vw)';
     } else {
-        selector.style.transform = 'translateX(23.5vw)';
+        selector.style.transform = 'translateX(24.5vw)';
     }
     
 }
@@ -134,6 +134,7 @@ let isClickable = true;
 leftShoeArrow.addEventListener('click', () => {
   if (isClickable) {
     isClickable = false;
+    console.log("left is clicked");
 
     const middleShoe = document.querySelector('.middleShoe');
     const rightShoe = document.querySelector('.rightShoe');
@@ -204,7 +205,8 @@ leftShoeArrow.addEventListener('click', () => {
 rightShoeArrow.addEventListener('click', () => {
     if (isClickable) {
       isClickable = false;
-
+      console.log("left is clicked");
+  
     const middleShoe = document.querySelector('.middleShoe');
     const rightShoe = document.querySelector('.rightShoe');
     const leftShoe = document.querySelector('.leftShoe');
@@ -406,6 +408,8 @@ function showChat() {
 
 
   chat.classList.toggle("showChat");
+  console.log("show chat");
+  
 }
 
 
@@ -461,18 +465,8 @@ const choices = document.querySelectorAll('.choice');
 
 // loop through each choice div
 choices.forEach(choice => {
- 
   // add an event listener to the choice div
   choice.addEventListener('click', () => {
-    // Initialize Variables
-    var withdrawalAndDeposits = document.getElementById('withdrawalAndDeposits').textContent;
-    var accountVerification = document.getElementById('accountVerification').textContent;
-    var referralProgram = document.getElementById('referralProgram').textContent;
-    var shoeAndReward = document.getElementById('shoeAndReward').textContent;
-    var leaderboardAndChallenges = document.getElementById('leaderboardAndChallenges').textContent;
-    var exchangePage = document.getElementById('exchangePage').textContent;
-    var marketPage = document.getElementById('marketPage').textContent;
-
     // get the text content of the choice div
     const choiceText = choice.querySelector('.message').textContent;
 
@@ -502,7 +496,7 @@ choices.forEach(choice => {
     chatBox.appendChild(visitorDiv);
 
     // check if "Withdrawal and deposits" was clicked
-    if (choiceText === withdrawalAndDeposits) {
+    if (choiceText === 'Withdrawal and deposits') {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
@@ -513,7 +507,7 @@ choices.forEach(choice => {
 
       // insert the new choices div below the visitor div
       chatBox.appendChild(newChoicesDiv);
-    } else if (choiceText === accountVerification) {
+    } else if (choiceText === 'Account verification') {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
@@ -526,7 +520,7 @@ choices.forEach(choice => {
 
       // insert the new choices div below the visitor div
       chatBox.appendChild(newChoicesDiv);
-    }  else if (choiceText === referralProgram) {
+    }  else if (choiceText === 'Referral program') {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
@@ -540,7 +534,7 @@ choices.forEach(choice => {
 
       // insert the new choices div below the visitor div
       chatBox.appendChild(newChoicesDiv);
-    } else if (choiceText === shoeAndReward) {
+    } else if (choiceText === 'Shoe and reward system') {
 
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
@@ -589,7 +583,7 @@ choices.forEach(choice => {
       newChoicesDiv.appendChild(newChoiceDiv20);
 
       chatBox.appendChild(newChoicesDiv);
-    } else if (choiceText === leaderboardAndChallenges) {
+    } else if (choiceText === 'Leaderboard and challenges') {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
@@ -601,7 +595,7 @@ choices.forEach(choice => {
 
       // insert the new choices div below the visitor div
       chatBox.appendChild(newChoicesDiv);
-    } else if (choiceText === exchangePage) {
+    } else if (choiceText === 'Exchange page') {
 
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
@@ -622,7 +616,7 @@ choices.forEach(choice => {
       newChoicesDiv.appendChild(newChoiceDiv6);
       
       chatBox.appendChild(newChoicesDiv);
-    } else if (choiceText === marketPage) {
+    } else if (choiceText === 'Market page') {
 
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
@@ -653,51 +647,3 @@ function createChoiceDiv(text, link) {
 
   return newChoiceDiv;
 }
-
-/*--------------------------------------------------- BENEFITS -------------------------------------------------------------*/
-const benefitPics = document.getElementById("benefitPics");
-
-let observerBenefits = {
-  rootMargin: "1000px 0px -200px 0px"
-};
-
-// Check screen size and update options if necessary
-if (window.matchMedia("(max-width: 768px)").matches) {
-  observerBenefits.rootMargin = "1000px 0px -200px 0px";
-} else {
-  observerBenefits.rootMargin = "5000px 0px -500px 0px";
-}
-
-const observerThree = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      const leftBenefit = document.querySelector('.leftBenefit');
-      const middleBenefit = document.querySelector('.middleBenefit');
-      const rightBenefit = document.querySelector('.rightBenefit');
-      const leftTextB = document.querySelector('.leftTextB');
-      const middleTextB = document.querySelector('.middleTextB');
-      const rightTextB = document.querySelector('.rightTextB');
-      
-      leftBenefit.classList.remove('leftBenefit');
-      leftBenefit.classList.add('rightBenefit');
-
-      middleBenefit.classList.remove('middleBenefit');
-      middleBenefit.classList.add('leftBenefit');
-
-      rightBenefit.classList.remove('rightBenefit');
-      rightBenefit.classList.add('middleBenefit');
-
-      leftTextB.classList.remove('leftTextB');
-      leftTextB.classList.add('rightTextB');
-
-      middleTextB.classList.remove('middleTextB');
-      middleTextB.classList.add('leftTextB');
-
-      rightTextB.classList.remove('rightTextB');
-      rightTextB.classList.add('middleTextB');
-    })
-  }, 
-  observerBenefits
-);
-
-observerThree.observe(benefitPics);

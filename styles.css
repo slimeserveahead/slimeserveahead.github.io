@@ -3,10 +3,10 @@
   src: url('Fonts/American\ Captain.ttf') format('truetype');
 }
 body {
-  background-color: black;
-  width: 100%;    
-  padding-top: 8vw;
-  overflow-x: hidden;
+    background-color: black;
+    width: 100%;    
+    padding-top: 8vw;
+    overflow-x: hidden;
 }
 .rightClick:hover {
   cursor: pointer;
@@ -32,6 +32,7 @@ body {
 span {
   color: #9AFF01;
 }
+
 a {
   text-decoration: none;
 }
@@ -63,7 +64,7 @@ em {
   font-size: 7vw;
   text-align: center;
   width: 105%;
-  height: 7.2vw;
+  height: 5.2vw;
   display: flex;
   justify-content: center;
 }
@@ -134,7 +135,7 @@ u {
   position: fixed;
   bottom: 1vw;
   right: 2vw;
-  z-index: 10;
+  z-index: 5;
   border-radius: 3vw;
   border: 0.1vw solid #9AFF01;
   display: flex;
@@ -171,7 +172,7 @@ u {
   width: 24vw;
   bottom: 6vw;
   right: 2vw;
-  z-index: 10;
+  z-index: 3;
   border: 1px solid #9AFF01;
   background-color: #393424;
   opacity: 0;
@@ -193,6 +194,7 @@ u {
   bottom: 30px;
   right: 30px;
 }
+
 /* CONTENT IS CLOSE */
 .chatbox__support {
   display: flex;
@@ -212,10 +214,13 @@ u {
   opacity: 1;
   
 }
+
 /* BUTTON */
 .chatbox__button {
   text-align: right;
 }
+
+
 /* HEADER */
 .chatbox__header {
   width: 100%;
@@ -227,6 +232,7 @@ u {
   justify-content: center;
   align-items: center;
 }
+
 /* MESSAGES */
 .chatbox__messages {
   margin-top: auto;
@@ -246,6 +252,7 @@ u {
   padding: 0 1vw;
   padding-bottom: 1vw;
 }
+
 .message-container {
   display: flex;
   justify-content: flex-start;  
@@ -255,6 +262,7 @@ u {
   background-color: #f2f2f2;
   margin-top: 1vw;
 }
+
 .message-container.visitor {
   align-self: flex-start;
   border-bottom-left-radius: 0;
@@ -263,10 +271,12 @@ u {
   border-top-right-radius: 2vw;
   background-color: #9CFF00;  
 }
+
 .message-container.visitor .message{
   font-size: 0.7vw;
   font-weight: 500;
 }
+
 .message-container.operator {
   align-self: flex-end;
   justify-content: flex-end;
@@ -316,12 +326,15 @@ u {
   max-width: 60.6%;
   width: fit-content;
 }
+
 .messages__item--operator {
   margin-left: auto;
 }
+
 .messages__item--visitor {
   margin-right: auto;
 }
+
 /* FOOTER */
 .chatbox__footer {
   bottom: 0;
@@ -367,6 +380,7 @@ u {
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
 .headerLogo {
   background-color: black;
   width: 3vw;
@@ -393,6 +407,7 @@ u {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
@@ -494,6 +509,7 @@ u {
 .middleShoe {
   animation: move-up-down 2s ease-in-out infinite;
 }
+
 @keyframes move-up-down {
   0% {
     transform: translateY(0);
@@ -518,6 +534,7 @@ u {
   z-index: 9999;
   top: 0;
 }
+
 .h15 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.6vw;
@@ -530,20 +547,25 @@ u {
   color: #9cff00;
   width: 38%;
 }
+
 .text img {
   width: 4vw;
   margin-right: 1vw;
   margin-left: 4vw;
 }
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 54vw;
 }
+
+
 .button img {
   width: 9vw;
 }
+
 .button {
   position: relative;
   width: 6.4vw;
@@ -570,25 +592,27 @@ u {
   left: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .button img:last-child {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .button:hover img:first-child {
   opacity: 0;
 }
+
 .button:hover img:last-child {
   opacity: 1;
 }
+
 /*----------------------------Download SECTION Revised--------------------------------------*/
 .upperSection img {
   width: 100%;
   z-index: -1;
   position: relative;
 }
-.downloadIcon2 i {
-  transform: translateY(-1vw);
-}
+
 .downloadSection {
   position: absolute;
   top: -8vw;
@@ -628,6 +652,7 @@ u {
   z-index: 1;
   text-shadow: none;
 }
+
 .downloadButton {
   width: 25%;
   height: 27%;
@@ -641,6 +666,7 @@ u {
   z-index: 3;
   transition: color 0.8s, background-color 0.8s, box-shadow 1.75s;
 }
+
 .downloadButton a{
   color: #9CFF00;
 }
@@ -680,7 +706,7 @@ u {
   font-weight: 600;
   line-height: 2vw;
   width: 12vw;
-  margin-top: -1.8vw;
+  margin-top: -1.5vw;
 }
 .downloadButton .hover {
   opacity: 0;
@@ -689,9 +715,11 @@ u {
   left: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .downloadButton:hover .default {
   opacity: 0;
 }
+
 .downloadButton:hover .hover {
   opacity: 1;
 }
@@ -725,6 +753,7 @@ u {
   width: 100%;
   z-index: 1;
 }
+
 .rightLine {
   background-color: #9AFF01;
   height: 61%;
@@ -759,6 +788,7 @@ u {
   color: #9AFF01;
   transform: scale(1.2);
 }
+
 .h14 {
   color: #9AFF01;
   font-family: 'Montserrat', sans-serif;
@@ -768,6 +798,7 @@ u {
   transition: all 0.5s;
   line-height: 4vw;
 }
+
 .h14:hover {
   color:#9AFF01;
   cursor: pointer;
@@ -830,6 +861,7 @@ u {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .phone {
   height: 29vw;
   width: 14vw;
@@ -847,12 +879,14 @@ u {
   width: 100%;
   z-index: 2;
 }
+
 .infoTexts {
   width: 30%;
   padding-top: 36%;
   text-align: end;
   padding-right: 5%;
 }
+
 /*----------------------- Carousel Section ----------------------------------*/
 .carouselImages {
   display: flex;
@@ -862,13 +896,16 @@ u {
   scroll-behavior: smooth; 
   scroll-behavior: 1s; 
 }
+
 .carousel {
   position: relative;
 }
+
 .carouselImages img {
   width: 100%;
   scroll-snap-align: center;
 }
+
 .arrowCar {
   position: absolute;
   top: 28vw;
@@ -886,6 +923,7 @@ u {
 .arrowCar img {
   width: 1.8vw;
 }
+
 .leftArrow,
 .rightArrow {
   position: fixed;
@@ -894,26 +932,32 @@ u {
   z-index: 10;
   display: none;  
 }
+
 .left-arrow {
   padding: 1vw;
   left: 2vw;
   opacity: 0.2;
 }
+
 .left-arrow:hover {
   opacity: 0.6;
 }
+
 .right-arrow {
   padding: 1vw;
   right: 2vw;
   opacity: 0.2;
 }
+
 .right-arrow:hover {
   opacity: 0.6;
 }
+
 /*--------------------------- Shoe Carousel Section -----------------------------*/
 .shoeCarousel {
   overflow: hidden;
 }
+
 .lineTwo {
   height: 2vw;
   width: 0.3vw; 
@@ -928,6 +972,7 @@ h16 {
   height: 27px;
   width: 93px;
 }
+
 .shoes {
   display: flex;
   flex-direction: row;
@@ -1047,6 +1092,7 @@ h11 {
 .leftShoeArrow img{
   width: 100%;
 }
+
 .shoeDescription {
   color: white;
   text-align: center;
@@ -1061,6 +1107,8 @@ h11 {
   height: 31vw;
   margin-top: 3vw;
 }
+
+
 .shoeDescriptionMiddle {              
   transition: opacity 0.5s ease;
   position: absolute;
@@ -1185,6 +1233,7 @@ h9 {
   align-items: center;
   margin-bottom: 28vw;
 }
+
 .lifestyle .benefits {
   width: 125%;
 }
@@ -1212,6 +1261,7 @@ h9 {
 .pictureContainer img {
   width: 100%;
 }
+
 h1 {
   color: white;
   font-size: 2.5vw;
@@ -1230,6 +1280,7 @@ h2 {
   font-family: 'Poppins', sans-serif;  
   font-weight: 400;
 }
+
 /*---------------------------- footer ------------------------------*/
 .footer{
   background-color: #161f2c;
@@ -1264,6 +1315,7 @@ h4 {
   font-size: 1.3vw;
   font-family: 'Poppins', sans-serif;
 }
+
 h5 {
   color: white;
   font-size: 1vw;
@@ -1277,6 +1329,7 @@ h6 {
   font-weight: 600;
   margin-top: 1vw;
 }
+
 h7 {
   color: #9CFF00;
   font-size: 1.1vw;
@@ -1304,6 +1357,7 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  
   .right {
     width: 40%;
     display: flex;
@@ -1347,10 +1401,10 @@ h7 {
     transform: translate(4vw, 6vw);
   }
   .hiddenRight {  
-    transform: translateX(120%);
+    transform: translateX(90vw);
   }
   .hiddenLeft {
-    transform: translateX(-120%);
+    transform: translateX(-90vw);
   }
   .show {
     transform: translateX(0);
@@ -1375,7 +1429,7 @@ h7 {
   h17 {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
   }  
   spanTwo {
     color: #9AFF01;
@@ -1416,13 +1470,14 @@ h7 {
   .upperSectionBackground {
     content: url(images/mobile-background.webp);
   }
+  
   .phones {
     display: none;
   }
   /* --------------------------------------- MOVING BORDER START -------------------------------------------*/
   .movingBorder {
     width: 25.2vw;
-    height: 50.8vw;
+    height: 42.8vw;
     top: 10.4vw;
     left: 102.4vw;
     box-shadow: 16px 14px 20px #0000008c;
@@ -1500,21 +1555,20 @@ h7 {
     display: none;
   } 
   .shoeDescription {
-    font-size: 3vw;
-    width: 95vw;
+    font-size: 2vw;
   }
   .coreValueTexts {
     width: 48%;
     padding-top: 3vw;
   }
   h9 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   h8 {
-    font-size: 4.3vw;
+    font-size: 3.3vw;
   }
   .number {
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-right: 1vw;
     font-size: 11vw;
     margin-top: -2vw;
@@ -1535,11 +1589,10 @@ h7 {
   .tutorialItems {
     display: flex;
     width: 96%;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 10vw;
     align-items: center;
     transition: all 0.8s;
-    gap: 5vw;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -1553,7 +1606,7 @@ h7 {
     align-items: flex-end;
     row-gap: 3vw;
     margin-bottom: -39vw;
-    margin-top: 22.5vw;
+    margin-top: 14.5vw;
     width: 24vw;
     border-radius: 1vw;
     border: 1px solid green;
@@ -1638,6 +1691,7 @@ h7 {
     opacity: 0.3;
     z-index: 4;
   }
+
   .pictureContainerText {
     display: none;
   }
@@ -1743,11 +1797,6 @@ h7 {
     height: 85vw;
     width: 54vw;
   }
-  .xIcon {
-    height: 5vw;
-    width: 5vw;
-    font-size: 3vw;
-  }
   .chat-box {    
     min-height: 72.2vw;
     padding: 0 2vw;
@@ -1762,6 +1811,8 @@ h7 {
     position: absolute;
     top: 3vw;    
   }
+  
+  
   @keyframes glowing {
     0% {
       text-shadow: 0px 0px 0px #9CFF00;
@@ -1779,10 +1830,16 @@ h7 {
       text-shadow: none;
     }
   }
+  
+  /* Define the animation styles for the new glow */
+  
+  
+  /* Apply the animations to the element */
   .h14 {
     position: relative;
     animation: glowing 1s ease-in-out infinite;
-  }
+  } 
+
   /* ---------------------------------------- DOWNLOAD ---------------------------------------*/
   h2 {
     font-size: 1.4vw;
@@ -1879,12 +1936,13 @@ h7 {
   .rightClick {
     background-color: transparent;
     width: 50vw;
-    height: 23vw;
+    height: 35vw;
     position: absolute;
-    transform: translate(0vw, -6vw);
+    transform: translate(0vw, 0vw);
     opacity: 0.3;
     z-index: 4;
   }
+
   .pictureContainerText {
     display: none;
   }
@@ -1980,14 +2038,14 @@ h7 {
   .shoeNext {
     position: absolute;
     width: 55vw;
-    height: 21vw;
+    height: 30vw;
     transform: translate(34vw, 3vw);
     z-index: 3;
   }
   .shoePrevious {
     position: absolute;
     width: 27vw;
-    height: 21vw;
+    height: 29vw;
     transform: translate(7vw, 4vw);
     z-index: 4;
   }
@@ -2053,7 +2111,7 @@ h7 {
     width: 6vw;
   }
   .buttons {
-    width: 42vw;
+    width: 36vw;
   }
   .h15 {
     font-size: 2.6vw;
@@ -2081,6 +2139,747 @@ h7 {
   .lifestyle {
     margin-bottom: 0;
   }
+  
+}
+
+/* -------------------------------------------------------------------------------------------------------- Learn More -------------------------------------------------------------------------------------*/
+.relative {
+  position: relative;
+}
+
+.text1 {
+  position: absolute;
+  font-size: 4vw;
+  width: 18vw;
+  font-weight: 700;
+  top: 8vw;
+  left: 27vw;
+  line-height: 5vw;
+}
+
+.text2 {
+  position: absolute;
+  top: 27.3vw;
+  left: 27vw;
+  font-size: 1.2vw;
+}
+
+.number1 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+
+.text3 {
+  position: absolute;
+  top: 1vw;
+  left: 21vw;
+  width: 32vw;
+  text-align: end;
+  font-size: 1.5vw;
+}
+.text4 {
+  position: absolute;
+  top: 11.5vw;
+  left: 18.5vw;
+  font-size: 1.6vw;
+}
+.text5 {
+  position: absolute;
+  top: 15vw;
+  left: 25.5vw;
+  font-size: 1.6vw;
+}
+.text6 {
+  position: absolute;
+  top: 31vw;
+  font-size: 1.5vw;
+  left: 47vw;
+}
+
+.number2 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+
+.text7 {
+  position: absolute;
+  top: 0vw;
+  left: 4vw;
+  font-size: 1.3vw;
+  width: 50vw;
+  text-align: end;
+}
+.text8 {
+  position: absolute;
+  top: 11.5vw;
+  left: 21.4vw;
+  font-size: 1vw;
+}
+.text9 {
+  position: absolute;
+  top: 29.5vw;
+  left: 15vw;
+  font-size: 1.5vw;
+  width: 17vw;
+  text-align: end;
+}
+.text10 {
+  position: absolute;
+  top: 27vw;
+  left: 46vw;
+  font-size: 1.5vw;
+}
+.text11 {
+  position: absolute;
+  top: 20.8vw;
+  left: 52.1vw;
+  font-size: 1.1vw;
+}
+.number3 {
+  position: absolute;
+  top: -1.5vw;
+  left: 55vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text12 {
+  position: absolute;
+  top: 2.5vw;
+  left: 8vw;
+  font-size: 1.5vw;
+  width: 45vw;
+  text-align: end;
+}
+.text13 {
+  position: absolute;
+  top: 14.5vw;
+  left: 8.7vw;
+  font-weight: 600;
+  font-size: 1.7vw;
+}
+.text14 {
+  position: absolute;
+  top: 13vw;
+  left: 35.5vw;
+  font-size: 1.6vw;
+}
+.number4 {
+  position: absolute;
+  top: 11.5vw;
+  left: 24vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text15 {
+  position: absolute;
+  top: 8vw;
+  left: 32vw;
+  font-weight: 800;
+  font-size: 1.8vw;
+}
+.text16 {
+  position: absolute;
+  top: 14vw;
+  left: 31vw;
+  width: 30vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+.number5 {
+  position: absolute;
+  top: -2.5vw;
+  left: 5vw;
+  font-size: 8vw;
+  font-weight: 800;
+}
+.text17 {
+  position: absolute;
+  top: 0vw;
+  left: 11vw;
+  font-size: 1.5vw;
+  width: 47vw;
+}
+.text18 {
+  position: absolute;
+  top: 24vw;
+  left: 20vw;
+  background-color: #70bb00;
+  font-size: 1.3vw;
+  padding: 0vw 1vw;
+  border-radius: 0.6vw;
+  color: black;
+  font-weight: 700;
+}
+.text19 {
+  position: absolute;
+  top: 14vw;
+  left: 35vw;
+  width: 11vw;
+  text-align: center;
+  font-size: 1.4vw;
+}
+.text20 {
+  position: absolute;
+  top: 6vw;
+  left: 22vw;
+  font-size: 4vw;
+  font-weight: 700;
+}
+.text21 {
+  position: absolute;
+  top: 14vw;
+  left: 27vw;
+  width: 36vw;
+  font-size: 1.7vw;
+}
+.text22 {
+  position: absolute;
+  top: 24vw;
+  left: 27vw;
+  width: 38vw;
+  font-size: 1.7vw;
+}
+.number6 {
+  position: absolute;
+  top: 16.5vw;
+  left: 4vw;
+  font-size: 13vw;
+  font-weight: 800;
+}
+.text23 {
+  position: absolute;
+  top: 4vw;
+  left: 4vw;
+  width: 41vw;
+  font-size: 3vw;
+  font-weight: 900;
+  line-height: 3.5vw;
+}
+.text24 {
+  position: absolute;
+  top: 15vw;
+  left: 4vw;
+  font-size: 1.7vw;
+}
+.text25 {
+  position: absolute;
+  top: 22vw;
+  left: 9vw;
+  width: 28vw;
+  font-size: 1.9vw;
+}
+.number7 {
+  position: absolute;
+  top: 18.5vw;
+  left: 34vw;
+  font-size: 13vw;
+  font-weight: 800;
+}
+.text26{
+  position: absolute;
+  top: 3vw;
+  left: 25vw;
+  width: 39vw;
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: end;
+}
+.text27{
+  position: absolute;
+  top: 17vw;
+  left: 34vw;
+  font-size: 1.6vw;
+}
+.text28{
+  position: absolute;
+  top: 21vw;
+  left: 43vw;
+  width: 22vw;
+  font-size: 1.9vw;
+  line-height: 2.2vw;
+}
+.text29{
+  position: absolute;
+  top: 29vw;
+  left: 43vw;
+  width: 22vw;
+  font-size: 1.6vw;
+  line-height: 2.2vw;
+}
+.number8{
+  position: absolute;
+  top: 0vw;
+  left: 61vw;
+  font-size: 2.3vw;
+}
+.text30{
+  position: absolute;
+  top: 6vw;
+  left: 10vw;
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+.text31 {
+  position: absolute;
+  top: 11vw;
+  left: 10vw;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.text32{
+  position: absolute;
+  top: 16vw;
+  left: 10vw;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.text33{
+  position: absolute;
+  top: 33.6vw;
+  left: 32vw;
+  font-size: 1.1vw;
+}
+.text34{
+  position: absolute;
+  top: 33.6vw;
+  left: 54vw;
+  font-size: 1.1vw;
+}
+.number9{
+  position: absolute;
+  font-size: 2.3vw;
+  top: 32vw;
+  left: 5vw;
+}
+.text35 {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  font-size: 2.3vw;
+  width: 24vw;
+  font-weight: 600;
+}
+.text36 {
+  position: absolute;
+  top: 14vw;
+  left: 5vw;
+  width: 24vw;
+  font-size: 1.4vw;
+}
+.text37 {
+  position: absolute;
+  top: 23vw;
+  left: 5vw;
+  width: 24vw;
+  font-size: 1.4vw;
+}
+.text38 {
+  position: absolute;
+  top: 33vw;
+  left: 41vw;
+  font-size: 0.9vw;
+}
+.number10{
+  position: absolute;
+  top: 2vw;
+  left: 4vw;
+  font-size: 2vw;
+}
+.text39{
+  position: absolute;
+  top: 2vw;
+  left: 23vw;
+  font-size: 2.3vw;
+  font-weight: 600;
+}
+.text40{
+  position: absolute;
+  top: 8vw;
+  left: 20vw;
+  width: 32vw;
+  font-size: 1.3vw;
+}
+.text41{
+  position: absolute;
+  top: 17vw;
+  left: 19vw;
+  font-size: 1.2vw;
+}
+.text42{
+  position: absolute;
+  top: 16vw;
+  left: 36.5vw;
+  font-size: 1.2vw;
+  width: 18vw;
+  text-align: center;
+}
+.number11{
+  position: absolute;
+  top: 32vw;
+  left: 60vw;
+  font-size: 2.4vw;
+}
+.text43{
+  position: absolute;
+  top: 0vw;
+  left: 21vw;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.text44{
+  position: absolute;
+  top: 4vw;
+  left: 17vw;
+  font-size: 1.4vw;
+  width: 34vw;
+  text-align: center;
+}
+.text45 {
+  position: absolute;
+  top: 13vw;
+  left: 5vw;
+  width: 28vw;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 3.4vw;
+}
+.number12{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 2.3vw;
+  left: 1vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text46 {
+  position: absolute;
+  top: 4vw;
+  left: 5vw;
+  font-size: 4vw;
+  font-weight: 700;
+}
+.text47 {
+  position: absolute;
+  top: 9vw;
+  left: 5vw;
+  font-size: 3vw;
+  font-weight: 600;
+}
+.text48 {
+  position: absolute;
+  top: 14vw;
+  left: 5vw;
+  font-size: 2vw;
+}
+.text49 {
+  position: absolute;
+  top: 17vw;
+  left: 5vw;
+  font-size: 2vw;
+}
+.text50 {
+  position: absolute;
+  color: black;
+  top: 24vw;
+  left: 14vw;
+  width: 18vw;
+  font-weight: 800;
+  font-size: 1.7vw;
+  transform: rotate(-21deg);
+}
+.number13{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 2.3vw;
+  left: 1vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text51 {
+  position: absolute;
+  top: 4vw;
+  left: 7vw;
+  width: 37vw;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 3.3vw;
+}
+.text52 {
+  position: absolute;
+  top: 12vw;
+  left: 7vw;
+  width: 37vw;
+  font-size: 2.6vw;
+  font-weight: 600;
+  line-height: 2.6vw;
+}
+.text53 {
+  position: absolute;
+  top: 20vw;
+  left: 7vw;
+  width: 34vw;
+  font-size: 1.85vw;
+  line-height: 2.2vw;
+}
+.text54 {
+  position: absolute;
+  top: 9vw;
+  left: 1vw;
+  width: 34vw;
+  font-size: 1.84vw;
+}
+.text55 {
+  position: absolute;
+  top: 10vw;
+  left: 28vw;
+  width: 39vw;
+  font-size: 1.8vw;
+}
+.number14{
+  position: absolute;
+  text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+  top: 1vw;
+  left: 6vw;
+  font-size: 8vw;
+  font-weight: 900;
+}
+.text56 {
+  position: absolute;
+  top: 14vw;
+  left: 6vw;
+  font-weight: 900;
+  font-size: 3.4vw;
+}
+.text57 {
+  position: absolute;
+  top: 21vw;
+  left: 6vw;
+  width: 37vw;
+  font-size: 1.4vw;
+}
+/* --------------------------------------- SIDEBAR  -------------------------------------------*/
+.follower {
+  position: fixed;
+  top: -2.5vw;
+  left: 0.4vw;
+  transform: translateX(-50%);
+  transform: translateY(200px);
+  z-index: 2;
+}
+.blackContent {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: #1a2b1e;
+  width: 44.6vw;
+  height: 14vw;
+  box-shadow: #201d1d 0px 0px 70px -12px;
+  border-radius: 0.5vw;
+  transform: translate(55vw, 32vw);
+}
+.learnMission {
+  width: 50%;
+  padding: 2vw;
+}
+.learnVision {
+  width: 50%;
+  padding: 2vw;
+}
+.h18 {
+  color: #9AFF01;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+.h19{ 
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+}
+.followerDiv {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0.5vw;
+  background-image: url('Untitled-1.webp');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0vw 0vw 1vw 0.3vw #9AFF01;
+}
+.followerDiv img {
+  width: 1vw;
+}
+.follower:hover .followerDiv{
+  visibility: hidden;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 29vw;
+  background-color: black;
+  opacity: 0.7;
+  padding: 2vw;
+  color: white;
+  transform: translateX(-30vw);
+  transition: transform 0.5s;
+}
+.sidebarIcons {
+  color: white;  
+  font-size: 3vw;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.sidebarIcons .rightIcon {
+  font-size: 2vw;
+}
+.sidebarTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  margin-top: 4vw;
+  font-size: 1.2vw;
+  margin-bottom: 1vw;
+}
+.sidebarText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+.sidebarTexts a{
+  color: white;
+  text-decoration: none;
+}
+.sidebarText:hover {
+  color:#9AFF01;
+  cursor: pointer;
+}
+.sidebarmover {    
+  height: 100%;
+  width: 9vw;
+  position: fixed;
+  z-index: 9;
+}
+.sidebarmover:hover .sidebar {
+  transform: translateX(0);
+}
+.howToUse {
+  display: flex;
+  flex-direction: column;
+  padding: 0 19vw;
+  padding-top: 12vw;
+  padding-bottom: 5vw;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  transform: translateX(20%)
+}
+.howToUse img {
+  width: 100%;
+  margin-bottom: 5vw;
+}
+.earn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.earn img{
+  margin-bottom: 8vw;
+  width: 100%;
+}
+.active {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.active img {
+  width: 100%;
+}
+.learnmorebg {
+  background-image: url('images/learnmore-bg2.webp');
+  background-size: cover;
+  overflow: hidden;
+}
+.active img{
+  margin-bottom: 8vw;
+}
+.contribution {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  margin-top: 2vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.contribution img{
+  margin-bottom: 8vw;
+  width: 100%;
+}
+.last img{
+  margin-bottom: 0;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.banner img {
+  transform: scaleX(-1);
+}
+.learnmorebg {  
+  margin-top: -0.49vw;
+}
+.bannerTexts {
+  position: absolute;
+  transform: translate(64vw, 6vw);
+  display: flex;
+  flex-direction: column;
+  width: 31vw;
+}
+.bannerTitle {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 4vw;
+  line-height: 4vw;
+  text-align: end;
+  margin-bottom: 3vw;
+}
+.bannerDescription {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.4vw;
+  text-align: end;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .downloadNow:nth-child(1) {
@@ -2091,22 +2890,6 @@ h7 {
   }
   .downloadNow:nth-child(3) {
     top: 4.75vw;
-  }
-  .downloadText {
-    font-size: 4vw;
-    line-height: 3.2vw;
-    width: 21vw;
-  }
-  .downloadText2 {
-    font-size: 4vw;
-    line-height: 3.2vw;
-    width: 25vw;
-  }
-  .downloadIcon {
-    font-size: 4vw;
-  }
-  .downloadIcon2 {
-    font-size: 5.4vw;
   }
   .button{
     width: 18.4vw;
@@ -2119,6 +2902,76 @@ h7 {
   .message {
     font-size: 1.6vw;
   }
+  .howToUse {
+    padding: 0 0;
+    padding-top: 14vw;
+  }
+  .earn {
+    padding: 0 0;
+  }
+  .active {
+    padding: 0 0;
+  }
+  .contribution {
+    padding: 0 0;
+  }
+  .sidebarIcons .rightIcon {
+    transform: translateX(0);
+    font-size: 4vw;
+  }
+  .sidebar {
+    width: 55vw;
+    padding: 8vw;
+    transform: translateX(-56vw);
+  }
+  .sidebarTitle {
+    font-size: 4.2vw;
+  }
+  .sidebarText {
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+  .bannerTexts {
+    position: absolute;
+    transform: translate(50vw, 6vw);
+    display: flex;
+    flex-direction: column;
+    width: 46vw;
+  }
+  .bannerDescription {    
+    font-size: 2vw;
+  }
+  .blackContent {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #1a2b1e;
+    width: 61.6vw;
+    height: 24vw;
+    box-shadow: #201d1d 0px 0px 70px -12px;
+    border-radius: 1vw;
+    transform: translate(38vw, 32vw);
+  }
+  .h18 {
+    color: #9AFF01;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+  }
+  .h19 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+  }
+  .followerDiv {
+    width: 6vw;
+    height: 6vw;
+  }
+  .followerDiv img {
+    width: 2vw;
+  }
   .chathead {
     background-color: black;
     width: 10vw;
@@ -2126,6 +2979,7 @@ h7 {
     position: fixed;
     bottom: 1vw;
     right: 2vw;
+    z-index: 2;
     border-radius: 10vw;
     border: 0.1vw solid #9AFF01;
     display: flex;
@@ -2147,10 +3001,501 @@ h7 {
     bottom: 1vw;
     right: 3.2vw;
   }
-  .benefits1{
-    height: 7.2vw;
+  .text1 {
+    position: absolute;
+    font-size: 7vw;
+    width: 27vw;
+    font-weight: 700;
+    top: 15vw;
+    left: 42vw;
+    line-height: 8vw;
   }
+  .text2 {
+    position: absolute;
+    top: 43.8vw;
+    left: 42vw;
+    font-size: 2vw;
+  }
+  .text3 {
+    position: absolute;
+    top: 9vw;
+    left: 26vw;
+    width: 55vw;
+    text-align: end;
+    font-size: 2.1vw;
+  }
+  .number1 {
+    position: absolute;
+    top: 6.5vw;
+    left: 83vw;
+    font-size: 11vw;
+    font-weight: 800;
+  }
+  .text4 {
+    position: absolute;
+    top: 19.5vw;
+    left: 28.5vw;
+    font-size: 2.3vw;
+  }
+  .text5 {
+    position: absolute;
+    top: 23.5vw;
+    left: 44.5vw;
+    font-size: 2.3vw;
+  }
+  .text6 {
+    position: absolute;
+    top: 50vw;
+    font-size: 2.3vw;
+    left: 75vw;
+  }
+  .number2 {
+    position: absolute;
+    top: -1.5vw;
+    left: 86vw;
+    font-size: 12vw;
+    font-weight: 800;
+  }
+  .text7 {
+    position: absolute;
+    top: 2vw;
+    left: 6vw;
+    font-size: 2vw;
+    width: 77vw;
+    text-align: end;
+  }
+  .text8 {
+    position: absolute;
+    top: 19vw;
+    left: 35.4vw;
+    font-size: 1.7vw;
+  }
+  .text9 {
+    position: absolute;
+    top: 47.5vw;
+    left: 28vw;
+    font-size: 1.8vw;
+    width: 18vw;
+    text-align: end;
+  } 
+  .text10 {
+    position: absolute;
+    top: 43.5vw;
+    left: 70vw;
+    font-size: 1.8vw;
+    width: 18vw;
+    text-align: end;
+  }
+  .text11 {
+    position: absolute;
+    top: 33.5vw;
+    left: 84.3vw;
+    font-size: 1.7vw;
+  }
+  .number3 {
+    position: absolute;
+    top: -1.5vw;
+    left: 86vw;
+    font-size: 12vw;
+    font-weight: 800;
+  }
+  .text12 {
+    position: absolute;
+    top: 3.5vw;
+    left: 8vw;
+    font-size: 2.5vw;
+    width: 76vw;
+    text-align: end;
+  }
+  .text13 {
+    position: absolute;
+    top: 25.5vw;
+    left: 14vw;
+    font-weight: 600;
+    font-size: 2.7vw;
+  }
+  .text14 {
+    position: absolute;
+    top: 21.5vw;
+    left: 56vw;
+    font-weight: 600;
+    font-size: 2.7vw;
+  }
+  .number4 {
+    position: absolute;
+    top: 20.5vw;
+    left: 40vw;
+    font-size: 14vw;
+    font-weight: 800;
+  }
+  .text15 {
+    position: absolute;
+    top: 13vw;
+    left: 51.5vw;
+    font-weight: 800;
+    font-size: 2.8vw;
+  }
+  .text16 {
+    position: absolute;
+    top: 25vw;
+    left: 52vw;
+    width: 43vw;
+    font-size: 2.6vw;
+    font-weight: 400;
+    line-height: 3.4vw;
+  }
+  .number5 {
+    position: absolute;
+    top: -2.5vw;
+    left: 10vw;
+    font-size: 11vw;
+    font-weight: 800;
+  }
+  .text17 {
+    position: absolute;
+    top: 1vw;
+    left: 19vw;
+    font-size: 2.2vw;
+    width: 70vw;
+  }
+  .text18 {
+    position: absolute;
+    top: 38vw;
+    left: 32vw;
+    background-color: #a0f81d;
+    font-size: 2vw;
+    padding: 0vw 1.3vw;
+    border-radius: 0.9vw;
+    color: black;
+    font-weight: 700;
+  }
+  .text19 {
+    position: absolute;
+    top: 24vw;
+    left: 58vw;
+    width: 16vw;
+    text-align: center;
+    font-size: 2vw;
+  }
+  .text45 {
+    position: absolute;
+    top: 18vw;
+    left: 7vw;
+    width: 47vw;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 5.4vw;
+  }
+  .text49 {
+    position: absolute;
+    top: 26vw;
+    left: 6vw;
+    font-size: 2.9vw;
+  }
+  .text48 {
+    top: 22vw;
+    left: 6vw;
+    font-size: 2.9vw;
+  }
+  .text46 {
+    position: absolute;
+    top: 9vw;
+    left: 6vw;
+    font-size: 6vw;
+    font-weight: 700;
+  }
+  .text47 {
+    position: absolute;
+    top: 17vw;
+    left: 6vw;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .number12 {
+    position: absolute;
+    text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+    top: 7.3vw;
+    left: 1.5vw;
+    font-size: 10vw;
+    font-weight: 900;
+  }
+  .text50 {
+    position: absolute;
+    color: black;
+    top: 36vw;
+    left: 20vw;
+    width: 19vw;
+    font-weight: 800;
+    font-size: 2.5vw;
+    transform: rotate(-21deg);
+  }
+  .number13 {
+    position: absolute;
+    text-shadow: 0 0 4px #9AFF01, 0 0 42px #9AFF01;
+    top: 5vw;
+    left: 1.5vw;
+    font-size: 10vw;
+    font-weight: 900;
+  }
+  .text53 {
+    position: absolute;
+    top: 30vw;
+    left: 8vw;
+    width: 58vw;
+    font-size: 2.6vw;
+  }
+  .text52 {
+    position: absolute;
+    top: 20vw;
+    left: 8vw;
+    width: 53vw;
+    font-size: 3.6vw;
+    font-weight: 600;
+    line-height: 3.6vw;
+  }
+  .text51 {
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+    width: 54vw;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 5.3vw;
+  }
+  .text54 {
+    position: absolute;
+    top: 11vw;
+    left: 2vw;
+    width: 54vw;
+    font-size: 2.8vw;
+  }
+  .text55 {
+    position: absolute;
+    top: 17vw;
+    left: 36vw;
+    width: 57vw;
+    font-size: 2.6vw;
+    line-height: 3vw;
+  }
+  .number14 {
+    top: 3vw;
+  }
+  .text56 {
+    top: 17vw;
+    font-size: 4.4vw;
+  }
+  .text57 {
+    top: 25vw;
+    width: 51vw;
+    font-size: 2.4vw;
+  }
+  .text20 {
+    top: 9vw;
+    left: 32vw;
+    font-size: 6vw;
+  }
+  .text21 {
+    position: absolute;
+    top: 18vw;
+    left: 38vw;
+    width: 50vw;
+    font-size: 2.7vw;
+  }
+  .text22 {
+    position: absolute;
+    top: 32vw;
+    left: 38vw;
+    width: 51vw;
+    font-size: 2.7vw;
+  }
+  .text23 {
+    top: 4vw;
+    left: 4vw;
+    width: 60vw;
+    font-size: 4.5vw;
+    line-height: 4.7vw;
+  }
+  .text24 {
+    top: 18vw;
+    left: 4vw;
+    font-size: 2.5vw;
+  }
+  .number6 {
+    top: 17.5vw;
+    left: 4vw;
+    font-size: 17vw;
+  }
+  .text25 {
+    top: 25vw;
+    left: 12vw;
+    width: 36vw;
+    font-size: 2.8vw;
+    line-height: 3.6vw;
+  }
+  .text26 {
+    top: 3vw;
+    left: 34vw;
+    width: 58vw;
+    font-size: 4.3vw;
+    line-height: 4.5vw;
+  }
+  .text27 {
+    top: 17vw;
+    left: 43vw;
+    font-size: 2.6vw;
+  }
+  .number7 {
+    top: 18.5vw;
+    left: 42vw;
+    font-size: 22vw;
+  }
+  .text28 {
+    top: 26vw;
+    left: 56vw;
+    width: 36vw;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  .text29 {
+    top: 38vw;
+    left: 56vw;
+    width: 32vw;
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+  }
+  .number8 {
+    top: 2vw;
+    left: 87vw;
+    font-size: 3.3vw;
+  }
+  .text30 {
+    top: 9vw;
+    left: 12vw;
+    font-size: 3.5vw;
+  }
+  .text31 {
+    top: 15vw;
+    left: 13vw;
+    font-size: 4.5vw;
+  }
+  .text32 {    
+    top: 21vw;
+    left: 13vw;
+    font-size: 4.5vw;
+  }
+  .text33 {
+    top: 48vw;
+    left: 45vw;
+    font-size: 1.5vw;
+  }
+  .text34 {
+    top: 48vw;
+    left: 78vw;
+    font-size: 1.5vw;
+  }
+  .number9 {
+    top: 43vw;
+    left: 5vw;
+    font-size: 3.3vw;
+  }
+  .text35 {
+    top: 12vw;
+    left: 5vw;
+    font-size: 3.3vw;
+    width: 39vw;
+    line-height: 4vw;
+  }
+  .text36 {
+    top: 24vw;
+    left: 5vw;
+    width: 32vw;
+    font-size: 1.7vw;
+  }
+  .text37 {
+    top: 34vw;
+    left: 5vw;
+    width: 31vw;
+    font-size: 1.7vw;
+  }
+  .text38 {
+    top: 47vw;
+    left: 53vw;
+    font-size: 1.8vw;
+  }
+  .number10 {
+    position: absolute;
+    top: 4vw;
+    left: 6vw;
+    font-size: 3.3vw;
+  }
+  .text42 {
+    top: 22vw;
+    left: 56.5vw;
+    font-size: 1.5vw;
+    width: 18vw;
+  }
+  .text41{
+    top: 24vw;
+    left: 28.5vw;
+    font-size: 1.5vw;
+  }
+  .text39 {
+    top: 4vw;
+    left: 32vw;
+    font-size: 3.3vw;
+    font-weight: 600;
+  }
+  .text40 { 
+    top: 11vw;
+    left: 26vw;
+    width: 50vw;
+    font-size: 2vw;
+  }
+  .number11 {
+    top: 48vw;
+    left: 86vw;
+    font-size: 3.3vw;
+  }
+  .text43 {
+    top: 1vw;
+    left: 29vw;
+    font-size: 3vw;
+  }
+  .text44 {
+    top: 7vw;
+    left: 26vw;
+    font-size: 1.8vw;
+    width: 45vw;
+    text-align: center;
+  }
+  .downloadIcon {
+    font-size: 4.3vw;
+  }
+  .downloadText {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    width: 21vw;
+  }
+  .downloadIcon2 {
+    font-size: 6.1vw;
+  }
+  .downloadText2 {
+    font-size: 3.5vw;
+    line-height: 3vw;
+    width: 17vw;
+  }
+}
+.hiddenItemsRight {
+  transform: translateX(100%);
+  transition: transform 0.8s;
+}
+.hiddenItemsLeft {
+  transform: translateX(-100%);
+  transition: transform 0.8s;
 }
 .show {
   transform: translateX(0);
+}
+.learnmoreS{
+  transform: translateX(32vw);
 }

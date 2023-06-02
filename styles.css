@@ -496,6 +496,7 @@ u {
 .buttonsContainer {
   display: flex;
   flex-direction: column;
+  width: 46%;
 }
 .selector {
   border-radius: 2vw;
@@ -580,6 +581,7 @@ u {
   align-items: center;
   font-weight: 500;
   transition: color 0.5s, background-color 0.5s;
+  margin-right: 1vw;
 }
 .button:hover {
   color:#9CFF00;

@@ -500,8 +500,8 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('How to withdraw from Walk Club?', 'https://www.walkclub.com/topic/163/how-to-withdraw');
-      const newChoiceDiv2 = createChoiceDiv('How to deposit funds into my Walk Club account?', 'https://www.walkclub.com/topic/159/how-to-deposit?_=1683962846622&lang=en-US');
+      const newChoiceDiv1 = createChoiceDiv('How to withdraw from Walk Club?', 'https://bbs.walkclub.com/topic/163/how-to-withdraw');
+      const newChoiceDiv2 = createChoiceDiv('How to deposit funds into my Walk Club account?', 'https://bbs.walkclub.com/topic/159/how-to-deposit?_=1683962846622&lang=en-US');
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
 
@@ -511,9 +511,9 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('Why does my Walk Club account need to be verified?', 'https://www.walkclub.com/topic/188/why-walkclub-account-need-to-verified');
-      const newChoiceDiv2 = createChoiceDiv('How can I start earning after registering with Walk Club? What do I need to do after registration?', 'https://www.walkclub.com/topic/112/how-can-i-start-after-registration-in-walk-club-what-i-need-to-do-after-registration');
-      const newChoiceDiv3 = createChoiceDiv('How do I register with Walk Club', 'https://www.walkclub.com/topic/111/how-to-register-in-walk-club?_=1683964963238&lang=en-US');
+      const newChoiceDiv1 = createChoiceDiv('Why does my Walk Club account need to be verified?', 'https://bbs.walkclub.com/topic/188/why-walkclub-account-need-to-verified');
+      const newChoiceDiv2 = createChoiceDiv('How can I start earning after registering with Walk Club? What do I need to do after registration?', 'https://bbs.walkclub.com/topic/112/how-can-i-start-after-registration-in-walk-club-what-i-need-to-do-after-registration');
+      const newChoiceDiv3 = createChoiceDiv('How do I register with Walk Club', 'https://bbs.walkclub.com/topic/111/how-to-register-in-walk-club?_=1683964963238&lang=en-US');
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
       newChoicesDiv.appendChild(newChoiceDiv3);
@@ -524,9 +524,9 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('How do I obtain my referral link?','https://www.walkclub.com/topic/135/how-do-i-get-my-referral-link');
-      const newChoiceDiv2 = createChoiceDiv("What are the benefits of Walk Club's referral program?" , 'https://www.walkclub.com/topic/126/what-are-the-benefits-of-referral');
-      const newChoiceDiv3 = createChoiceDiv('Is my referral link valid for a limited time or indefinitely?' , 'https://www.walkclub.com/topic/172/is-my-referral-for-all-time-or-monthly');
+      const newChoiceDiv1 = createChoiceDiv('How do I obtain my referral link?','https://bbs.walkclub.com/topic/135/how-do-i-get-my-referral-link');
+      const newChoiceDiv2 = createChoiceDiv("What are the benefits of Walk Club's referral program?" , 'https://bbs.walkclub.com/topic/126/what-are-the-benefits-of-referral');
+      const newChoiceDiv3 = createChoiceDiv('Is my referral link valid for a limited time or indefinitely?' , 'https://bbs.walkclub.com/topic/172/is-my-referral-for-all-time-or-monthly');
       
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
@@ -539,26 +539,26 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('How does the Walk Club shoe work?','https://www.walkclub.com/topic/123/how-does-the-walkclub-shoe-work');
-      const newChoiceDiv2 = createChoiceDiv('What are eggs, and how can I earn them?','https://www.walkclub.com/topic/115/what-is-eggs-how-can-this-be-as-my-earning');
-      const newChoiceDiv3 = createChoiceDiv('If I am using a paid shoe but not active, will it expire in 35 days too?','https://www.walkclub.com/topic/130/what-if-i-am-using-paid-shoes-and-not-active-will-it-expire-in-35-days-too');
-      const newChoiceDiv4 = createChoiceDiv('If I use a retrieve with a paid shoe, will that be considered a completed task for extra rewards?','https://www.walkclub.com/topic/129/if-i-am-using-a-retrieve-with-a-paid-shoe-will-that-be-decided-for-extra-rewards-as-a-completed-task');
-      const newChoiceDiv5 = createChoiceDiv('What is the contribution value and how does it work?','https://www.walkclub.com/topic/133/how-does-contribution-value-work');
-      const newChoiceDiv6 = createChoiceDiv('What is the active value and how does it work?','https://www.walkclub.com/topic/125/how-does-active-value-work');
-      const newChoiceDiv7 = createChoiceDiv('How can I claim my daily rewards?','https://www.walkclub.com/topic/114/how-to-claim-my-daily-rewards');
-      const newChoiceDiv8 = createChoiceDiv('How can I start earning with Walk Club?','https://www.walkclub.com/topic/113/how-to-start-earning-with-walk-club');
-      const newChoiceDiv9 = createChoiceDiv('How much are the withdrawal and recharge amount ranges in Walk Club?','https://www.walkclub.com/topic/201/how-much-is-withdrawal-and-recharge-amount-range-in-walkclub');
-      const newChoiceDiv10 = createChoiceDiv('Does Walk Club count steps even when the screen is turned off?','https://www.walkclub.com/topic/178/did-walkclub-count-the-steps-even-when-the-screen-was-turned-off');
-      const newChoiceDiv11 = createChoiceDiv('What is the use of retrieve points?','https://www.walkclub.com/topic/175/what-is-the-use-of-retrieve-points');
-      const newChoiceDiv12 = createChoiceDiv('What is the sale fee in Walk Club?','https://www.walkclub.com/topic/174/what-is-the-sale-fee-in-walk-club');
-      const newChoiceDiv13 = createChoiceDiv('What is the daily reward amount with a 500 shoe?','https://www.walkclub.com/topic/173/how-much-is-daily-rewards-with-500-shoe');
-      const newChoiceDiv14 = createChoiceDiv('What are the profits of the shoes? Please explain.','https://www.walkclub.com/topic/128/what-are-the-profits-of-the-shoes-please-explain?_=1683967278698&lang=en-US');
-      const newChoiceDiv15 = createChoiceDiv('Can I use free shoes all the time or how do I prevent the shoe from expiring?','https://www.walkclub.com/topic/127/can-i-use-free-shoes-all-the-time-or-how-to-make-the-shoe-not-expire');
-      const newChoiceDiv16 = createChoiceDiv('What is the Walk Club level for and how can I level up?','https://www.walkclub.com/topic/124/what-is-the-walk-club-level-for-and-how-to-level-up');
-      const newChoiceDiv17 = createChoiceDiv('Can I earn without a shoe?','https://www.walkclub.com/topic/122/can-i-earn-without-shoe');
-      const newChoiceDiv18 = createChoiceDiv('When will my shoe expire and what do I do after that?','https://www.walkclub.com/topic/121/when-my-shoe-will-expire-and-how-to-do-after-that');
-      const newChoiceDiv19 = createChoiceDiv('I completed 2000 steps, but did not receive any rewards. Why?','https://www.walkclub.com/topic/116/i-take-more-than-2000-steps-but-rewards-not-increase-why');
-      const newChoiceDiv20 = createChoiceDiv('How can I calculate my daily earnings?','https://www.walkclub.com/topic/117/how-can-i-know-or-calculate-my-daily-earning');
+      const newChoiceDiv1 = createChoiceDiv('How does the Walk Club shoe work?','https://bbs.walkclub.com/topic/123/how-does-the-walkclub-shoe-work');
+      const newChoiceDiv2 = createChoiceDiv('What are eggs, and how can I earn them?','https://bbs.walkclub.com/topic/115/what-is-eggs-how-can-this-be-as-my-earning');
+      const newChoiceDiv3 = createChoiceDiv('If I am using a paid shoe but not active, will it expire in 35 days too?','https://bbs.walkclub.com/topic/130/what-if-i-am-using-paid-shoes-and-not-active-will-it-expire-in-35-days-too');
+      const newChoiceDiv4 = createChoiceDiv('If I use a retrieve with a paid shoe, will that be considered a completed task for extra rewards?','https://bbs.walkclub.com/topic/129/if-i-am-using-a-retrieve-with-a-paid-shoe-will-that-be-decided-for-extra-rewards-as-a-completed-task');
+      const newChoiceDiv5 = createChoiceDiv('What is the contribution value and how does it work?','https://bbs.walkclub.com/topic/133/how-does-contribution-value-work');
+      const newChoiceDiv6 = createChoiceDiv('What is the active value and how does it work?','https://bbs.walkclub.com/topic/125/how-does-active-value-work');
+      const newChoiceDiv7 = createChoiceDiv('How can I claim my daily rewards?','https://bbs.walkclub.com/topic/114/how-to-claim-my-daily-rewards');
+      const newChoiceDiv8 = createChoiceDiv('How can I start earning with Walk Club?','https://bbs.walkclub.com/topic/113/how-to-start-earning-with-walk-club');
+      const newChoiceDiv9 = createChoiceDiv('How much are the withdrawal and recharge amount ranges in Walk Club?','https://bbs.walkclub.com/topic/201/how-much-is-withdrawal-and-recharge-amount-range-in-walkclub');
+      const newChoiceDiv10 = createChoiceDiv('Does Walk Club count steps even when the screen is turned off?','https://bbs.walkclub.com/topic/178/did-walkclub-count-the-steps-even-when-the-screen-was-turned-off');
+      const newChoiceDiv11 = createChoiceDiv('What is the use of retrieve points?','https://bbs.walkclub.com/topic/175/what-is-the-use-of-retrieve-points');
+      const newChoiceDiv12 = createChoiceDiv('What is the sale fee in Walk Club?','https://bbs.walkclub.com/topic/174/what-is-the-sale-fee-in-walk-club');
+      const newChoiceDiv13 = createChoiceDiv('What is the daily reward amount with a 500 shoe?','https://bbs.walkclub.com/topic/173/how-much-is-daily-rewards-with-500-shoe');
+      const newChoiceDiv14 = createChoiceDiv('What are the profits of the shoes? Please explain.','https://bbs.walkclub.com/topic/128/what-are-the-profits-of-the-shoes-please-explain?_=1683967278698&lang=en-US');
+      const newChoiceDiv15 = createChoiceDiv('Can I use free shoes all the time or how do I prevent the shoe from expiring?','https://bbs.walkclub.com/topic/127/can-i-use-free-shoes-all-the-time-or-how-to-make-the-shoe-not-expire');
+      const newChoiceDiv16 = createChoiceDiv('What is the Walk Club level for and how can I level up?','https://bbs.walkclub.com/topic/124/what-is-the-walk-club-level-for-and-how-to-level-up');
+      const newChoiceDiv17 = createChoiceDiv('Can I earn without a shoe?','https://bbs.walkclub.com/topic/122/can-i-earn-without-shoe');
+      const newChoiceDiv18 = createChoiceDiv('When will my shoe expire and what do I do after that?','https://bbs.walkclub.com/topic/121/when-my-shoe-will-expire-and-how-to-do-after-that');
+      const newChoiceDiv19 = createChoiceDiv('I completed 2000 steps, but did not receive any rewards. Why?','https://bbs.walkclub.com/topic/116/i-take-more-than-2000-steps-but-rewards-not-increase-why');
+      const newChoiceDiv20 = createChoiceDiv('How can I calculate my daily earnings?','https://bbs.walkclub.com/topic/117/how-can-i-know-or-calculate-my-daily-earning');
       
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
@@ -587,8 +587,8 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('Why is my email displayed instead of my name on the leaderboard?','https://www.walkclub.com/topic/177/i-have-my-own-name-but-instead-it-is-showing-my-email-in-the-leaderboard-why');
-      const newChoiceDiv2 = createChoiceDiv('Why is the leaderboard useful for me? and what is the Walk Club challenge?','https://www.walkclub.com/topic/137/what-is-the-leader-board-useful-for-me-what-is-walk-club-challenge');
+      const newChoiceDiv1 = createChoiceDiv('Why is my email displayed instead of my name on the leaderboard?','https://bbs.walkclub.com/topic/177/i-have-my-own-name-but-instead-it-is-showing-my-email-in-the-leaderboard-why');
+      const newChoiceDiv2 = createChoiceDiv('Why is the leaderboard useful for me? and what is the Walk Club challenge?','https://bbs.walkclub.com/topic/137/what-is-the-leader-board-useful-for-me-what-is-walk-club-challenge');
       
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
@@ -600,12 +600,12 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('What is the general statistics on the exchange page of Walk Club?','https://www.walkclub.com/topic/170/what-is-the-the-general-statistics-in-the-exchange-page-of-walk-club');
-      const newChoiceDiv2 = createChoiceDiv('What is the sell and buy options on the exchange page of Walk Club?','https://www.walkclub.com/topic/169/what-is-the-sell-buy-options-in-the-exchange-page-of-walkclub');
-      const newChoiceDiv3 = createChoiceDiv('I have posted my eggs to sell, but have not received my profits yet. Why?','https://www.walkclub.com/topic/140/i-have-posted-my-eggs-to-sell-but-still-not-get-my-profit-why');
-      const newChoiceDiv4 = createChoiceDiv('What is the withdrawal fee in Walk Club?','https://www.walkclub.com/topic/132/what-is-the-withdrawal-fee-in-walk-club');
-      const newChoiceDiv5 = createChoiceDiv('How to make mobile recharge with flash sale?','https://www.walkclub.com/topic/118/how-to-make-mobile-recharge-with-flash-sale');
-      const newChoiceDiv6 = createChoiceDiv('I have 5 eggs. How can I withdraw them?','https://www.walkclub.com/topic/120/i-have-5-eggs-now-how-can-i-withdraw-it?_=1683969399372&lang=en-US');
+      const newChoiceDiv1 = createChoiceDiv('What is the general statistics on the exchange page of Walk Club?','https://bbs.walkclub.com/topic/170/what-is-the-the-general-statistics-in-the-exchange-page-of-walk-club');
+      const newChoiceDiv2 = createChoiceDiv('What is the sell and buy options on the exchange page of Walk Club?','https://bbs.walkclub.com/topic/169/what-is-the-sell-buy-options-in-the-exchange-page-of-walkclub');
+      const newChoiceDiv3 = createChoiceDiv('I have posted my eggs to sell, but have not received my profits yet. Why?','https://bbs.walkclub.com/topic/140/i-have-posted-my-eggs-to-sell-but-still-not-get-my-profit-why');
+      const newChoiceDiv4 = createChoiceDiv('What is the withdrawal fee in Walk Club?','https://bbs.walkclub.com/topic/132/what-is-the-withdrawal-fee-in-walk-club');
+      const newChoiceDiv5 = createChoiceDiv('How to make mobile recharge with flash sale?','https://bbs.walkclub.com/topic/118/how-to-make-mobile-recharge-with-flash-sale');
+      const newChoiceDiv6 = createChoiceDiv('I have 5 eggs. How can I withdraw them?','https://bbs.walkclub.com/topic/120/i-have-5-eggs-now-how-can-i-withdraw-it?_=1683969399372&lang=en-US');
             
       newChoicesDiv.appendChild(newChoiceDiv1);
       newChoicesDiv.appendChild(newChoiceDiv2);
@@ -621,7 +621,7 @@ choices.forEach(choice => {
       // create a new choices div with two choice divs with specified text and links
       const newChoicesDiv = document.createElement('div');
       newChoicesDiv.classList.add('choices');
-      const newChoiceDiv1 = createChoiceDiv('What are the requirements for a 50 INR mobile recharge?','https://www.walkclub.com/topic/119/what-is-the-requirement-for-50-inr-mobile-recharge?_=1683970484791&lang=en-US');
+      const newChoiceDiv1 = createChoiceDiv('What are the requirements for a 50 INR mobile recharge?','https://bbs.walkclub.com/topic/119/what-is-the-requirement-for-50-inr-mobile-recharge?_=1683970484791&lang=en-US');
                   
       newChoicesDiv.appendChild(newChoiceDiv1);
             
@@ -655,7 +655,6 @@ const benefitTexts = document.getElementById("benefitTexts");
 const observerBenefit = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-      console.log("ObserverBenefit")
 
       const leftBenefit = document.querySelector('.leftBenefit');
       const middleBenefit = document.querySelector('.middleBenefit');
@@ -665,22 +664,22 @@ const observerBenefit = new IntersectionObserver(
       const rightTextB = document.querySelector('.rightTextB');
       
       leftBenefit.classList.remove('leftBenefit');
-      leftBenefit.classList.add('middleBenefit');
+      leftBenefit.classList.add('rightBenefit');
 
       middleBenefit.classList.remove('middleBenefit');
-      middleBenefit.classList.add('rightBenefit');
+      middleBenefit.classList.add('leftBenefit');
 
       rightBenefit.classList.remove('rightBenefit');
-      rightBenefit.classList.add('leftBenefit');
+      rightBenefit.classList.add('middleBenefit');
 
       leftTextB.classList.remove('leftTextB');
-      leftTextB.classList.add('middleTextB');
+      leftTextB.classList.add('rightTextB');
 
       middleTextB.classList.remove('middleTextB');
-      middleTextB.classList.add('rightTextB');
+      middleTextB.classList.add('leftTextB');
 
       rightTextB.classList.remove('rightTextB');
-      rightTextB.classList.add('leftTextB');
+      rightTextB.classList.add('middleTextB');
     })
   }, 
 );

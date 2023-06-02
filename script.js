@@ -647,3 +647,115 @@ function createChoiceDiv(text, link) {
 
   return newChoiceDiv;
 }
+
+/*----------------- Scroll animation --------------------------------------*/
+const benefitTexts = document.getElementById("benefitTexts");
+
+
+const observerBenefit = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      console.log("ObserverBenefit")
+
+      const leftBenefit = document.querySelector('.leftBenefit');
+      const middleBenefit = document.querySelector('.middleBenefit');
+      const rightBenefit = document.querySelector('.rightBenefit');
+      const leftTextB = document.querySelector('.leftTextB');
+      const middleTextB = document.querySelector('.middleTextB');
+      const rightTextB = document.querySelector('.rightTextB');
+      
+      leftBenefit.classList.remove('leftBenefit');
+      leftBenefit.classList.add('middleBenefit');
+
+      middleBenefit.classList.remove('middleBenefit');
+      middleBenefit.classList.add('rightBenefit');
+
+      rightBenefit.classList.remove('rightBenefit');
+      rightBenefit.classList.add('leftBenefit');
+
+      leftTextB.classList.remove('leftTextB');
+      leftTextB.classList.add('middleTextB');
+
+      middleTextB.classList.remove('middleTextB');
+      middleTextB.classList.add('rightTextB');
+
+      rightTextB.classList.remove('rightTextB');
+      rightTextB.classList.add('leftTextB');
+    })
+  }, 
+);
+
+observerBenefit.observe(benefitTexts);
+
+/*----------------- Scroll animation --------------------------------------*/
+const shoeDescription = document.getElementById("shoeDescription");
+
+
+const observerShoes = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      console.log("ObserverShoes")
+
+      const middleShoe = document.querySelector('.middleShoe');
+      const rightShoe = document.querySelector('.rightShoe');
+      const leftShoe = document.querySelector('.leftShoe');
+      const secondShoe = document.querySelector('.secondShoe');
+      const sixthShoe = document.querySelector('.sixthShoe');
+      const firstShoe = document.querySelector('.firstShoe');
+      const seventhShoe = document.querySelector('.seventhShoe');
+
+      const shoeDescriptionFirst = document.querySelector('.shoeDescriptionFirst');
+      const shoeDescriptionSecond = document.querySelector('.shoeDescriptionSecond');
+      const shoeDescriptionMiddle = document.querySelector('.shoeDescriptionMiddle');
+      const shoeDescriptionRight = document.querySelector('.shoeDescriptionRight');
+      const shoeDescriptionLeft = document.querySelector('.shoeDescriptionLeft');
+      const shoeDescriptionSixth = document.querySelector('.shoeDescriptionSixth');
+      const shoeDescriptionSeventh = document.querySelector('.shoeDescriptionSeventh');
+
+      middleShoe.classList.remove('middleShoe');
+      middleShoe.classList.add('leftShoe');
+      
+      leftShoe.classList.remove('leftShoe');
+      leftShoe.classList.add('secondShoe');
+
+      secondShoe.classList.remove('secondShoe');
+      secondShoe.classList.add('firstShoe');
+
+      firstShoe.classList.remove('firstShoe');
+      firstShoe.classList.add('seventhShoe');
+
+      seventhShoe.classList.remove('seventhShoe');
+      seventhShoe.classList.add('sixthShoe');
+
+      sixthShoe.classList.remove('sixthShoe');
+      sixthShoe.classList.add('rightShoe');
+
+      rightShoe.classList.remove('rightShoe');
+      rightShoe.classList.add('middleShoe');
+      
+      
+      shoeDescriptionMiddle.classList.remove('shoeDescriptionMiddle');
+      shoeDescriptionMiddle.classList.add('shoeDescriptionLeft');
+      
+      shoeDescriptionLeft.classList.remove('shoeDescriptionLeft');
+      shoeDescriptionLeft.classList.add('shoeDescriptionSecond');
+
+      shoeDescriptionSecond.classList.remove('shoeDescriptionSecond');
+      shoeDescriptionSecond.classList.add('shoeDescriptionFirst');
+
+      shoeDescriptionFirst.classList.remove('shoeDescriptionFirst');
+      shoeDescriptionFirst.classList.add('shoeDescriptionSeventh');
+
+      shoeDescriptionSeventh.classList.remove('shoeDescriptionSeventh');
+      shoeDescriptionSeventh.classList.add('shoeDescriptionSixth');
+
+      shoeDescriptionSixth.classList.remove('shoeDescriptionSixth');
+      shoeDescriptionSixth.classList.add('shoeDescriptionRight');
+
+      shoeDescriptionRight.classList.remove('shoeDescriptionRight');
+      shoeDescriptionRight.classList.add('shoeDescriptionMiddle');
+    })
+  }, 
+);
+
+observerShoes.observe(shoeDescription);

@@ -8,6 +8,104 @@ body {
     padding-top: 8vw;
     overflow-x: hidden;
 }
+/* ----------------------------------------------- HOME ----------------------------------------------*/
+#home {
+  position: relative;
+}
+.h20 {
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  right: 14.7vw;
+  top: 5vw;
+}
+.h21 {
+  position: absolute;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: rgb(255, 255, 255);
+  right: 14.7vw;
+  top: 15vw;
+  line-height: 3.5vw;
+  width: 18vw;
+}
+.homeButtons{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2vw;
+  position: absolute;
+  bottom: 12vw;
+}
+
+.homeButton{
+  width: 22vw;
+  height: 6vw;
+  background: #DBFF00;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  transition: background-color 2s, box-shadow 0.9s;
+  transition-delay: 0s, 100ms;
+}
+.homeButton:hover {
+  box-shadow: 0px 0px 3vw 0.5vw #DBFF00;
+  border: 1px solid green;
+  cursor: pointer;
+  background-color: black;
+}
+
+.homeButton p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 1.5vw;
+  line-height: 2vw;
+  transition: color 2s;
+}
+
+.homeButton i{
+  font-size: 5vw;
+  padding-left: 2vw;
+  color: black;
+  transition: color 2s;
+}
+
+.homeButton p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 1.5vw;
+  line-height: 2vw;
+}
+
+.homeButton i{
+  font-size: 5vw;
+  padding-left: 2vw;
+  color: black;
+}
+
+.homeButton:hover p, .homeButton:hover i{
+  color: #DBFF00;
+}
+/* ----------------------------------------------- END HOME ----------------------------------------------*/
 .rightClick:hover {
   cursor: pointer;
 }
@@ -55,7 +153,7 @@ a {
 em {
   font-style: normal;
   color: transparent;
-  -webkit-text-stroke-width: 0.04vw;
+  -webkit-text-stroke-width: 0.08vw;
   -webkit-text-stroke-color: white;
 }
 .benefits1 {
@@ -1359,7 +1457,15 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  
+  .h20{
+    top: 5vw;
+    font-size: 3vw;
+  }
+  .h21{
+    top: 13vw;
+    font-size: 2vw;
+    width: 35vw;
+  }
   .right {
     width: 40%;
     display: flex;
@@ -1607,7 +1713,7 @@ h7 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1.4vw;
     margin-bottom: -39vw;
     margin-top: 14.5vw;
     width: 24vw;

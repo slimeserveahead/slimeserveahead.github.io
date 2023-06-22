@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'American Captain';
   src: url('Fonts/American\ Captain.ttf') format('truetype');
@@ -11,6 +13,8 @@ body {
 /* ----------------------------------------------- HOME ----------------------------------------------*/
 #home {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .h20 {
   position: absolute;
@@ -47,6 +51,10 @@ body {
   bottom: 12vw;
 }
 
+.homeButtons a{
+  color: black;
+}
+
 .homeButton{
   width: 22vw;
   height: 6vw;
@@ -57,13 +65,52 @@ body {
   transition: background-color 2s, box-shadow 0.9s;
   transition-delay: 0s, 100ms;
 }
+.forumButton {
+  align-items: center;
+  background: #DBFF00;
+  position: absolute;
+  top: 25vw;
+  right: 32vw;
+  height: 8vw;
+  width: 36vw;
+  display: flex;
+  border-radius: 2vw;
+  transition: background-color 2s, box-shadow 0.9s;
+  transition-delay: 0s, 100ms;
+}
+.forumButton i{
+  font-size: 5vw;
+  padding-left: 2vw;
+  color: black;
+  transition: color 2s;
+}
+.forumButton p{
+  padding-left: 2vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.4vw;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 2vw;
+  transition: color 2s;
+}
+#home a{
+  color: black;
+}
 .homeButton:hover {
   box-shadow: 0px 0px 3vw 0.5vw #DBFF00;
   border: 1px solid green;
   cursor: pointer;
   background-color: black;
 }
-
+.forumButton:hover {
+  box-shadow: 0px 0px 3vw 0.5vw #DBFF00;
+  border: 1px solid green;
+  cursor: pointer;
+  background-color: black;
+}
 .homeButton p{
   font-family: 'Poppins';
   font-style: normal;
@@ -103,6 +150,9 @@ body {
 }
 
 .homeButton:hover p, .homeButton:hover i{
+  color: #DBFF00;
+}
+.forumButton:hover p, .forumButton:hover i{
   color: #DBFF00;
 }
 /* ----------------------------------------------- END HOME ----------------------------------------------*/
@@ -659,7 +709,6 @@ u {
   justify-content: space-between;
   width: 54vw;
 }
-
 
 .button img {
   width: 9vw;

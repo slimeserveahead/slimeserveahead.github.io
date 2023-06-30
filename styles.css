@@ -3013,6 +3013,10 @@ h7 {
   text-align: end;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,1vw));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,1vw));
+  }
   .swiper .swiper-button-prev, .swiper .swiper-button-next {
     height: 8vw;
     width: 8vw;

@@ -57,11 +57,13 @@ body {
 
 .homeButton{
   width: 22vw;
-  height: 6vw;
-  background: #4DC514;
+  height: 9vw;
+  color: white;
+  background: black;
   border-radius: 2vw;
   display: flex;
   align-items: center;
+  border: 0.3vw solid #4DC514;
   transition: background-color 2s, box-shadow 0.9s;
   transition-delay: 0s, 100ms;
 }
@@ -110,7 +112,16 @@ body {
   padding: 0 1.5vw;
   line-height: 2vw;
 }
-
+.homeButton img {
+  margin-left: 2vw;
+  width: 5vw;
+}
+.homeButtons a:nth-of-type(2) .homeButton img {
+  width: 6vw;
+}
+.homeButtons a:nth-of-type(3) .homeButton img {
+  width: 4vw;
+}
 .homeButton:hover p, .homeButton:hover i{
   color: #4DC514;
 }
@@ -1738,7 +1749,7 @@ h7 {
     margin-bottom: -39vw;
     margin-top: 14.5vw;
     width: 24vw;
-    border-radius: 1vw;
+    border-radius: 2vw;
     border: 1px solid green;
     margin-right: -29vw;
     margin-left: 6vw;
@@ -1752,7 +1763,7 @@ h7 {
     padding-bottom: 0;
   }
   .buttonsShow {
-    transform: translateX(6.4vw);
+    transform: translateX(6.1vw);
   }
   .selector {
     display: none;

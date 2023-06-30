@@ -590,6 +590,9 @@ u {
 .swiper-button-prev img, .swiper-button-next img{
   width: 1vw;
 }
+.swiper, swiper-container {
+  overflow:hidden;
+}
 /*----------------------------NAVIGATION BAR--------------------------------------*/
 .bx {  
   position: absolute;
@@ -1469,6 +1472,12 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .swiper {
+    width: 86%;
+    height: fit-content;
+    margin-top: 16vw;
+    margin-bottom: 7vw;
+  }
   .h20{
     top: 5vw;
     font-size: 3vw;
@@ -3004,6 +3013,13 @@ h7 {
   text-align: end;
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .swiper .swiper-button-prev, .swiper .swiper-button-next {
+    height: 8vw;
+    width: 8vw;
+  }
+  .swiper-button-prev img, .swiper-button-next img {
+    width: 3vw;
+  } 
   .downloadNow:nth-child(1) {
     top: 0.75vw;
   }
@@ -3101,7 +3117,7 @@ h7 {
     position: fixed;
     bottom: 1vw;
     right: 2vw;
-    z-index: 2;
+    z-index: 55;
     border-radius: 10vw;
     border: 0.1vw solid #9AFF01;
     display: flex;

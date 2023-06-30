@@ -70,7 +70,6 @@ body {
 }
 .homeButton:hover {
   box-shadow: 0px 0px 3vw 0.5vw #4DC514;
-  border: 1px solid green;
   cursor: pointer;
   background-color: black;
 }
@@ -94,7 +93,7 @@ body {
 }
 
 .homeButton i{
-  font-size: 5vw;
+  font-size: 4.2vw;
   padding-left: 2vw;
   color: black;
   transition: color 2s;
@@ -110,12 +109,6 @@ body {
   margin: 0;
   padding: 0 1.5vw;
   line-height: 2vw;
-}
-
-.homeButton i{
-  font-size: 5vw;
-  padding-left: 2vw;
-  color: black;
 }
 
 .homeButton:hover p, .homeButton:hover i{
@@ -162,12 +155,12 @@ a {
 .gameplay2 {
   position: absolute;
   top: 4.2vw;
-  left: 31vw;
+  left: 26vw;
 }
 .gameplay3 {
   position: absolute;
   top: 12.2vw;
-  left: 37.6vw;
+  left: 33.6vw;
 }
 em {
   font-style: normal;
@@ -614,7 +607,7 @@ u {
 .buttonsContainer {
   display: flex;
   flex-direction: column;
-  width: 46%;
+  width: 37%;
 }
 .selector {
   border-radius: 2vw;

@@ -1725,7 +1725,7 @@ h7 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.4vw;
+    gap: 3vw;
     margin-bottom: -39vw;
     margin-top: 14.5vw;
     width: 24vw;
@@ -1737,13 +1737,13 @@ h7 {
     transition: 0.6s ease;
     background: black;
     z-index: 2;
-    transform: translateX(45vw);
+    transform: translateX(35vw);
   }
   .move {
     padding-bottom: 0;
   }
   .buttonsShow {
-    transform: translateX(15vw);
+    transform: translateX(6.4vw);
   }
   .selector {
     display: none;

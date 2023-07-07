@@ -81,24 +81,13 @@ body {
   cursor: pointer;
   background-color: black;
 }
-.homeButton p{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.5vw;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0 1.5vw;
-  line-height: 2vw;
-  transition: color 2s;
-}
 
 .homeButton i{
-  font-size: 4.2vw;
-  padding-left: 2vw;
-  color: black;
+  font-size: 1.6vw;
+  color: #4DC514;
+  margin-top: -2vw;
   transition: color 2s;
+  transform: translate(-0.9vw, -0.1vw);
 }
 
 .homeButton p{
@@ -111,6 +100,8 @@ body {
   margin: 0;
   padding: 0 1.5vw;
   line-height: 2vw;
+  transition: color 2s;
+  color: #4DC514;
 }
 .homeButton img {
   margin-left: 2vw;
@@ -131,13 +122,13 @@ body {
 .homeTextsTitle {
   position: absolute;
   display: flex;
-  color: #FFF;
-  font-size: 5vw;
-  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 6vw;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 800;
-  left: 22vw;
-  top: 7vw;
+  left: 15vw;
+  top: 11vw;
 }
 .homeTextsSubtitle {
   position: absolute;

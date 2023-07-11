@@ -128,7 +128,7 @@ body {
   font-style: normal;
   font-weight: 800;
   left: 15vw;
-  top: 11vw;
+  top: 7vw;
 }
 .homeTextsSubtitle {
   position: absolute;
@@ -386,7 +386,6 @@ u {
   margin: 0 auto;
   min-height: 22.7vw;
   overflow-y: scroll;   
-  scroll-behavior:smooth;
   padding: 0 1vw;
   padding-bottom: 1vw;
 }
@@ -1036,7 +1035,6 @@ u {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   overflow: hidden;
-  scroll-behavior: smooth; 
   scroll-behavior: 1s; 
 }
 

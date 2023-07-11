@@ -272,7 +272,7 @@ u {
   height: 4vw;
   position: fixed;
   bottom: 1vw;
-  right: 2vw;
+  right: 91vw;
   z-index: 5;
   border-radius: 3vw;
   border: 0.1vw solid #9AFF01;
@@ -298,8 +298,8 @@ u {
   width: 1vw;
   height: 1vw;
   position: fixed;
-  bottom: 1vw;
-  right: 2.2vw;
+  bottom: 1vw;    
+  right: 91.2vw;
   z-index: 3;
   border-radius: 2vw;
   border: 1px solid white;
@@ -309,7 +309,7 @@ u {
   height: 35vw;
   width: 24vw;
   bottom: 6vw;
-  right: 2vw;
+  right: 71vw;
   z-index: 3;
   border: 1px solid #9AFF01;
   background-color: #393424;
@@ -358,7 +358,14 @@ u {
   text-align: right;
 }
 
+h7 a {
+  color:#9CFF00;
+  transition: color 0.3s;
+}
 
+h7 a:hover {
+  color:#4DC514;
+}
 /* HEADER */
 .chatbox__header {
   width: 100%;
@@ -1455,8 +1462,12 @@ h4 {
   color: #9CFF00;
   font-size: 1.3vw;
   font-family: 'Poppins', sans-serif;
+  transition: color 0.3s;
 }
 
+h4:hover {
+  color:#4DC514;
+}
 h5 {
   color: white;
   font-size: 1vw;
@@ -3158,7 +3169,7 @@ h7 {
     height: 10vw;
     position: fixed;
     bottom: 1vw;
-    right: 2vw;
+    right: 86vw;
     z-index: 55;
     border-radius: 10vw;
     border: 0.1vw solid #9AFF01;
@@ -3170,16 +3181,18 @@ h7 {
     width: 5vw;
   }
   .chat {
+    right: 42vw;
     transform: translateY(-4vw);
   }
   .showChat {
+    right: 42vw;
     transform: translateY(-7vw);
   }
   .online {
     width: 2vw;
     height: 2vw;
     bottom: 1vw;
-    right: 3.2vw;
+    right: 87.2vw;
   }
   .text1 {
     position: absolute;

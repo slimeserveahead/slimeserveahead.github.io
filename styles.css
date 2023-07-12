@@ -10,6 +10,29 @@ body {
     padding-top: 8vw;
     overflow-x: hidden;
 }
+/* ------------------------Privacy Policy ----------------------------------------------------------- */
+.privacyPolicy{
+  color: white;
+  padding: 0vw 5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.privacyTitle {
+  color:#9cff00;
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+h22{
+  font-size: 24px;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+}
+.privacyLink {
+  font-weight: 500;
+}
 /* ----------------------------------------------- HOME ----------------------------------------------*/
 #home {
   position: relative;

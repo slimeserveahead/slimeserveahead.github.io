@@ -17,6 +17,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 15px;
+  margin-top: 7vw;
 }
 .privacyTitle {
   color:#9cff00;
@@ -26,6 +27,7 @@ body {
   margin-bottom: 10px;
 }
 h22{
+  margin-top: 20px;
   font-size: 24px;
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
@@ -349,6 +351,7 @@ u {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+  z-index: 999;
 }
 .chatbox {
   position: absolute;

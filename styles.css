@@ -10,6 +10,35 @@ body {
     padding-top: 8vw;
     overflow-x: hidden;
 }
+.SocialMediaIcons {
+  display: flex;
+  gap: 0.5vw;
+  transform: translateX(-5vw);
+}
+
+.navbarIcon {
+  background-color: #9CFF00;
+  border-radius: 2vw;
+  height: 2.5vw;
+  width: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  color: black;
+  transition: all 0.3s;
+}
+.navbarIcon:hover {
+  
+  background-color: black;
+  border: solid 0.1vw #9CFF00;
+}
+.navbarIcon a{
+  color: black;
+}
+.navbarIcon:hover a{
+  color: #9CFF00;
+}
 /* ------------------------Privacy Policy ----------------------------------------------------------- */
 .privacyPolicy{
   color: white;
@@ -1535,6 +1564,15 @@ h7 {
 /* ------------------------------------- responsiveness ------------------------------------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .SocialMediaIcons {
+    transform: translateX(13vw);
+  }
+  .navbarIcon {
+    height: 5vw;
+    width: 5vw;
+    font-size: 3vw;
+    border-radius: 5vw;
+  }
   .swiper {
     width: 76vw;
     height: fit-content;
@@ -1821,7 +1859,7 @@ h7 {
     padding-bottom: 0;
   }
   .buttonsShow {
-    transform: translateX(6.1vw);
+    transform: translateX(2.1vw);
   }
   .selector {
     display: none;
@@ -2004,6 +2042,7 @@ h7 {
 }
 
 @media screen and (min-width: 768px) {  
+  
   .carousel {
     position: relative;
   }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="btc-graph" class="graph"></div>
+  <div id="eth-graph" class="graph"></div>
+  <div id="bnb-graph" class="graph"></div>
+  <div id="trx-graph" class="graph"></div>
+
+  <script>
+    // Function to fetch cryptocurrency data and create a graph
+    function createGraph(id, currency) {
+      fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=1&interval=1h`)
+        .then(response => response.json())
+        .then(data => {
+          // Extract timestamps and prices from the API response
+          var timestamps = data.prices.map(entry => new Date(entry[0]));
+          var prices = data.prices.map(entry => entry[1]);
+
+          // Create a trace for the graph
+          var trace = {
+            x: timestamps,
+            y: prices,
+            mode: 'lines',
+            line: { color: '#000000' } // Set line color to black
+          };
+
+          // Define the layout
+          var layout = {
+            showlegend: false, // Hide legend
+            xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
+            yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
+            paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
+            plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
+            margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
+          };
+
+          // Combine the trace and layout and plot the graph
+          Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    // Create graphs for each cryptocurrency
+    createGraph('btc-graph', 'bitcoin');
+    createGraph('eth-graph', 'ethereum');
+    createGraph('bnb-graph', 'binancecoin');
+    createGraph('trx-graph', 'tron');
+  </script>
+
+  <style>
+    .graph {
+      width: 400px; /* Adjust the width as needed */
+      height: 200px; /* Adjust the height as needed */
+      margin-bottom: 20px; /* Add spacing between graphs */
+    }
+  </style>
+</body>
+</html>

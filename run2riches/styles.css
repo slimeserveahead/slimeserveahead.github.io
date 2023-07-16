@@ -54,22 +54,21 @@ h1 {
     font-size: 0.8vw;
     color: #FFFFFF;
     letter-spacing: 0;
-    line-height: 18.75px;
     font-weight: 400;
 }
 .navbar {
     background-color: black;
     display: flex;
-    height: 75px;
+    height: 6vw;
     align-items: center;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 10vw;
     padding-bottom: 0;
     font-family: 'PingFang SC 400', sans-serif;
 }
 
-.navbarLogo img {
-    width: 38.25px;
+.navbarLogo img {    
+    width: 3vw;
 }
 
 .navbarMenu {
@@ -78,7 +77,9 @@ h1 {
 }
 .navbarLogo {
     display: flex;
-    gap: 20px;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
 }
 .navbarRight {
     display: flex;
@@ -100,7 +101,7 @@ h1 {
 /* -----------------DOWNLOAD SECTION -------------------*/
 .downloadSection {
     background-color: #F2F3FF;
-    height: 575px;
+    height: 28vw;
     margin-top: 0;
     position: relative;
     padding: 5vw 15vw;
@@ -127,11 +128,12 @@ h3 {
 h4 {
     font-family: 'Helvetica Light', sans-serif;
     color: #777777;
+    font-size: 1.2vw;
 }
 .downloadIcons {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.5vw;
 }
 .downloadButton {
     font-family: 'Helvetica Bold', sans-serif;
@@ -140,8 +142,8 @@ h4 {
 .iosIcon{
     font-family: 'Helvetica', sans-serif;
     background-color: black;
-    width: 150.75px;
-    height: 44.25px;
+    width: 12vw;
+    height: 3.5vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -151,15 +153,19 @@ h4 {
 .androidIcon{
     font-family: 'Helvetica', sans-serif;
     background-color: black;
-    width: 150.75px;
-    height: 44.25px;
+    width: 12vw;
+    height: 3.5vw;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.androidIcon, .iosIcon {
+    font-size: 1vw;
+}
 .firstQRCode img {
-    width: 44.25px;
+    width: 3.5vw;
 }
 
 .androidIcon img{
@@ -199,7 +205,7 @@ h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 5vw;
 }
 .leftCounter {
     display: flex;
@@ -207,7 +213,7 @@ h4 {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 0px;
+    gap: 0vw;
 }
 .middleCounter {
     display: flex;
@@ -215,7 +221,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 0vw;
 }
 .rightCounter {
     display: flex;
@@ -223,7 +229,7 @@ h4 {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 0vw;
 }
 h5 {
     font-family: 'Helvetica Light', sans-serif;
@@ -233,7 +239,7 @@ h5 {
 }
 h6 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 0.8vw;
+    font-size: 1vw;
     text-align: center;
 }
 .widthReducer {
@@ -244,11 +250,12 @@ h6 {
     background-color: #F7F9FB;
     height: 35vw;
     padding: 0 105px;
+    overflow-x: hidden;
 }
 .cryptoTable {
-    width: 100%;
-    position: absolute;
-    left:12vw;
+    width: 86vw;
+    font-size: 0.8vw;
+    transform: translateX(15vw);
 }
 .cryptoTable tbody tr{
     height: 5vw;
@@ -294,7 +301,6 @@ h6 {
 }
 /*-------------------------------- STEPS -------------------------*/
 .steps {
-    height: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,36 +309,32 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5vw;
     gap: 2vw;
     font-family: 'Helvetica', sans-serif;
 }
-.step1 img {
-    width: 168px;
-}
-.step2 img {
-    width: 168px;
-}
-.step3 img {
-    width: 168px;
+.step1 img, .step2 img, .step3 img{
+    width: 10vw;
 }
 .stepLine img{
-    width: 143px;
-    padding-top: 75px;
+    width: 12vw;
+    padding-top: 5vw;
 }
 .stepsIcons {
     display: flex;
-    gap: 50px;
+    gap: 4vw;
 }
 .downloadButton {
     background-color: #4E62E4;
     color:  white;
-    height: 75px;
-    width: 248px;
-    border-radius: 5px;
+    height: 6vw;
+    width: 16vw;
+    border-radius: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
 }
 .titleSteps { 
     font-family: 'Helvetica Bold', sans-serif;
@@ -349,7 +351,7 @@ h6 {
 }
 .appDescriptionContents {
     position: absolute;
-    top: 0px;
+    top: 0vw;
     height: 100%;
     width: 100%;
     display: flex;
@@ -361,7 +363,7 @@ h6 {
     justify-content: space-between;
 }
 .appLeft img {
-    width: 399px;
+    width: 30vw;
 }
 .appRight {
     display: flex;
@@ -382,7 +384,7 @@ h8 {
     width: 40vw;
 }
 .socialMediaIcons img {
-    width: 8vw;
+    width: 4vw;
 }
 .socialMediaIcons {
     margin-top: 2vw;
@@ -391,13 +393,13 @@ h8 {
 }
 /*------------------------ SOCIAL MEDIA LINKS --------------------------*/
 .socialMediaLinks{
-    height: 500px;
+    height: 35vw;
     justify-content: center;
     align-items: center;
     gap: 10vw;
 }
 .socialRight img {
-    width: 406px;
+    width: 30vw;
 }
 .socialMediaLinks {
     display: flex;
@@ -415,11 +417,12 @@ h10 {
     font-family: 'Helvetica', sans-serif;
     color: #606060;
     margin-top: 1vw;
+    font-size: 1.5vw;
 }
 /*------------------------ CORE --------------------------*/
 .core {
     background-color: #F7F9FB;
-    height: 500px;
+    height: 45vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -427,7 +430,7 @@ h10 {
     gap: 10vw;
 }
 .coreLeft img {
-    width: 631px;
+    width: 50vw;
 }
 .h11 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -438,7 +441,7 @@ h10 {
 }
 
 .h12 img, .h13 img, .h14 img{
-    width: 7vw;
+    width: 3vw;
 }
 
 .h12, .h13, .h14 {
@@ -454,21 +457,21 @@ h10 {
 }
 /*--------------------- BENEFITS ---------------------------*/
 .benefits {
-    padding: 50px 300px;
-    gap: 75px;
+    padding: 5vw 10vw;
+    gap: 6vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .benefitsIcon img{
-    width: 10vw;
+    width: 4vw;
 }
 .benefitsContainer {
     width: 16vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
 }
 .benefitsTitle {
     font-family: 'Helvetica Bold', sans-serif;
@@ -480,12 +483,13 @@ h10 {
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     color: #989898;
+    font-size: 1vw;
 }
 /*------------------- App Description ------------------------------*/
 .appDescriptionDownload {
     background-color: #4E62E4;
-    height: 136px;
-    padding: 100px 100px;
+    height: auto;    
+    padding: 6vw 3vw;
     display: flex;
     justify-content: center;
 }
@@ -505,24 +509,26 @@ h10 {
     flex-direction: row;
 }
 .download {
-    width: 201px;
-    height: 59px;
+    width: 16vw;
+    height: 4.9vw;
     color: white;
     display: flex;
+    font-size: 1.3vw;
     justify-content: center;
     align-items: center;
 }
 .qrCode {
-    width: 136px;
-    height: 136px;
+    width: 11vw;
+    height: 10.35vw;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2vw;
 }
 .appDescriptionRight {
     display: flex;
-    gap: 20px;
+    gap: 1.5vw;
 }
 .downloadButtons {
     gap: 14px;
@@ -535,12 +541,13 @@ h10 {
 /*---------------------------------------------------- FOOTER ------------------------------------*/
 .footer{
     background-color: #F7F9FB;
-    height: 50px;
+    height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Helvetica', sans-serif;
     color: #7E7D7D;
+    font-size: 1vw;
 }
 /*---------------------------------------------------- RESPONSIVENESS ------------------------------------*/
 @media screen and (min-width: 768px) {
@@ -642,6 +649,9 @@ h10 {
     .step1 img, .step2 img,  .step3 img{
         width: 10vw;
     }
+    .step1, .step2, .step3 {
+        font-size: 2vw;
+    }
     .stepLine img{
         width: 8vw;
         padding-top: 5.5vw;
@@ -704,7 +714,7 @@ h10 {
     .benefitsContainer{
         flex-direction: row;
         width: 81vw;
-        border: 1px solid #DFDFDF;
+        border: 0.01vw solid #DFDFDF;
         border-radius: 2vw;
     }
     .benefits {
@@ -770,6 +780,7 @@ h10 {
     }
     .h12 img, .h13 img, .h14 img{
         margin-right: 2vw;
+        width: 7vw;
     }
     .stepsIcons {
         gap: 4vw;
@@ -788,17 +799,26 @@ h10 {
         font-size: 3vw;
     }
     .firstColumn{
-        transform: translateX(0vw);
-    }
-    .secondColumn{
-        transform: translateX(0vw);
+        transform: translateX(-15vw);
         width: 5vw;
     }
-    .thirdColumn{
-        transform: translateX(0vw);
+    .secondColumn{
+        transform: translateX(-5vw);
+        width: 15vw;
     }
-    .cryptoTable {
-        width: 86%;
+    .thirdColumn{
+        transform: translateX(10vw);
+        width: 5vw;
+    }
+    .cryptoTable {    
         position: absolute;
+        width:45vw;
+        font-size: 2.5vw
+    }
+    .socialMediaIcons img {
+        width: 8vw;
+    }
+    .benefitsIcon img {
+        width: 10vw;
     }
 }

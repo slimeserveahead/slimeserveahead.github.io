@@ -1,40 +1,40 @@
 @font-face {
     font-family: 'Helvetica';
-    src: url('fonts/Helvetica-Font/Helvetica.ttf') format('truetype');
+    src: url('fonts/Helvetica.ttf') format('truetype');
 }
   
 @font-face {
     font-family: 'Helvetica Bold';
-    src: url('fonts/Helvetica-Font/Helvetica-Bold.ttf') format('truetype');
+    src: url('fonts/Helvetica-Bold.ttf') format('truetype');
 }
   
 @font-face {
     font-family: 'Helvetica Bold Oblique';
-    src: url('fonts/Helvetica-Font/Helvetica-Font/Helvetica-BoldOblique.ttf') format('truetype');
+    src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Helvetica Bold Oblique';
-    src: url('fonts/Helvetica-Font/Helvetica-BoldOblique.ttf') format('truetype');
+    src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
 }
   
 @font-face {
     font-family: 'Helvetica Compressed';
-    src: url('fonts/Helvetica-Font/helvetica-compressed-5871d14b6903a.otf') format('opentype');
+    src: url('fonts/helvetica-compressed-5871d14b6903a.otf') format('opentype');
 }
   
 @font-face {
     font-family: 'Helvetica Light';
-    src: url('fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf') format('truetype');
+    src: url('fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
 }
   
 @font-face {
     font-family: 'Helvetica Oblique';
-    src: url('fonts/Helvetica-Font/Helvetica-Oblique.ttf') format('truetype');
+    src: url('fonts/Helvetica-Oblique.ttf') format('truetype');
 }
   
 @font-face {
     font-family: 'Helvetica Rounded Bold';
-    src: url('fonts/Helvetica-Font/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
+    src: url('fonts/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
 }
 
 @font-face {
@@ -172,19 +172,24 @@ h4 {
     transform: translateY(-0.01vw)
 }
 .downloadPopup {
+    opacity: 0;
     position: absolute;
-    left: 33vw;
-    display: block;
+    /* transform: translateX(33vw); */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out; /* Add transition properties */
 }
 .downloadPopup img{
     width: 8vw;
 }
-.firstQRCode:hover .downloadPopup,
-.downloadPopup:hover {
+.firstQRCode:hover {
     cursor: pointer;
-    display: block;
 }
 
+.firstQRCode:hover .downloadPopup{
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+}
 
 /* ----------------- COUNTER -------------------*/
 .counter{

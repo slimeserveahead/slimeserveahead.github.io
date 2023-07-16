@@ -1,388 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="//db.onlinewebfonts.com/c/0f9c349da923afea31fae4db7b8094f0?family=Gotham+Black" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Walk Club No.1 Fitness Brand : Walk and Earn</title>
-
-    <link rel="icon" href="images/blackbg-logo.webp" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <title>Run2Riches</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <div class="background-img">
-        <img src="images/body-background.webp">
-    </div>
-    <div class="navigation-bar">
-        <div class="text">
-            <img src="images/logo.webp">
-            <div class="h15">WALK CLUB</div>
+    <!-----------------------------NAVIGATION BAR------------------------------>
+    <div class="navbar">
+        <div class="navbarLogo">
+            <img src="images/home_logo1@3x.png">
+            <h1><strong>Run2Riches</strong></h1>
         </div>
-        <div class="movingBorder" id="movingBorder"></div>
-        <div class="SocialMediaIcons">
-            <div class="navbarIcon"><a href="https://t.me/walkclubofficial" target=”_blank”><i class="fa-solid fa-paper-plane"></i></a></div>
-            <div class="navbarIcon"><a href="https://twitter.com/_walkclub" target=”_blank”><i class="fa-brands fa-twitter"></i></a></div>
-            <div class="navbarIcon"><a href="https://www.instagram.com/_walkclub/" target=”_blank”><i class="fa-brands fa-instagram"></i></a></div>
-            <div class="navbarIcon"><a href="https://www.facebook.com/WalkclubOfficial" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a></div>
-            <div class="navbarIcon"><a href="https://www.youtube.com/@WalkClubOfficial1/featured" target=”_blank”><i class="fa-brands fa-youtube"></i></a></div>
-            <div class="navbarIcon"><a href="mailto:contact@walkclub.com" target=”_blank”><i class="fa-regular fa-envelope"></i></a></div>
+        <div class="navbarMenu">
+            <h1><strong>Giới thiệu sản phẩm</strong></h1>
+            <h1><strong>Câu hỏi thường gặp</strong></h1>
+            <h1><strong>Tải ứng dụng</strong></h1>
+            <h1><strong>Liên hệ chúng tôi</strong></h1>
         </div>
-        <div class="buttonsContainer">
-            <div class="buttons" id="buttons">
-                <a href="#home">
-                    <div class="button">Home</div>
-                </a>
-                <a href="#news">
-                    <div class="button">Tutorials</div>
-                </a>
-                <a href="#gameplay">
-                    <div class="button">How To Start</div>
-                </a>
-                <a href="#benefits">
-                    <div class="button">Benefits</div>
-                </a>
-                <a href="learnmore.html">
-                    <div class="button">Learn More</div>
-                </a>
-            </div>
-            <div class="selector"></div>
-            <div onclick="toggleMenu()" class="bx bx-menu" id="menu-icon"></div>
-        </div>         
+        <div class="navbarRight">
+            <img src="images/home_yuyan@3x.png">
+            <h1><strong>Tiếng Việt</strong></h1>
+            <img src="images/home_sanjiao@3x.png">
+        </div>
     </div>
-    <!---------------------------------------------- HOME ---------------------------------------------->
-    <div id="home" class="testing">
-        <img style="width: 100%;" src="images/Desktop - 8.webp">
-        <div class="homeTexts">
-            <div class="homeTextsTitle">
-                EVERY STEP COUNTS
+    <!------------------------- DOWNLOAD SECTION ------------------------------>
+    <div class="downloadSection">
+        <img class="downloadBanner" src="images/home_banner_img@3x.png">
+        <div class="downloadTexts">
+            <h2>Hãy để chúng tôi đồng hành cùng bạn</h2>
+            <h3>Đi bộ kiếm tiền - Nhận phần thưởng - Chơi thả ga</h3>
+            <h4>Hành trình đi bộ kiếm tiền đầy hứng khởi cùng hơn 1 triệu người dùng</h4>
+        </div>
+        <div class="downloadIcons">
+            <div class="iosIcon"><img src="images/ios@3x.png"></i>iOS</div>
+            <div class="androidIcon"><img src="images/android@3x.png">Android</div>
+            <div class="firstQRCode"><img src="images/erweima@3x.png">
+                <div class="downloadPopup">
+                    <img src="images/sampleqr.png">
+                </div>
             </div>
         </div>
-        <div class="homeButtons">
-            <a href="https://t.me/walkclubofficial" target="_blank">
-                <div class="homeButton">
-                    <img src="images/telegram_icon.webp">
-                    <p>JOIN US ON TELEGRAM</p>
-                </div>
-            </a>
-            <a href="https://bbs.walkclub.com" target="_blank">
-                <div class="homeButton">
-                    <img src="images/forum_icon.webp">
-                    <p>WALKCLUB FORUM</p>
-                </div>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.intayaho.wcfbc&hl=en" target="_blank">
-                <div class="homeButton">
-                    <img src="images/playstore_icon.webp">
-                    <p>GOOGLE PLAY + DOWNLOAD</p>
-                </div>
-            </a>
-            <a href="https://docs.walkclub.com/redirectwp.html" target="_blank">
-                <div class="homeButton">
-                    <img src="images/whatsapp_icon.webp">
-                    <p>MESSAGE US ON WHATSAPP</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <!---------------------------------------- CAROUSEL SECTION ------------------------------------>
-    <div class="carousel">
-        <div class="shoes">
-            <div class="lineTwo"></div>
-            <h16>NEWS</h16>
-        </div>
-        <div class="carouselImages">
-        </div>
-        <div class="arrowCar left-arrow"><img src="images/cararrow-left.webp"></div>
-        <div class="arrowCar right-arrow"><img src="images/cararrow-right.webp"></div>
-    </div>
-    <!---------------------------------------- REVISED CAROUSEL SECTION ------------------------------------>
-    <div id="news" class="container">
-        <div class="shoes">
-            <div class="lineTwo"></div>
-            <h16>TUTORIAL</h16>
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="images/tutorial1.webp"></div>
-                <div class="swiper-slide"><a href="https://bbs.walkclub.com/topic/2707/walkclub-contribution-value-function-upgrade?_=1687941066886&lang=en-US" target="_blank"><img src="images/tutorial2.webp"></a></div>
-                <div class="swiper-slide"><img src="images/tutorial3.webp"></div>
-                <div class="swiper-slide"><a href="https://bbs.walkclub.com/topic/113/how-to-start-earning-with-walk-club?_=1687941066891&lang=en-US" target="_blank"><img src="images/tutorial4.webp"></a></div>
-                <div class="swiper-slide"><a href="https://bbs.walkclub.com/topic/2784/walkclub-lucky-usdt-is-here?_=1687941066883&lang=en-US" target="_blank"><img src="images/tutorial5.webp"></a></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
         
-            
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"><img src="images/cararrow-left.webp"></div>
-        <div class="swiper-button-next"><img src="images/cararrow-right.webp"></div>
     </div>
-    <!---------------------------------------- SHOE CAROUSEL SECTION ------------------------------------>
-    <div class="shoeCarousel">
-        <div class="shoes">
-            <div class="lineTwo"></div>
-            <h16>SHOES</h16>
+    <!------------------------------- COUNTER ------------------------------------>
+    <div class="counter">
+        <div class="leftCounter">
+            <h5>10000+</h5>
+            <h6>Lựa chọn của người dùng</h6>
         </div>
-        <div class="shoeNext"></div>
-        <div class="shoePrevious"></div>
-        <div class="shoeChoice">
-            <div class="leftShoeArrow">
-                <img src="images/previous.webp">
-            </div>
-            <div class="stage">
-                <img src="images/stage.webp">
-                <div class="firstShoe">
-                    <img src="images/shoe1.webp">
-                </div>
-                <div class="secondShoe">
-                    <img src="images/shoe2.webp">
-                </div>
-                <div class="leftShoe">
-                    <img src="images/shoe3.webp">
-                </div>
-                <div class="middleShoe">
-                    <img src="images/shoe4.webp">
-                </div>
-                <div class="rightShoe">
-                    <img src="images/shoe5.webp">
-                </div>
-                <div class="sixthShoe">
-                    <img src="images/shoe6.webp">
-                </div>
-                <div class="seventhShoe">
-                    <img src="images/shoe7.webp">
-                </div>
-            </div>
-            <div class="rightShoeArrow">
-                <img src="images/next.webp">
-            </div>        
+        <div class="middleCounter">
+            <h5>14125979+</h5>
+            <h6>24h giao dịch</h6>
         </div>
-        <div class="shoeDescription" id="shoeDescription">
-            <div class="shoeDescriptionFirst">
-                <h11>This shoe has a modern design with a blue tube and white upper, finished with a classic white midsole and black sole. It's a versatile choice for any casual occasion, offering a unique color combination and sleek style that's sure to turn heads.</h11>
-            </div>
-            <div class="shoeDescriptionSecond">
-                <h11> The unique wavy texture of the blue and black upper catches the eye, while the black midsole and sole provide a sleek and professional finish. With its high-quality construction and attention to detail, this shoe is designed to meet the demands of even the most rigorous training sessions or outdoor adventures.</h11>
-            </div>
-            <div class="shoeDescriptionMiddle">
-                <h11>Featuring a dynamic combination of black and red hues, this shoe is the perfect blend of classic and modern styles. The intricate design on the upper creates a visually stunning texture that is sure to captivate the eye.  Whether you're hitting the gym or hitting the town, this versatile footwear option is guaranteed to turn heads.</h11>
-            </div>
-            <div class="shoeDescriptionRight">
-                <h11>With a unique and modern design, this shoe features a mix of intricate patterns and textures on its upper. The classic white midsole is finished with a subtle deep crimson hue detail, providing an elegant touch to the overall look. Versatile and stylish, this shoe is a perfect choice for any occasion.</h11>
-            </div>
-            <div class="shoeDescriptionLeft">
-                <h11>Elevate your style with this shoe's unique black and white stripe texture that boasts an eye-catching design. The white midsole with a hint of black adds a polished finish, making it a versatile choice for any occasion. Turn heads and showcase your bold yet subtle sense of style with this must-have footwear.</h11>
-            </div>
-            <div class="shoeDescriptionSixth">
-                <h11>With a stunning light blue-green or teal color, this shoe evokes a sense of serenity and calmness. The sleek and minimalist design features a streamlined silhouette that allows the color to shine as the main focal point. Perfect for any casual occasion, this shoe provides a comfortable fit and stylish look that will keep you feeling and looking great all day long.</h11>
-            </div>
-            <div class="shoeDescriptionSeventh">
-                <h11>This shoe is a bold and colorful statement piece that's sure to grab attention. With its vibrant hues and eye-catching design, it's perfect for those who want to stand out from the crowd. The comfortable fit and durable construction make it a practical choice for any occasion.</h11>
-            </div>
-        </div>
-    </div>    
-    <!---------------------------------------- GAMEPLAY SECTION  ------------------------------------>
-    <div id="gameplay" class="gameplay">
-        <div class="gameplay1">
-        <img src="images/gameplay.webp">
-            <div class="gameplay2"><em>HOW TO</em> START</div>
-            <div class="gameplay3">HOW TO <em>START</em></div>
+        <div class="rightCounter">
+            <h5>12+</h5>
+            <h6 class="widthReducer">Được đề xuất bởi các phương tiện truyền thông lớn</h6>
         </div>
     </div>
-    <!---------------------------------------- TUTORIAL SECTION  ------------------------------------>
-    <div class="tutorial">
-        <div class="upperTutorial">
-            <div class="tutorialItems hidden hiddenLeft hiddenLeftPC">
-                <div class="upperTImage"><img class="firstPic" src="images/phone1.webp"></div>
-                <div class="upperTText">
-                    <div class="number">1</div>
-                    <div class="tutorialText">
-                        <div><h8>DOWNLOAD</h8></div>
-                        <div><h9><p>the application and create an account.</p></h9></div>
-                    </div>
-                </div>
-            </div>
-            <div><img class="arrow tutorialItems" src="images/Vector.webp"></div>
-            <div class="tutorialItems reverse hidden hiddenRight hiddenUpPC">
-                <div class="upperTImage"><img class="secondPic" src="images/phone2.webp"></div>
-                <div class="upperTText reverse endAlign">
-                    <div class="number">2</div>
-                    <div class="tutorialText">
-                        <div><h8>VERIFY</h8></div>
-                        <div><h9><p>the account by scanning your face to get your free shoes.</p></h9></div>
-                    </div>
-                </div>
-            </div>
-            <div><img class="arrow tutorialItems" src="images/Vector.webp"></div>
-            <div class="tutorialItems hidden hiddenLeft hiddenRightPC">
-                <div class="upperTImage"><img class="thirdPic" src="images/phone3.webp"></div>
-                <div class="upperTText">
-                    <div class="number">3</div>
-                    <div class="tutorialText">
-                        <div><h8>START</h8></div>
-                        <div><h9><p>taking your first step and be rewarded.</p></h9></div>
-                    </div>
-                </div>
-            </div>
+    <!---------------------------- CRYPTO PRICES ---------------------------------->
+    <div class="cryptoPrices">
+        <div class="titleCrypto">Giao dịch</div>
+        <div class="mainCrypto">
+            <table class="cryptoTable">
+                <tr>
+                    <th class="firstColumn">Tên</th>
+                    <th class="secondColumn" >Giá mới nhất (VND)</th>
+                    <th class="thirdColumn"  >Thay đổi</th>
+                    <th class="fourthColumn fourthColumnHeader">24h qua</th>
+                </tr>
+                <tr>
+                    <td class="firstColumn"><img src="images/bnb.png">BNB</td>
+                    <td class="secondColumn" id="bnbPrice">Loading...</td>
+                    <td class="thirdColumn"   id="bnbChange">Loading...</td>
+                    <td id="bnb-graph" class="graph fourthColumn"></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn"><img src="images/btc.png">BTC</td>
+                    <td class="secondColumn" id="btcPrice">Loading...</td>
+                    <td class="thirdColumn"  id="btcChange">Loading...</td>
+                    <td id="btc-graph" class="graph fourthColumn"></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn" ><img src="images/eth.png">ETH</td>
+                    <td class="secondColumn" id="ethPrice">Loading...</td>
+                    <td class="thirdColumn"   id="ethChange">Loading...</td>
+                    <td id="eth-graph" class="graph fourthColumn"></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn"><img src="images/trx.png">TRX</td>
+                    <td class="secondColumn" id="trxPrice">Loading...</td>
+                    <td class="thirdColumn"   id="trxChange">Loading...</td>
+                    <td id="trx-graph" class="graph fourthColumn"></td>
+                </tr>
+            </table>
         </div>
-        <div class="lowerTutorial">
-            <div class="tutorialItems reverse hidden hiddenRight hiddenLeftPC">
-                <div class="upperTImage"><img class="fourthPic" src="images/phone4.webp"></div>
-                <div class="upperTText reverse endAlign">
-                    <div class="number">4</div>
-                    <div class="tutorialText">
-                        <div><h8>RECHARGE</h8></div>
-                        <div><h9><p>different kind of shoes if you want to gain "EGGS" faster.</p></h9></div>
-                    </div>
-                </div>
-            </div>
-            <div><img class="arrow arrowBelow tutorialItems" src="images/Vector.webp"></div>
-            <div class="tutorialItems hidden hiddenLeft bottomRightPC">
-                <div class="upperTImage"><img class="fifthPic" src="images/phone5.webp"></div>
-                <div class="upperTText">
-                    <div class="number">5</div>
-                    <div class="tutorialText">
-                        <div><h8>EXCHANGE</h8></div>
-                        <div><h9><p>your "EGGS" into cash by going to "Exchange" page.</p></h9></div>
-                    </div>
-                </div>
+    </div> 
+    <!-------------------------------- STEPS  -------------------------------------->
+    <div class="steps">
+        <div class="titleSteps">
+            Ba bước để bắt đầu hành trình của bạn
+        </div>
+        <div class="stepsIcons">
+            <div class="step1"><img src="images/home_ico_ico1-1@3x.png">Tải ứng dụng</div>
+            <div class="stepLine"><img src="images/home_line@3x.png"></div>
+            <div class="step2"><img src="images/home_ico_ico1-2@3x.png">Bắt đầu đi bộ</div>
+            <div class="stepLine"><img src="images/home_line@3x.png"></div>
+            <div class="step3"><img src="images/home_ico_ico1-3@3x.png">Kiếm tiền</div>
+        </div>
+        <a href="https://vnfilesbk1.s3.amazonaws.com/app/demo/run2Riches-release-1%287%29.apk" download><div class="downloadButton">Tải ứng dụng</div></a>
+    </div> 
+    <!------------------------------- App Description --------------------------------------->
+    <div class="appDescription">
+        <img src="images/home_bg2@3x.png">
+        <div class="appDescriptionContents">
+            <div class="appLeft"><img src="images/home_img2@3x.png"></div>
+            <div class="appRight">
+                <h7>APP khuyến khích người dùng tập thể dục</h7>
+                <h8>Là một ứng dụng luyện tập tạo động lực cho người dùng nâng cao sức khỏe</h8>
             </div>
         </div>
     </div>
-    <!---------------------------------------- LIFESTYLE SECTION  ------------------------------------>
-    <div id="benefits" class="lifestyle">
-        <div class="benefits1">
-            <div class="benefits2">BENEFITS</div>
-            <div class="benefits3">BENEFITS</div>
-            <div class="benefits4">BENEFITS</div>
-            <div class="benefits3">BENEFITS</div>
-            <div class="benefits2">BENEFITS</div>
-        </div>
-        <div class="pictures">
-            <div class="pictureContainer leftBenefit">
-                <div class="photos">
-                    <img src="images/picture1.webp">
-                </div>            
-            </div>
-            <div class="pictureContainer middleBenefit">
-                <div class="photos">
-                    <img src="images/picture2.webp">
-                </div>                
-            </div>
-            <div class="pictureContainer rightBenefit">
-                <div class="photos">
-                    <img src="images/picture3.webp">
-                </div>           
+    <div class="socialMediaLinks">
+        <div class="socialLeft">
+            <h9>Tham gia cộng đồng của chúng tôi trên nền tảng mạng xã hội</h9>
+            <h10>Nhận tin tức mới nhất của chúng tôi</h10>
+            <div class="socialMediaIcons">
+                <img src="images/zalo-circular.png">
+                <a href="https://www.facebook.com/profile.php?id=100067485453717" target="_blank"><img src="images/facebook.png"></a>
+                <img src="images/instagram.png">
+                <img src="images/email.png">
             </div>
         </div>
-        <div class="leftClick"></div>
-        <div class="rightClick"></div>
-        <div class="benefitTexts" id="benefitTexts">
-            <div class="leftTextB">
-                <div class="benefitTitle">BECOMING FIT</div>
-                <div class="description">Whether you're just starting your fitness journey or looking to push your limits, our app provides the inspiration and accountability you need to achieve your fitness goals. Get ready to feel healthier, stronger, and more energized than ever before!</div>
+        <div class="socialRight"><img src="images/home_img3@3x.png"></div>
+    </div>
+    <!---------------------------------------- CORE ----------------------------------------->
+    <div class="core">
+        <div class="coreLeft"><img src="images/home_img4@3x.png"></div>
+        <div class="coreRight">
+            <div class="h11">
+                Chức năng cốt lõi của chúng tôi
             </div>
-            <div class="middleTextB">
-                <div class="benefitTitle">SAVING EARTH</div>
-                <div class="description">Every step you take contributes to reducing carbon emissions and protecting the planet. Join our community of eco-conscious individuals and help make a difference today.</div>
+            <div class="h12">
+                <img src="images/home_ico3-1@3x.png">
+                Điểm danh nhận xu
             </div>
-            <div class="rightTextB">
-                <div class="benefitTitle">EARN</div>
-                <div class="description">Earn rewards just for being active! Our app incentivizes users for every step they take, making it easier and more fun than ever to reach your fitness goals. With a variety of rewards to choose from, you'll be motivated to keep moving every day.</div>
+            <div class="h13">
+                <img src="images/home_ico3-2@3x.png">
+                Giao dịch thời gian thực
+            </div>
+            <div class="h14">
+                <img src="images/home_ico3-3@3x.png">
+                Trò chơi phong phú
             </div>
         </div>
     </div>
-    <object type="image/svg+xml" data="Untitled(3).svg"></object>
-    <!---------------------------------------- FOOTER  ------------------------------------>
+    <!----------------------------------------- Benefits --------------------------------------->
+    <div class="benefits">
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-1@3x.png"></div>
+            <div class="benefitsTitle">Tài sản được đảm bảo</div>
+            <div class="benefitsDescription">Ứng dụng yêu cầu người dùng thiết lập bảo mật tài khoản như mật khẩu hoặc nhận diện khuôn mặt. Ngoài ra, ứng dụng còn cung cấp bảo mật đa lớp như xác thực danh tính. </div>
+        </div>
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-2@3x.png"></div>
+            <div class="benefitsTitle">Dịch vụ khách hàng 24h</div>
+            <div class="benefitsDescription">Đội ngũ chăm sóc khách hàng cung cấp dịch vụ 24h hỗ trợ mọi nhu cầu và giải đáp thắc mắc của khách hàng nhanh nhất có thể.</div>
+        </div>
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-3@3x.png"></div>
+            <div class="benefitsTitle">An toàn và đáng tin cậy</div>
+            <div class="benefitsDescription"> Ứng dụng thực hiện các biện pháp hiệu quả để bảo vệ thông tin cá nhân và dữ liệu quan trọng của người dùng nhằm ngăn chặn truy cập trái phép và rò rỉ thông tin.</div>
+        </div>
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-4@3x.png"></div>
+            <div class="benefitsTitle">Khả năng vô tận</div>
+            <div class="benefitsDescription">Người dùng có thể đạt được mục tiêu thu nhập của mình bằng cách hoàn thành nhiệm vụ và nhận phần thưởng, đồng thời tận hưởng tính linh hoạt và chủ động của ứng dụng.</div>
+        </div>
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-5@3x.png"></div>
+            <div class="benefitsTitle">Trò chơi thú vị</div>
+            <div class="benefitsDescription">Ứng dụng cung cấp nhiều nội dung giải trí, người dùng có thể tương tác, chia sẻ và giao lưu với những người dùng khác, mang đến trải nghiệm phong phú và thú vị hơn.</div>
+        </div>
+        <div class="benefitsContainer">
+            <div class="benefitsIcon"><img src="images/home_ico4-6@3x.png"></div>
+            <div class="benefitsTitle">Số liệu thị trường thực tế</div>
+            <div class="benefitsDescription">Giá và số lượng mua/bán tốt nhất được cập nhật liên tục theo thị trường thực tế. Dữ liệu phản ánh mức độ sẵn sàng và độ sâu giao dịch của người mua và người bán trên thị trường giúp đánh giá các điểm hỗ trợ và kháng cự.</div>
+        </div>
+    </div>
+    <!----------------------------------------- App Description --------------------------------------->
+    <div class="appDescriptionDownload">
+        <div class="appDescriptionLeft">Run2Riches khuyến khích mọi người trở nên tích cực hơn trong việc đi bộ để cải thiện sức khỏe và kiếm phần thưởng trong lúc thực hiện nhiệm vụ.</div>
+        <div class="appDescriptionRight">
+            <div class="downloadButtons">
+                <div class="download">
+                    iOS
+                </div>
+                <div class="download">
+                    Android
+                </div>
+            </div>
+            <div class="qrCode">二维码</div>
+        </div>
+    </div>
+    <!---------------------------------------------- FOOTER ------------------------------------------>
     <div class="footer">
-        <div class="upFooter">
-            <div>
-                <h3>WALKCLUB</h3>
-            </div>
-            <div class="center">
-                <a href="privacy.html"><h4>Privacy Policy</h4></a>
-                <h5>All Rights Reserved | Walk Club © 2023</h5>
-            </div>
-            <div class="footerRight">
-                <h6>SOCIAL MEDIA:</h6>
-                <div class="footerIcons">
-                    <div class="footerIconsContainer"><a href="https://t.me/walkclubofficial" target=”_blank”><i class="fa-solid fa-paper-plane"></i></a></div>
-                    <div class="footerIconsContainer"><a href="https://twitter.com/_walkclub" target=”_blank”><i class="fa-brands fa-twitter"></i></a></div>
-                    <div class="footerIconsContainer"><a href="https://www.instagram.com/_walkclub/" target=”_blank”><i class="fa-brands fa-instagram"></i></a></div>
-                    <div class="footerIconsContainer"><a href="https://www.facebook.com/WalkclubOfficial" target=”_blank”><i class="fa-brands fa-square-facebook"></i></a></div>
-                    <div class="footerIconsContainer"><a href="https://www.youtube.com/@WalkClubOfficial1/featured" target=”_blank”><i class="fa-brands fa-youtube"></i></a></div>
-                    <div class="footerIconsContainer"><a href="mailto:contact@walkclub.com" target=”_blank”><i class="fa-regular fa-envelope"></i></a></div>
-                </div>
-                <h6>CONTACT US:</h6>
-                <h7><a href="mailto:contact@walkclub.com" target=”_blank”>contact@walkclub.com</a></h7>
-            </div>
-        </div>
+        © All Right Reserved By Run2Riches  v 1.1.1.0 Copyright 2023 Run2Riches Inc.Đã đăng ký Bản quyền
     </div>
-    <!---------------------------------------- Chat support  ------------------------------------>
-    <div class="chatSupport">
-        <div class="chathead" onclick="showChat()">
-            <img src="images/logo.webp">
-            <div class="online"></div>
-        </div>
-        <div class="chat" id="chat">
-            <div class="xIcon" onclick="showChat()"><i class="fa-solid fa-xmark"></i></div>
-            <div class="chatbox__header">
-                <div class="headerLogo"><img src="images/logo.webp"></div>    
-                <div class="headerText">WALK CLUB</div>                            
-            </div>
-            <div class="chat-box">
-                <div class="message-container visitor">
-                  <div class="message">How can we help you?</div>
-                </div>
-                <div class="message-container operator">
-                  <div class="message">Hi there!</div>
-                </div>
-                <div class="message-container visitor">
-                    <div class="message">Select the category you're interested in:</div>
-                </div>
-                <div class="choices">
-                    <div class="message-container choice">
-                        <div class="message">Withdrawal and deposits</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Account verification</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Referral program</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Shoe and reward system</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Leaderboard and challenges</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Exchange page</div>
-                    </div>
-                    <div class="message-container choice">
-                        <div class="message">Market page</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div ></div>
     
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+
+function getPrices() {
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum,bitcoin,tron,binancecoin&vs_currencies=vnd')
+    .then(response => response.json())
+    .then(data => {
+        const ethPrice = data.ethereum.vnd;
+        const btcPrice = data.bitcoin.vnd;
+        const trxPrice = data.tron.vnd;
+        const bnbPrice = data.binancecoin.vnd;
+
+        document.getElementById('ethPrice').textContent = `${ethPrice.toLocaleString()}`;
+        document.getElementById('btcPrice').textContent = `${btcPrice.toLocaleString()}`;
+        document.getElementById('trxPrice').textContent = `${trxPrice.toLocaleString()}`;
+        document.getElementById('bnbPrice').textContent = `${bnbPrice.toLocaleString()}`;
+    })
+    .catch(error => {
+        console.log('Error:', error);
+        document.getElementById('ethPrice').textContent = 'Error retrieving price';
+        document.getElementById('btcPrice').textContent = 'Error retrieving price';
+        document.getElementById('trxPrice').textContent = 'Error retrieving price';
+        document.getElementById('bnbPrice').textContent = 'Error retrieving price';
+    });
+}
+
+getPrices();
+
+function getChange() {
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,tron,binancecoin&vs_currencies=usd&include_24hr_change=true')
+    .then(response => response.json())
+    .then(data => {
+      const bitcoinChange = data.bitcoin.usd_24h_change;
+      const ethereumChange = data.ethereum.usd_24h_change;
+      const trxChange = data.tron.usd_24h_change;
+      const bnbChange = data.binancecoin.usd_24h_change;
+
+      document.getElementById('btcChange').textContent = `${bitcoinChange.toLocaleString()}%`;
+      document.getElementById('ethChange').textContent = `${ethereumChange.toLocaleString()}%`;
+      document.getElementById('trxChange').textContent = `${trxChange.toLocaleString()}%`;
+      document.getElementById('bnbChange').textContent = `${bnbChange.toLocaleString()}%`;
+
+      const bnbChangeElement = document.getElementById("bnbChange");
+      const bnbChangeText = parseFloat(bnbChange).toFixed(2);
+
+      if (bnbChangeText > 0) {
+        bnbChangeElement.style.color = "#52AF99";
+        bnbChangeElement.textContent = "+" + bnbChangeText + "%"; // Add "+" sign
+      } else if (bnbChangeText < 0) {
+        bnbChangeElement.style.color = "#E05A38";
+      }
+
+      const ethChangeElement = document.getElementById("ethChange");
+      const ethChangeText = parseFloat(ethereumChange).toFixed(2);
+
+      if (ethChangeText > 0) {
+        ethChangeElement.style.color = "#52AF99";
+        ethChangeElement.textContent = "+" + ethChangeText + "%"; // Add "+" sign
+      } else if (ethChangeText < 0) {
+        ethChangeElement.style.color = "#E05A38";
+      }
+
+      const trxChangeElement = document.getElementById("trxChange");
+      const trxChangeText = parseFloat(trxChange).toFixed(2);
+
+      if (trxChangeText > 0) {
+        trxChangeElement.style.color = "#52AF99";
+        trxChangeElement.textContent = "+" + trxChangeText + "%"; // Add "+" sign
+      } else if (trxChangeText < 0) {
+        trxChangeElement.style.color = "#E05A38";
+      }
+
+      const btcChangeElement = document.getElementById("btcChange");
+      const btcChangeText = parseFloat(bitcoinChange).toFixed(2);
+
+      if (btcChangeText > 0) {
+        btcChangeElement.style.color = "#52AF99";
+        btcChangeElement.textContent = "+" + btcChangeText + "%"; // Add "+" sign
+      } else if (btcChangeText < 0) {
+        btcChangeElement.style.color = "#E05A38";
+      }
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
+}
+
+getChange();
+
+
+</script>
+<!-- // ----------------------------------------- GRAPHS ------------------------------------------------- -->
+
+<script>
+    function createGraph(id, currency) {
+      fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=1&interval=1h`)
+        .then(response => response.json())
+        .then(data => {
+          // Extract timestamps and prices from the API response
+          var timestamps = data.prices.map(entry => new Date(entry[0]));
+          var prices = data.prices.map(entry => entry[1]);
+
+          // Determine the color of the graph line based on price change
+          var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
+
+          // Create a trace for the graph
+          var trace = {
+            x: timestamps,
+            y: prices,
+            mode: 'lines',
+            line: { color: color } // Set line color dynamically
+          };
+
+          // Define the layout
+          var layout = {
+            showlegend: false, // Hide legend
+            xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
+            yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
+            paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
+            plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
+            margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
+          };
+
+          // Combine the trace and layout and plot the graph
+          Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+
+    // Create graphs for each cryptocurrency
+    createGraph('btc-graph', 'bitcoin');
+    createGraph('eth-graph', 'ethereum');
+    createGraph('bnb-graph', 'binancecoin');
+    createGraph('trx-graph', 'tron');
+  </script>
+
+  <style>
+    
+  </style>
 </html>

@@ -522,8 +522,8 @@ h10 {
     align-items: center;
 }
 .qrCode {
-    width: 11vw;
-    height: 10.35vw;
+    width: 10.6vw;
+    height: 10.6vw;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -535,7 +535,7 @@ h10 {
     gap: 1.5vw;
 }
 .downloadButtons {
-    gap: 2vw;
+    gap: 0.5vw;    
     display: flex;
     flex-direction: column;
 }
@@ -571,6 +571,9 @@ h10 {
     .menu{
         display: none;
     }
+    .navbar {
+        width: 81%;
+    }
 }
 /*---------------------------------------------------- BELOW ------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -600,7 +603,7 @@ h10 {
     }
     
     .downloadSection {
-        height: 141vw;
+        height: 131vw;
         margin-top: 0;
         position: relative;
         padding: 6vw 10vw;
@@ -638,7 +641,7 @@ h10 {
     }
     .phone {
         position: absolute;
-        width: 61vw;
+        width: 54vw;
         bottom: 0;
     }
     .counter {
@@ -748,6 +751,7 @@ h10 {
         flex-direction: column;
     }
     .downloadButtons {
+        gap: 3.5vw;
         flex-direction: row;
     }
     .appDescriptionLeft {

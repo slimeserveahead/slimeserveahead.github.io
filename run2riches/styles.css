@@ -49,6 +49,10 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Helvetica', sans-serif;
+}
+a {
+    text-decoration: none;
 }
 h1 {
     font-size: 0.8vw;
@@ -69,11 +73,9 @@ h1 {
     width: 100%;
     z-index: 98;
 }
-
 .navbarLogo img {    
     width: 3vw;
 }
-
 .navbarMenu {
     display: flex;
     gap: 7vw;
@@ -116,7 +118,6 @@ h1 {
     bottom: 0;
     right: 5vw;
 }
-
 h2 {
     margin-top: 0;
     font-family: 'Helvetica Bold', sans-serif;
@@ -553,7 +554,327 @@ h10 {
     color: #7E7D7D;
     font-size: 1vw;
 }
+/*---------------------------------------------------- DOWNLOAD PAGE SECTION STARTS HERE ------------------------------------*/
+.downloadPage {
+    position: relative;
+    padding-top: 6vw;
+    overflow: hidden;
+}
+.dpbgimg {
+    width: 118%;
+}
+.downloadPageContents {
+    position: absolute;
+    z-index: 2;
+    top: 6vw;
+    left: -6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 52vw;
+    width: 107vw;
+    gap: 11vw;
+}
+.topOne {
+    font-size: 2vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    font-family: 'PingFang SC 400', sans-serif;
+    color: #4E62E4;
+}
+.topOne img {
+    width: 3vw;
+}
+.topTwo {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.topThree {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5vw;
+}
+.rightDownloadP img{
+    width: 29vw;
+}
+.outerSquare {
+    margin-top: 3vw;
+    background-color: white;
+    height: 14vw;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftBotDownloadP {
+    display: flex;
+    align-items: center;
+}
+.downloadPButtons img {
+    width: 1.4vw;
+}
+.iosDownloadP, .androidDownloadP {
+    background-color: #262B27;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    height: 4vw;
+    width: 14vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    transform: translateY(2vw);
+    font-family: 'PingFang SC 400', sans-serif;
+    font-size: 1.3vw;
+}
+.innerSquare {
+    height: 13vw;
+    width: 13vw;
+    background-color: #C7C3C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+/* ---------------------------------------------------- INTRODUCTION ------------------------------------ */
+.introduction {
+    position: relative;
+    padding-top: 6vw;
+}
+.aboutImg {
+    width: 100%;
+}
+.bannerContents {
+    position: absolute;
+    top: 13vw;
+    left: 15vw;
+}
+.h15 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+.h16 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.7vw;
+}
+.introSecondSection {
+    background-color: #F7F9FB;
+    margin-top: 0vw;
+    padding: 3vw 14vw;
+}
+.h17 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333333;
+    font-size: 2vw;
+}
+.h18 p{
+    font-family: 'Helvetica', sans-serif;
+    text-align: justify;
+    color: #333333;
+    font-size: 1.8vw;
+}
+.h19 {
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vw;
+    font-size: 2.5vw;
+}
+.introContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.maps img {
+    width: 40vw;
+}
+.h20 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.6vw;
+    font-family: 'Helvetica', sans-serif;
+}
+.introContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.h20 img {
+    width: 2vw;
+}
+.h21 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 10vw;
+}
+.h22 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.5vw;
+    color: #989898;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+.fourthContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 18vw;
+}
+.fourthLeft img {
+    width: 15vw;
+}
+.fourthRight {
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+.h23 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2vw;
+}
+.h24 {
+    color: #989898;
+    font-size: 1.5vw;
+}
+.h25 {
+    font-size: 1.5vw;
+    color: #4AA6F9;
+}
+/* ------------------------------------------------- INITIAL -------------------------------------------- */
 
+.initialBannerBG {
+    width: 150%;
+    transform: translate(-47vw, 6vw)
+}
+.initialBanner {
+    position: relative;
+    height: 25vw;
+    overflow: hidden;
+    height: 26vw;
+}
+
+
+.initialBannerContents {
+    position: absolute;
+    top: 12vw;
+    left: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.IBCTop {
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #8291F3;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.5vw;
+}
+.IBCTop img{
+    width: 3vw;
+}
+.IBCBottom {
+    font-size: 2.5vw;
+    font-family: 'Helvetica Bold', sans-serif;
+}
+.secondSectionTitle {
+    margin-top: 10vw;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    margin-bottom: 6vw;
+    font-family: 'Helvetica Bold', sans-serif;
+    color: #333333;
+}
+.initalSecondSection {
+    padding: 0px 10vw;
+}
+.instructions {
+    padding: 0vw 16vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 58vw;
+    align-items: center;
+}
+.instruction {
+    width: 25vw;
+    font-size: 1.6vw;
+}
+.instructionDescription {
+    text-align: justify;
+    margin-bottom: 2vw;
+    color: #8C8C8C;
+    font-size: 1vw;
+}
+.instructionTitle {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+.thirdSection {
+    background-color: #F7F9FB;
+    padding-top: 4vw;
+}
+.thirdSectionTitle {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 2vw;
+    font-family: 'Helvetica Bold', sans-serif;   
+    margin-bottom: 3vw;
+}
+.testimonialsContainer {
+    width: 15vw;
+    padding: 1.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    border: 0.01vw solid #DCDCDC;
+    margin-bottom: 2vw;
+}
+.testimonials {
+    color: #938d8d;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    text-align: justify;
+}
+.allTestimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75vw;
+    padding: 0 20vw;
+    height: 60vw;
+}
+.user {
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 2vw;
+    margin-right: 0.5vw;
+}
+.moveDown {
+    transform: translateY(3vw);
+}
 /*---------------------------------------------------- RESPONSIVENESS ------------------------------------*/
 @media screen and (min-width: 768px) {
     .phone{
@@ -573,6 +894,18 @@ h10 {
     }
     .navbar {
         width: 81%;
+    }
+    .dpbgimgphone {
+        display: none;
+    }
+    .aboutImgPhone {
+        display: none;
+    }
+    .pPhone {
+        display: none;
+    }
+    .introContactDetails{
+        display: none;
     }
 }
 /*---------------------------------------------------- BELOW ------------------------------------*/
@@ -896,6 +1229,7 @@ h10 {
     }
     .active {
         background-color: #4E63E4;
+        color: white;
     }
     .menu {
         transform: translateX(-7vw);
@@ -920,4 +1254,239 @@ h10 {
         visibility: visible;
         opacity: 0.5;
       }
+    /* ---------------------------- DONWLOAD PAGE ------------------------*/
+    .dpbgimg {
+        display: none;
+    }
+    .dpbgimgphone{
+        width: 100%;
+    }
+    .dpbgimg img{
+        width: 115%;
+    }
+    .downloadPageContents {
+        top: 64vw;
+        flex-direction: column;
+    }
+    .topOne img {
+        width: 6vw;
+    }
+    .topOne {
+        font-size: 4vw;
+        justify-content: center;
+    }
+    .topTwo {
+        font-size: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+    .topThree {
+        font-size: 2.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .qrCodeThree{
+        display: none;
+    }
+    .downloadPButtons {
+        display: flex;
+    }
+    .leftBotDownloadP {
+        justify-content: center;
+    }
+    .iosDownloadP, .androidDownloadP {
+        height: 10vw;
+        width: 33vw;
+        margin-top: 6vw;
+        font-size: 3vw;
+    }
+    .downloadPButtons img {
+        width: 2.4vw;
+    }
+    .rightDownloadP img {
+        width: 71vw;
+    }
+    /*----------------- INTRODUCTION PAGE ------------------------*/
+    .aboutImg{
+        display: none;
+    }
+    .aboutImgPhone {
+        width: 100%;
+        position: absolute;
+    }
+    .introduction{
+        padding-top: 12vw;
+    }
+    .bannerContents {
+        position: absolute;
+        top: 26vw;
+        left: 14vw;
+    }
+    .introSecondSection {
+        margin-top: 35vw;
+    }
+    .h16 {
+        font-size: 2.7vw;
+    }
+    .h17{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 3vw;
+    }
+    .pWeb {
+        display: none;
+    }
+    .h18 p {
+        font-family: 'Helvetica', sans-serif;
+        text-align: justify;
+        color: #333333;
+        font-size: 2.8vw;
+        line-height: 4vw;
+    }
+    .introContactDetails {
+        margin-top: 7vw;
+        background-color: white;
+        border: 0.01vw solid #EBEBEB;
+        padding: 4vw 8vw;
+        gap: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactContainer {
+        display: flex;
+        gap: 4vw;
+    }
+    .leftContact img{
+        width: 8vw;
+    }
+    .rightContact {
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .contactTitle {
+        font-size: 3vw;
+    }
+    .introContainer {
+        flex-direction: column;
+    }
+    .maps img {
+        width: 71vw;
+    }
+    .introContacts {
+        align-self: start;
+        padding-left: 15vw;
+    }
+    .h19{
+        font-size: 3.5vw;
+    }
+    .h20 img {
+        width: 5vw;
+    }
+    .h20{
+        font-size: 2.3vw;
+        gap: 2vw;
+    }
+    .introHide{
+        display: none;
+    }
+    .introThirdSection {
+        margin-bottom: 4vw;
+    }
+    .introFourthSection {
+        background-color: #F7F9FB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h21 {
+        margin-top: 4vw;
+        font-size: 3.5vw;
+    }
+    .h22 {
+        font-size: 2.5vw;
+        width: 48vw;
+        text-align: center;
+    }
+    .h23 {
+        font-size: 2.4vw;
+    }
+    .h24 {
+        font-size: 2.1vw;
+    }
+    .h25 {
+        font-size: 2.1vw;
+    }
+    /* --------------------------- INTIAL ------------------------------------ */
+    .IBCTop {
+        display: none;
+    }
+    .IBCBottom {
+        font-size: 4.5vw;
+        transform: translate(-6vw, 4vw);
+    }
+    .initialBannerBG {
+        width: 130%;
+        transform: translate(-17vw, 10vw);
+    }
+    .secondSectionTitle{
+        font-size: 4vw;
+    }
+    .instructions{
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 0vw 5vw;
+    }
+    .instruction {
+        width: auto;
+    }
+    .instructionTitle {
+        margin-bottom: 3vw;
+        font-size: 4vw;
+    }
+    .instructionDescription {
+        font-size: 3.5vw;
+        margin-bottom: 7vw;
+    }
+    .thirdSectionTitle {
+        font-size: 4vw;
+        margin-bottom: 6vw;
+        margin-top: 3vw;
+    }
+    .allTestimonials {
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 0 7vw;
+    }
+    .moveDown {
+        transform: translateY(0);
+    }
+    .testimonialsContainer {
+        width: 77vw;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5vw;
+        margin-bottom: 5vw;
+    }
+    .user {
+        font-size: 4.1vw;
+    }
+    .user img {
+        width: 8vw;
+        margin-right: 2vw;
+    }
+    .testimonials {
+        font-size: 4vw;
+        color: #333333;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+    }
+    .initialHide {
+        display: none;
+    }
 }

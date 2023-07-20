@@ -253,8 +253,9 @@ h6 {
 /*--------------------------- CRYPTO PRICES ----------------------*/
 .cryptoPrices {
     background-color: #F7F9FB;
-    height: 35vw;
+    height: auto;
     padding: 0 10vw;
+    padding-bottom: 2vw;
     overflow-x: hidden;
 }
 .cryptoTable {

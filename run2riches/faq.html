@@ -18,22 +18,27 @@
             <h1><strong>Run2Riches</strong></h1>
         </div>
         <div class="navbarMenu">
-            <a href="index.html"><h1><strong>Home</strong></h1></a>
+            <a href="home.html"><h1><strong>Home</strong></h1></a>
             <a href="faq.html"><h1><strong>FAQ</strong></h1></a>
             <a href="download.html"><h1><strong>Download</strong></h1></a>
             <a href="contact_us.html"><h1><strong>Contact us</strong></h1></a>
         </div>
-        <div class="navbarRight">
+        <div id="languageSelectorButton" class="navbarRight">
             <img src="images/home_yuyan@3x.webp">
             <h1><strong>English</strong></h1>
             <img src="images/home_sanjiao@3x.webp">
         </div>
     </div>
+    <!------------------------------------------------- LANGUANGE SELECTOR -------------------------------------------------->
+    <div class="languageSelector">
+        <a href="câu_hỏi_thường_gặp.html"><div class="language">Tiếng Việt</div></a>
+        <div class="language selectedLanguage">English</div>
+    </div>
     <!------------------------- MOBILE SIDEBAR -------------------------------->
     <div class="sidebar" id="sidebar">
         <div class="xButton" id="xButton"><img src="images/guanbi@3x.webp"></div>
         <div class="sidebarMenus">
-            <a href="index.html"><div class="sidebarMenu"><img src="images/cebian_ico1@3x_inactive.webp">Home</div></a>
+            <a href="home.html"><div class="sidebarMenu"><img src="images/cebian_ico1@3x_inactive.webp">Home</div></a>
             <a href="faq.html"><div class="sidebarMenu active"><img src="images/cebian_ico2@3x_active.webp">FAQ</div></a>
             <a href="download.html"><div class="sidebarMenu"><img src="images/cebian_ico3@3x.webp">Download</div></a>
             <a href="contact_us.html"><div class="sidebarMenu"><img src="images/cebian_ico4@3x.webp">Contact us</div></a>
@@ -224,5 +229,17 @@
         sidebar.classList.remove("sidebarShow");
         blackBG.classList.remove("blackBGShow");
     }); 
+    // ----------------------------------LANGUAGE SELCTOR---------------------------------------------//
+
+    // Handle the click event of the image
+    // Get references to the image and language selector elements
+    const languageImage = document.getElementById('languageSelectorButton');
+    const languageSelector = document.querySelector('.languageSelector');
+
+    // Add a click event listener to the image
+    languageImage.addEventListener('click', function () {
+        // Toggle the "showLanguageSelector" class on the language selector
+        languageSelector.classList.toggle('showLanguageSelector');
+    });
 </script>
 </html>

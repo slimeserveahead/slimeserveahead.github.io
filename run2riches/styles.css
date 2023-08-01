@@ -550,18 +550,22 @@ h10 {
     width: 37vw;
     font-size: 1.5vw;
     margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
 }
-.download{
-    border: 0.01vw solid white;
-    font-family: 'Helvetica Bold', sans-serif;
+.appDescriptionLeft img {
+    width: 15vw;
+    margin-top: 1vw;
 }
 .appDescription {
     display: flex;
     flex-direction: row;
 }
 .download {
+    border: 0.01vw solid white;
+    font-family: 'Helvetica Bold', sans-serif;
     width: 16vw;
-    height: 4.9vw;
+    height: 7.9vw;
     color: white;
     display: flex;
     font-size: 1.3vw;
@@ -569,15 +573,15 @@ h10 {
     align-items: center;
 }
 .qrCode {
-    width: 10.6vw;
-    height: 10.6vw;
+    width: 16.6vw;
+    height: auto;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2vw;
 }
-.qrCode img{
+.qrCode img {
     width: 100%;
 }
 .appDescriptionRight {
@@ -585,12 +589,18 @@ h10 {
     gap: 1.5vw;
 }
 .downloadButtons {
-    gap: 0.5vw;    
+    gap: 0.9vw;
     display: flex;
     flex-direction: column;
 }
+
 .steps a{
     text-decoration: none;
+}
+.certificate {
+	font-size: 1.2vw;
+    margin-top: 3vw;
+    font-family: 'Arial';
 }
 /*---------------------------------------------------- FOOTER ------------------------------------*/
 .footer{
@@ -652,8 +662,6 @@ h10 {
 .outerSquare {
     margin-top: 3vw;
     background-color: white;
-    height: 14vw;
-    width: 14vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,13 +689,14 @@ h10 {
     font-size: 1.3vw;
 }
 .innerSquare {
-    height: 13vw;
-    width: 13vw;
     background-color: #C7C3C3;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5vw;
+}
+.innerSquare img {
+    width: 12vw;
 }
 /* ---------------------------------------------------- INTRODUCTION ------------------------------------ */
 .introduction {
@@ -1204,6 +1213,10 @@ h10 {
         text-align: justify;
         margin-top: 3vw;
     }
+    .appDescriptionLeft img{
+        width: 26vw;
+        margin-top: 5vw;
+    }
     .footer{
         display: none;
     }
@@ -1246,6 +1259,10 @@ h10 {
     }
     h4 {
         font-size: 3vw;
+    }
+    .certificate {
+        font-size: 3.2vw;
+        margin-top: 6vw;
     }
     .appDescriptionDownload {
         padding: 2vw 2vw;

@@ -577,6 +577,9 @@ h10 {
     align-items: center;
     font-size: 1.2vw;
 }
+.qrCode img{
+    width: 100%;
+}
 .appDescriptionRight {
     display: flex;
     gap: 1.5vw;
@@ -748,11 +751,34 @@ h10 {
     gap: 1vw;
     font-size: 1.6vw;
     font-family: 'Helvetica', sans-serif;
+    background-color: #47729e;
+    height: 3.5vw;
+    width: 30vw;
+    padding-left: 1vw;
+    border-radius: 2vw;
+    transition: transform 0.3s;
+}
+.h20:hover {
+    transform: scale(1.1);
+}
+.h20Text {
+    background-color: white;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 2vw;
+    width: 25.8vw;
+    padding-left: 1vw;
 }
 .introContacts {
     display: flex;
     flex-direction: column;
     gap: 2vw;
+}
+.introContacts a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s;
 }
 .h20 img {
     width: 2vw;
@@ -779,6 +805,7 @@ h10 {
     display: flex;
     flex-direction: row;
     padding: 0 18vw;
+    margin-bottom: 4vw;
 }
 .fourthLeft img {
     width: 15vw;
@@ -1401,6 +1428,9 @@ h10 {
     .introduction{
         padding-top: 12vw;
     }
+    .fourthContainer {
+        margin-bottom: 7vw;
+    }
     .bannerContents {
         position: absolute;
         top: 26vw;
@@ -1473,6 +1503,15 @@ h10 {
     .h20{
         font-size: 2.3vw;
         gap: 2vw;
+        height: 7vw;
+        width: 46vw;
+        border-radius: 4vw;
+    }
+    .h20Text{
+        height: 6vw;
+        width: 36.5vw;
+        border-radius: 4vw;
+        padding-left: 2vw;
     }
     .introHide{
         display: none;

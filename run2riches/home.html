@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCVNXHBMLR"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGHF3RR83K"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-RCVNXHBMLR');
+    gtag('config', 'G-RGHF3RR83K');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,7 +102,7 @@
                     <th class="firstColumn">Token</th>
                     <th class="secondColumn" >Latest price (VND)</th>
                     <th class="thirdColumn"  >Change</th>
-                    <th class="fourthColumn fourthColumnHeader">In the last 24 hours</th>
+                    <th class="fourthColumn fourthColumnHeader">5 days chart</th>
                 </tr>
                 <tr>
                     <td class="firstColumn"><img src="images/wcoin_logo.webp">Wcoin</td>
@@ -353,7 +353,7 @@ getChange();
 
 <script>
     function createGraph(id, currency) {
-      fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=1&interval=1h`)
+      fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=5&interval=daily`)
         .then(response => response.json())
         .then(data => {
           // Extract timestamps and prices from the API response

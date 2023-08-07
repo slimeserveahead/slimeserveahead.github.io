@@ -2,12 +2,10 @@
     font-family: 'Helvetica';
     src: url('fonts/Helvetica.ttf') format('truetype');
 }
-  
 @font-face {
     font-family: 'Helvetica Bold';
     src: url('fonts/Helvetica-Bold.ttf') format('truetype');
-}
-  
+}  
 @font-face {
     font-family: 'Helvetica Bold Oblique';
     src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
@@ -16,27 +14,22 @@
     font-family: 'Helvetica Bold Oblique';
     src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
 }
-  
 @font-face {
     font-family: 'Helvetica Compressed';
     src: url('fonts/helvetica-compressed-5871d14b6903a.otf') format('opentype');
-}
-  
+}  
 @font-face {
     font-family: 'Helvetica Light';
     src: url('fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
 }
-  
 @font-face {
     font-family: 'Helvetica Oblique';
     src: url('fonts/Helvetica-Oblique.ttf') format('truetype');
 }
-  
 @font-face {
     font-family: 'Helvetica Rounded Bold';
     src: url('fonts/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
 }
-
 @font-face {
     font-family: 'PingFang SC Regular';
     src: url('fonts/pingfang\ \(regular\).ttf') format('truetype');
@@ -91,7 +84,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .navbarRight img:nth-child(1) {
     width: 1.2vw;
     margin-right: 0.5vw;
@@ -199,7 +191,6 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-
 .androidIcon{
     font-family: 'Helvetica', sans-serif;
     background-color: black;
@@ -210,14 +201,12 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-
 .androidIcon, .iosIcon {
     font-size: 1vw;
 }
 .firstQRCode img {
     width: 3.5vw;
 }
-
 .androidIcon img{
     width: 1vw;
     margin-right: 0.5vw;
@@ -436,6 +425,10 @@ h8 {
 }
 .socialMediaIcons img {
     width: 4vw;
+    transition: transform 0.3s;
+}
+.socialMediaIcons img:hover { 
+    transform: scale(1.2);
 }
 .socialMediaIcons {
     margin-top: 2vw;
@@ -695,7 +688,8 @@ h10 {
 .certificate {
     font-size: 1.2vw;
     margin-top: 3vw;
-    font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
 }
 /* ---------------------------------------------------- INTRODUCTION ------------------------------------ */
 .introduction {
@@ -820,6 +814,7 @@ h10 {
 }
 .fourthRight {
     padding: 0 6vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -849,8 +844,6 @@ h10 {
     overflow: hidden;
     height: 26vw;
 }
-
-
 .initialBannerContents {
     position: absolute;
     top: 10vw;
@@ -1203,10 +1196,14 @@ h10 {
     .certificate {
         font-size: 3.2vw;
         margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(13vw);
     }
     .downloadButtons {
         gap: 3.5vw;
         flex-direction: row;
+        transform: translateY(-26vw);
     }
     .appDescriptionLeft {
         width: 84vw;
@@ -1216,9 +1213,9 @@ h10 {
         text-align: justify;
         margin-top: 3vw;
     }
-    .appDescriptionLeft img{
+    .appDescriptionLeft img {
         width: 26vw;
-        margin-top: 5vw;
+        margin-top: 2vw;
     }
     .footer{
         display: none;
@@ -1331,6 +1328,13 @@ h10 {
     .sidebarShow {
         transform: translateX(0);
     }
+    .sidebarMenus {
+        margin-top: 5vw;
+        color: #4E63E4;
+    }
+    .sidebarMenus a{
+        color: #4E63E4;
+    }
     .sidebarMenu {
         font-family: 'Helvetica', sans-serif;
         height: 10vw;
@@ -1341,11 +1345,48 @@ h10 {
         border-radius: 2vw;
         padding-left: 4vw;
         font-size: 3vw;
-        
     }
     .sidebarMenu img {
         width: 4vw;
         margin-right: 2vw;
+    }
+    .sidebarLanguageSelector {
+        margin-top: 7vw;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .sidebarArrowdown {
+        margin-left: 2vw;
+    }
+    .languageContainer {
+        border-radius: 2vw;
+        border: 0.4vw solid #4E63E4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: all 0.3s;
+    }
+    .sidebarLanguage {
+        height: 8vw;
+        width: 27vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4E63E4;
+        font-size: 3vw;
+    }
+    .selectedSidebarLanguage {
+        background-color: #4E63E4;
+        color: white;
+    }
+    .showSidebarLanguageSelector {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
     }
     .xButton {
         align-self:flex-start;
@@ -1375,12 +1416,11 @@ h10 {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s;
-      }
-      
-      .blackBGShow {
+    }
+    .blackBGShow {
         visibility: visible;
         opacity: 0.5;
-      }
+    }
     /* ---------------------------- DONWLOAD PAGE ------------------------*/
     .dpbgimg {
         display: none;

@@ -52,6 +52,16 @@
             <a href="câu_hỏi_thường_gặp.html"><div class="sidebarMenu active"><img src="images/cebian_ico2@3x_active.webp">Câu hỏi thường gặp</div></a>
             <a href="tải_ứng_dụng.html"><div class="sidebarMenu"><img src="images/cebian_ico3@3x.webp">Tải ứng dụng</div></a>
             <a href="liên_hệ_chúng_tôi.html"><div class="sidebarMenu"><img src="images/cebian_ico4@3x.webp">Liên hệ chúng tôi</div></a>
+            <a href="hủy_tài_khoản.html"><div class="sidebarMenu"><img src="images/cancel_account_icon.png">Hủy tài khoản</div></a>
+            <div class="sidebarMenu sidebarLanguageSelector" id="sidebarLanguageSelector">
+                <img src="images/sidebar_world.png">
+                Tiếng Việt
+                <img class="sidebarArrowdown" src="images/sidebar_arrowdown.png">
+            </div>
+        </div>
+        <div class="languageContainer">
+            <div class="sidebarLanguage selectedSidebarLanguage">Tiếng Việt</div>
+            <a href="faq.html"><div class="sidebarLanguage">English</div></a>
         </div>
     </div>
     <div class="blackBG" id="blackBG"></div>
@@ -200,8 +210,10 @@
     <div class="appDescriptionDownload">
         <div class="appDescriptionLeft">
             <div>Run2Riches khuyến khích mọi người trở nên tích cực hơn trong việc đi bộ để cải thiện sức khỏe và kiếm phần thưởng trong lúc thực hiện nhiệm vụ.</div>
-            <div class="certificate"><strong>CHỨNG NHẬN</strong></div>
-            <img src="images/vn_cert_logo.png">
+            <div class="certificate">
+                <strong>CHỨNG NHẬN</strong>
+                <img src="images/vn_cert_logo.webp">
+            </div>
         </div>
         <div class="appDescriptionRight">
             <div class="downloadButtons">
@@ -215,7 +227,7 @@
                 </a>
             </div>
             <div class="qrCode">
-                <img src="images/erweima@3x.jpg">
+                <img src="images/erweima@3x.webp">
             </div>
         </div>
     </div>
@@ -254,6 +266,13 @@
     languageImage.addEventListener('click', function () {
         // Toggle the "showLanguageSelector" class on the language selector
         languageSelector.classList.toggle('showLanguageSelector');
+    });
+    // ----------------------------SIDEBAR LANGUAGE SELECTOR---------------------------------------//
+    const sidebarLanguageSelector = document.getElementById('sidebarLanguageSelector');
+    const languageContainer = document.querySelector('.languageContainer')
+
+    sidebarLanguageSelector.addEventListener('click', function() {
+        languageContainer.classList.toggle('showSidebarLanguageSelector')
     });
 </script>
 </html>

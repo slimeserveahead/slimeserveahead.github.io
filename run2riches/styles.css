@@ -436,6 +436,10 @@ h8 {
 }
 .socialMediaIcons img {
     width: 4vw;
+    transition: transform 0.3s;
+}
+.socialMediaIcons img:hover { 
+    transform: scale(1.2);
 }
 .socialMediaIcons {
     margin-top: 2vw;
@@ -598,9 +602,11 @@ h10 {
     text-decoration: none;
 }
 .certificate {
-	font-size: 1.2vw;
+    font-size: 1.2vw;
     margin-top: 3vw;
     font-family: 'Arial';
+    display: flex;
+    flex-direction: column;
 }
 /*---------------------------------------------------- FOOTER ------------------------------------*/
 .footer{
@@ -813,7 +819,7 @@ h10 {
 .fourthContainer {
     display: flex;
     flex-direction: row;
-    padding: 0 18vw;
+    padding: 0 5vw;
     margin-bottom: 4vw;
 }
 .fourthLeft img {
@@ -1204,6 +1210,7 @@ h10 {
     .downloadButtons {
         gap: 3.5vw;
         flex-direction: row;
+        transform: translateY(-26vw);
     }
     .appDescriptionLeft {
         width: 84vw;
@@ -1215,7 +1222,7 @@ h10 {
     }
     .appDescriptionLeft img{
         width: 26vw;
-        margin-top: 5vw;
+        margin-top: 2vw;
     }
     .footer{
         display: none;
@@ -1263,6 +1270,9 @@ h10 {
     .certificate {
         font-size: 3.2vw;
         margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(13vw);
     }
     .appDescriptionDownload {
         padding: 2vw 2vw;
@@ -1330,6 +1340,13 @@ h10 {
     .sidebarShow {
         transform: translateX(0);
     }
+    .sidebarMenus {
+        margin-top: 5vw;
+        color: #4E63E4;
+    }
+    .sidebarMenus a{
+        color: #4E63E4;
+    }
     .sidebarMenu {
         font-family: 'Helvetica', sans-serif;
         height: 10vw;
@@ -1340,11 +1357,48 @@ h10 {
         border-radius: 2vw;
         padding-left: 4vw;
         font-size: 3vw;
-        
     }
     .sidebarMenu img {
         width: 4vw;
         margin-right: 2vw;
+    }
+    .sidebarLanguageSelector {
+        margin-top: 7vw;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .sidebarArrowdown {
+        margin-left: 2vw;
+    }
+    .languageContainer {
+        border-radius: 2vw;
+        border: 0.4vw solid #4E63E4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: all 0.3s;
+    }
+    .sidebarLanguage {
+        height: 8vw;
+        width: 27vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4E63E4;
+        font-size: 3vw;
+    }
+    .selectedSidebarLanguage {
+        background-color: #4E63E4;
+        color: white;
+    }
+    .showSidebarLanguageSelector {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
     }
     .xButton {
         align-self:flex-start;
@@ -1374,12 +1428,11 @@ h10 {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s;
-      }
-      
-      .blackBGShow {
+    }
+    .blackBGShow {
         visibility: visible;
         opacity: 0.5;
-      }
+    }
     /* ---------------------------- DONWLOAD PAGE ------------------------*/
     .dpbgimg {
         display: none;

@@ -1089,6 +1089,7 @@ h10 {
     }
     .counter {
         height: 17vw;
+        padding-top: 3vw;
     }
     h5 {
         font-size: 4vw;

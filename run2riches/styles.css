@@ -1103,6 +1103,7 @@ h10 {
     }
     .counter {
         height: 17vw;
+        padding-top: 3vw;
     }
     h5 {
         font-size: 4vw;
@@ -1340,13 +1341,6 @@ h10 {
     .sidebarShow {
         transform: translateX(0);
     }
-    .sidebarMenus {
-        margin-top: 5vw;
-        color: #4E63E4;
-    }
-    .sidebarMenus a{
-        color: #4E63E4;
-    }
     .sidebarMenu {
         font-family: 'Helvetica', sans-serif;
         height: 10vw;
@@ -1357,48 +1351,11 @@ h10 {
         border-radius: 2vw;
         padding-left: 4vw;
         font-size: 3vw;
+        
     }
     .sidebarMenu img {
         width: 4vw;
         margin-right: 2vw;
-    }
-    .sidebarLanguageSelector {
-        margin-top: 7vw;
-        justify-content: center;
-        gap: 3vw;
-    }
-    .sidebarArrowdown {
-        margin-left: 2vw;
-    }
-    .languageContainer {
-        border-radius: 2vw;
-        border: 0.4vw solid #4E63E4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-5vw);
-        transition: all 0.3s;
-    }
-    .sidebarLanguage {
-        height: 8vw;
-        width: 27vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #4E63E4;
-        font-size: 3vw;
-    }
-    .selectedSidebarLanguage {
-        background-color: #4E63E4;
-        color: white;
-    }
-    .showSidebarLanguageSelector {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
     }
     .xButton {
         align-self:flex-start;
@@ -1428,11 +1385,12 @@ h10 {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s;
-    }
-    .blackBGShow {
+      }
+      
+      .blackBGShow {
         visibility: visible;
         opacity: 0.5;
-    }
+      }
     /* ---------------------------- DONWLOAD PAGE ------------------------*/
     .dpbgimg {
         display: none;

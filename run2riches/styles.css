@@ -176,7 +176,7 @@ h3 {
     margin-top: -1vw;
 }
 h4 {
-    font-family: 'Helvetica Light', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     color: #777777;
     font-size: 1.2vw;
 }
@@ -1034,6 +1034,9 @@ h10 {
 }
 /*---------------------------------------------------- BELOW ------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
+    .languageSelector {
+        display: none;
+    }
     .navbar {
         background-color: white;
         display: flex;
@@ -1563,7 +1566,6 @@ h10 {
     }
     .introContacts {
         align-self: start;
-        padding-left: 15vw;
     }
     .h19{
         font-size: 3.5vw;

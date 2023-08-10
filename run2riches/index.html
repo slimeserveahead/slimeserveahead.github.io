@@ -115,8 +115,8 @@
                 </tr>
                 <tr>
                     <td class="firstColumn"><img src="images/wcoin_logo.webp">Wcoin</td>
-                    <td class="secondColumn" id="wCoinPrice">2,670</td>
-                    <td class="thirdColumn"   id="wCoinChange">0%</td>
+                    <td class="secondColumn" id="wCoinPrice">2,513</td>
+                    <td class="thirdColumn"   id="wCoinChange">Loading...</td>
                     <td id="wCoin-graph" class="graph fourthColumn"></td>
                 </tr>
                 <tr>
@@ -179,7 +179,6 @@
             <div class="socialMediaIcons">
                 <a href="https://zalo.me/3733805797735313484" target="_blank"><img src="images/zalo-circular.webp"></a>
                 <a href="https://www.facebook.com/profile.php?id=100067485453717" target="_blank"><img src="images/facebook.webp"></a>
-                <img src="images/instagram.webp">
                 <a href="https://t.me/run2richesofficial" target="_blank"><img src="images/about_ico2@3x.webp"></a>
                 <a href="mailto:Support@run2riches.com" target=”_blank”><img src="images/email.webp"></a>
             </div>
@@ -307,12 +306,15 @@ function getChange() {
       const ethereumChange = data.ethereum.usd_24h_change;
       const trxChange = data.tron.usd_24h_change;
       const bnbChange = data.binancecoin.usd_24h_change;
+    //   UPDATE 
+      const wCoinChange = -0.2;
 
       document.getElementById('btcChange').textContent = `${bitcoinChange.toLocaleString()}%`;
       document.getElementById('ethChange').textContent = `${ethereumChange.toLocaleString()}%`;
       document.getElementById('trxChange').textContent = `${trxChange.toLocaleString()}%`;
       document.getElementById('bnbChange').textContent = `${bnbChange.toLocaleString()}%`;
-
+      document.getElementById('wCoinChange').textContent = `${wCoinChange}%`;
+      
       const bnbChangeElement = document.getElementById("bnbChange");
       const bnbChangeText = parseFloat(bnbChange).toFixed(2);
 
@@ -351,6 +353,16 @@ function getChange() {
         btcChangeElement.textContent = "+" + btcChangeText + "%"; // Add "+" sign
       } else if (btcChangeText < 0) {
         btcChangeElement.style.color = "#E05A38";
+      }
+
+      const wCoinChangeElement = document.getElementById("wCoinChange");
+      const wCoinChangeText = parseFloat(wCoinChange).toFixed(2);
+
+      if (wCoinChangeText > 0) {
+        wCoinChangeElement.style.color = "#52AF99";
+        wCoinChangeElement.textContent = "+" + wCoinChangeText + "%"; // Add "+" sign
+      } else if (wCoinChangeText < 0) {
+        wCoinChangeElement.style.color = "#E05A38";
       }
     })
     .catch(error => {
@@ -408,6 +420,51 @@ getChange();
     createGraph('bnb-graph', 'binancecoin');
     createGraph('trx-graph', 'tron');
 
+    // ------------------------------------------------------ GRAPH FOR WCOIN -----------------------------------------------------------//
+    function createGraphManual(id, prices) {
+  // Manually provided prices and timestamps
+  var timestamps = prices.map(entry => new Date(entry[0]));
+  var prices = prices.map(entry => entry[1]);
+
+  // Determine the color of the graph line based on price change
+  var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
+
+  // Create a trace for the graph
+  var trace = {
+    x: timestamps,
+    y: prices,
+    mode: 'lines',
+    line: { color: color } // Set line color dynamically
+  };
+
+  // Define the layout
+  var layout = {
+    showlegend: false, // Hide legend
+    xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
+    yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
+    paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
+    plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
+    margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
+  };
+
+  // Combine the trace and layout and plot the graph
+  Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
+}
+
+// Example usage with manually input prices for 'wCoin'
+// UPDATE
+var wCoinPrices = [
+    [1631011200000, 2530],
+    [1631097600000, 2540],
+    [1631184000000, 2550],
+    [1631270400000, 3000],
+    [1631356800000, 2500],
+    [1631443200000, 2500]
+];
+
+// Create a graph for 'wCoin' with manually input prices
+createGraphManual('wCoin-graph', wCoinPrices);
+
 // ------------------------------------MOBILE SIDEBAR------------------------------------------- //
     // Get the menu and sidebar elements
     const menu = document.getElementById("menu");
@@ -426,7 +483,6 @@ getChange();
         sidebar.classList.remove("sidebarShow");
         blackBG.classList.remove("blackBGShow");
     }); 
-
     // ----------------------------------LANGUAGE SELCTOR---------------------------------------------//
 
     // Handle the click event of the image

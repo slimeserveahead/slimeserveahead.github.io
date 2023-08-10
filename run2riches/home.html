@@ -299,105 +299,103 @@ function getPrices() {
 getPrices();
 
 function getChange() {
-  fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,tron,binancecoin&vs_currencies=usd&include_24hr_change=true')
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,tron,binancecoin&vs_currencies=usd&include_24hr_change=true')
     .then(response => response.json())
     .then(data => {
-      const bitcoinChange = data.bitcoin.usd_24h_change;
-      const ethereumChange = data.ethereum.usd_24h_change;
-      const trxChange = data.tron.usd_24h_change;
-      const bnbChange = data.binancecoin.usd_24h_change;
+        const bitcoinChange = data.bitcoin.usd_24h_change;
+        const ethereumChange = data.ethereum.usd_24h_change;
+        const trxChange = data.tron.usd_24h_change;
+        const bnbChange = data.binancecoin.usd_24h_change;
+        
+        document.getElementById('btcChange').textContent = `${bitcoinChange.toLocaleString()}%`;
+        document.getElementById('ethChange').textContent = `${ethereumChange.toLocaleString()}%`;
+        document.getElementById('trxChange').textContent = `${trxChange.toLocaleString()}%`;
+        document.getElementById('bnbChange').textContent = `${bnbChange.toLocaleString()}%`;
+        
+        const bnbChangeElement = document.getElementById("bnbChange");
+        const bnbChangeText = parseFloat(bnbChange).toFixed(2);
 
-      document.getElementById('btcChange').textContent = `${bitcoinChange.toLocaleString()}%`;
-      document.getElementById('ethChange').textContent = `${ethereumChange.toLocaleString()}%`;
-      document.getElementById('trxChange').textContent = `${trxChange.toLocaleString()}%`;
-      document.getElementById('bnbChange').textContent = `${bnbChange.toLocaleString()}%`;
-
-      const bnbChangeElement = document.getElementById("bnbChange");
-      const bnbChangeText = parseFloat(bnbChange).toFixed(2);
-
-      if (bnbChangeText > 0) {
+        if (bnbChangeText > 0) {
         bnbChangeElement.style.color = "#52AF99";
         bnbChangeElement.textContent = "+" + bnbChangeText + "%"; // Add "+" sign
-      } else if (bnbChangeText < 0) {
+        } else if (bnbChangeText < 0) {
         bnbChangeElement.style.color = "#E05A38";
-      }
+        }
 
-      const ethChangeElement = document.getElementById("ethChange");
-      const ethChangeText = parseFloat(ethereumChange).toFixed(2);
+        const ethChangeElement = document.getElementById("ethChange");
+        const ethChangeText = parseFloat(ethereumChange).toFixed(2);
 
-      if (ethChangeText > 0) {
+        if (ethChangeText > 0) {
         ethChangeElement.style.color = "#52AF99";
         ethChangeElement.textContent = "+" + ethChangeText + "%"; // Add "+" sign
-      } else if (ethChangeText < 0) {
+        } else if (ethChangeText < 0) {
         ethChangeElement.style.color = "#E05A38";
-      }
+        }
 
-      const trxChangeElement = document.getElementById("trxChange");
-      const trxChangeText = parseFloat(trxChange).toFixed(2);
+        const trxChangeElement = document.getElementById("trxChange");
+        const trxChangeText = parseFloat(trxChange).toFixed(2);
 
-      if (trxChangeText > 0) {
+        if (trxChangeText > 0) {
         trxChangeElement.style.color = "#52AF99";
         trxChangeElement.textContent = "+" + trxChangeText + "%"; // Add "+" sign
-      } else if (trxChangeText < 0) {
+        } else if (trxChangeText < 0) {
         trxChangeElement.style.color = "#E05A38";
-      }
+        }
 
-      const btcChangeElement = document.getElementById("btcChange");
-      const btcChangeText = parseFloat(bitcoinChange).toFixed(2);
+        const btcChangeElement = document.getElementById("btcChange");
+        const btcChangeText = parseFloat(bitcoinChange).toFixed(2);
 
-      if (btcChangeText > 0) {
+        if (btcChangeText > 0) {
         btcChangeElement.style.color = "#52AF99";
         btcChangeElement.textContent = "+" + btcChangeText + "%"; // Add "+" sign
-      } else if (btcChangeText < 0) {
+        } else if (btcChangeText < 0) {
         btcChangeElement.style.color = "#E05A38";
-      }
+        }
     })
     .catch(error => {
-      console.log('Error:', error);
+        console.log('Error:', error);
     });
 }
 
 getChange();
 
 
-</script>
-<!-- // ----------------------------------------- GRAPHS ------------------------------------------------- -->
+// ----------------------------------------- GRAPHS ------------------------------------------------- -->
 
-<script>
     function createGraph(id, currency) {
-      fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=5&interval=daily`)
+        fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=5&interval=daily`)
         .then(response => response.json())
         .then(data => {
-          // Extract timestamps and prices from the API response
-          var timestamps = data.prices.map(entry => new Date(entry[0]));
-          var prices = data.prices.map(entry => entry[1]);
+            // Extract timestamps and prices from the API response
+            var timestamps = data.prices.map(entry => new Date(entry[0]));
+            var prices = data.prices.map(entry => entry[1]);
 
-          // Determine the color of the graph line based on price change
-          var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
+            // Determine the color of the graph line based on price change
+            var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
 
-          // Create a trace for the graph
-          var trace = {
+            // Create a trace for the graph
+            var trace = {
             x: timestamps,
             y: prices,
             mode: 'lines',
             line: { color: color } // Set line color dynamically
-          };
+            };
 
-          // Define the layout
-          var layout = {
+            // Define the layout
+            var layout = {
             showlegend: false, // Hide legend
             xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
             yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
             paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
             plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
             margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
-          };
+            };
 
-          // Combine the trace and layout and plot the graph
-          Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
+            // Combine the trace and layout and plot the graph
+            Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
         })
         .catch(error => {
-          console.error('Error:', error);
+            console.error('Error:', error);
         });
     }
 
@@ -407,7 +405,76 @@ getChange();
     createGraph('bnb-graph', 'binancecoin');
     createGraph('trx-graph', 'tron');
 
-    // ------------------------------------MOBILE SIDEBAR------------------------------------------- //
+
+    // ------------------------------------------------------ GRAPH FOR WCOIN -----------------------------------------------------------//
+
+    function createWCoinGraph(id) {
+        const wCoinData = 'https://raw.githubusercontent.com/slimeserveahead/slimeserveahead.github.io/main/run2riches/data.json';
+
+        fetch(wCoinData)
+        .then(response => response.json())
+        .then(data => {
+
+            var timestamps = data.prices.map(entry => new Date(entry[0]));
+            var prices = data.prices.map(entry => entry[1]);
+
+            console.log(`timestamps: ${timestamps}`)
+            console.log(`prices: ${prices}`)
+
+            // Determine the color of the graph line based on price change
+            var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
+
+            // Create a trace for the graph
+            var trace = {
+            x: timestamps,
+            y: prices,
+            mode: 'lines',
+            line: { color: color } // Set line color dynamically
+            };
+
+            // Define the layout
+            var layout = {
+            showlegend: false, // Hide legend
+            xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
+            yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
+            paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
+            plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
+            margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
+            };
+
+            // Combine the trace and layout and plot the graph
+            Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
+
+            // -------------------------------------- WCOIN CHANGE ------------------------------------//
+
+            const wCoinChange = data.change;
+            
+            document.getElementById('wCoinChange').textContent = `${wCoinChange}%`;
+
+            const wCoinChangeElement = document.getElementById("wCoinChange");
+            const wCoinChangeText = parseFloat(wCoinChange).toFixed(2);
+
+            if (wCoinChangeText > 0) {
+                wCoinChangeElement.style.color = "#52AF99";
+                wCoinChangeElement.textContent = "+" + wCoinChangeText + "%"; // Add "+" sign
+            } else if (wCoinChangeText < 0) {
+                wCoinChangeElement.style.color = "#E05A38";
+            }
+
+            // ------------------------------------ WCOIN PRICE ---------------------------------------//
+            const wCoinPrice = data.current_price;
+
+            document.getElementById('wCoinPrice').textContent = `${wCoinPrice.toLocaleString()}`;
+
+        })
+        .catch(error => {
+            console.error('Error fetching JSON:', error);
+        });
+
+    }
+    createWCoinGraph('wCoin-graph');
+
+// ------------------------------------MOBILE SIDEBAR------------------------------------------- //
     // Get the menu and sidebar elements
     const menu = document.getElementById("menu");
     const sidebar = document.querySelector(".sidebar");
@@ -425,7 +492,7 @@ getChange();
         sidebar.classList.remove("sidebarShow");
         blackBG.classList.remove("blackBGShow");
     }); 
-    // ----------------------------------LANGUAGE SELECTOR---------------------------------------------//
+    // ----------------------------------LANGUAGE SELCTOR---------------------------------------------//
 
     // Handle the click event of the image
     // Get references to the image and language selector elements

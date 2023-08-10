@@ -115,7 +115,7 @@
                 </tr>
                 <tr>
                     <td class="firstColumn"><img src="images/wcoin_logo.webp">Wcoin</td>
-                    <td class="secondColumn" id="wCoinPrice">2,513</td>
+                    <td class="secondColumn" id="wCoinPrice">Loading...</td>
                     <td class="thirdColumn"   id="wCoinChange">Loading...</td>
                     <td id="wCoin-graph" class="graph fourthColumn"></td>
                 </tr>
@@ -360,10 +360,8 @@ function getChange() {
 getChange();
 
 
-</script>
-<!-- // ----------------------------------------- GRAPHS ------------------------------------------------- -->
+// ----------------------------------------- GRAPHS ------------------------------------------------- -->
 
-<script>
     function createGraph(id, currency) {
       fetch(`https://api.coingecko.com/api/v3/coins/${currency}/market_chart?vs_currency=usd&days=5&interval=daily`)
         .then(response => response.json())
@@ -462,6 +460,12 @@ getChange();
             } else if (wCoinChangeText < 0) {
                 wCoinChangeElement.style.color = "#E05A38";
             }
+
+            // ------------------------------------ WCOIN PRICE ---------------------------------------//
+            const wCoinPrice = data.current_price;
+
+            document.getElementById('wCoinPrice').textContent = `${wCoinPrice.toLocaleString()}`;
+
         })
         .catch(error => {
             console.error('Error fetching JSON:', error);

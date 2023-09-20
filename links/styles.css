@@ -24,8 +24,14 @@ body {
     padding: 0 15vw;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 7vw;
+    gap: 2vw;
+}
+
 .logo img {
-    margin-top: 4vw;
     width: 40vw;
 }
 
@@ -95,26 +101,20 @@ body {
     display: none;
 }
 
-.logoBottom {
-    width: 100%;
-    display: flex;
-    padding-left: 3vw;
-}
-.logoContainer {
-    position: fixed;
-    bottom: 0px;
+.iconContainer {
+    background-color: white;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 2.5vw;
+    margin-top: 1.3vw;
     display: flex;
     justify-content: center;
-    background-color: white;
-    height: 10vw;
     align-items: center;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    width: 9vw;
 }
 
-.logoContainer img {
-    width: 8vw;
+.iconContainer img {
+    width: 90%;
+    margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -124,8 +124,10 @@ body {
     .mobileBackground {
         display: block;
     }
-    .logo img {
+    .logo {
         margin-top: 19vw;
+    }
+    .logo img {
         width: 46vw;
     }
     .tableHeader {
@@ -152,11 +154,12 @@ body {
     .tableContainer {
         margin-top: 25vw;
     }
-    .logoContainer {
-        height: 20vw;
-        width: 17vw;
+    .iconContainer {
+        width: 13vw;
+        height: 13vw;
+        border-radius: 3.5vw;
     }
-    .logoContainer img {
-        width: 12vw;
+    .iconContainer img {
+        width: 90%;
     }
 }

@@ -69,7 +69,7 @@ body {
     font-size: 1.5vw;
     justify-content: space-between;
     font-family: Arial;
-
+    position: relative;
 }
 
 .tableRows:hover {
@@ -113,12 +113,39 @@ body {
 }
 
 .expand {
-    width: 11vw;
+    width: 11.8vw;
 }
 
 .iconContainer img {
     width: 90%;
     margin-top: 0;
+}
+
+.leftHand {
+    right: 15.2vw;
+}
+
+.rightHand {
+    right: 1.8vw;
+}
+
+.leftHand, .rightHand {
+    top: 0.8vw;
+    width: 2vw;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+.leftHand img, .rightHand img {
+    width: 100%;
+}
+
+.moveLeft {
+    transform: translateX(-0.5vw);
+}
+
+.moveRight {
+    transform: translateX(0.5vw);
 }
 
 @media (max-width: 768px) {
@@ -150,7 +177,7 @@ body {
         padding: 0 5vw;
     }
     .expand {
-        width: 22vw;
+        width: 24vw;
     }
     .move {
         transform: translateX(5.7vw);
@@ -165,5 +192,12 @@ body {
     }
     .iconContainer img {
         width: 90%;
+    }
+    .leftHand, .rightHand {
+        top: 3.7vw;
+        width: 3.9vw;
+    }
+    .leftHand {
+        right: 27.2vw;
     }
 }

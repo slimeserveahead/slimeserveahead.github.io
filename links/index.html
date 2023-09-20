@@ -27,34 +27,58 @@
                     <div class="tableData">Link 1</div>
                     <div class="green tableData">7ms</div>
                     <div class="green tableData">Online</div>
-                    <div class="tableData expand"><strong>[Click to Enter]</strong></div> 
+                    <div class="tableData expand"><strong>[Click to Enter]</strong></div>
+                    <div class="leftHand"><img src="images/left_hand.png"></div>
+                    <div class="rightHand"><img src="images/right_hand.png"></div>
                 </div>
                 <div class="tableRows">
                     <div class="tableData">Link 2</div>
                     <div class="yellow tableData">95ms</div>
                     <div class="yellow tableData">Weak</div>
                     <div class="tableData expand"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.png"></div>
+                    <div class="rightHand"><img src="images/right_hand.png"></div>
                 </div>
                 <div class="tableRows">
                     <div class="tableData">Link 3</div>
                     <div class="red tableData">305ms</div>
                     <div class="red tableData">Offline</div>
                     <div class="tableData expand"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.png"></div>
+                    <div class="rightHand"><img src="images/right_hand.png"></div>
                 </div>
                 <div class="tableRows">
                     <div class="tableData">Link 4</div>
                     <div class="green tableData">7ms</div>
                     <div class="green tableData">Online</div>
                     <div class="tableData expand"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.png"></div>
+                    <div class="rightHand"><img src="images/right_hand.png"></div>
                 </div>
                 <div class="tableRows">
                     <div class="tableData">Link 5</div>
                     <div class="yellow tableData">120ms</div>
                     <div class="yellow tableData">Online</div>
                     <div class="tableData expand"><strong>[Click to Enter]</strong></div> 
+                    <div class="leftHand"><img src="images/left_hand.png"></div>
+                    <div class="rightHand"><img src="images/right_hand.png"></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    let leftHand = document.querySelectorAll(".leftHand")
+    let rightHand = document.querySelectorAll(".rightHand")
+
+    setInterval(() => {
+        leftHand.forEach(element => {
+            element.classList.toggle("moveLeft")
+        })
+        rightHand.forEach(element => {
+            element.classList.toggle("moveRight")
+        })
+    }, 500)
+
+</script>
 </html>

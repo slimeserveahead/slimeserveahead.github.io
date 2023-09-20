@@ -95,6 +95,28 @@ body {
     display: none;
 }
 
+.logoBottom {
+    width: 100%;
+    display: flex;
+    padding-left: 3vw;
+}
+.logoContainer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 10vw;
+    align-items: center;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    width: 9vw;
+}
+
+.logoContainer img {
+    width: 8vw;
+}
+
 @media (max-width: 768px) {
     .desktopBackground {
         display: none;
@@ -129,5 +151,12 @@ body {
     }
     .tableContainer {
         margin-top: 25vw;
+    }
+    .logoContainer {
+        height: 20vw;
+        width: 17vw;
+    }
+    .logoContainer img {
+        width: 12vw;
     }
 }

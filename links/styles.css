@@ -112,6 +112,10 @@ body {
     align-items: center;
 }
 
+.expand {
+    width: 11vw;
+}
+
 .iconContainer img {
     width: 90%;
     margin-top: 0;
@@ -146,7 +150,7 @@ body {
         padding: 0 5vw;
     }
     .expand {
-        width: 20vw;
+        width: 22vw;
     }
     .move {
         transform: translateX(5.7vw);

@@ -148,6 +148,10 @@ body {
     transform: translateX(0.5vw);
 }
 
+.entrance {
+    color: #5C00B5;
+}
+
 @media (max-width: 768px) {
     .desktopBackground {
         display: none;

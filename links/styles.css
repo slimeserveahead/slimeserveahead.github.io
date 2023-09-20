@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #63A5FF;
+}
+
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 0 15vw;
+}
+
+.logo img {
+    margin-top: 4vw;
+    width: 40vw;
+}
+
+.tableContainer {
+    width: 100%;
+    margin-top: 10vw;
+}
+
+.tableHeader {
+    border-radius: 2vw;
+    border: 0.01vw solid white;
+    width: -webkit-fill-available;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Lalezar', cursive;
+    justify-content: space-between;
+}
+
+.tableRows {
+    width: -webkit-fill-available;
+    height: 3vw;
+    border-radius: 5vw;
+    background-color: rgba(217, 217, 217, 0.54); 
+    margin-top: 2vw;
+    transition: background-color 0.2s, transform 0.3s;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    font-family: Arial;
+
+}
+
+.tableRows:hover {
+    background-color: rgba(255, 72, 204, 0.57); 
+    transform: scale(1.03);
+}
+
+.green {
+    color: #00FF0A;
+}
+
+.yellow {
+    color: #FFF500;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.tableData {
+    width: 10vw;
+}
+
+.move {
+    transform: translateX(3.7vw);
+}
+
+.mobileBackground {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktopBackground {
+        display: none;
+    }
+    .mobileBackground {
+        display: block;
+    }
+    .logo img {
+        margin-top: 19vw;
+        width: 46vw;
+    }
+    .tableHeader {
+        border-radius: 8vw;
+        border: 0.3vw solid white;
+        height: 10vw;
+        font-size: 3.5vw;
+    }
+    .tableRows {
+        height: 10vw;
+        font-size: 3.5vw;
+        font-size: 3vw;
+        margin-top: 7vw;
+    }
+    .container {
+        padding: 0 5vw;
+    }
+    .expand {
+        width: 20vw;
+    }
+    .move {
+        transform: translateX(5.7vw);
+    }
+    .tableContainer {
+        margin-top: 25vw;
+    }
+}

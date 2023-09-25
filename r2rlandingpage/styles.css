@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E9EEFA;
+}
+
+.backgroundContainer img {
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backgroundContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vw;
+    gap: 2vw;
+    margin-bottom: 22vw;
+}
+
+.logoContainer img {
+    width: 10vw;
+}
+
+input {
+    background-color: #FCF2F2;
+    height: 10vw;
+    margin-bottom: 7vw;
+    width: 69vw;
+    border-radius: 2vw;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 3vw;
+    font-size: 4vw;
+}
+
+h1 {
+    color: #5D6FE7;
+    font-size: 5vw;
+}
+
+.submitButton {
+    height: 10vw;
+    width: 75vw;
+    border-radius: 2vw;
+    background-color: #5D6FE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 35vw;
+    font-size: 4vw;
+}
+
+.detailsContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.messageContainer {
+    background-color: #E9EEFA;
+    height: 78vw;
+    width: 78vw;
+    border-radius: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.showMainContainer {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.showMessageContainer {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------- Loader --------------------------------------------*/
+.loader  {
+    animation: rotate 2s infinite;  
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+    display: none;
+  }
+  
+  .loader:before,
+  .loader:after {   
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 20px;  
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;  
+    background-color: #cb2025;
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite; 
+    background-color: #00a096;
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+
+
+ 
+
+
+
+
+
+
+
+  @keyframes rotate {
+    0% { 
+      -webkit-transform: rotate(0deg) scale(0.8); 
+      -moz-transform: rotate(0deg) scale(0.8);
+    }
+    50% { 
+      -webkit-transform: rotate(360deg) scale(1.2); 
+      -moz-transform: rotate(360deg) scale(1.2);
+    }
+    100% { 
+      -webkit-transform: rotate(720deg) scale(0.8); 
+      -moz-transform: rotate(720deg) scale(0.8);
+    }
+  }
+  
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #f8b334;
+    }
+    50% {
+      box-shadow: 0 0 0 #f8b334;
+      margin-bottom: 0;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #f8b334;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #97bf0d;
+    }
+    50% {
+      box-shadow: 0 0 0 #97bf0d;
+      margin-top: -20px;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #97bf0d;
+      margin-top: 0;
+    }
+  }
+
+
+.showLoader {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.message {
+    justify-content: center;
+    padding: 0 9vw;
+    gap: 11vw;
+    text-align: center;
+    font-size: 4vw;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.goBackButton {
+    background-color: #5D6FE7;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 35vw;
+    border-radius: 1.5vw;
+}
+
+.showMessage {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}

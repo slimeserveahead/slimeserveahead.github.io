@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="detailsContainer">
+        <div class="messageContainer">
+            <div class="loader"></div>
+            <div class="message">
+                <h2 id="message"></h2>
+                <div onclick="hideDetails()" class="goBackButton">Go Back</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="backgroundContainer">
+            <img src="images/background.png">
+        </div>
+        <div class="logoContainer">
+            <img src="images/logo.webp">
+            <h1>Run2Riches</h1>
+        </div>
+        <input id="run2richesUsername" placeholder="Run2Riches Username" type="text">
+        <input id="telegramID" placeholder="Telegram ID" type="text">
+        <div onclick="submit()" class="submitButton">SUBMIT</div>
+    </div>
+</body>
+<script>
+    // https://demostvnapis2rep.shiryu.cc/api/task/telegram?username={}&id={}
+    function submit() {
+        const username = document.getElementById("run2richesUsername").value
+        const telegramID = document.getElementById("telegramID").value
+        if (!username || !telegramID) {
+            window.alert("Please input Run2Riches username and Telegram ID")
+        } else {
+            let api = `https://corsproxy.io/?https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=${telegramID}`
+            showDetails()
+            fetch(api)
+            .then(res => res.json())
+            .then(data => {
+                hideLoader()
+                showMessage()
+                const message = document.getElementById('message')
+                message.innerText = data.msg
+            })
+        }
+    }
+
+    function showDetails() {
+        const detailsContainer = document.querySelector('.detailsContainer')
+        const messageContainer = document.querySelector('.messageContainer')
+        
+        detailsContainer.classList.add('showMainContainer')
+
+        setTimeout(() => {
+            messageContainer.classList.add('showMessageContainer')
+        }, 300)
+
+        setTimeout(() => {
+            showLoader()
+        }, 600)
+    }
+
+    function hideLoader() {
+        const loader = document.querySelector('.loader')
+        loader.classList.remove('showLoader')
+    }
+
+    function showLoader() {
+        const loader = document.querySelector('.loader')
+        loader.classList.add('showLoader')
+    }
+
+    function showMessage() {
+        const message = document.querySelector('.message')
+        message.classList.add("showMessage")
+    }
+
+    function hideMessage() {
+        const message = document.querySelector('.message')
+        message.classList.remove("showMessage")
+    }
+
+    function hideDetails() {
+        const detailsContainer = document.querySelector('.detailsContainer')
+        const messageContainer = document.querySelector('.messageContainer')
+        
+        detailsContainer.classList.remove('showMainContainer')
+        messageContainer.classList.remove('showMessageContainer')
+        hideMessage()
+    }
+</script>
+</html>

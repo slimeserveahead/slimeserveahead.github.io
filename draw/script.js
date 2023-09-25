@@ -110,7 +110,7 @@ if (timeData) {
     }
     calculateTimeRemaining();
 } else {
-    fetch('http://worldtimeapi.org/api/timezone/Asia/Manila')
+    fetch('https://worldtimeapi.org/api/timezone/Asia/Manila')
     .then(response => response.json())
     .then(data => {
         timeData = "Fetched";

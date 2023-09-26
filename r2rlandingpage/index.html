@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/icon.webp" type="image/icon type">
-    <title>Run2Riches</title>
+    <title>Join Group Task</title>
 </head>
 <body>
     <div class="detailsContainer">
@@ -13,7 +13,7 @@
             <div class="loader"></div>
             <div class="message">
                 <h2 id="message"></h2>
-                <div onclick="hideDetails()" class="goBackButton">Go Back</div>
+                <div onclick="hideDetails()" class="goBackButton">TRỞ LẠI</div>
             </div>
 
         </div>
@@ -26,9 +26,9 @@
             <img src="images/logo.webp">
             <h1>Run2Riches</h1>
         </div>
-        <input id="run2richesUsername" placeholder="Run2Riches Username" type="text">
+        <input id="run2richesUsername" placeholder="Tên người dùng Run2Riches" type="text">
         <input id="telegramID" placeholder="Telegram ID" type="text">
-        <div onclick="submit()" class="submitButton">SUBMIT</div>
+        <div onclick="submit()" class="submitButton">NỘP</div>
     </div>
 </body>
 <script>
@@ -37,7 +37,7 @@
         const username = document.getElementById("run2richesUsername").value
         const telegramID = document.getElementById("telegramID").value
         if (!username || !telegramID) {
-            window.alert("Please input Run2Riches username and Telegram ID")
+            window.alert("Vui lòng nhập tên người dùng của Run2Riches và ID Telegram.")
         } else {
             let api = `https://corsproxy.io/?https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=${telegramID}`
             showDetails()
@@ -47,7 +47,15 @@
                 hideLoader()
                 showMessage()
                 const message = document.getElementById('message')
-                message.innerText = data.msg
+                let responseMsg = data.msg 
+                console.log(responseMsg)
+                if (responseMsg === "User does not exist") {
+                    responseMsg = "Tài khoản không hợp lệ"
+                } else if (responseMsg === "Task bonus has been received") {
+                    responseMsg = "Nhiệm vụ hoàn thành"
+                } 
+
+                message.innerText = responseMsg
             })
         }
     }

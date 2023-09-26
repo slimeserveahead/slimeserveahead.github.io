@@ -45,14 +45,16 @@
             fetch(api)
             .then(res => res.json())
             .then(data => {
-                hideLoader()
+                const loader = document.querySelector('.loader')
+                loader.classList.remove('showLoader')
+                console.log(data.msg)
                 showMessage()
                 const message = document.getElementById('message')
                 let responseMsg = data.msg 
                 console.log(responseMsg)
                 if (responseMsg === "User does not exist") {
                     responseMsg = "Tài khoản không hợp lệ"
-                } else if (responseMsg === "Task bonus has been received") {
+                } else if (responseMsg === "Task completed, bonus cannot be claimed") {
                     responseMsg = "Nhiệm vụ hoàn thành"
                 } else if (responseMSG === "Success") {
                     responseMsg = "Hoàn thành"
@@ -76,11 +78,6 @@
         setTimeout(() => {
             showLoader()
         }, 600)
-    }
-
-    function hideLoader() {
-        const loader = document.querySelector('.loader')
-        loader.classList.remove('showLoader')
     }
 
     function showLoader() {

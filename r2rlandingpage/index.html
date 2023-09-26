@@ -56,8 +56,10 @@
                     responseMsg = "Tài khoản không hợp lệ"
                 } else if (responseMsg === "Task completed, bonus cannot be claimed") {
                     responseMsg = "Nhiệm vụ hoàn thành"
-                } else if (responseMSG === "Success") {
+                } else if (responseMsg === "Success") {
                     responseMsg = "Hoàn thành"
+                } else if (responseMsg === "Task bonus has been received") {
+                    responseMsg = "Nhiệm vụ hoàn thành"
                 }
 
                 message.innerText = responseMsg

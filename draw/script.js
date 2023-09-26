@@ -1,4 +1,9 @@
-const movingImages = document.querySelector(".moving")
+const movingImages = document.querySelector(".movingWeb")
+const movingImagesMobile = document.querySelector(".movingMobile")
+
+setInterval(() => {
+    movingImagesMobile.classList.toggle("movedMobile")
+}, 1000)
 
 setInterval(() => {
     movingImages.classList.toggle("moved")
@@ -26,29 +31,7 @@ let namesContainer = document.querySelectorAll(".namesContainer")
 let intervalId;
 let pickingInterval = 50;
 
-function getRandomName() {
-    clearInterval(intervalId); 
-    let duration = 5000; 
-    picking = true;
 
-    intervalId = setInterval(() => {
-        let randomName = names.names[Math.floor(Math.random() * names.names.length)];
-        let randomName2 = names.names[Math.floor(Math.random() * names.names.length)];
-        let randomName3 = names.names[Math.floor(Math.random() * names.names.length)];
-        name.innerText = randomName
-        namesContainer[0].innerText = randomName2;
-        namesContainer[1].innerText = randomName3;            
-    }, 50); 
-
-    setTimeout(() => {
-        clearInterval(intervalId);
-        name.innerText = names.names[0];
-        picking = false;
-        startConfetti();
-        namesContainer[0].innerText = "";
-        namesContainer[1].innerText = "";
-    }, duration);
-}
 
 let hours = 0;
 let minutes = 0;
@@ -60,6 +43,48 @@ let leftSeconds = 99;
 let remainingTime;
 let duration = 10;
 let ran = false;
+
+function addGlow() {
+    const userNames = document.getElementById("userNames")
+    userNames.classList.add("glowingWhite")
+}
+
+function getRandomName() {
+    clearInterval(intervalId); 
+    let duration = 5000; 
+    picking = true;
+
+    intervalId = setInterval(() => {
+        let randomName = names.names[Math.floor(Math.random() * names.names.length)];
+        let randomName2 = names.names[Math.floor(Math.random() * names.names.length)];
+        let randomName3 = names.names[Math.floor(Math.random() * names.names.length)];
+        let randomName4 = names.names[Math.floor(Math.random() * names.names.length)];
+        let randomName5 = names.names[Math.floor(Math.random() * names.names.length)];
+        name.innerText = randomName
+        namesContainer[0].innerText = randomName2;
+        namesContainer[1].innerText = randomName3;
+        namesContainer[2].innerText = randomName4;            
+        namesContainer[3].innerText = randomName5;
+    }, 50); 
+
+    setTimeout(() => {
+        clearInterval(intervalId);
+        name.innerText = `${names.names[0]}`;
+        picking = false;
+        if (!ran) {
+            addGlow()
+            ran = true;
+            startConfetti();
+            namesContainer[0].innerText = names.names[1];
+            namesContainer[1].innerText = names.names[2];
+            namesContainer[2].innerText = names.names[3];
+            namesContainer[3].innerText = names.names[4];
+        }
+        
+    }, duration);
+}
+
+
 
 function updateTime() {
 if (timeData) {
@@ -80,8 +105,13 @@ if (timeData) {
     } else if (remainingTime > 86400 - duration){
         getRandomName()
     } else if (remainingTime < 86400 - duration && remainingTime > 72000 && picking === false) {
-        name.innerText = names.names[0];
         if (!ran) {
+            addGlow()
+            name.innerText = `${names.names[0]}`
+            namesContainer[0].innerText = names.names[1];
+            namesContainer[1].innerText = names.names[2];
+            namesContainer[2].innerText = names.names[3];
+            namesContainer[3].innerText = names.names[4];
             ran = true;
             startConfetti();
         }
@@ -121,8 +151,6 @@ if (timeData) {
         hours = utcDate.getUTCHours();
         minutes = utcDate.getUTCMinutes();
         seconds = utcDate.getUTCSeconds();
-
-        const formattedDatetime = `${utcDate.toISOString().slice(0, 19).replace("T", " ")}`;
     })
     .catch(error => {
         console.error('Error fetching time from the API:', error);

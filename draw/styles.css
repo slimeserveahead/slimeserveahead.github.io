@@ -2,9 +2,10 @@
 /* font-family: 'Montserrat', sans-serif; */
 
 body {
-    background-color: black;
+    background-color: #010214;
     margin: 0;
     color: white;
+    
 }
 
 .mainContainer {
@@ -22,7 +23,7 @@ body {
     z-index: -2;
 }
 
-.moving {
+.movingWeb {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,8 +68,12 @@ body {
     color: black;
 }
 
+.glowingWhite {
+    animation: glowingWhite 1s ease-in-out infinite;
+}
+
 .namesContainer {
-    height: 5vw;
+    height: 2vw;
     width: 100%;
     opacity: 0.5;
     display: flex;
@@ -76,7 +81,7 @@ body {
     border-radius: 5vw;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
+    font-size: 1.4vw;
     color: white;
 }
 
@@ -125,4 +130,87 @@ body {
       box-shadow: none;
     }
   }
-  
+
+@keyframes glowingWhite {
+    0% {
+        box-shadow: 0px 0px 0px rgb(255, 238, 0);
+    }    
+    50% {
+        box-shadow: 0 0 100px rgb(255, 238, 0);
+    }
+    75% {
+        box-shadow: 0 0 200px rgb(255, 238, 0);
+    }
+    90% {
+        box-shadow: 0 0 400px rgb(255, 238, 0);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .backgroundMobile {
+        display: none;
+    }
+    .movingMobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .movingWeb {
+        display: none;
+    }
+    .background {
+        display: none;
+    }
+    .backgroundMobile {
+        display: flex;
+        width: 100%;
+    }
+    .backgroundMobile img{
+        width: 100%;
+    }
+    .mainContainer {
+        overflow: hidden;
+        height: 217vw;
+    }
+    .titleContainer {
+        top: 31vw;
+        left: 9vw;
+        width: 84vw;
+        height: 15.5vw;
+        border-radius: 2vw;
+    }
+    .contents {
+        height: 80vw;
+        top: 66vw;
+        width: 80vw;
+        left: 4.4vw;
+        padding: 0px 5vw;
+    }
+    .logo {
+        width: 55vw;
+        margin-top: 2vw;
+    }
+    .userNames {
+        height: 12vw;
+        font-size: 4.4vw;
+    }
+    .namesContainer {
+        height: 7vw;
+        font-size: 3.8vw;
+    }
+    .movingMobile {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 1.3s;
+    }
+    .movedMobile {
+        
+        transform: scale(1.1);
+    }
+}

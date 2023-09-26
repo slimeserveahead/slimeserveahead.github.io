@@ -28,7 +28,7 @@
         </div>
         <input id="run2richesUsername" placeholder="Tên người dùng Run2Riches" type="text">
         <input id="telegramID" placeholder="Telegram ID" type="text">
-        <div onclick="submit()" class="submitButton">Gửi đi</div>
+        <div onclick="submit()" class="submitButton">Nhận thưởng ngay</div>
     </div>
 </body>
 <script>
@@ -70,14 +70,13 @@
         const messageContainer = document.querySelector('.messageContainer')
         
         detailsContainer.classList.add('showMainContainer')
+        messageContainer.classList.add('showMessageContainer')
+        showLoader()
 
-        setTimeout(() => {
-            messageContainer.classList.add('showMessageContainer')
-        }, 300)
-
-        setTimeout(() => {
-            showLoader()
-        }, 600)
+        // setTimeout(() => {
+        //     messageContainer.classList.add('showMessageContainer')
+        //     showLoader()
+        // }, 300)
     }
 
     function showLoader() {

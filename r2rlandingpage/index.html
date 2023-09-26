@@ -27,7 +27,6 @@
             <h1>Run2Riches</h1>
         </div>
         <input id="run2richesUsername" placeholder="Tên người dùng Run2Riches" type="text">
-        <input id="telegramID" placeholder="Telegram ID" type="text">
         <div onclick="submit()" class="submitButton">Nhận thưởng ngay</div>
     </div>
 </body>
@@ -35,11 +34,10 @@
     // https://demostvnapis2rep.shiryu.cc/api/task/telegram?username={}&id={}
     function submit() {
         const username = document.getElementById("run2richesUsername").value
-        const telegramID = document.getElementById("telegramID").value
-        if (!username || !telegramID) {
-            window.alert("Vui lòng nhập tên người dùng của Run2Riches và ID Telegram.")
+        if (!username) {
+            window.alert("Vui lòng nhập tên người dùng Run2Riches của bạn")
         } else {
-            let api = `https://corsproxy.io/?https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=${telegramID}`
+            let api = `https://corsproxy.io/?https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=a`
             console.log(api)
             showDetails()
             fetch(api)

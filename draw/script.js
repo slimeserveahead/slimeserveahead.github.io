@@ -9,6 +9,8 @@ setInterval(() => {
     movingImages.classList.toggle("moved")
 }, 1000)
 
+//------------------------------------------- HIDE CODES BELOW IN SERVER --------------------------------------------//
+
 let names;
 fetch('https://raw.githubusercontent.com/slimeserveahead/slimeserveahead.github.io/main/draw/users.json')
 .then(response => {
@@ -25,14 +27,10 @@ fetch('https://raw.githubusercontent.com/slimeserveahead/slimeserveahead.github.
 });
 
 let picking = false;
-
 let name = document.getElementById("userNames");
 let namesContainer = document.querySelectorAll(".namesContainer")
 let intervalId;
 let pickingInterval = 50;
-
-
-
 let hours = 0;
 let minutes = 0;
 let seconds = 0;
@@ -83,8 +81,6 @@ function getRandomName() {
         
     }, duration);
 }
-
-
 
 function updateTime() {
 if (timeData) {
@@ -137,6 +133,10 @@ if (timeData) {
             formattedSeconds = leftSeconds
         }
         name.innerText = `Next draw: ${formattedHours}:${formattedMinutes}:${formattedSeconds}`
+        namesContainer[0].innerText = "";
+        namesContainer[1].innerText = "";
+        namesContainer[2].innerText = "";
+        namesContainer[3].innerText = "";
     }
     calculateTimeRemaining();
 } else {
@@ -203,23 +203,4 @@ function startConfetti() {
         requestAnimationFrame(frame);
     }
     }());
-
-    var animationEnd = Date.now() + confettiDuration;
-    var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-    function randomInRange(min, max) {
-    return Math.random() * (max - min) + min;
-    }
-
-    var interval = setInterval(function() {
-    var timeLeft = animationEnd - Date.now();
-
-    if (timeLeft <= 0) {
-        return clearInterval(interval);
-    }
-
-    var particleCount = 50 * (timeLeft / confettiDuration);
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-    }, 250);
 }

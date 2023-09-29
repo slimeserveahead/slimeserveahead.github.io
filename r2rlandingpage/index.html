@@ -27,6 +27,7 @@
             <h1>Run2Riches</h1>
         </div>
         <input id="run2richesUsername" placeholder="Tên người dùng Run2Riches" type="text">
+        <input id="telegramID" placeholder="Telegram ID" type="text">
         <div onclick="submit()" class="submitButton">Nhận thưởng ngay</div>
     </div>
 </body>
@@ -34,10 +35,11 @@
     // https://demostvnapis2rep.shiryu.cc/api/task/telegram?username={}&id={}
     function submit() {
         const username = document.getElementById("run2richesUsername").value
-        if (!username) {
+        const telegram = document.getElementById("telegramID").value
+        if (!username && !telegram) {
             window.alert("Vui lòng nhập tên người dùng Run2Riches của bạn")
         } else {
-            let api = `https://corsproxy.io/?https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=a`
+            let api = `https://demostvnapis2rep.shiryu.cc/api/task/telegram?username=${username}&id=${telegram}`
             console.log(api)
             showDetails()
             fetch(api)
@@ -59,7 +61,6 @@
                 } else if (responseMsg === "Task bonus has been received") {
                     responseMsg = "Nhiệm vụ hoàn thành"
                 }
-
                 message.innerText = responseMsg
             })
         }

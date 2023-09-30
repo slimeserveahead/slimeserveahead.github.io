@@ -114,12 +114,6 @@
                     <th class="fourthColumn fourthColumnHeader">5 days chart</th>
                 </tr>
                 <tr>
-                    <td class="firstColumn"><img src="images/wcoin_logo.webp">Wcoin</td>
-                    <td class="secondColumn" id="wCoinPrice">2,670</td>
-                    <td class="thirdColumn"   id="wCoinChange">0%</td>
-                    <td id="wCoin-graph" class="graph fourthColumn"></td>
-                </tr>
-                <tr>
                     <td class="firstColumn"><img src="images/bnb.webp">BNB</td>
                     <td class="secondColumn" id="bnbPrice">Loading...</td>
                     <td class="thirdColumn"   id="bnbChange">Loading...</td>
@@ -403,75 +397,6 @@ getChange();
     createGraph('eth-graph', 'ethereum');
     createGraph('bnb-graph', 'binancecoin');
     createGraph('trx-graph', 'tron');
-
-
-    // ------------------------------------------------------ GRAPH FOR WCOIN -----------------------------------------------------------//
-
-    function createWCoinGraph(id) {
-        const wCoinData = 'https://raw.githubusercontent.com/slimeserveahead/slimeserveahead.github.io/main/run2riches/data.json';
-
-        fetch(wCoinData)
-        .then(response => response.json())
-        .then(data => {
-
-            var timestamps = data.prices.map(entry => new Date(entry[0]));
-            var prices = data.prices.map(entry => entry[1]);
-
-            console.log(`timestamps: ${timestamps}`)
-            console.log(`prices: ${prices}`)
-
-            // Determine the color of the graph line based on price change
-            var color = prices[0] <= prices[prices.length - 1] ? '#52AF99' : '#E05A38'; // Green if positive, red if negative
-
-            // Create a trace for the graph
-            var trace = {
-            x: timestamps,
-            y: prices,
-            mode: 'lines',
-            line: { color: color } // Set line color dynamically
-            };
-
-            // Define the layout
-            var layout = {
-            showlegend: false, // Hide legend
-            xaxis: { showgrid: false, zeroline: false }, // Hide x-axis grid and zeroline
-            yaxis: { showgrid: false, zeroline: false }, // Hide y-axis grid and zeroline
-            paper_bgcolor: 'rgba(0,0,0,0)', // Set the background color to transparent
-            plot_bgcolor: 'rgba(0,0,0,0)', // Set the plot area background color to transparent
-            margin: { t: 0, r: 0, b: 0, l: 0 } // Remove margins
-            };
-
-            // Combine the trace and layout and plot the graph
-            Plotly.newPlot(id, [trace], layout, { displayModeBar: false }); // Hide mode bar
-
-            // -------------------------------------- WCOIN CHANGE ------------------------------------//
-
-            const wCoinChange = data.change;
-            
-            document.getElementById('wCoinChange').textContent = `${wCoinChange}%`;
-
-            const wCoinChangeElement = document.getElementById("wCoinChange");
-            const wCoinChangeText = parseFloat(wCoinChange).toFixed(2);
-
-            if (wCoinChangeText > 0) {
-                wCoinChangeElement.style.color = "#52AF99";
-                wCoinChangeElement.textContent = "+" + wCoinChangeText + "%"; // Add "+" sign
-            } else if (wCoinChangeText < 0) {
-                wCoinChangeElement.style.color = "#E05A38";
-            }
-
-            // ------------------------------------ WCOIN PRICE ---------------------------------------//
-            const wCoinPrice = data.current_price;
-
-            document.getElementById('wCoinPrice').textContent = `${wCoinPrice.toLocaleString()}`;
-
-        })
-        .catch(error => {
-            console.error('Error fetching JSON:', error);
-        });
-
-    }
-    createWCoinGraph('wCoin-graph');
 
 // ------------------------------------MOBILE SIDEBAR------------------------------------------- //
     // Get the menu and sidebar elements

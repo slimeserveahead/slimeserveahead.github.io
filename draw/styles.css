@@ -38,9 +38,9 @@ body {
 
 .contents {
     position: absolute;
-    height: 30vw;
+    height: 25vw;
     width: 52vw;
-    top: 22vw;
+    top: 24vw;
     left: 19.4vw;
     display: flex;
     flex-direction: column;
@@ -52,8 +52,14 @@ body {
 .logo {
     width: 24vw;
     margin-top: 2vw;
+    width: 19vw;
+    margin-top: -20vw;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
 }
-
+.moveLogo {
+    transform: translateX(-17vw);
+}
 .userNames {
     height: 5vw;
     width: 100%;
@@ -247,7 +253,7 @@ body {
         height: 217vw;
     }
     .titleContainer {
-        top: 31vw;
+        top: 16vw;
         left: 9vw;
         width: 84vw;
         height: 15.5vw;
@@ -261,8 +267,8 @@ body {
         padding: 0px 5vw;
     }
     .logo {
-        width: 55vw;
-        margin-top: 2vw;
+        width: 48vw;
+        margin-top: -57vw;
     }
     .userNames {
         height: 12vw;
@@ -301,8 +307,11 @@ body {
         font-size: 2.2vw;
     }
     .historyIcon {
-        top: 14vw;
+        top: 45vw;
         right: 8vw;
         width: 10vw;
+    }
+    .moveLogo {
+        transform: translateY(-27vw);
     }
 }

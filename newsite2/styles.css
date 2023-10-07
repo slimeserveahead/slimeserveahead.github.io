@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 110%;
+    /* overflow: hidden; */
+    background-color: black;
+}
+
+body {
+    background: url("./images/pcnew24.png") no-repeat center top;
+    background-size: cover;
+}
+
+.w750 {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnBox {
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+}
+.third-content{
+    width: 1308px;
+    height: 125px;
+    margin: 0 auto;
+    background: url("./img/EE88PC.png") no-repeat center top;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background: url("images/MOBILEqh88.png") no-repeat center top;
+        background-size: cover;
+    }
+    .btnBox img {
+        width: 60%;
+    }
+    .third-content{
+        width: 60%;
+        margin: 0 auto;
+        background: url(./img/EE88MB.png) no-repeat center top;    
+        background-size: contain;
+}
+}

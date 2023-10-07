@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    color:#4B4B4B
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121d34;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.topImage img {
+    width: 100%;
+}
+
+.mainSection {
+    padding: 0 8vw;
+}
+
+
+.container {
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-color: #121a2e;
+    background-size: contain;
+    border: 0.01vw solid white;
+    border-radius: 2vw;
+    padding: 5vw;
+    color: #c5bbb8;
+    text-align: justify;
+    position: relative;
+    margin-bottom: 7vw;
+    font-size: 4.4vw;
+    z-index: 4;
+}
+
+
+.outerLine {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 0.005vw solid white;
+    border-radius: 2vw;
+    top: 0;
+    left: 0;
+    transform: scaleX(1.05) translateY(2vw);
+    z-index: -1;
+}
+
+.container img {
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.tableContainer {
+    display: flex;
+    margin-top: 3vw;
+    gap: 5vw;
+}
+
+
+.leftContainer {
+    width: 4vw;
+}
+
+.leftContainer img {
+    width: 6vw;
+    margin-top: 0;
+}
+
+.footer {
+    height: 13vw;
+}
+
+.iconContainer {
+    height: 9vw;
+    width: 33vw;
+    border-radius: 6vw;
+    background-color: white;
+    position: fixed;
+    right: 8vw;
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    font-size: 3.6vw;
+    bottom: 3vw;
+    z-index: 9;
+}
+
+.iconContainer img {
+    width: 11vw;
+    position: absolute;
+    right: -2vw;
+}
+
+.imageAdjust {
+    margin-bottom: 5vw;
+}
+
+.leftBG {
+    position: absolute;
+    transform: translateX(-11vw);
+}
+
+.leftBG img {
+    height: 16vw;
+}
+
+.rightBG {
+    position: absolute;
+    transform: translateX(78vw);
+}
+
+.rightBG img {
+    height: 16vw;
+}
+
+.left1 {
+    top: 16vw;
+}
+
+.left2 {
+    top: 60vw;
+}
+
+.left3 {
+    top: 60vw;
+}
+
+.left4 {
+    top: 22vw;
+}
+
+.left5 {
+    top: 15vw;
+}
+
+.left6 {
+    top: 13vw;
+}
+
+span {
+    color: #86C6FF;
+}
+
+.increaseSize {
+    transform: scale(1.05);
+}

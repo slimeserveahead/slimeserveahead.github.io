@@ -23,7 +23,7 @@ body {
 }
 
 body {
-    background: url("./images/pcnew24.png") no-repeat center top;
+    background: url("./images/pcnew24.webp") no-repeat center top;
     background-size: cover;
 }
 
@@ -46,12 +46,12 @@ body {
     width: 1308px;
     height: 125px;
     margin: 0 auto;
-    background: url("./img/EE88PC.png") no-repeat center top;
+    background: url("./img/EE88PC.webp") no-repeat center top;
 }
 
 @media screen and (max-width: 1024px) {
     body {
-        background: url("images/MOBILEqh88.png") no-repeat center top;
+        background: url("images/MOBILEqh88.webp") no-repeat center top;
         background-size: cover;
     }
     .btnBox img {
@@ -60,7 +60,7 @@ body {
     .third-content{
         width: 60%;
         margin: 0 auto;
-        background: url(./img/EE88MB.png) no-repeat center top;    
+        background: url(./img/EE88MB.webp) no-repeat center top;    
         background-size: contain;
 }
 }

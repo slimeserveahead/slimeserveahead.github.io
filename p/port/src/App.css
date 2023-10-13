@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background-color: #131313;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+.aboutMe {
+  display: flex;
+}
+
+.userImageContainer {
+  width: 34vw;
+}
+
+.userImage {
+  width: 5vw;
+}
+
+.aboutMeContainer {
+  background-color: #B2B0B0;
+  border-radius: 2vw;
+  height: 46vw;
+  width: 58vw;
+  overflow: hidden;
+}
+
+.aboutMeButtonsContainer {
+  width: auto;
+  height: 12vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background: #FFC428;
+}
+
+.aboutMeButton {
+  width: 15vw;
+  height: 6vw;
+  background: #FFC428;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: 1px #302E2F solid;
+  border-top: 1px #302E2F solid;
+  border-right: 1px #302E2F solid;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #131313;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.activeAboutMeButton  {
+  background-color: #302E2F;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.education {
+  transition: all 0.5s;
+  transform: translateX(-100%);
+  display: flex;
+}
+.educationShow {
+  transform: translateX(0);
+}
+.work {
+  display: flex;
+  transform: translate(100%, -80vw);
+  transition: all 0.5s;
+}
+.workShow {
+  transform: translate(0, -80vw);
+}
+.workContents {
+  width: 39.8vw;
+}
+.workSidebar {
+  background-color: #302E2F;
+  height: 32vw;
+  width: 16.3vw;
+  border-bottom-left-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  padding: 1vw;
+}
+.aboutMeDescription {
+  background-color: #302E2F;
+  height: 100%;
+  width: 100%;
+  transform: translate(0vw, -34vw);
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+.aboutMeDescriptionShow {
+  opacity: 1;
+  visibility: visible;
+}
+.educationSidebar {
+  height: 32vw;
+  width: 16.3vw;
+  background-color: #302E2F;
+  border-bottom-right-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  padding: 1vw;
+}
+.educationButtons, .workButtons {
+  border: solid 0.2vw #B2B0B0;
+  border-radius: 0.5vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.educationSidebar img {
+  width: 4vw;
+  margin-left: 1vw;
+  margin-right: 2vw;
+}
+.educationButtonActive, .workButtonActive {
+  background-color: #FFC428;
+  border: solid 0.2vw #FFC428;
+  transition: all 0.5s;
+}
+.workButtons img {
+  height: 4vw;
+  margin-right: 2vw;
+}
+.skills {
+  justify-content: center;
+  height: 42vw;
+  overflow: hidden;
+}
+.skillsContainer {
+  padding: 0vw 20vw;
+  z-index: 1;
+  height: 36vw;
+  position: absolute;
+  width: calc(100% - 40vw);
+}
+.skillBar {
+  background-color: #282828;
+  height: 1vw;
+  border-radius: 2vw;
+  margin-top: 0.5vw;
+  overflow: hidden;
+}
+.skillbarContainer {
+  margin-top: 4vw;
+}
+.skillProgress {
+  width: 59vw;
+  background-color: #FFC428;
+  height: 1vw;
+  transition: width 0.8s cubic-bezier(0.41, -0.02, 0.01, 1.51);
+}
+.rightArrow, .leftArrow{
+  background-color: #FFC428;
+  height: 6vw;
+  width: 17vw;
+  gap: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  cursor: pointer;
+}
+.rightArrow {
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  transform: translateX(11vw);
+}
+.leftArrow {
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  transform: translateX(-11vw);
+}
+.rightArrow img, .leftArrow img{
+  width: 4vw;
+}
+.skillsSection {
+  position: relative;
+  overflow-x: hidden;
+}
+.arrows {
+  position: absolute;
+  top: 21vw;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.arrowText {
+  color: #131313;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+
+}
+.contact {
+  display: flex;
+  height: 46vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.contactText {
+  width: 41vw;
+}
+.contactSocialContainer {
+  position: relative;
+}
+.messenger {
+  height: 14vw;
+  width: 14vw;
+  border: 1px solid white;
+  border-radius: 7vw;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-67deg);
+  font-size: 1.5vw;
+}
+.linkedIn {
+  height: 18vw;
+  width: 18vw;
+  border: 1px solid white;
+  border-radius: 9vw;
+  position: absolute;
+  bottom: 0;
+  left: 14.05vw;
+  transform: rotate(29deg);
+  font-size: 2.4vw;
+}
+.viber {
+  height: 22vw;
+  width: 22vw;
+  border: 1px solid white;
+  border-radius: 11vw;
+  position: absolute;
+  bottom: 0;
+  left: 32.1vw;
+  transform: rotate(-45deg);
+  font-size: 3vw;
+}
+.telegram {
+  height: 11vw;
+  width: 11vw;
+  border: 1px solid white;
+  border-radius: 7vw;
+  position: absolute;
+  bottom: 13.2vw;
+  left: 6.4vw;
+  font-size: 1.5vw;
+  transform: rotate(-14deg);
+}
+.facebook {
+  height: 11vw;
+  width: 11vw;
+  border: 1px solid white;
+  border-radius: 7vw;
+  position: absolute;
+  bottom: 16.2vw;
+  left: 24.9vw;
+  font-size: 1.5vw;
+  transform: rotate(6deg);
+}
+.messenger, .linkedIn, .viber, .telegram, .facebook {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease-in-out, color 0.4s;
+}
+.messenger:hover, .linkedIn:hover, .viber:hover, .telegram:hover, .facebook:hover {
+  background-color: white;
+  color: #131313;
+}
+.contactText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2vw;
+}
+.screenshotsContainer {
+  position: relative;
+}
+
+.screenshotsContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.screenshot {
+  position: absolute;
+  width: 20vw;
+  transition: all 0.4s;
+}
+
+.screenshot img {
+  width: 100%;
+}
+
+.screenshot1 {
+  top: 4vw;
+  left: 64vw;
+  transform: rotate(11deg);
+}
+
+.screenshot2 {
+  top: 4vw;
+  left: 36vw;
+  transform: rotate(3deg);
+}
+
+.screenshot3 {
+  top: 4vw;
+  left: 6vw;
+  transform: rotate(-11deg);
+}
+
+.screenshot4 {
+  top: 24vw;
+  left: 6vw;
+  transform: rotate(8deg);
+}
+.screenshot5 {
+  top: 24vw;
+  left: 37vw;
+  transform: rotate(-3deg);
+}
+.screenshot6 {
+  top: 25vw;
+  left: 63vw;
+  transform: rotate(-13deg);
+}
+.backscreenshot1 {
+  top: 4vw;
+  left: 64vw;
+  transform: rotate(11deg);
+}
+
+.backscreenshot2 {
+  top: 4vw;
+  left: 36vw;
+  transform: rotate(3deg);
+}
+
+.backscreenshot3 {
+  top: 4vw;
+  left: 6vw;
+  transform: rotate(-11deg);
+}
+
+.backscreenshot4 {
+  top: 24vw;
+  left: 6vw;
+  transform: rotate(8deg);
+}
+.backscreenshot5 {
+  top: 24vw;
+  left: 37vw;
+  transform: rotate(-3deg);
+}
+.backscreenshot6 {
+  top: 25vw;
+  left: 63vw;
+  transform: rotate(-13deg);
+}
+.screenshotCenter {
+  top: 19vw;
+  left: 45vw;
+  width: 2vw;
+  visibility: hidden;
+}
+.visibilityHidden {
+  visibility: hidden;
+}
+.frontEndProjects {
+  position: relative;
+}
+.frontEndProjectsText {
+  position: absolute;
+  top: 19vw;
+  left: 45vw;
+  z-index: 1;
+  animation: glowingWhite 1s ease-in-out infinite;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+@keyframes glowingWhite {
+  0% {
+    text-shadow:
+    0 0 10px white,
+    0 0 0px white,
+    0 0 0px white;
+  }
+  50% {
+    text-shadow:
+    0 0 10px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 10px white;
+  }
+  100% {
+    text-shadow:
+    0 0 10px white,
+    0 0 0px white,
+    0 0 0px white;
+  }
+}
+
+.leftContainer {
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(1, 0.18, 0.24, 0.91);
+}
+.middleContainer {
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(1, 0.18, 0.24, 0.91);
+}
+.rightContainer {
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(1, 0.18, 0.24, 0.91);
+}

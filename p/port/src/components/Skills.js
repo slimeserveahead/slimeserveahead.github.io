@@ -8,46 +8,35 @@ import rightArrow from "../images/right_arrow.png"
 import BackEnd from "./BackEnd";
 import Languages from "./Languages";
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function Skills() {
     const [isLeftHovered, setIsLeftHovered] = React.useState(false);
     const [isRightHovered, setIsRightHovered] = React.useState(false);
-    const [category, setCategory] = React.useState(0);
-    const [isLanguages, setIsLanguages] = React.useState(true)
-    const [isBackend, setIsBackend] = React.useState(false)
-    const [isFrontend, setIsFrontend] = React.useState(false)
     const [isMoving, setIsMoving] = React.useState(false)
 
-    React.useEffect(() => {
-        if (category === 0) {
-            setIsLanguages(true)
-            setIsBackend(false)
-            setIsFrontend(false)
-        } else if (category === 1) {
-            setIsLanguages(false)
-            setIsFrontend(true)
-            setIsBackend(false)
-        } else {
-            setIsLanguages(false)
-            setIsFrontend(false)
-            setIsBackend(true)
-        }
-    }, [category])
-
-    function moveUp() {
+    function moveRight() {
         setIsMoving(true)
 
         if (!isMoving) {
-            if (category === 2) {
-                setCategory(0)
-            } else {
-                setCategory(prevCount => prevCount + 1)
-            }
+            
             const middleContainer = document.querySelector('.middleContainer') 
             const rightContainer = document.querySelector(".rightContainer")
             const leftContainer = document.querySelector(".leftContainer")
             leftContainer.classList.add("visibilityHidden")
             rightContainer.classList.remove("visibilityHidden")
-    
+
+            const arrowTextTop = document.querySelector(".arrowTextTop")
+            const arrowTextMid = document.querySelector(".arrowTextMid")
+            const arrowTextBot = document.querySelector(".arrowTextBot")
+
+            const arrowTextLeftTop = document.querySelector(".arrowTextLeftTop")
+            const arrowTextLeftMid = document.querySelector(".arrowTextLeftMid")
+            const arrowTextLeftBot = document.querySelector(".arrowTextLeftBot")
+
             setTimeout(() => {
                 middleContainer.classList.add("leftContainer")
                 middleContainer.classList.remove("middleContainer")
@@ -55,6 +44,20 @@ function Skills() {
                 leftContainer.classList.remove("leftContainer")
                 rightContainer.classList.add("middleContainer")
                 rightContainer.classList.remove("rightContainer")
+
+                arrowTextMid.classList.add("arrowTextTop")
+                arrowTextMid.classList.remove("arrowTextMid")
+                arrowTextTop.classList.add("arrowTextBot")
+                arrowTextTop.classList.remove("arrowTextTop")
+                arrowTextBot.classList.add("arrowTextMid")
+                arrowTextBot.classList.remove("arrowTextBot")
+
+                arrowTextLeftMid.classList.add("arrowTextLeftBot")
+                arrowTextLeftMid.classList.remove("arrowTextLeftMid")
+                arrowTextLeftTop.classList.add("arrowTextLeftMid")
+                arrowTextLeftTop.classList.remove("arrowTextLeftTop")
+                arrowTextLeftBot.classList.add("arrowTextLeftTop")
+                arrowTextLeftBot.classList.remove("arrowTextLeftBot")
             }, 50)
 
             setTimeout(() => {
@@ -63,20 +66,26 @@ function Skills() {
         }
     }
 
-    function moveDown() {
+    function moveLeft() {
         setIsMoving(true)
         
         if (!isMoving) {
-            if (category === 0) {
-                setCategory(2)
-            } else {
-                setCategory(prevCount => prevCount - 1)
-            }
+            
             const middleContainer = document.querySelector('.middleContainer') 
             const rightContainer = document.querySelector(".rightContainer")
             const leftContainer = document.querySelector(".leftContainer")
             rightContainer.classList.add("visibilityHidden")
             leftContainer.classList.remove("visibilityHidden")
+
+
+            const arrowTextTop = document.querySelector(".arrowTextTop")
+            const arrowTextMid = document.querySelector(".arrowTextMid")
+            const arrowTextBot = document.querySelector(".arrowTextBot")
+
+            const arrowTextLeftTop = document.querySelector(".arrowTextLeftTop")
+            const arrowTextLeftMid = document.querySelector(".arrowTextLeftMid")
+            const arrowTextLeftBot = document.querySelector(".arrowTextLeftBot")
+
             setTimeout(() => {
                 middleContainer.classList.add("rightContainer")
                 middleContainer.classList.remove("middleContainer")
@@ -84,6 +93,20 @@ function Skills() {
                 leftContainer.classList.remove("leftContainer")
                 rightContainer.classList.add("leftContainer")
                 rightContainer.classList.remove("rightContainer")
+
+                arrowTextLeftMid.classList.add("arrowTextLeftTop")
+                arrowTextLeftMid.classList.remove("arrowTextLeftMid")
+                arrowTextLeftTop.classList.add("arrowTextLeftBot")
+                arrowTextLeftTop.classList.remove("arrowTextLeftTop")
+                arrowTextLeftBot.classList.add("arrowTextLeftMid")
+                arrowTextLeftBot.classList.remove("arrowTextLeftBot")
+
+                arrowTextMid.classList.add("arrowTextBot")
+                arrowTextMid.classList.remove("arrowTextMid")
+                arrowTextTop.classList.add("arrowTextMid")
+                arrowTextTop.classList.remove("arrowTextTop")
+                arrowTextBot.classList.add("arrowTextTop")
+                arrowTextBot.classList.remove("arrowTextBot")
             }, 50)
 
             setTimeout(() => {
@@ -109,7 +132,7 @@ function Skills() {
     }
 
     return (
-        <div className="skillsSection">
+        <div className="skillsSection" id="skillsSection">
             <div className="skills">
                 <Languages />
                 <BackEnd />
@@ -118,27 +141,35 @@ function Skills() {
             <div className="arrows">
                 <div 
                     className="leftArrow"
-                    onClick={moveDown}
+                    onClick={moveLeft}
                     onMouseEnter={hoveringLeft}
                     onMouseLeave={leavingLeft}
                     style={{transform : isLeftHovered ? `translateX(0)` : ""}}
                 >
-                    <div className="arrowText">{isLanguages ? "F" : isBackend ? "B" :  "L"}</div>
+                    <div className="arrowText">
+                        <div className="arrowTextContent arrowTextLeftTop">Languages</div>
+                        <div className="arrowTextContent arrowTextLeftMid">Frontend</div>
+                        <div className="arrowTextContent arrowTextLeftBot">Backend</div>
+                    </div>
                     <img src={leftArrow}></img>
                 </div>
                 <div 
                     className="rightArrow"
-                    onClick={moveUp}
+                    onClick={moveRight}
                     onMouseEnter={hoveringRight}
                     onMouseLeave={leavingRight}
                     style={{transform : isRightHovered ? `translateX(0)` : ""}}
                 >
                     <img src={rightArrow}></img>
-                    <div className="arrowText">{isLanguages ? "B" : isFrontend ? "F" : "L"}</div>
+                    <div className="arrowText">
+                        <div className="arrowTextContent arrowTextTop">Languages</div>
+                        <div className="arrowTextContent arrowTextMid">Backend</div>
+                        <div className="arrowTextContent arrowTextBot">Frontend</div>
+                    </div>
                 </div>
             </div>
         </div>
     )
-}
+}   
 
 export default Skills

@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
 
     React.useEffect(() => {
+
         gsap.fromTo('.messenger', 
         {   
             y: -1000,
@@ -18,7 +19,8 @@ function Contact() {
             ease: 'bounce', 
             scrollTrigger : {
                 trigger: ".contactSocialContainer",
-                start: "bottom bottom"
+                start: "center bottom",
+                markers: true
             }
         })
 
@@ -33,7 +35,7 @@ function Contact() {
             ease: 'bounce',
             scrollTrigger : {
                 trigger: ".contactSocialContainer",
-                start: "bottom bottom"
+                start: "center bottom"
             } 
         })
 
@@ -48,7 +50,7 @@ function Contact() {
             ease: 'bounce',
             scrollTrigger : {
                 trigger: ".contactSocialContainer",
-                start: "bottom bottom"
+                start: "center bottom"
             } 
         })
 
@@ -63,7 +65,7 @@ function Contact() {
             ease: 'bounce',
             scrollTrigger : {
                 trigger: ".contactSocialContainer",
-                start: "bottom bottom"
+                start: "center bottom"
             } 
         })
 
@@ -78,9 +80,9 @@ function Contact() {
             ease: 'bounce',
             scrollTrigger : {
                 trigger: ".contactSocialContainer",
-                start: "bottom bottom"
+                start: "center bottom"
             } 
-        })
+        })       
     }, [])
     
     return (

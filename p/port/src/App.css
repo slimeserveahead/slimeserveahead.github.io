@@ -135,7 +135,7 @@ body {
 }
 .skills {
   justify-content: center;
-  height: 42vw;
+  height: 45vw;
   overflow: hidden;
 }
 .skillsContainer {
@@ -170,7 +170,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.5s ease-in-out;
-  z-index: 2;
+  z-index: 10;
   cursor: pointer;
 }
 .rightArrow {
@@ -192,17 +192,20 @@ body {
 }
 .arrows {
   position: absolute;
-  top: 21vw;
+  top: 19vw;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  overflow: hidden;
 }
 .arrowText {
   color: #131313;
   width: 8vw;
   display: flex;
   justify-content: center;
-
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: 1.5vw;
 }
 .contact {
   display: flex;
@@ -294,7 +297,6 @@ body {
 }
 
 .screenshotsContainer {
-  width: 100vw;
   height: 100vh;
 }
 
@@ -429,4 +431,29 @@ body {
 .rightContainer {
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(1, 0.18, 0.24, 0.91);
+}
+.arrowTextContent {
+  position: absolute;
+  top: -1vw;
+}
+
+.arrowTextTop, .arrowTextLeftTop {
+  top: -5vw;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 6px #000;
+  color: transparent;
+  visibility: hidden;
+}
+
+.arrowTextMid, .arrowTextLeftMid {
+  top: -1vw;
+  transition: all 0.4s ease-in-out;
+}
+
+.arrowTextBot, .arrowTextLeftBot {
+  top: 3vw;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 6px #000;
+  color: transparent;
+  visibility: hidden;
 }

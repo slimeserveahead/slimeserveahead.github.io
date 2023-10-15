@@ -1,6 +1,4 @@
-import gsap from "gsap";
 import React from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 import FrontendProjects from "./FrontendProjects";
 import BackendProjects from "./BackendProjects";

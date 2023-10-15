@@ -1,10 +1,13 @@
+import React from "react"
+
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import HeroSection from './components/HeroSection';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+
 import logo from './logo.svg';
 import './App.css';
-import React from "react"
-import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
 
 function App() {
 
@@ -20,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <HeroSection />
       <AboutMe />
       <Skills />
       <Projects 

@@ -4,6 +4,8 @@ body {
   background-color: #131313;
   font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 .aboutMe {
   display: flex;
@@ -456,4 +458,24 @@ body {
   text-shadow: 0 0 6px #000;
   color: transparent;
   visibility: hidden;
+}
+.heroSection {
+  background-image: url('images/herobackground.png');
+  background-size: 101vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vw;
+  display: flex;
+  position: relative;
+}
+
+.heroPictureContainer {
+  width: 44vw;
+  position: absolute;
+  top: 9vw;
+  left: 50vw;
+}
+
+.heroPictureContainer img {
+  width: 100%;
 }

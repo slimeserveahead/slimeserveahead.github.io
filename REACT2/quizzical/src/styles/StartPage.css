@@ -1,0 +1,59 @@
+.startPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startPage button {
+    background-color: #4d5b9e;
+    border: 0;
+    border-radius: 15px;
+    color: #f5f7fb;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    height: 50px;
+    width: 190px;
+    z-index: 100;
+    margin-top: 20px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 550px;
+}
+
+.selection label {
+    font-weight: 700;
+    font-size: 16px;
+    width: 233px;
+}
+
+.selection select {
+    border: 0;
+    border-radius: .25em;
+    box-shadow: 0 0 0.6em 0 rgba(0,0,0,.2);
+    color: #293264;
+    cursor: pointer;
+    font: inherit;
+    height: 3em;
+    padding: 0 1em;
+    width: -webkit-fill-available;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}

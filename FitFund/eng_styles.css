@@ -1,0 +1,1731 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('fonts/Helvetica-Bold.ttf') format('truetype');
+}  
+@font-face {
+    font-family: 'Helvetica Bold Oblique';
+    src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Bold Oblique';
+    src: url('fonts/Helvetica-BoldOblique.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Compressed';
+    src: url('fonts/helvetica-compressed-5871d14b6903a.otf') format('opentype');
+}  
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url('fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Oblique';
+    src: url('fonts/Helvetica-Oblique.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Helvetica Rounded Bold';
+    src: url('fonts/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PingFang SC Regular';
+    src: url('fonts/pingfang\ \(regular\).ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PingFang SC 400';
+    src: url('fonts/pingfang\ \(regular\).ttf') format('truetype');
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Helvetica', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.1vw;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.navbar {
+    background-color: black;
+    display: flex;
+    height: 6vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    padding-bottom: 0;
+    font-family: 'PingFang SC 400', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.navbarSelector {
+    position: absolute;
+    height: 0.6vw;
+    background-color: white;
+    bottom: 0;
+    border-top-right-radius: 0.5vw;
+    border-top-left-radius: 0.5vw;
+}
+.navbarSelectorHome {
+    right: 42.4vw;
+    width: 4vw;
+}
+.navbarSelectorFaq {
+    right: 35.05vw;
+    width: 3.3vw;
+}
+.navbarSelectorDownload {
+    right: 25.05vw;
+    width: 6vw;
+}
+.navbarSelectorCancellation {
+    right: 9.4vw;
+    width: 11.5vw;
+}
+.navbarLogo img {    
+    width: 3vw;
+}
+.navbarMenu {
+    display: flex;
+    gap: 5vw;
+}
+.navbarLogo {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    left: 10vw;
+}
+.navbarRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarRight img:nth-child(1) {
+    width: 1.2vw;
+    margin-right: 0.5vw;
+}
+.navbarRight:nth-child(2) {
+    margin-right: 1vw;
+}
+.navbarRight img:nth-child(3) {
+    width: 0.8vw;
+    margin-left: 0.5vw;
+}
+/*---------------------------- LANGUAGE SELECTOR ----------------------------------------*/
+.navbarRight:hover {
+    cursor: pointer;
+}
+.languageSelector {
+    background-color: black;
+    position: fixed;
+    top: 5vw;
+    right: 8.4vw;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    border: 0.01vw solid white;
+    color: white;
+    font-size: 1vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    transform: translateY(-2vw);
+}
+.languageSelector a{
+    color: white;
+    text-decoration: none;
+}
+.showLanguageSelector {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.language {
+    background-color: black;
+    width: 7vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2vw;
+    margin: 0.25vw 0.25vw;
+}
+.selectedLanguage {
+    background-color: #606060;
+    border: 0.01vw solid white;
+}
+/* -----------------DOWNLOAD SECTION -------------------*/
+.downloadSection {
+    background-color: #F2F3FF;
+    height: 28vw;
+    margin-top: 0;
+    position: relative;
+    padding: 5vw 15vw;
+    padding-top: 11vw;
+}
+.downloadBanner{
+    position: absolute;
+    width: 45vw;
+    bottom: 0;
+    right: 5vw;
+}
+h2 {
+    margin-top: 0;
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 45vw;
+    font-size: 3vw;
+}
+h3 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2vw;
+    width: 37vw;
+    margin-top: -1vw;
+}
+h4 {
+    font-family: 'Helvetica', sans-serif;
+    color: #777777;
+    font-size: 1.2vw;
+    width: 41vw;
+}
+.downloadIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+.downloadButton {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.2vw;
+}
+.iosIcon{
+    font-family: 'Helvetica', sans-serif;
+    background-color: black;
+    width: 12vw;
+    height: 3.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.androidIcon{
+    font-family: 'Helvetica', sans-serif;
+    background-color: black;
+    width: 12vw;
+    height: 3.5vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.androidIcon, .iosIcon {
+    font-size: 1vw;
+}
+.firstQRCode img {
+    width: 3.5vw;
+}
+.androidIcon img{
+    width: 1vw;
+    margin-right: 0.5vw;
+}
+.iosIcon img{
+    width: 0.8vw;
+    margin-right: 0.5vw;
+    transform: translateY(-0.01vw)
+}
+.downloadPopup {
+    opacity: 0;
+    position: absolute;
+    /* transform: translateX(33vw); */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out; /* Add transition properties */
+}
+.downloadPopup img{
+    width: 8vw;
+}
+.firstQRCode:hover {
+    cursor: pointer;
+}
+
+.firstQRCode:hover .downloadPopup{
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+}
+
+/* ----------------- COUNTER -------------------*/
+.counter{
+    height: 9vw;
+    background-color: #4E62E4;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5vw;
+}
+.leftCounter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0vw;
+}
+.middleCounter {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 0vw;
+}
+.rightCounter {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 0vw;
+}
+h5 {
+    font-family: 'Helvetica Light', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 1vw;
+}
+h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+}
+.widthReducer {
+    width: 15vw;
+}
+/*--------------------------- CRYPTO PRICES ----------------------*/
+.cryptoPrices {
+    background-color: #F7F9FB;
+    height: auto;
+    padding: 0 10vw;
+    padding-bottom: 2vw;
+    overflow-x: hidden;
+}
+.cryptoTable {
+    width: 86vw;
+    font-size: 0.8vw;
+    transform: translateX(10vw);
+}
+.cryptoTable tbody tr{
+    height: 5vw;
+    text-align: center;
+    color: #454545;
+    font-family: 'Helvetica Bold', sans-serif;
+}
+.cryptoTable tbody th{
+    color: #999999;
+    font-family: 'Helvetica', sans-serif;
+}
+.titleCrypto {
+    padding-left: 10vw;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2vw;
+    color: #454545;
+    padding-top: 4vw;
+}
+.graph {
+    width: 3vw; /* Adjust the width as needed */
+    height: 0.2vw; /* Adjust the height as needed */
+    margin-bottom: 2vw; /* Add spacing between graphs */
+}
+.firstColumn {
+    text-align: start;
+}
+.firstColumn img {
+    width: 1vw;
+    margin-right: 0.5vw;
+    transform: translateY(0.1vw)
+}
+.secondColumn {
+    transform: translateX(-45vw);
+    text-align: end;
+    
+}
+.thirdColumn {
+    transform: translateX(-37vw);
+}
+.fourthColumn{
+    width: 5vw;
+    transform: translateX(-31vw);
+}
+/*-------------------------------- STEPS -------------------------*/
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step1, .step2, .step3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    gap: 2vw;
+    font-family: 'Helvetica', sans-serif;
+}
+.step1 img, .step2 img, .step3 img{
+    width: 10vw;
+}
+.stepLine img{
+    width: 12vw;
+    padding-top: 5vw;
+}
+.stepsIcons {
+    display: flex;
+    gap: 4vw;
+}
+.downloadButton {
+    background-color: #4E62E4;
+    color:  white;
+    height: 6vw;
+    width: 16vw;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
+.titleSteps { 
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.7vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+/*------------------------ APP DESCRIPTION --------------------------*/
+.appDescription img{
+    width: 100%;
+}
+.appDescription{
+    position: relative;
+}
+.appDescriptionContents {
+    position: absolute;
+    top: 0vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.socialMediaLinks {
+    justify-content: space-between;
+}
+.appLeft img {
+    width: 30vw;
+}
+.appRight {
+    display: flex;
+    flex-direction: column;
+}
+h7 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3vw;
+    width: 40vw;
+    text-align: end;
+}
+h8 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5vw;
+    text-align: end;
+    color: #606060;
+    margin-top: 2vw;
+    width: 40vw;
+}
+.socialMediaIcons img {
+    width: 4vw;
+    transition: transform 0.3s;
+}
+.socialMediaIcons img:hover { 
+    transform: scale(1.2);
+}
+.socialMediaIcons {
+    margin-top: 2vw;
+    gap: 2vw;
+    display: flex;
+}
+/*------------------------ SOCIAL MEDIA LINKS --------------------------*/
+.socialMediaLinks{
+    height: 35vw;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.socialRight img {
+    width: 30vw;
+}
+.socialMediaLinks {
+    display: flex;
+}
+.socialLeft {
+    display: flex;
+    flex-direction: column;
+}
+h9 {
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 30vw;
+    font-size: 2.5vw;
+}
+h10 {
+    font-family: 'Helvetica', sans-serif;
+    color: #606060;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+/*------------------------ CORE --------------------------*/
+.core {
+    background-color: #F7F9FB;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.coreLeft img {
+    width: 50vw;
+}
+.h11 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2.5vw;
+    text-align: end;
+    width: 33vw;
+    transform: translateX(-11vw);
+}
+
+.h12 img, .h13 img, .h14 img{
+    width: 3vw;
+}
+
+.h12, .h13, .h14 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5vw;
+    color: #262B26;
+}
+/*--------------------- BENEFITS ---------------------------*/
+.benefits {
+    padding: 5vw 10vw;
+    gap: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.benefitsIcon img{
+    width: 4vw;
+}
+.benefitsContainer {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+.benefitsTitle {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 0.4vw;
+}
+.benefitsDescription {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    color: #989898;
+    font-size: 1vw;
+}
+/*------------------- App Description ------------------------------*/
+.appDescriptionDownload {
+    background-color: #4E62E4;
+    height: auto;    
+    padding: 6vw 3vw;
+    display: flex;
+    justify-content: center;
+}
+.appDescriptionLeft {
+    color: white;
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 40vw;
+    font-size: 1.5vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+.appDescriptionLeft img {
+    width: 15vw;
+    margin-top: 1vw;
+}
+.appDescription {
+    display: flex;
+    flex-direction: row;
+}
+.download {
+    border: 0.01vw solid white;
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 16vw;
+    height: 7.9vw;
+    color: white;
+    display: flex;
+    font-size: 1.3vw;
+    justify-content: center;
+    align-items: center;
+}
+.qrCode {
+    width: 16.6vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+.qrCode img{
+    width: 100%;
+}
+.appDescriptionRight {
+    display: flex;
+    gap: 1.5vw;
+}
+.downloadButtons {
+    gap: 0.9vw;
+    display: flex;
+    flex-direction: column;
+}
+.steps a{
+    text-decoration: none;
+}
+/*---------------------------------------------------- FOOTER ------------------------------------*/
+.footer{
+    background-color: #F7F9FB;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica', sans-serif;
+    color: #7E7D7D;
+    font-size: 1vw;
+}
+/*---------------------------------------------------- DOWNLOAD PAGE SECTION STARTS HERE ------------------------------------*/
+.downloadPage {
+    position: relative;
+    padding-top: 6vw;
+    overflow: hidden;
+}
+.dpbgimg {
+    width: 118%;
+}
+.downloadPageContents {
+    position: absolute;
+    z-index: 2;
+    top: 6vw;
+    left: -6vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 52vw;
+    width: 107vw;
+    gap: 11vw;
+}
+.topOne {
+    font-size: 2vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    font-family: 'PingFang SC 400', sans-serif;
+    color: #4E62E4;
+}
+.topOne img {
+    width: 3vw;
+}
+.topTwo {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.topThree {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5vw;
+}
+.rightDownloadP img{
+    width: 29vw;
+}
+.outerSquare {
+    margin-top: 3vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftBotDownloadP {
+    display: flex;
+    align-items: center;
+}
+.downloadPButtons img {
+    width: 1.4vw;
+}
+.iosDownloadP, .androidDownloadP {
+    background-color: #262B27;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    height: 4vw;
+    width: 14vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    transform: translateY(2vw);
+    font-family: 'PingFang SC 400', sans-serif;
+    font-size: 1.3vw;
+}
+.innerSquare {
+    background-color: #C7C3C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.innerSquare img {
+    width: 12vw;
+}
+.certificate {
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------------------------------------------- INTRODUCTION ------------------------------------ */
+.introduction {
+    position: relative;
+    padding-top: 6vw;
+}
+.aboutImg {
+    width: 100%;
+}
+.bannerContents {
+    position: absolute;
+    top: 13vw;
+    left: 15vw;
+}
+.h15 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+.h16 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.7vw;
+}
+.introSecondSection {
+    background-color: #F7F9FB;
+    margin-top: 0vw;
+    padding: 3vw 14vw;
+}
+.h17 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333333;
+    font-size: 2vw;
+}
+.h18 p{
+    font-family: 'Helvetica', sans-serif;
+    text-align: justify;
+    color: #333333;
+    font-size: 1.8vw;
+}
+.h19 {
+    font-family: 'Helvetica Bold', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vw;
+    font-size: 2.5vw;
+}
+.introContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.maps img {
+    width: 40vw;
+}
+.h20 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.6vw;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #47729e;
+    height: 3.5vw;
+    width: 30vw;
+    padding-left: 1vw;
+    border-radius: 2vw;
+    transition: transform 0.3s;
+}
+.h20:hover {
+    transform: scale(1.1);
+}
+.h20Text {
+    background-color: white;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 2vw;
+    width: 25.8vw;
+    padding-left: 1vw;
+}
+.introContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.introContacts a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s;
+}
+.h20 img {
+    width: 2vw;
+}
+.h21 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2.5vw;
+    margin-top: 10vw;
+}
+.h22 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.5vw;
+    color: #989898;
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+.fourthContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 18vw;
+    margin-bottom: 4vw;
+}
+.fourthLeft img {
+    width: 15vw;
+}
+.fourthRight {
+    padding: 0 6vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+.h23 {
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 2vw;
+}
+.h24 {
+    color: #989898;
+    font-size: 1.5vw;
+}
+.h25 {
+    font-size: 1.5vw;
+    color: #4AA6F9;
+}
+/* ------------------------------------------------- INITIAL -------------------------------------------- */
+.initialBannerBG {
+    width: 150%;
+    transform: translate(-47vw, 4.5vw)
+}
+.initialBanner {
+    position: relative;
+    height: 25vw;
+    overflow: hidden;
+    height: 26vw;
+}
+.initialBannerContents {
+    position: absolute;
+    top: 10vw;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.IBCTop {
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #8291F3;
+    font-family: 'Helvetica Bold', sans-serif;
+    font-size: 1.5vw;
+}
+.IBCTop img{
+    width: 3vw;
+}
+.IBCBottom {
+    font-size: 2.5vw;
+    font-family: 'Helvetica Bold', sans-serif;
+}
+.secondSectionTitle {
+    margin-top: 10vw;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    margin-bottom: 6vw;
+    font-family: 'Helvetica Bold', sans-serif;
+    color: #333333;
+}
+.initalSecondSection {
+    padding: 0px 10vw;
+}
+.instructions {
+    padding: 0vw 16vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 61vw;
+    align-items: center;
+}
+.instruction {
+    width: 25vw;
+    font-size: 1.6vw;
+}
+.instructionDescription {
+    text-align: justify;
+    margin-bottom: 2vw;
+    color: #8C8C8C;
+    font-size: 1vw;
+}
+.instructionTitle {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+.thirdSection {
+    background-color: #F7F9FB;
+    padding-top: 4vw;
+}
+.thirdSectionTitle {
+    width: 100%; 
+    justify-content: center;
+    display: flex;
+    font-size: 2vw;
+    font-family: 'Helvetica Bold', sans-serif;   
+    margin-bottom: 3vw;
+}
+.testimonialsContainer {
+    width: 15vw;
+    padding: 1.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    border: 0.01vw solid #DCDCDC;
+    margin-bottom: 2vw;
+}
+.testimonials {
+    color: #938d8d;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    text-align: justify;
+}
+.allTestimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75vw;
+    padding: 0 20vw;
+    height: 60vw;
+}
+.user {
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 2vw;
+    margin-right: 0.5vw;
+}
+.moveDown {
+    transform: translateY(3vw);
+}
+/*------------------------------------------ CANCELLATION PAGE -------------------------------------------*/
+.cancellationPage {
+    padding-top: 8vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.cancellationContentContainer {
+    margin-bottom: 7vw;
+}
+.cancellationContents {
+    color:#777777;
+}
+.cancellationTitle {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+.cancellationContents {
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+    line-height: 2.5vw;
+}
+.photoInstructions img {
+    height: 37vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+}
+.cancellationLogo img{
+    width: 4vw;
+}
+.cancellationLogo {
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 3vw;
+}
+/*---------------------------------------------------- RESPONSIVENESS ------------------------------------*/
+@media screen and (min-width: 768px) {
+    .phone{
+        display: none;
+    }
+    .phoneBG {
+        display: none;
+    }
+    .appDescriptionBGTwo{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .navbar {
+        width: 81%;
+    }
+    .dpbgimgphone {
+        display: none;
+    }
+    .aboutImgPhone {
+        display: none;
+    }
+    .pPhone {
+        display: none;
+    }
+    .introContactDetails{
+        display: none;
+    }
+}
+/*---------------------------------------------------- BELOW ------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .navbarSelector {
+        display: none;
+    }
+    .languageSelector {
+        display: none;
+    }
+    .navbar {
+        background-color: white;
+        display: flex;
+        justify-content: flex-start;
+        height: 12vw;
+    }
+    .navbarMenu {
+        display: none;
+    }
+    .navbarRight{
+        display: none;
+    }
+    .navbarLogo img{
+        display: none;
+    }
+    .navbarLogo {
+        left: 40vw;
+    }
+    h1 {
+        color: #444444;
+        font-size: 4vw;
+    }
+    /* DOWNLOAD */
+    h2 {
+        width: 83vw;
+        font-size: 7vw;
+    }
+    
+    .downloadSection {
+        height: 131vw;
+        margin-top: 0;
+        position: relative;
+        padding: 6vw 10vw;
+        background-color: transparent;
+        padding-top: 16vw;
+    }
+    .firstQRCode {
+        display: none;
+    }
+    .downloadIcons {
+        justify-content: center;
+    }
+    .androidIcon, .iosIcon {
+        height: 9vw;
+        width: 34vw;
+        font-size: 3vw;
+    }
+    .androidIcon img, .iosIcon img {
+        width: 3vw;
+        margin-right: 1.5vw;
+    }
+    .downloadBanner {
+        display: none;
+    }
+    h3 {
+        font-size: 4.3vw;
+        width: 78vw;
+    }
+    .phoneBG {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .phone {
+        position: absolute;
+        width: 54vw;
+        bottom: 0;
+    }
+    .counter {
+        height: 17vw;
+        padding-top: 3vw;
+    }
+    h5 {
+        font-size: 4vw;
+    }
+    h6 {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 2vw;
+        text-align: center;
+        margin-top: 2vw;
+    }
+    .widthReducer {
+        width: 25vw;
+    }
+    .fourthColumn {
+        display: none;
+    }
+    .step1 img, .step2 img,  .step3 img{
+        width: 10vw;
+    }
+    .step1, .step2, .step3 {
+        font-size: 2vw;
+    }
+    .stepLine img{
+        width: 8vw;
+        padding-top: 5.5vw;
+    }
+    .titleSteps {
+        font-size: 3.7vw;
+    }
+    .steps {
+        height: 51vw;
+    }
+    .coreLeft img {
+        width: 64vw;
+    }
+    .downloadButton {
+        height: 7vw;
+        width: 21vw;
+        margin-top: 6vw;
+        font-size: 2vw;
+    }
+    .appDescriptionBGOne {
+        display: none;
+    }
+    .appDescriptionContents {
+        flex-direction: column-reverse;
+    }
+    .appLeft img {
+        width: 57vw;
+    }
+    .appLeft {
+        position: absolute;
+        bottom: 0;
+    }
+    .appRight {
+        position: absolute;
+        top: 10vw;
+        align-items: center;
+    }
+    h7{
+        text-align: center;
+        width: 82vw;
+        font-size: 4.5vw;
+    }
+    h8 {
+        font-size: 3.1vw;
+        width: 81vw;
+        text-align: center;
+        margin-top: 5vw;
+    }
+    .socialMediaLinks {
+        flex-direction: column;
+        height: auto;
+    }
+    .core {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .benefitsDescription {
+        display: none;
+    }
+    .benefitsContainer{
+        flex-direction: row;
+        width: 81vw;
+        border: 0.01vw solid #DFDFDF;
+        border-radius: 2vw;
+    }
+    .benefits {
+        padding: 4vw 7vw;
+        gap: 2vw;
+    }
+    .benefitsTitle {
+        font-size: 3.2vw;
+    }
+    .benefitsIcon{
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .qrCode {
+        display: none;
+    }
+    .appDescriptionDownload{
+        flex-direction: column;
+    }
+    .certificate {
+        font-size: 3.2vw;
+        margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(13vw);
+    }
+    .downloadButtons {
+        gap: 3.5vw;
+        flex-direction: row;
+        margin-bottom: 5vw;
+    }
+    .appDescriptionLeft {
+        width: 84vw;
+        font-size: 3.5vw;
+        margin-right: 0vw;
+        margin-bottom: 3vw;
+        text-align: justify;
+        margin-top: 1vw;
+    }
+    .appDescriptionLeft img {
+        width: 26vw;
+        margin-top: 2vw;
+    }
+    .footer{
+        display: none;
+    }
+    .socialRight img {
+        width: 43vw;
+    }
+    h9{
+        width: 83vw;
+        text-align: center;
+        font-size: 4.5vw;
+        margin-top: 4vw;
+    }
+    h10 {
+        text-align: center;
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    .socialMediaIcons {
+        justify-content: center;
+        margin-top: 4vw;
+    }
+    .h11 {
+        margin-top: 11vw;
+        margin-bottom: 6vw;
+        font-size: 4.5vw;
+        text-align: end;
+        width: 72vw;
+        transform: translateX(0);
+    }
+    .h12, .h13, .h14 {
+        font-size: 3.5vw;
+        margin-top: 4vw;
+        padding-left: 3vw;
+    }
+    .h12 img, .h13 img, .h14 img{
+        margin-right: 2vw;
+        width: 7vw;
+    }
+    .stepsIcons {
+        gap: 4vw;
+    }
+    h4 {
+        font-size: 3vw;
+        width: auto;
+    }
+    .appDescriptionDownload {
+        padding: 2vw 2vw;
+        height: auto;
+        align-items: center;
+    }
+    .download {
+        width: 40vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+    .firstColumn{
+        transform: translateX(-15vw);
+        width: 10vw;
+    }
+    .firstColumn img {
+        width: 2vw;
+    }
+    .secondColumn{
+        transform: translateX(-5vw);
+        width: 20vw;
+    }
+    .thirdColumn{
+        transform: translateX(10vw);
+        width: 5vw;
+    }
+    .cryptoTable {    
+        position: absolute;
+        width:45vw;
+        font-size: 2.5vw
+    }
+    .socialMediaIcons img {
+        width: 8vw;
+    }
+    .benefitsIcon img {
+        width: 10vw;
+    }
+    .titleCrypto {
+        padding-left: 0vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vw;
+        font-size: 4vw;
+    }
+    .cryptoPrices {
+        height: 50vw;
+    }
+    .cryptoTable {
+        transform: translateX(20vw);
+    }
+    /* ------------------------------------------------- SIDEBAR ------------------------------ */
+    .sidebar{
+        position: fixed;
+        background-color: white;
+        width: 60%;
+        height: 100%;
+        z-index: 100;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s;
+        transform: translateX(-100%);
+    }
+    .sidebarShow {
+        transform: translateX(0);
+    }
+    .sidebarMenus {
+        margin-top: 5vw;
+        color: #4E63E4;
+    }
+    .sidebarMenus a{
+        color: #4E63E4;
+    }
+    .sidebarMenu {
+        font-family: 'Helvetica', sans-serif;
+        height: 10vw;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2vw;
+        border-radius: 2vw;
+        padding-left: 4vw;
+        font-size: 3vw;
+    }
+    .sidebarMenu img {
+        width: 4vw;
+        margin-right: 2vw;
+    }
+    .sidebarLanguageSelector {
+        margin-top: 7vw;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .sidebarArrowdown {
+        margin-left: 2vw;
+    }
+    .languageContainer {
+        border-radius: 2vw;
+        border: 0.4vw solid #4E63E4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: all 0.3s;
+    }
+    .sidebarLanguage {
+        height: 8vw;
+        width: 27vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4E63E4;
+        font-size: 3vw;
+    }
+    .selectedSidebarLanguage {
+        background-color: #4E63E4;
+        color: white;
+    }
+    .showSidebarLanguageSelector {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .xButton {
+        align-self:flex-start;
+        padding-left: 1vw;       
+    }
+    .xButton img {
+        width: 10vw;
+    }
+    .active {
+        background-color: #4E63E4;
+        color: white;
+    }
+    .menu {
+        transform: translateX(-7vw);
+        margin-right: 25vw;
+    }
+    .menu img{
+        width: 5vw;
+    }
+    .blackBG {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        z-index: 99;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s;
+    }
+    .blackBGShow {
+        visibility: visible;
+        opacity: 0.5;
+    }
+    /* ---------------------------- DONWLOAD PAGE ------------------------*/
+    .dpbgimg {
+        display: none;
+    }
+    .dpbgimgphone{
+        width: 100%;
+    }
+    .dpbgimg img{
+        width: 115%;
+    }
+    .downloadPageContents {
+        top: 64vw;
+        flex-direction: column;
+    }
+    .topOne img {
+        width: 6vw;
+    }
+    .topOne {
+        font-size: 4vw;
+        justify-content: center;
+    }
+    .topTwo {
+        font-size: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 3vw;
+        display: flex;
+        justify-content: center;
+    }
+    .topThree {
+        font-size: 2.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .qrCodeThree{
+        display: none;
+    }
+    .downloadPButtons {
+        display: flex;
+    }
+    .leftBotDownloadP {
+        justify-content: center;
+    }
+    .iosDownloadP, .androidDownloadP {
+        height: 10vw;
+        width: 33vw;
+        margin-top: 6vw;
+        font-size: 3vw;
+    }
+    .downloadPButtons img {
+        width: 2.4vw;
+    }
+    .rightDownloadP img {
+        width: 71vw;
+    }
+    /*----------------- INTRODUCTION PAGE ------------------------*/
+    .aboutImg{
+        display: none;
+    }
+    .aboutImgPhone {
+        width: 100%;
+        position: absolute;
+    }
+    .introduction{
+        padding-top: 12vw;
+    }
+    .fourthContainer {
+        margin-bottom: 7vw;
+    }
+    .bannerContents {
+        position: absolute;
+        top: 26vw;
+        left: 14vw;
+    }
+    .introSecondSection {
+        margin-top: 35vw;
+    }
+    .h16 {
+        font-size: 2.7vw;
+    }
+    .h17{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 3vw;
+    }
+    .pWeb {
+        display: none;
+    }
+    .h18 p {
+        font-family: 'Helvetica', sans-serif;
+        text-align: justify;
+        color: #333333;
+        font-size: 2.8vw;
+        line-height: 4vw;
+    }
+    .introContactDetails {
+        margin-top: 7vw;
+        background-color: white;
+        border: 0.01vw solid #EBEBEB;
+        padding: 4vw 8vw;
+        gap: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactContainer {
+        display: flex;
+        gap: 4vw;
+    }
+    .leftContact img{
+        width: 8vw;
+    }
+    .rightContact {
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .contactTitle {
+        font-size: 3vw;
+    }
+    .introContainer {
+        flex-direction: column;
+    }
+    .maps img {
+        width: 71vw;
+    }
+    .introContacts {
+        align-self: start;
+        padding-left: 15vw;
+    }
+    .h19{
+        font-size: 3.5vw;
+    }
+    .h20 img {
+        width: 5vw;
+    }
+    .h20{
+        font-size: 2.3vw;
+        gap: 2vw;
+        height: 7vw;
+        width: 46vw;
+        border-radius: 4vw;
+    }
+    .h20Text{
+        height: 6vw;
+        width: 36.5vw;
+        border-radius: 4vw;
+        padding-left: 2vw;
+    }
+    .introHide{
+        display: none;
+    }
+    .introThirdSection {
+        margin-bottom: 4vw;
+    }
+    .introFourthSection {
+        background-color: #F7F9FB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h21 {
+        margin-top: 4vw;
+        font-size: 3.5vw;
+    }
+    .h22 {
+        font-size: 2.5vw;
+        width: 48vw;
+        text-align: center;
+    }
+    .h23 {
+        font-size: 2.4vw;
+    }
+    .h24 {
+        font-size: 2.1vw;
+    }
+    .h25 {
+        font-size: 2.1vw;
+    }
+    /* --------------------------- INTIAL ------------------------------------ */
+    .IBCTop {
+        display: none;
+    }
+    .IBCBottom {
+        font-size: 4.5vw;
+        transform: translate(-6vw, 4vw);
+    }
+    .initialBannerBG {
+        width: 130%;
+        transform: translate(-17vw, 10vw);
+    }
+    .secondSectionTitle{
+        font-size: 4vw;
+    }
+    .instructions{
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 0vw 5vw;
+    }
+    .instruction {
+        width: auto;
+    }
+    .instructionTitle {
+        margin-bottom: 3vw;
+        font-size: 4vw;
+    }
+    .instructionDescription {
+        font-size: 3.5vw;
+        margin-bottom: 7vw;
+    }
+    .thirdSectionTitle {
+        font-size: 4vw;
+        margin-bottom: 6vw;
+        margin-top: 3vw;
+    }
+    .allTestimonials {
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 0 7vw;
+    }
+    .moveDown {
+        transform: translateY(0);
+    }
+    .testimonialsContainer {
+        width: 77vw;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5vw;
+        margin-bottom: 5vw;
+    }
+    .user {
+        font-size: 4.1vw;
+    }
+    .user img {
+        width: 8vw;
+        margin-right: 2vw;
+    }
+    .testimonials {
+        font-size: 4vw;
+        color: #333333;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+    }
+    .initialHide {
+        display: none;
+    }
+    /* -------------------- CANCELLATION PAGE ------------------------------- */
+    .photoInstructions img {
+        height: 100vw;
+        margin: 7vw 4vw;
+    }
+    .photoInstructions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cancellationPage {
+        padding-top: 12vw;
+    }
+    .cancellationTitle {
+        font-size: 2.5vw;
+    }
+    .cancellationContents {
+        font-size: 2.2vw;
+    }
+    .cancellationLogo img{
+        width: 7vw;
+    }
+    .cancellationLogo {
+        font-size: 4vw;
+    }
+
+}

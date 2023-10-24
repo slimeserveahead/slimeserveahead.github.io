@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eng_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <title>FitFund</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-----------------------------NAVIGATION BAR------------------------------>
+    <div class="navbar">
+        <div class="menu" id="menu"><img src="images/menu.webp"></div>
+        <div class="navbarLogo">
+            <img src="images/home_logo1@3x.webp">
+            <h1><strong>FitFund</strong></h1>
+        </div>
+        <div class="navbarMenu">
+            <a href="index.html"><h1><strong>Home</strong></h1></a>
+            <a href="faq.html"><h1><strong>FAQ</strong></h1></a>
+            <a href="download.html"><h1><strong>Download</strong></h1></a>
+            <a href="account_cancellation.html"><h1><strong>Account cancellation</strong></h1></a>
+        </div>
+        <div class="navbarSelector navbarSelectorCancellation"></div>
+    </div>
+    <!------------------------------------------------- LANGUANGE SELECTOR -------------------------------------------------->
+    <div class="languageSelector">
+        <a href="hủy_tài_khoản.html"><div class="language ">Tiếng Việt</div></a>
+        <div class="language selectedLanguage">English</div>
+    </div>
+    <!------------------------- MOBILE SIDEBAR -------------------------------->
+    <div class="sidebar" id="sidebar">
+        <div class="xButton" id="xButton"><img src="images/guanbi@3x.webp"></div>
+        <div class="sidebarMenus">
+            <a href="index.html"><div class="sidebarMenu"><img src="images/cebian_ico1@3x_inactive.webp">Home</div></a>
+            <a href="faq.html"><div class="sidebarMenu"><img src="images/cebian_ico2@3x.webp">FAQ</div></a>
+            <a href="download.html"><div class="sidebarMenu"><img src="images/cebian_ico3@3x.webp">Download</div></a>
+            <a href="account_cancellation.html"><div class="sidebarMenu active"><img src="images/cancel_account_icon_active.webp">Account cancellation</div></a>
+        </div>
+    </div>
+    <div class="blackBG" id="blackBG"></div>
+    <!-------------------------------------------------- CANCELLATION PAGE ------------------------------------------------->
+    <div class="cancellationPage">
+        <div class="cancellationLogo">
+            <img src="images/run2riches_logo.webp">
+            FitFund
+        </div>
+        <div class="cancellationContentContainer">
+            <div class="cancellationTitle"><strong>The steps to delete an account:</strong></div>
+            <div class="cancellationContents">
+                1. Logging into the application:
+            </div>
+            <div class="cancellationContents">
+                2. Click on the profile picture at the top left corner of the homepage to view personal information.
+                <div class="photoInstructions">
+                    <img src="images/step1.webp">
+                </div>
+            </div>
+            <div class="cancellationContents">
+                3. Scroll down to the bottom and click on "Delete Account," then confirm.
+                <div class="photoInstructions">
+                    <img src="images/step2.webp">
+                    <img src="images/step3.webp">
+                    <img src="images/step4.webp">
+                    <img src="images/step5.webp">
+                </div>
+            </div>
+            <div class="cancellationContents">
+                4. After scanning Face ID, your account will be successfully deleted.
+                <div class="photoInstructions">
+                    <img src="images/step6.webp">
+                </div>
+            </div>
+        </div>
+        <div class="cancellationContentContainer">
+            <div class="cancellationTitle"><strong>Confirmation about the account deletion and its implications after cancellation:</strong></div>
+            <div class="cancellationContents">
+                1. When deciding to delete your account, please be aware that this action is irreversible. The account will be closed, and you won't be able to access or use it anymore. All personal information related to this account will be deleted and cannot be recovered. Therefore, you do not have the right to request us to restore any deleted personal data.
+            </div>
+            <div class="cancellationContents">
+                2. 
+                At the same time, all benefits and privileges that you have gained or could have obtained from using the FitFund account, including future benefits, will be lost. Therefore, before proceeding with the deletion of your FitFund account, please ensure that you have properly handled all the benefits and privileges you currently possess. If you fail to do so, we reserve the right to process and completely remove all benefits and privileges associated with this account, and you will be responsible for all related consequences.
+            </div>
+            <div class="cancellationContents">
+                Please think carefully and confirm once again before deciding to delete your account. This decision will have long-term implications and may affect your benefits and personal data.
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // ------------------------------------ MOBILE SIDEBAR ------------------------------------------- //
+// Get the menu and sidebar elements
+const menu = document.getElementById("menu");
+const sidebar = document.querySelector(".sidebar");
+const xButton = document.querySelector(".xButton");
+const blackBG = document.querySelector(".blackBG");
+
+// Add event listener to the menu
+menu.addEventListener("click", () => {
+    sidebar.classList.add("sidebarShow");
+    blackBG.classList.add("blackBGShow")
+});
+
+// Add event listener to the xButton
+xButton.addEventListener("click", () => {
+    sidebar.classList.remove("sidebarShow");
+    blackBG.classList.remove("blackBGShow");
+});
+
+// ---------------------------------- LANGUAGE SELECTOR ---------------------------------------------//
+
+// Handle the click event of the image
+// Get references to the image and language selector elements
+const languageImage = document.getElementById('languageSelectorButton');
+const languageSelector = document.querySelector('.languageSelector');
+
+// Add a click event listener to the image
+languageImage.addEventListener('click', function () {
+    // Toggle the "showLanguageSelector" class on the language selector
+    languageSelector.classList.toggle('showLanguageSelector');
+});
+// ----------------------------SIDEBAR LANGUAGE SELECTOR---------------------------------------//
+    const sidebarLanguageSelector = document.getElementById('sidebarLanguageSelector');
+    const languageContainer = document.querySelector('.languageContainer')
+
+    sidebarLanguageSelector.addEventListener('click', function() {
+        languageContainer.classList.toggle('showSidebarLanguageSelector')
+    });
+</script>
+</html>

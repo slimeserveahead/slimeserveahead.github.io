@@ -83,43 +83,28 @@
     </div>
 </body>
 <script>
-    // ------------------------------------ MOBILE SIDEBAR ------------------------------------------- //
-// Get the menu and sidebar elements
-const menu = document.getElementById("menu");
-const sidebar = document.querySelector(".sidebar");
-const xButton = document.querySelector(".xButton");
-const blackBG = document.querySelector(".blackBG");
+// ------------------------------------MOBILE SIDEBAR------------------------------------------- //
+    // Get the menu and sidebar elements
+    const menu = document.getElementById("menu");
+    const sidebar = document.querySelector(".sidebar");
+    const xButton = document.querySelector(".xButton");
+    const blackBG = document.querySelector(".blackBG");
 
-// Add event listener to the menu
-menu.addEventListener("click", () => {
-    sidebar.classList.add("sidebarShow");
-    blackBG.classList.add("blackBGShow")
-});
-
-// Add event listener to the xButton
-xButton.addEventListener("click", () => {
-    sidebar.classList.remove("sidebarShow");
-    blackBG.classList.remove("blackBGShow");
-});
-
-// ---------------------------------- LANGUAGE SELECTOR ---------------------------------------------//
-
-// Handle the click event of the image
-// Get references to the image and language selector elements
-const languageImage = document.getElementById('languageSelectorButton');
-const languageSelector = document.querySelector('.languageSelector');
-
-// Add a click event listener to the image
-languageImage.addEventListener('click', function () {
-    // Toggle the "showLanguageSelector" class on the language selector
-    languageSelector.classList.toggle('showLanguageSelector');
-});
-// ----------------------------SIDEBAR LANGUAGE SELECTOR---------------------------------------//
-    const sidebarLanguageSelector = document.getElementById('sidebarLanguageSelector');
-    const languageContainer = document.querySelector('.languageContainer')
-
-    sidebarLanguageSelector.addEventListener('click', function() {
-        languageContainer.classList.toggle('showSidebarLanguageSelector')
+    // Add event listener to the menu
+    menu.addEventListener("click", () => {
+        sidebar.classList.add("sidebarShow");
+        blackBG.classList.add("blackBGShow")
     });
+
+    // Add event listener to the xButton
+    xButton.addEventListener("click", () => {
+        sidebar.classList.remove("sidebarShow");
+        blackBG.classList.remove("blackBGShow");
+    }); 
+
+    blackBG.addEventListener("click", () => {
+        sidebar.classList.remove("sidebarShow");
+        blackBG.classList.remove("blackBGShow")
+    })
 </script>
 </html>

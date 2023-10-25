@@ -74,6 +74,7 @@ h1 {
     bottom: 0;
     border-top-right-radius: 0.5vw;
     border-top-left-radius: 0.5vw;
+    transition: all 0.5s;
 }
 .navbarSelectorHome {
     right: 42.4vw;
@@ -88,6 +89,22 @@ h1 {
     width: 6vw;
 }
 .navbarSelectorCancellation {
+    right: 9.4vw;
+    width: 11.5vw;
+}
+.moveOne {
+    right: 42.4vw;
+    width: 4vw;
+}
+.moveTwo {
+    right: 35.05vw;
+    width: 3.3vw;
+}
+.moveThree {
+    right: 25.05vw;
+    width: 6vw;
+}
+.moveFour {
     right: 9.4vw;
     width: 11.5vw;
 }

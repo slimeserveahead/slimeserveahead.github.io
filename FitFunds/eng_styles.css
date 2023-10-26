@@ -44,6 +44,13 @@ body {
     overflow-x: hidden;
     font-family: 'Helvetica', sans-serif;
 }
+img {
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-user-drag: none;
+}
 a {
     text-decoration: none;
 }
@@ -1081,7 +1088,7 @@ h10 {
         display: none;
     }
     .navbarLogo img{
-        display: none;
+        width: 40vw;
     }
     .navbarLogo {
         left: 40vw;
@@ -1453,7 +1460,7 @@ h10 {
     }
     .menu {
         transform: translateX(-7vw);
-        margin-right: 25vw;
+        margin-right: 14vw;
     }
     .menu img{
         width: 5vw;

@@ -133,11 +133,6 @@ body {
     margin-top: 10vw;
     margin-bottom: 5vw;
 }
-.line {
-    background-color: #464646;
-    height: 1px;
-    width: 100%;
-}
 .appDescriptionContents {
     font-size: 3.5vw;
     color: #9AA2A5;
@@ -281,7 +276,4 @@ hr {
     display: flex;
     justify-content: space-between;
     font-size: 3.5vw;
-}
-.marginBottom {
-    margin-bottom: 5vw;
 }

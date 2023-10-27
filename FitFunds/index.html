@@ -9,6 +9,7 @@
     <meta name="description" content="Step into a healthier future with FitFunds – the app that rewards you for every step you take. Earn while walking towards your fitness goals and financial success. Join us today and turn your daily steps into FitFunds!">
     <title>FitFunds</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
 </head>
 <body>
     <!----------------------------- NAVIGATION BAR ------------------------------>
@@ -29,11 +30,12 @@
     <div class="sidebar" id="sidebar">
         <div class="xButton" id="xButton"><img src="images/guanbi@3x.webp"></div>
         <div class="sidebarMenus">
-            <a href="index.html"><div class="sidebarMenu active"><img src="images/cebian_ico1@3x.webp">Home</div></a>
-            <a href="faq.html"><div class="sidebarMenu"><img src="images/cebian_ico2@3x.webp">FAQ</div></a>
-            <a href="download.html"><div class="sidebarMenu"><img src="images/cebian_ico3@3x.webp">Download</div></a>
-            <a href="account_cancellation.html"><div class="sidebarMenu"><img src="images/cancel_account_icon.webp">Account cancellation</div></a>
+            <div onclick="indexClick()" id="index" class="sidebarMenu active"><img id="indexImg" src="images/cebian_ico1@3x.webp">Home</div>
+            <div onclick="faqClick()" id="faq" class="sidebarMenu"><img id="faqImg" src="images/cebian_ico2@3x.webp">FAQ</div>
+            <div onclick="downloadClick()" id="download" class="sidebarMenu"><img id="downloadImg" src="images/cebian_ico3@3x.webp">Download</div>
+            <div onclick="accountCancellationClick()" id="accountCancellation" class="sidebarMenu"><img id="accountCancellationImg" src="images/cancel_account_icon.webp">Account cancellation</div>
         </div>
+        <div id="sidebarMenusSelector" class="sidebarMenusSelector sidebarMenusSelectorIndex"></div>
     </div>
     <div class="blackBG" id="blackBG"></div>
     <!------------------------- DOWNLOAD SECTION ------------------------------>
@@ -41,9 +43,8 @@
         <img class="phoneBG" src="images/home_bg1@3x.png">
         <img class="downloadBanner" src="images/home_banner_img@3x.webp">
         <div class="downloadTexts">
-            <h2>Embark on an Incredible Journey with Us</h2>
-            <h3>Make Money While Walking - Receive Rewards - Limitless Play!</h3>
-            <h4>Embark on an exhilarating journey of earning money by walking alongside a community of over 1 million users.</h4>
+            <h2>Explore the "FitFunds" <br>Rewards Daily Logins</h2>
+            <h4>As technology continues to advance, our lifestyles are undergoing a revolutionary transformation. We will introduce ''FitFunds'' that allows you to earn money simply by logging in each day. This additional income can be used to redeem a variety of different rewards, adding a touch of enjoyment to your life.</h4>
         </div>
         <div class="downloadIcons">
             <div class="iosIcon"><img src="images/ios@3x.webp"></i>iOS</div>
@@ -76,7 +77,7 @@
     <!-------------------------------- STEPS  -------------------------------------->
     <div class="steps">
         <div class="titleSteps">
-            Three Steps to Begin Your Journey:
+            Four Steps to Begin Your Journey:
         </div>
         <div class="stepsIcons">
             <div class="step1"><img src="images/home_ico_ico1-1@3x.webp">Download</div>
@@ -84,6 +85,8 @@
             <div class="step2"><img src="images/home_ico_ico1-2@3x.png">Register</div>
             <div class="stepLine"><img src="images/home_line@3x.webp"></div>
             <div class="step3"><img src="images/home_ico_ico1-3@3x.png">Verify</div>
+            <div class="stepLine"><img src="images/home_line@3x.webp"></div>
+            <div class="step3"><img src="images/home_ico_ico1-3@3x.webp">Get Rewarded</div>
         </div>
         <a href="https://vnfilesbk1.s3.amazonaws.com/app/demo/run2Riches-release-1%287%29.apk" download><div class="downloadButton">Download</div></a>
     </div> 
@@ -94,7 +97,8 @@
         <div class="appDescriptionContents">
             <div class="appLeft"><img src="images/home_img2@3x.webp"></div>
             <div class="appRight">
-                <h7>FitFunds - A fitness app that encourages exercise and motivates users to improve their health.</h7>
+                <h7>Logging in daily<br>Watch your money grow</h7>
+                <div class="h28">What sets FitFunds apart is that users can effortlessly earn extra income by simply logging in each day. There is no need for complex tasks or to invest significant amounts of time. This app is designed to reward user loyalty and consistent use. Users only need to open the app, log in to their accounts, and they can start enjoying a steady stream of cash.</div>
             </div>
         </div>
     </div>
@@ -175,11 +179,12 @@
         <div class="introSecondSection">
             <div class="h17">About Us</div>
             <div class="h18">
-                <p class="pWeb">"FitFunds" is a mobile application that encourages users to walk and engage in physical activities while providing rewards for their efforts.</p>
-                <p class="pWeb">The goal of "FitFunds" is to promote a healthy lifestyle by inspiring people to exercise and improve their daily habits. Based on the recorded steps, "FitFunds" rewards its users, and they can use these rewards to play games within the app and earn even more rewards.</p>
-                <p class="pWeb">Additionally, "FitFunds" focuses on social interaction, allowing users to connect with friends, participate in communities, and share their experiences. Social interaction creates motivation and a supportive environment for users to maintain healthy habits.</p>
-                <p class="pWeb">"FitFunds" aims to promote physical activity, improve health, and motivate users to prioritize walking in their daily routines. For a healthy and prosperous future, take action now!</p>
-                <p class="pPhone">FitFunds is an advanced technology company and the largest trading platform in Vietnam. Since its establishment in 2015, the company has served millions of users, creating a safe and exciting trading environment that integrates sports and digital currencies for its users.</p>
+                <p class="pWeb">"FitFunds" rewards daily logins with money and aims not only to provide cash but also to enrich the user experience by increasing interaction and loyalty among users. Users can share their earnings and rewards with friends and interact on the app's social platform. This interactivity helps foster a positive user community, making users more inclined to continue using "FitFunds"<p>
+                <p class="pPhone">"FitFunds" rewards daily logins with money and aims not only to provide cash but also to enrich the user experience by increasing interaction and loyalty among users. Users can share their earnings and rewards with friends and interact on the app's social platform. This interactivity helps foster a positive user community, making users more inclined to continue using "FitFunds"</p>
+            </div>
+            <div class="h18">
+                <p class="pWeb">"FitFunds," which allows you to earn money through daily logins, represents the forefront of mobile technology. It not only provides monetary rewards but also offers a wide array of reward choices for users. The success of ''FitFunds'' lies not only in its user-friendly interface but also in the tangible income it provides for users. Through this app, users can easily acquire extra money in their daily lives while also enjoying the pleasures of shopping and traveling. It has become an integral part of many people's daily lives, adding a significant splash of color to their experiences.<p>
+                <p class="pPhone">"FitFunds," which allows you to earn money through daily logins, represents the forefront of mobile technology. It not only provides monetary rewards but also offers a wide array of reward choices for users. The success of ''FitFunds'' lies not only in its user-friendly interface but also in the tangible income it provides for users. Through this app, users can easily acquire extra money in their daily lives while also enjoying the pleasures of shopping and traveling. It has become an integral part of many people's daily lives, adding a significant splash of color to their experiences.</p>
             </div>
             <div class="introContactDetails">
                 <div class="contactTitle">Cooperation Consultation</div>
@@ -272,58 +277,5 @@
         © All Right Reserved By FitFunds  v 1.1.1.0 Copyright 2023 FitFunds Inc. Registered Copyright
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-
-// ------------------------------------MOBILE SIDEBAR------------------------------------------- //
-    // Get the menu and sidebar elements
-    const menu = document.getElementById("menu");
-    const sidebar = document.querySelector(".sidebar");
-    const xButton = document.querySelector(".xButton");
-    const blackBG = document.querySelector(".blackBG");
-    const navbarSelector = document.getElementById("navbarSelector")
-
-    // Add event listener to the menu
-    menu.addEventListener("click", () => {
-        sidebar.classList.add("sidebarShow");
-        blackBG.classList.add("blackBGShow")
-    });
-
-    // Add event listener to the xButton
-    xButton.addEventListener("click", () => {
-        sidebar.classList.remove("sidebarShow");
-        blackBG.classList.remove("blackBGShow");
-    }); 
-
-    blackBG.addEventListener("click", () => {
-        sidebar.classList.remove("sidebarShow");
-        blackBG.classList.remove("blackBGShow")
-    })
-    function homeHover() {
-        navbarSelector.classList.add("moveOne")
-    }
-    function homeHoverLeave() {
-        navbarSelector.classList.remove("moveOne")
-    }
-    function faqHover() {
-        navbarSelector.classList.add("moveTwo")
-    }
-
-    function faqHoverLeave() {
-        navbarSelector.classList.remove("moveTwo")
-    }
-
-    function downloadHover() {
-        navbarSelector.classList.add("moveThree")
-    }
-    function downloadHoverLeave() {
-        navbarSelector.classList.remove("moveThree")
-    }
-    function accountHover() {
-        navbarSelector.classList.add("moveFour")
-    }
-    function accountHoverLeave() {
-        navbarSelector.classList.remove("moveFour")
-    }
-</script>
+<script src="script.js"></script>
 </html>

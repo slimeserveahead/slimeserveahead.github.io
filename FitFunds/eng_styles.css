@@ -207,8 +207,8 @@ h1 {
 h2 {
     margin-top: 0;
     font-family: 'Helvetica Bold', sans-serif;
-    width: 45vw;
-    font-size: 3vw;
+    width: 39vw;
+    font-size: 2.5vw;
 }
 h3 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -220,7 +220,7 @@ h4 {
     font-family: 'Helvetica', sans-serif;
     color: #777777;
     font-size: 1.2vw;
-    width: 41vw;
+    width: 36vw;
 }
 .downloadIcons {
     display: flex;
@@ -404,15 +404,15 @@ h6 {
     font-family: 'Helvetica', sans-serif;
 }
 .step1 img, .step2 img, .step3 img{
-    width: 10vw;
+    width: 7vw;
 }
-.stepLine img{
-    width: 12vw;
-    padding-top: 5vw;
+.stepLine img {
+    width: 8vw;
+    padding-top: 3.5vw;
 }
 .stepsIcons {
     display: flex;
-    gap: 4vw;
+    gap: 2vw;
 }
 .downloadButton {
     background-color: #27AEAE;
@@ -461,7 +461,7 @@ h6 {
 }
 h7 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
     width: 40vw;
     text-align: end;
 }
@@ -484,6 +484,13 @@ h8 {
     margin-top: 2vw;
     gap: 2vw;
     display: flex;
+}
+.h28 {
+    font-size: 1.2vw;
+    width: 40vw;
+    text-align: right;
+    margin-top: 1vw;
+    color: #606060;
 }
 /*------------------------ SOCIAL MEDIA LINKS --------------------------*/
 .socialMediaLinks {
@@ -1036,6 +1043,7 @@ h10 {
 }
 /*---------------------------------------------------- RESPONSIVENESS ------------------------------------*/
 @media screen and (min-width: 768px) {
+    
     .phone{
         display: none;
     }
@@ -1069,6 +1077,13 @@ h10 {
 }
 /*---------------------------------------------------- BELOW ------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
+    .h28 {
+        font-size: 3vw;
+        width: auto;
+        padding: 0 12vw;
+        text-align: justify;
+        margin-top: 3vw;
+    }
     .navbarSelector {
         display: none;
     }
@@ -1100,11 +1115,10 @@ h10 {
     /* DOWNLOAD */
     h2 {
         width: 83vw;
-        font-size: 7vw;
+        font-size: 4.5vw;
     }
-    
     .downloadSection {
-        height: 131vw;
+        height: 122vw;
         margin-top: 0;
         position: relative;
         padding: 6vw 10vw;
@@ -1196,7 +1210,7 @@ h10 {
         flex-direction: column-reverse;
     }
     .appLeft img {
-        width: 57vw;
+        width: 46vw;
     }
     .appLeft {
         position: absolute;
@@ -1404,6 +1418,8 @@ h10 {
         border-radius: 2vw;
         padding-left: 4vw;
         font-size: 3vw;
+        transition: all 0.3s;
+        cursor: pointer;
     }
     .sidebarMenu img {
         width: 4vw;
@@ -1455,7 +1471,6 @@ h10 {
         width: 10vw;
     }
     .active {
-        background-color: #4E63E4;
         color: white;
     }
     .menu {
@@ -1479,6 +1494,27 @@ h10 {
     .blackBGShow {
         visibility: visible;
         opacity: 0.5;
+    }
+    .sidebarMenusSelector {
+        background-color: #4E63E4;
+        height: 10vw;
+        width: 54vw;
+        border-radius: 2vw;
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s;
+    }
+    .sidebarMenusSelectorIndex {
+        top: 15.7vw;
+    }
+    .sidebarMenusSelectorFaq {
+        top: 27.6vw;
+    }
+    .sidebarMenusSelectorDownload {
+        top: 39.7vw;
+    }
+    .sidebarMenusSelectorAccountCancellation {
+        top: 51.6vw;
     }
     /* ---------------------------- DONWLOAD PAGE ------------------------*/
     .dpbgimg {
@@ -1644,21 +1680,27 @@ h10 {
     }
     .h21 {
         margin-top: 4vw;
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     .h22 {
         font-size: 2.5vw;
-        width: 48vw;
+        width: 65vw;
         text-align: center;
     }
     .h23 {
-        font-size: 2.4vw;
+        font-size: 3vw;
     }
     .h24 {
-        font-size: 2.1vw;
+        font-size: 2.5vw;
     }
     .h25 {
-        font-size: 2.1vw;
+        font-size: 2.5vw;
+    }
+    .fourthLeft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     }
     /* --------------------------- INTIAL ------------------------------------ */
     .IBCTop {

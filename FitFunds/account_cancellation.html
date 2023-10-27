@@ -29,11 +29,12 @@
     <div class="sidebar" id="sidebar">
         <div class="xButton" id="xButton"><img src="images/guanbi@3x.webp"></div>
         <div class="sidebarMenus">
-            <a href="index.html"><div class="sidebarMenu"><img src="images/cebian_ico1@3x_inactive.webp">Home</div></a>
-            <a href="faq.html"><div class="sidebarMenu"><img src="images/cebian_ico2@3x.webp">FAQ</div></a>
-            <a href="download.html"><div class="sidebarMenu"><img src="images/cebian_ico3@3x.webp">Download</div></a>
-            <a href="account_cancellation.html"><div class="sidebarMenu active"><img src="images/cancel_account_icon_active.webp">Account cancellation</div></a>
+            <div onclick="indexClick()" id="index" class="sidebarMenu"><img id="indexImg" src="images/cebian_ico1@3x_inactive.webp">Home</div>
+            <div onclick="faqClick()" id="faq" class="sidebarMenu"><img id="faqImg" src="images/cebian_ico2@3x.webp">FAQ</div>
+            <div onclick="downloadClick()" id="download" class="sidebarMenu"><img id="downloadImg" src="images/cebian_ico3@3x.webp">Download</div>
+            <div onclick="accountCancellationClick()" id="accountCancellation" class="sidebarMenu active"><img id="accountCancellationImg" src="images/cancel_account_icon_active.webp">Account cancellation</div>
         </div>
+        <div id="sidebarMenusSelector" class="sidebarMenusSelector sidebarMenusSelectorAccountCancellation"></div>
     </div>
     <div class="blackBG" id="blackBG"></div>
     <!-------------------------------------------------- CANCELLATION PAGE ------------------------------------------------->
@@ -83,56 +84,5 @@
         </div>
     </div>
 </body>
-<script>
-// ------------------------------------MOBILE SIDEBAR------------------------------------------- //
-    // Get the menu and sidebar elements
-    const menu = document.getElementById("menu");
-    const sidebar = document.querySelector(".sidebar");
-    const xButton = document.querySelector(".xButton");
-    const blackBG = document.querySelector(".blackBG");
-    const navbarSelector = document.getElementById("navbarSelector")
-
-    // Add event listener to the menu
-    menu.addEventListener("click", () => {
-        sidebar.classList.add("sidebarShow");
-        blackBG.classList.add("blackBGShow")
-    });
-
-    // Add event listener to the xButton
-    xButton.addEventListener("click", () => {
-        sidebar.classList.remove("sidebarShow");
-        blackBG.classList.remove("blackBGShow");
-    }); 
-
-    blackBG.addEventListener("click", () => {
-        sidebar.classList.remove("sidebarShow");
-        blackBG.classList.remove("blackBGShow")
-    })
-    function homeHover() {
-        navbarSelector.classList.add("moveOne")
-    }
-    function homeHoverLeave() {
-        navbarSelector.classList.remove("moveOne")
-    }
-    function faqHover() {
-        navbarSelector.classList.add("moveTwo")
-    }
-
-    function faqHoverLeave() {
-        navbarSelector.classList.remove("moveTwo")
-    }
-
-    function downloadHover() {
-        navbarSelector.classList.add("moveThree")
-    }
-    function downloadHoverLeave() {
-        navbarSelector.classList.remove("moveThree")
-    }
-    function accountHover() {
-        navbarSelector.classList.add("moveFour")
-    }
-    function accountHoverLeave() {
-        navbarSelector.classList.remove("moveFour")
-    }
-</script>
+<script src="script.js"></script>
 </html>

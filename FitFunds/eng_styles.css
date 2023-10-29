@@ -63,7 +63,7 @@ h1 {
 .navbar {
     background-color: white;
     display: flex;
-    height: 6vw;
+    height: 3vw;
     align-items: center;
     justify-content: space-between;
     padding: 0 10vw;
@@ -203,12 +203,32 @@ h1 {
     width: 45vw;
     bottom: 0;
     right: 5vw;
+    transition: transform 1s ease-in-out;
+}
+.downloadBanner1 {
+    z-index: 1;
+    transform: scale(0.8);
+}
+.downloadBanner2 {
+    z-index: 2;
+}
+.downloadBanner3 {
+    z-index: 3;
+}
+.downloadBanner4 {
+    z-index: 4;
+}
+.downloadBannerMove1 {
+    transform: scale(1.1);
+}
+.downloadBannerMove2 {
+    transform: scale(1.2);
 }
 h2 {
     margin-top: 0;
     font-family: 'Helvetica Bold', sans-serif;
     width: 39vw;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 h3 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -221,6 +241,7 @@ h4 {
     color: #777777;
     font-size: 1.2vw;
     width: 36vw;
+    font-weight: 400;
 }
 .downloadIcons {
     display: flex;
@@ -322,17 +343,17 @@ h4 {
 }
 h5 {
     font-family: 'Helvetica Light', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 0vw;
     margin-top: 1vw;
 }
 h6 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: center;
 }
 .widthReducer {
-    width: 15vw;
+    width: 18vw;
 }
 /*--------------------------- CRYPTO PRICES ----------------------*/
 .cryptoPrices {
@@ -399,7 +420,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     gap: 2vw;
     font-family: 'Helvetica', sans-serif;
 }
@@ -428,7 +449,7 @@ h6 {
 }
 .titleSteps { 
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin-top: 4vw;
     margin-bottom: 4vw;
 }
@@ -453,7 +474,7 @@ h6 {
     justify-content: space-between;
 }
 .appLeft img {
-    width: 30vw;
+    width: 21vw;
 }
 .appRight {
     display: flex;
@@ -461,7 +482,7 @@ h6 {
 }
 h7 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     width: 40vw;
     text-align: end;
 }
@@ -474,7 +495,7 @@ h8 {
     width: 40vw;
 }
 .socialMediaIcons img {
-    width: 4vw;
+    width: 3vw;
     transition: transform 0.3s;
 }
 .socialMediaIcons img:hover { 
@@ -500,7 +521,7 @@ h8 {
     gap: 10vw;
 }
 .socialRight img {
-    width: 30vw;
+    width: 22vw;
 }
 .socialMediaLinks {
     display: flex;
@@ -512,7 +533,7 @@ h8 {
 h9 {
     font-family: 'Helvetica Bold', sans-serif;
     width: 30vw;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 h10 {
     font-family: 'Helvetica', sans-serif;
@@ -523,7 +544,7 @@ h10 {
 /*------------------------ CORE --------------------------*/
 .core {
     background-color: #DCFFFF;
-    height: 45vw;
+    height: 31vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -531,18 +552,18 @@ h10 {
     gap: 10vw;
 }
 .coreLeft img {
-    width: 50vw;
+    width: 32vw;
 }
 .h11 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     text-align: end;
     width: 33vw;
     transform: translateX(-11vw);
 }
 
 .h12 img, .h13 img, .h14 img{
-    width: 3vw;
+    width: 2.5vw;
 }
 
 .h12, .h13, .h14 {
@@ -553,7 +574,7 @@ h10 {
     margin-top: 2vw;
     margin-bottom: 2vw;
     font-family: 'Helvetica', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #262B26;
 }
 /*--------------------- BENEFITS ---------------------------*/
@@ -597,11 +618,12 @@ h10 {
 .appDescriptionLeft {
     color: white;
     font-family: 'Helvetica Bold', sans-serif;
-    width: 40vw;
+    width: 36vw;
     font-size: 1.5vw;
     margin-right: 3vw;
     display: flex;
     flex-direction: column;
+    text-align: justify;
 }
 .appDescriptionLeft img {
     width: 15vw;
@@ -614,8 +636,8 @@ h10 {
 .download {
     border: 0.01vw solid white;
     font-family: 'Helvetica Bold', sans-serif;
-    width: 16vw;
-    height: 7.9vw;
+    width: 11vw;
+    height: 2.9vw;
     color: white;
     display: flex;
     font-size: 1.3vw;
@@ -623,7 +645,7 @@ h10 {
     align-items: center;
 }
 .qrCode {
-    width: 16.6vw;
+    width: 7vw;
     height: auto;
     background-color: white;
     display: flex;
@@ -639,9 +661,9 @@ h10 {
     gap: 1.5vw;
 }
 .downloadButtons {
-    gap: 0.9vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .steps a{
     text-decoration: none;
@@ -660,7 +682,7 @@ h10 {
 /*---------------------------------------------------- DOWNLOAD PAGE SECTION STARTS HERE ------------------------------------*/
 .downloadPage {
     position: relative;
-    padding-top: 6vw;
+    padding-top: 3vw;
     overflow: hidden;
 }
 .dpbgimg {
@@ -669,13 +691,13 @@ h10 {
 .downloadPageContents {
     position: absolute;
     z-index: 2;
-    top: 6vw;
+    top: 0vw;
     left: -6vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 52vw;
+    height: 50vw;
     width: 107vw;
     gap: 11vw;
 }
@@ -762,12 +784,12 @@ h10 {
 }
 .h15 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 3vw;
+    font-size: 1.5vw;
     margin-bottom: 2vw;
 }
 .h16 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
 .introSecondSection {
     background-color: #F7F9FB;
@@ -777,13 +799,14 @@ h10 {
 .h17 {
     font-family: 'Helvetica', sans-serif;
     color: #333333;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    font-weight: 600;
 }
 .h18 p{
     font-family: 'Helvetica', sans-serif;
     text-align: justify;
     color: #333333;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 .h19 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -846,7 +869,7 @@ h10 {
     justify-content: center;
     display: flex;
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     margin-top: 10vw;
 }
 .h22 {
@@ -854,10 +877,10 @@ h10 {
     justify-content: center;
     display: flex;
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #989898;
-    margin-top: 3vw;
-    margin-bottom: 6vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
 }
 .fourthContainer {
     display: flex;
@@ -878,14 +901,14 @@ h10 {
 }
 .h23 {
     font-family: 'Helvetica Bold', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .h24 {
     color: #989898;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 .h25 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #4AA6F9;
 }
 /* ------------------------------------------------- INITIAL -------------------------------------------- */
@@ -1592,6 +1615,9 @@ h10 {
     .introSecondSection {
         margin-top: 35vw;
     }
+    .h15 {
+        font-size: 2.7vw;
+    }
     .h16 {
         font-size: 2.7vw;
     }
@@ -1701,7 +1727,6 @@ h10 {
         justify-content: center;
         align-items: center;
     }
-    }
     /* --------------------------- INTIAL ------------------------------------ */
     .IBCTop {
         display: none;
@@ -1794,5 +1819,4 @@ h10 {
     .cancellationLogo {
         font-size: 4vw;
     }
-
 }

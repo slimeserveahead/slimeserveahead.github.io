@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="eng_styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <link rel="icon" href="images/icon_logo.ico" type="image/icon type">
     <meta name="description" content="Step into a healthier future with FitFunds – that rewards you for every step you take. Earn while walking towards your fitness goals and financial success. Join us today and turn your daily steps into FitFunds!">
     <title>FitFunds</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    
 </head>
 <body>
     <!----------------------------- NAVIGATION BAR ------------------------------>
@@ -41,7 +39,11 @@
     <!------------------------- DOWNLOAD SECTION ------------------------------>
     <div class="downloadSection">
         <img class="phoneBG" src="images/home_bg1@3x.png">
-        <img class="downloadBanner" src="images/home_banner_img@3x.webp">
+        <img class="downloadBanner downloadBanner2" src="images/home_banner_img@3x.png">
+        <img id="downloadBanner4" class="downloadBanner downloadBanner4" src="images/home_banner_img@3x2.png">
+        <img id="downloadBanner3" class="downloadBanner downloadBanner3" src="images/home_banner_img@3x4.png">
+        <img id="downloadBanner1" class="downloadBanner downloadBanner1" src="images/home_banner_img@3x3.png">
+        
         <div class="downloadTexts">
             <h2>Explore the "FitFunds" <br>Rewards Daily Logins</h2>
             <h4>As technology continues to advance, our lifestyles are undergoing a revolutionary transformation. We will introduce ''FitFunds'' that allows you to earn money simply by logging in each day. This additional income can be used to redeem a variety of different rewards, adding a touch of enjoyment to your life.</h4>
@@ -56,7 +58,7 @@
                     <img src="images/sampleqr.webp">
                 </div>
             </div>
-            <img class="phone" src="images/home_phone@3x.webp">        
+            <img class="phone" src="images/home_phone@3x.png">        
         </div>
     </div>
     <!------------------------------- COUNTER ------------------------------------>
@@ -278,4 +280,16 @@
     </div>
 </body>
 <script src="script.js"></script>
+<script>
+    let downloadBanner1 = document.getElementById("downloadBanner1")
+    let downloadBanner3 = document.getElementById("downloadBanner3")
+    let downloadBanner4 = document.getElementById("downloadBanner4")
+
+    setInterval(() => {
+        downloadBanner1.classList.toggle("downloadBannerMove1")
+        downloadBanner3.classList.toggle("downloadBannerMove1")
+        downloadBanner4.classList.toggle("downloadBannerMove2")
+    }, 1050)
+
+</script>
 </html>

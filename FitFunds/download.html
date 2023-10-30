@@ -20,7 +20,7 @@
             <a onmouseenter="homeHover()" onmouseleave="homeHoverLeave()" href="index.html"><h1><strong>Home</strong></h1></a>
             <a onmouseenter="faqHover()" onmouseleave="faqHoverLeave()" href="faq.html"><h1><strong>FAQ</strong></h1></a>
             <a onmouseenter="downloadHover()" onmouseleave="downloadHoverLeave()" href="download.html"><h1><strong>Download</strong></h1></a>
-            <a onmouseenter="accountHover()" onmouseleave="accountHoverLeave()" href="account_cancellation.html"><h1><strong>Account cancellation</strong></h1></a>
+            <a onmouseenter="accountHover()" onmouseleave="accountHoverLeave()" href="account_cancellation.html"><h1 class="accountCancellationTab"><strong>Account Cancellation</strong></h1></a>
         </div>
         <div id="navbarSelector" class="navbarSelector navbarSelectorDownload"></div>
     </div>
@@ -64,7 +64,8 @@
                 </div>
             </div>
             <div class="rightDownloadP">
-                <img src="images/down_img1@3x.png">
+                <img class="downloadSectionImg" src="images/down_img1@3x2.png">
+                <img class="downloadSectionImg2 downloadSectionImg2Move" src="images/down_img1@3x3.png">
             </div>
         </div>
     </div>
@@ -74,4 +75,13 @@
     </div>
 </body>
 <script src="script.js"></script>
+<script>
+    // Download Section Image Animation //
+    const downloadImgAnimation = document.querySelector(".downloadSectionImg2")
+    downloadImgAnimation.classList.toggle("downloadSectionImg2Move")
+    setInterval(() => {
+        downloadImgAnimation.classList.toggle("downloadSectionImg2Move")
+    }, 2000);
+
+</script>
 </html>

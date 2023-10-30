@@ -20,7 +20,7 @@
             <a onmouseenter="homeHover()" onmouseleave="homeHoverLeave()" href="index.html"><h1><strong>Home</strong></h1></a>
             <a onmouseenter="faqHover()" onmouseleave="faqHoverLeave()" href="faq.html"><h1><strong>FAQ</strong></h1></a>
             <a onmouseenter="downloadHover()" onmouseleave="downloadHoverLeave()" href="download.html"><h1><strong>Download</strong></h1></a>
-            <a onmouseenter="accountHover()" onmouseleave="accountHoverLeave()" href="account_cancellation.html"><h1><strong>Account cancellation</strong></h1></a>
+            <a onmouseenter="accountHover()" onmouseleave="accountHoverLeave()" href="account_cancellation.html"><h1 class="accountCancellationTab"><strong>Account Cancellation</strong></h1></a>
         </div>
         <div id="navbarSelector" class="navbarSelector navbarSelectorHome"></div>
     </div>
@@ -57,8 +57,7 @@
                 <div class="downloadPopup">
                     <img src="images/sampleqr.webp">
                 </div>
-            </div>
-            <img class="phone" src="images/home_phone@3x.png">        
+            </div>       
         </div>
     </div>
     <!------------------------------- COUNTER ------------------------------------>
@@ -77,18 +76,18 @@
         </div>
     </div>
     <!-------------------------------- STEPS  -------------------------------------->
-    <div class="steps">
+    <div class="steps" id="steps">
         <div class="titleSteps">
             Four Steps to Begin Your Journey:
         </div>
         <div class="stepsIcons">
-            <div class="step1"><img src="images/home_ico_ico1-1@3x.webp">Download</div>
-            <div class="stepLine"><img src="images/home_line@3x.webp"></div>
-            <div class="step2"><img src="images/home_ico_ico1-2@3x.png">Register</div>
-            <div class="stepLine"><img src="images/home_line@3x.webp"></div>
-            <div class="step3"><img src="images/home_ico_ico1-3@3x.png">Verify</div>
-            <div class="stepLine"><img src="images/home_line@3x.webp"></div>
-            <div class="step3"><img src="images/home_ico_ico1-3@3x.webp">Get Rewarded</div>
+            <div class="step1 appearFromTop"><img src="images/home_ico_ico1-1@3x.webp">Download</div>
+            <div class="stepLine appearFromTop"><img src="images/home_line@3x.webp"></div>
+            <div class="step2 appearFromTop"><img src="images/home_ico_ico1-2@3x.png">Register</div>
+            <div class="stepLine appearFromTop"><img src="images/home_line@3x.webp"></div>
+            <div class="step3 appearFromTop"><img src="images/home_ico_ico1-3@3x.png">Verify</div>
+            <div class="stepLine appearFromTop"><img src="images/home_line@3x.webp"></div>
+            <div class="step3 appearFromTop"><img src="images/home_ico_ico1-3@3x.webp">Get Rewarded</div>
         </div>
         <a href="https://vnfilesbk1.s3.amazonaws.com/app/demo/run2Riches-release-1%287%29.apk" download><div class="downloadButton">Download</div></a>
     </div> 
@@ -291,5 +290,61 @@
         downloadBanner4.classList.toggle("downloadBannerMove2")
     }, 1050)
 
+    // --------------------------------------------------- STEPS ENTRANCE ------------------------------------- //
+
+    const stepsSection = document.getElementById('steps');
+
+    function isStepsSectionInMiddleOfViewport() {
+        const stepsSectionRect = stepsSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const middleOfViewport = viewportHeight / 2;
+        const middleOfSectionRect = (stepsSectionRect.top + stepsSectionRect.bottom) / 2;
+
+        const range = 10;
+
+        if (Math.abs(middleOfViewport - middleOfSectionRect) < range) {
+            showStepsSection();
+        }
+    }
+
+let isPassedThrough = false
+
+function showStepsSection() {
+    let appearingElements = document.querySelectorAll(".appearFromTop");
+    let delay = 500; 
+    
+    appearingElements.forEach((e, index) => {
+        setTimeout(() => {
+            e.classList.remove("appearFromTop");
+        }, (index + 1)  * delay);
+    });
+    if (!isPassedThrough) {
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
+        document.body.style.overflow = "auto"; 
+        }, 2000)
+        isPassedThrough = true
+    }
+}
+
+    window.addEventListener('scroll', isStepsSectionInMiddleOfViewport);
+
+    isStepsSectionInMiddleOfViewport();
+
+    // APP DESCRIPTION ENTRANCE //
+    
+    function middleSectionChecker(elementClass) {
+        const element = document.querySelector(elementClass)
+        const stepsSectionRect = stepsSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const middleOfViewport = viewportHeight / 2;
+        const middleOfSectionRect = (stepsSectionRect.top + stepsSectionRect.bottom) / 2;
+
+        const range = 10;
+
+        if (Math.abs(middleOfViewport - middleOfSectionRect) < range) {
+            showStepsSection();
+        }
+    }
 </script>
 </html>

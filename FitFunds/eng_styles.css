@@ -43,7 +43,18 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: 'Helvetica', sans-serif;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.appearFromTop {
+    opacity: 0;
+    transform: translateY(-5vw);
+}
+
 img {
     -webkit-user-select: none; 
     -moz-user-select: none; 
@@ -59,6 +70,12 @@ h1 {
     color: black;
     letter-spacing: 0;
     font-weight: 400;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+}
+.accountCancellationTab {
+    width: 15vw;
 }
 .navbar {
     background-color: white;
@@ -81,38 +98,39 @@ h1 {
     bottom: 0;
     border-top-right-radius: 0.5vw;
     border-top-left-radius: 0.5vw;
+    z-index: -1;
     transition: all 0.5s;
 }
 .navbarSelectorHome {
-    right: 42.4vw;
+    right: 45.4vw;
     width: 4vw;
 }
 .navbarSelectorFaq {
-    right: 35.05vw;
+    right: 36.8vw;
     width: 3.3vw;
 }
 .navbarSelectorDownload {
-    right: 25.05vw;
+    right: 26.4vw;
     width: 6vw;
 }
 .navbarSelectorCancellation {
-    right: 9.4vw;
+    right: 11.6vw;
     width: 11.5vw;
 }
 .moveOne {
-    right: 42.4vw;
+    right: 45.4vw;
     width: 4vw;
 }
 .moveTwo {
-    right: 35.05vw;
+    right: 36.8vw;
     width: 3.3vw;
 }
 .moveThree {
-    right: 25.05vw;
+    right: 26.4vw;
     width: 6vw;
 }
 .moveFour {
-    right: 9.4vw;
+    right: 11.6vw;
     width: 11.5vw;
 }
 .navbarLogo img {
@@ -120,7 +138,6 @@ h1 {
 }
 .navbarMenu {
     display: flex;
-    gap: 5vw;
 }
 .navbarLogo {
     display: flex;
@@ -196,7 +213,8 @@ h1 {
     margin-top: 0;
     position: relative;
     padding: 5vw 15vw;
-    padding-top: 11vw;
+    padding-top: 8vw;
+    overflow: hidden;
 }
 .downloadBanner{
     position: absolute;
@@ -423,9 +441,13 @@ h6 {
     font-size: 1.2vw;
     gap: 2vw;
     font-family: 'Helvetica', sans-serif;
+    transition: all 0.5s;
 }
 .step1 img, .step2 img, .step3 img{
     width: 7vw;
+}
+.stepLine {
+    transition: all 0.5s;
 }
 .stepLine img {
     width: 8vw;
@@ -722,8 +744,30 @@ h10 {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.5vw;
 }
+.rightDownloadP {
+    position: relative;
+    height: 34vw;
+    width: 29vw;
+}
 .rightDownloadP img{
     width: 29vw;
+}
+.downloadSectionImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.downloadSectionImg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.9) rotate(-14deg) translate(-10vw, 0);
+    z-index: 1;
+    transition: transform 0.5s;
+}
+.downloadSectionImg2Move {
+    transform: scale(0.9) rotate(0) translate(0, 0);
 }
 .outerSquare {
     margin-top: 3vw;
@@ -948,7 +992,7 @@ h10 {
     font-family: 'Helvetica Bold', sans-serif;
 }
 .secondSectionTitle {
-    margin-top: 10vw;    
+    margin-top: 5vw;    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1066,7 +1110,6 @@ h10 {
 }
 /*---------------------------------------------------- RESPONSIVENESS ------------------------------------*/
 @media screen and (min-width: 768px) {
-    
     .phone{
         display: none;
     }
@@ -1162,9 +1205,6 @@ h10 {
     .androidIcon img, .iosIcon img {
         width: 3vw;
         margin-right: 1.5vw;
-    }
-    .downloadBanner {
-        display: none;
     }
     h3 {
         font-size: 4.3vw;
@@ -1550,7 +1590,7 @@ h10 {
         width: 115%;
     }
     .downloadPageContents {
-        top: 64vw;
+        top: 29vw;
         flex-direction: column;
     }
     .topOne img {
@@ -1590,8 +1630,22 @@ h10 {
     .downloadPButtons img {
         width: 2.4vw;
     }
+    .rightDownloadP {
+        width: 71vw;
+    }
     .rightDownloadP img {
         width: 71vw;
+    }
+    .downloadSectionImg2 {
+        transform: scale(0.9) rotate(-14deg) translate(-28vw, 0);
+    }
+    .downloadSectionImg2Move {
+        transform: scale(0.9) rotate(0) translate(0, 0);
+    }
+    .downloadBanner {
+        width: 91vw;
+        right: 0;
+        overflow: hidden;
     }
     /*----------------- INTRODUCTION PAGE ------------------------*/
     .aboutImg{

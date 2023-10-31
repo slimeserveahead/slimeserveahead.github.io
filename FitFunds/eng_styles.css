@@ -49,7 +49,18 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-
+.entranceLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.entranceRight {
+    transform: translateX(100%);
+    opacity: 0;
+}
+.entranceUp {
+    transform: translateY(-5vw);
+    opacity: 0;
+}
 .appearFromTop {
     opacity: 0;
     transform: translateY(-5vw);
@@ -481,6 +492,7 @@ h6 {
 }
 .appDescription{
     position: relative;
+    overflow: hidden;
 }
 .appDescriptionContents {
     position: absolute;
@@ -494,6 +506,10 @@ h6 {
 }
 .socialMediaLinks {
     justify-content: space-between;
+    overflow: hidden;
+}
+.appLeft {
+    transition: all 0.75s;
 }
 .appLeft img {
     width: 21vw;
@@ -501,6 +517,8 @@ h6 {
 .appRight {
     display: flex;
     flex-direction: column;
+    transition: all 0.75s;
+    transition-delay: 0.25s;
 }
 h7 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -551,6 +569,11 @@ h8 {
 .socialLeft {
     display: flex;
     flex-direction: column;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+.socialRight {
+    transition: all 0.5s;
 }
 h9 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -572,9 +595,17 @@ h10 {
     justify-content: center;
     align-items: center;
     gap: 10vw;
+    overflow: hidden;
 }
 .coreLeft img {
     width: 32vw;
+}
+.coreLeft {
+    transition: all 0.5s;
+}
+.coreRight {
+    transition: all 0.5s;
+    transition-delay: 0.25s;
 }
 .h11 {
     font-family: 'Helvetica Bold', sans-serif;
@@ -603,10 +634,12 @@ h10 {
 .benefits {
     padding: 5vw 10vw;
     gap: 6vw;
+    padding-top: 10vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .benefitsIcon img{
     width: 4vw;
 }
@@ -616,7 +649,24 @@ h10 {
     flex-direction: column;
     align-items: center;
     gap: 1vw;
+    transition: all 0.5s;
 }
+.benefitsContainer:nth-child(2) {
+    transition-delay: 0.25s;
+}
+.benefitsContainer:nth-child(3) {
+    transition-delay: 0.5s;
+}
+.benefitsContainer:nth-child(4) {
+    transition-delay: 0.75s;
+}
+.benefitsContainer:nth-child(5) {
+    transition-delay: 1s;
+}
+.benefitsContainer:nth-child(6) {
+    transition-delay: 1.25s;
+}
+
 .benefitsTitle {
     font-family: 'Helvetica Bold', sans-serif;
     font-size: 1.2vw;
@@ -1451,7 +1501,7 @@ h10 {
     .sidebar{
         position: fixed;
         background-color: white;
-        width: 60%;
+        width: 62vw;
         height: 100%;
         z-index: 100;
         top: 0;

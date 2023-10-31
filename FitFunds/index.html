@@ -96,15 +96,15 @@
         <img class="appDescriptionBGOne" src="images/home_bg2@3x.png">
         <img class="appDescriptionBGTwo" src="images/appDescriptionBGtwo.png">
         <div class="appDescriptionContents">
-            <div class="appLeft"><img src="images/home_img2@3x.webp"></div>
-            <div class="appRight">
+            <div class="appLeft entranceLeft"><img src="images/home_img2@3x.webp"></div>
+            <div class="appRight entranceRight">
                 <h7>Logging in daily<br>Watch your money grow</h7>
                 <div class="h28">What sets FitFunds apart is that users can effortlessly earn extra income by simply logging in each day. There is no need for complex tasks or to invest significant amounts of time. This app is designed to reward user loyalty and consistent use. Users only need to open the app, log in to their accounts, and they can start enjoying a steady stream of cash.</div>
             </div>
         </div>
     </div>
     <div class="socialMediaLinks">
-        <div class="socialLeft">
+        <div class="socialLeft entranceLeft">
             <h9>Join our social media community today!</h9>
             <h10>Receive our latest news</h10>
             <div class="socialMediaIcons">
@@ -114,12 +114,12 @@
                 <a href="mailto:Support@run2riches.com" target=”_blank”><img src="images/email.webp"></a>
             </div>
         </div>
-        <div class="socialRight"><img src="images/home_img3@3x.webp"></div>
+        <div class="socialRight entranceRight"><img src="images/home_img3@3x.webp"></div>
     </div>
     <!---------------------------------------- CORE ----------------------------------------->
     <div class="core">
-        <div class="coreLeft"><img src="images/home_img4@3x.webp"></div>
-        <div class="coreRight">
+        <div class="coreLeft entranceLeft"><img src="images/home_img4@3x.webp"></div>
+        <div class="coreRight entranceRight">
             <div class="h11">
                 Our Core Functions Include:
             </div>
@@ -139,32 +139,32 @@
     </div>
     <!----------------------------------------- Benefits --------------------------------------->
     <div class="benefits">
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-1@3x.webp"></div>
             <div class="benefitsTitle">Assets Are Guaranteed</div>
             <div class="benefitsDescription">The app ensures account security through password and facial recognition setup, and further enhances protection with multi-layer security measures, including identity verification. Your safety is our top priority!</div>
         </div>
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-2@3x.webp"></div>
             <div class="benefitsTitle">24/7 Customer Service</div>
             <div class="benefitsDescription">We offer round-the-clock customer service to assist with all your needs and promptly address any inquiries you may have. Your satisfaction is our priority!</div>
         </div>
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-3@3x.webp"></div>
             <div class="benefitsTitle">Safe And Reliable</div>
             <div class="benefitsDescription">The app employs robust measures to safeguard users' personal information and crucial data, ensuring protection against unauthorized access and data leaks.</div>
         </div>
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-4@3x.webp"></div>
             <div class="benefitsTitle">Infinite Possibilities</div>
             <div class="benefitsDescription">Achieve your income goals, complete tasks, and earn rewards, all while experiencing the freedom and autonomy of the app.</div>
         </div>
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-5@3x.webp"></div>
             <div class="benefitsTitle">Exciting Games</div>
             <div class="benefitsDescription">Enjoy a diverse range of entertainment content, interact with fellow users, and share memorable moments for a truly enjoyable experience. Let the fun begin!</div>
         </div>
-        <div class="benefitsContainer">
+        <div class="benefitsContainer entranceUp">
             <div class="benefitsIcon"><img src="images/home_ico4-6@3x.webp"></div>
             <div class="benefitsTitle">Real-time Market Data</div>
             <div class="benefitsDescription">FitFunds provides real market data, constantly updating the best prices and quantities for buying and selling based on actual market conditions. This data reflects the trading readiness and depth from buyers and sellers, aiding in assessing support and resistance levels for more informed decisions.</div>
@@ -273,6 +273,7 @@
             </div>
         </div>
     </div>
+    <button onclick="moveToMiddleBenefits()">MOVE TO MIDDLE</button>
     <!---------------------------------------------- FOOTER ------------------------------------------>
     <div class="footer">
         © All Right Reserved By FitFunds  v 1.1.1.0 Copyright 2023 FitFunds Inc. Registered Copyright
@@ -280,6 +281,26 @@
 </body>
 <script src="script.js"></script>
 <script>
+    function moveToMiddleBenefits() {
+        console.log("Moved")
+        const container = document.querySelector(".benefits");
+        const containerMiddle = container.offsetTop + container.offsetHeight / 2;
+        const viewportMiddle = window.innerHeight / 2;
+        const scrollPosition = containerMiddle - viewportMiddle;
+        document.body.style.overflow = "hidden";
+
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth",
+        });
+
+        setTimeout(() => {
+            document.body.style.overflow = "auto"; 
+        }, 2000)
+    }
+    // ---------------------------------------------------- //
+
+
     let downloadBanner1 = document.getElementById("downloadBanner1")
     let downloadBanner3 = document.getElementById("downloadBanner3")
     let downloadBanner4 = document.getElementById("downloadBanner4")
@@ -300,7 +321,7 @@
         const middleOfViewport = viewportHeight / 2;
         const middleOfSectionRect = (stepsSectionRect.top + stepsSectionRect.bottom) / 2;
 
-        const range = 10;
+        const range = 30;
 
         if (Math.abs(middleOfViewport - middleOfSectionRect) < range) {
             showStepsSection();
@@ -318,13 +339,15 @@ function showStepsSection() {
             e.classList.remove("appearFromTop");
         }, (index + 1)  * delay);
     });
-    if (!isPassedThrough) {
-        document.body.style.overflow = "hidden";
-        setTimeout(() => {
-        document.body.style.overflow = "auto"; 
-        }, 2000)
-        isPassedThrough = true
-    }
+    // if (!isPassedThrough) {
+    //     document.body.style.overflow = "hidden";
+        
+    //     moveToMiddle(".steps")
+    //     setTimeout(() => {
+    //     document.body.style.overflow = "auto"; 
+    //     }, 2000)
+    //     isPassedThrough = true
+    // }
 }
 
     window.addEventListener('scroll', isStepsSectionInMiddleOfViewport);
@@ -335,16 +358,70 @@ function showStepsSection() {
     
     function middleSectionChecker(elementClass) {
         const element = document.querySelector(elementClass)
-        const stepsSectionRect = stepsSection.getBoundingClientRect();
+        const elementSectionRect = element.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
         const middleOfViewport = viewportHeight / 2;
-        const middleOfSectionRect = (stepsSectionRect.top + stepsSectionRect.bottom) / 2;
-
-        const range = 10;
+        const middleOfSectionRect = (elementSectionRect.top + elementSectionRect.bottom) / 2;
+        
+        const range = 50;
 
         if (Math.abs(middleOfViewport - middleOfSectionRect) < range) {
-            showStepsSection();
+            return true
+        } else {
+            return false
         }
     }
+
+    
+    function leftRightEntrance(container, left, right) {
+        let isAnimating = middleSectionChecker(container)
+        let leftElement = document.querySelector(left)
+        let rightElement = document.querySelector(right)
+        if (isAnimating) {
+            leftElement.classList.remove("entranceLeft")
+            rightElement.classList.remove("entranceRight")
+        }
+    }
+    
+    window.addEventListener('scroll', () => leftRightEntrance(".appDescription", ".appLeft", ".appRight"));
+    window.addEventListener('scroll', () => leftRightEntrance(".socialMediaLinks", ".socialLeft", ".socialRight"));
+    window.addEventListener('scroll', () => leftRightEntrance(".core", ".coreLeft", ".coreRight"));
+
+    leftRightEntrance(".appDescription", ".appLeft", ".appRight")
+    leftRightEntrance(".socialMediaLinks", ".socialLeft", ".socialRight")
+    leftRightEntrance(".core", ".coreLeft", ".coreRight")
+
+    // MOVE TO MIDDLE FUNCTION //
+
+    function moveToMiddle(containerClass) {
+        const container = document.querySelector(containerClass);
+        const containerMiddle = container.offsetTop + container.offsetHeight / 2;
+        const viewportMiddle = window.innerHeight / 2;
+        const scrollPosition = containerMiddle - viewportMiddle;
+
+        console.log(`Moved to the middle of ${containerClass}`)
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth",
+        });
+    }
+
+    // ----------------------- BENEFITS ------------------------ //
+    isPassedThroughBenefits = false
+    function benefitsEntrance() {
+        let isAnimating = middleSectionChecker(".benefits")
+        if (isAnimating && !isPassedThroughBenefits) {
+            isPassedThroughBenefits = true
+            moveToMiddleBenefits()
+
+            let benefitsContainer = document.querySelectorAll(".benefitsContainer")
+            benefitsContainer.forEach(element => {
+                element.classList.remove("entranceUp")
+            })
+        }
+
+    }
+    window.addEventListener('scroll', benefitsEntrance);
+
 </script>
 </html>

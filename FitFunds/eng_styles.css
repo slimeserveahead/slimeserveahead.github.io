@@ -104,8 +104,8 @@ h1 {
 }
 .navbarSelector {
     position: absolute;
-    height: 0.6vw;
-    background-color: #4E62E4;
+    height: 0.4vw;
+    background-color: #556bffc0;
     bottom: 0;
     border-top-right-radius: 0.5vw;
     border-top-left-radius: 0.5vw;
@@ -709,7 +709,7 @@ h10 {
     border: 0.01vw solid white;
     font-family: 'Helvetica Bold', sans-serif;
     width: 11vw;
-    height: 2.9vw;
+    height: 3.1vw;
     color: white;
     display: flex;
     font-size: 1.3vw;
@@ -1096,6 +1096,15 @@ h10 {
     border: 0.01vw solid #DCDCDC;
     margin-bottom: 2vw;
 }
+.testimonialsContainer:nth-child(1) {
+    margin-top: 5vw;
+}
+.testimonialsContainer:nth-child(2) {
+    margin-bottom: 5vw;
+}
+.testimonialsContainer:nth-child(6) {
+    margin-top: 5vw;
+}
 .testimonials {
     color: #938d8d;
     margin-bottom: 1vw;
@@ -1106,9 +1115,8 @@ h10 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 75vw;
     padding: 0 20vw;
-    height: 60vw;
+    height: 78vw;
 }
 .user {
     font-size: 1.1vw;
@@ -1118,9 +1126,6 @@ h10 {
 .user img{
     width: 2vw;
     margin-right: 0.5vw;
-}
-.moveDown {
-    transform: translateY(3vw);
 }
 /*------------------------------------------ CANCELLATION PAGE -------------------------------------------*/
 .cancellationPage {
@@ -1872,15 +1877,18 @@ h10 {
         height: auto;
         padding: 0 7vw;
     }
-    .moveDown {
-        transform: translateY(0);
-    }
     .testimonialsContainer {
         width: 77vw;
         display: flex;
         flex-direction: column-reverse;
         padding: 5vw;
         margin-bottom: 5vw;
+    }
+    .testimonialsContainer:nth-child(1) {
+        margin-top: 0vw;
+    }
+    .testimonialsContainer:nth-child(6) {
+        margin-top: 0vw;
     }
     .user {
         font-size: 4.1vw;

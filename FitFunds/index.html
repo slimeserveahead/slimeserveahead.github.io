@@ -273,7 +273,6 @@
             </div>
         </div>
     </div>
-    <button onclick="moveToMiddleBenefits()">MOVE TO MIDDLE</button>
     <!---------------------------------------------- FOOTER ------------------------------------------>
     <div class="footer">
         © All Right Reserved By FitFunds  v 1.1.1.0 Copyright 2023 FitFunds Inc. Registered Copyright
@@ -339,15 +338,15 @@ function showStepsSection() {
             e.classList.remove("appearFromTop");
         }, (index + 1)  * delay);
     });
-    // if (!isPassedThrough) {
-    //     document.body.style.overflow = "hidden";
+    if (!isPassedThrough) {
+        document.body.style.overflow = "hidden";
         
-    //     moveToMiddle(".steps")
-    //     setTimeout(() => {
-    //     document.body.style.overflow = "auto"; 
-    //     }, 2000)
-    //     isPassedThrough = true
-    // }
+        moveToMiddle(".steps")
+        setTimeout(() => {
+        document.body.style.overflow = "auto"; 
+        }, 2000)
+        isPassedThrough = true
+    }
 }
 
     window.addEventListener('scroll', isStepsSectionInMiddleOfViewport);
@@ -400,6 +399,7 @@ function showStepsSection() {
         const scrollPosition = containerMiddle - viewportMiddle;
 
         console.log(`Moved to the middle of ${containerClass}`)
+        
         window.scrollTo({
             top: scrollPosition,
             behavior: "smooth",

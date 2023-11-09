@@ -244,10 +244,14 @@ span {
 .contactContainer {
     display: flex;
     align-items: center;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
 }
 .contactContainer:nth-child(5) {
-    margin-bottom: 4vw;
+    margin-bottom: 6vw;
+}
+.contactIcon {
+    display: flex;
+    align-items: center;
 }
 .contactIcon img {
     width: 6vw;

@@ -100,8 +100,40 @@ span {
     height: 10vw;
     font-weight: bold;
 }
+.credentials {
+    padding: 6vw;
+    background-color: black;
+    background-image: url('images/credentials-background.png');
+    background-size: cover;
+}
+.iconsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.credentialIcons {
+    border: 1px solid white;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5vw;
+    padding: 2vw 0;
+    margin-bottom: 4vw;
+}
+.credentialIcons img {
+    height: 13vw;
+    margin-top: 4vw;
+}
+.credentialIcons div {
+    margin-bottom: 2vw;
+}
+.credentialsDescription {
+    font-size: 3.5vw;
+    text-align: justify;
+}
 .agentsBenefit {
     padding: 0 6vw;
+    padding-top: 6vw;
 }
 .agentsBenefitTitle {
     display: flex;
@@ -153,6 +185,10 @@ span {
     text-align: justify;
     line-height: 4vw;
     margin-bottom: 5vw;
+}
+.benefitImg {
+    width: 100%;
+    margin-bottom: 3vw;
 }
 .commission {
     padding: 4vw 6vw;
@@ -223,7 +259,6 @@ span {
     font-size: 3.5vw;
     margin-bottom: 4vw;
 }
-
 .contact {
     padding: 4vw 6vw;
     background-image: url('images/位图@3x.png');

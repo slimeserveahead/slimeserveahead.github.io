@@ -104,7 +104,7 @@ span {
 .credentials {
     padding: 6vw;
     background-color: black;
-    background-image: url('images/credentials-background.png');
+    background-image: url('images/credentials-background.webp');
     background-size: cover;
 }
 .iconsContainer {
@@ -264,7 +264,7 @@ span {
 }
 .contact {
     padding: 4vw 6vw;
-    background-image: url('images/位图@3x.png');
+    background-image: url('images/位图@3x.webp');
     background-size: cover;
 }
 .contactTitle {

@@ -17,6 +17,7 @@ body {
     color: white;
     font-family: 'Helvetica', sans-serif;
     background-color: #20193A;
+    line-height: 5vw;
 }
 
 .header {
@@ -79,7 +80,7 @@ body {
     justify-content: space-between;
     font-size: 3.5vw;
     align-items: center;
-    height: 9vw;
+    height: 8vw;
     padding: 0 2vw;
 }
 span {
@@ -183,7 +184,6 @@ span {
 .benefit2Description {
     font-size: 3.5vw;
     text-align: justify;
-    line-height: 4vw;
     margin-bottom: 5vw;
 }
 .benefitImg {
@@ -198,11 +198,12 @@ span {
     justify-content: center;
     font-weight: bold;
     font-size: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
+    margin-top:3vw;
 }
 .commissionCard {
     background-color: white;
-    height: 52vw;
+    height: 55vw;
     border-radius: 2vw;
     overflow: hidden;
     display: flex;
@@ -215,7 +216,7 @@ span {
 }
 .commissionCardTop {
     position: relative;
-    height: 21vw;
+    height: 19vw;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -223,11 +224,12 @@ span {
     align-items: center;
     font-weight: bold;
     font-size: 6vw;
+    margin-bottom: 2vw;
 }
 .commissionCardTopBG {
     position: absolute;
     top: 0;
-    left: 26vw;
+    left: 24vw;
     background-color: #5380D5;
     height: 20vw;
     width: 40vw;
@@ -241,7 +243,7 @@ span {
     font-weight: bold;
     justify-content: center;
     margin-top: 3vw;
-    margin-bottom: 3vw;
+    margin-bottom: 6vw;
 }
 .bottomDescription {
     color: black;
@@ -258,6 +260,7 @@ span {
 .commissionDescription {
     font-size: 3.5vw;
     margin-bottom: 4vw;
+    text-align: justify;
 }
 .contact {
     padding: 4vw 6vw;
@@ -269,7 +272,8 @@ span {
     font-weight: bold;
     justify-content: center;
     display: flex;
-    margin-bottom: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
 }
 .contactDescription {
     font-size: 3.5vw;
@@ -305,4 +309,5 @@ span {
     justify-content: center;
     align-items: center;
     border-radius: 1.5vw;
+    margin-bottom: 2vw;
 }

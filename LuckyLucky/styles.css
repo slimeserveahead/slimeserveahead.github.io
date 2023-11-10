@@ -20,6 +20,15 @@ body {
     line-height: 5vw;
 }
 
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none; 
+}
+
 .header {
     background-color: #24222C;
     display: flex;
@@ -141,7 +150,8 @@ span {
     justify-content: center;
     font-size: 5vw;
     font-weight: bold;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
+    margin-top: 1vw;
 }
 .benefitsContents {
     display: flex;
@@ -239,11 +249,12 @@ span {
     z-index: -1;
 }
 .bottomTitle {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: bold;
     justify-content: center;
     margin-top: 3vw;
     margin-bottom: 6vw;
+    text-align: center;
 }
 .bottomDescription {
     color: black;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Join LUCKYLUCKY today and become an affiliate agent to access top-notch gambling products, attractive commissions up to 65%, and excellent support. No conditions needed, just register and start earning profits now!">
+    <title>LuckyLucky</title>
+</head>
+<body>
+    <div class="logo"><img alt="LuckyLucky Logo" src="images/logo@3x.webp"></div>
+    <div class="table">
+        <div class="testing"></div>
+        <div class="heading">
+            <div class="column1">WEBSITE</div>
+            <div class="column2">PING</div>
+            <div class="column3">STATUS</div>
+            <div class="column4">LINK</div>
+        </div>
+        <div class="row">
+            <div class="column1">Link 1</div>
+            <div class="column2">62ms</div>
+            <div class="column3">Online</div>
+            <div class="column4">
+                <img class="leftHand" alt="Left Hand Icon" src="images/icon1@3x.webp">
+                [Click to Enter]
+                <img class="rightHand" alt="Right Hand Icon" src="images/icon2@3x.webp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">Link 2</div>
+            <div class="column2">20ms</div>
+            <div class="column3">Online</div>
+            <div class="column4">
+                <img class="leftHand" alt="Left Hand Icon" src="images/icon1@3x.webp">
+                [Click to Enter]
+                <img class="rightHand" alt="Right Hand Icon" src="images/icon2@3x.webp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">Link 3</div>
+            <div class="column2">30ms</div>
+            <div class="column3">Online</div>
+            <div class="column4">
+                <img class="leftHand" alt="Left Hand Icon" src="images/icon1@3x.webp">
+                [Click to Enter]
+                <img class="rightHand" alt="Right Hand Icon" src="images/icon2@3x.webp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">Link 4</div>
+            <div class="column2">62ms</div>
+            <div class="column3">Online</div>
+            <div class="column4">
+                <img class="leftHand" alt="Left Hand Icon" src="images/icon1@3x.webp">
+                [Click to Enter]
+                <img class="rightHand" alt="Right Hand Icon" src="images/icon2@3x.webp">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column1">Link 5</div>
+            <div class="column2">62ms</div>
+            <div class="column3">Online</div>
+            <div class="column4">
+                <img class="leftHand" alt="Left Hand Icon" src="images/icon1@3x.webp">
+                [Click to Enter]
+                <img class="rightHand" alt="Right Hand Icon" src="images/icon2@3x.webp">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let leftHand = document.querySelectorAll(".leftHand")
+    let rightHand = document.querySelectorAll(".rightHand")
+
+    setInterval(() => {
+        leftHand.forEach(hand => {
+            hand.classList.toggle("moveLeft")
+        })
+        rightHand.forEach(hand => {
+            hand.classList.toggle("moveRight")
+        })
+    }, 800)
+    
+
+</script>
+</html>

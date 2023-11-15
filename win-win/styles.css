@@ -113,8 +113,9 @@ span {
 .credentials {
     padding: 6vw;
     background-color: black;
-    background-image: url('images/credentials-background.webp');
+    background-image: url(images/credentials-background.webp);
     background-size: cover;
+    background-position: center;
 }
 .iconsContainer {
     display: flex;

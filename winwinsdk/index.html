@@ -28,7 +28,7 @@
 <body>
     <div class="header">
         <img alt="WIN-WIN logo" class="logo" src="images/logo.webp">
-        <div class="registerButton">
+        <div onclick="registerButtonClick()" class="registerButton">
             REGISTER
         </div>
     </div>
@@ -47,7 +47,7 @@
                 <div class="stepsText"><span>Step3</span> Promote</div>
             </div>
         </div>
-        <div class="stepsButton">Start earning profits</div>
+        <div onclick="startButtonClick()" class="stepsButton">Start earning profits</div>
     </div>
     <div class="credentials">
         <div class="iconsContainer">
@@ -186,13 +186,13 @@
     <div class="contact">
         <div class="contactTitle">Contact for cooperation</div>
         <div class="contactDescription">No condition is needed to become our VIP agent. As long as you have contacts or thoughtful promotion, you don't need to do anything, nor do you need too much time. You can wait for profits without worrying about downline losses. All you need to do is contact us and register with your Telegram or Gmail account.</div>
-        <a href="mailto:winwin.helpdesk1@gmail.com" target="_blank">
+        <a onclick="emailClick()" href="mailto:winwin.helpdesk1@gmail.com" target="_blank">
             <div class="contactContainer">
                 <div class="contactIcon"><img alt="Email Icon" src="images/编组 8@3x.webp"></div>
                 <div class="contactText">Email: winwin.helpdesk1@gmail.com</div>
             </div>
         </a>
-        <a href="https://t.me/WinWinAssist" target="_blank">
+        <a onclick="telegramClick()" href="https://t.me/WinWinAssist" target="_blank">
             <div class="contactContainer">
                 <div class="contactIcon"><img alt="Telegram Icon" src="images/编组 9@3x.webp"></div>
                 <div class="contactText">Telegram: @WinWinAssist</div>
@@ -211,6 +211,26 @@
     function facebookClick() {
         Adjust.trackEvent({
             eventToken: 'haw9k1'
+        })
+    }
+    function emailClick() {
+        Adjust.trackEvent({
+            eventToken: 'kp53jf'
+        })
+    }
+    function registerButtonClick() {
+        Adjust.trackEvent({
+            eventToken: '82ehpu'
+        })
+    }
+    function startButtonClick() {
+        Adjust.trackEvent({
+            eventToken: 'a5tbar'
+        })
+    }
+    function telegramClick() {
+        Adjust.trackEvent({
+            eventToken: 'glvb1p'
         })
     }
 </script>

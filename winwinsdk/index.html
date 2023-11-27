@@ -13,7 +13,7 @@
     <script>
         Adjust.initSdk({
             appToken: 'man5tul60lc0',
-            environment: 'sandbox',
+            environment: 'production',
             logLevel: "verbose",
         }, function (event) {
             if (event && event.eventToken === 'Initiated') {
@@ -28,9 +28,6 @@
 <body>
     <div class="header">
         <img alt="WIN-WIN logo" class="logo" src="images/logo.webp">
-        <div onclick="registerButtonClick()" class="registerButton">
-            REGISTER
-        </div>
     </div>
     <div class="banner">
         <img alt="Up to 60% Agent Commission" class="logo" src="images/编组 3@3x.webp">
@@ -174,10 +171,8 @@
         <div class="commissionTitle2">Membership Requirements</div>
         <div class="commissionDescription">Deposit three times or more in the current month, with a total deposit amount exceeding ₱5,000 and valid bets exceeding ₱10,000.</div>
         <div class="commissionTitle2">Commission calculation formula</div>
-        <div class="commissionDescription">Commission = [Total amount lost by the customer - Refund amount - (Total lost amount × 15% management fee)] × Commission Percentage.</div>
-        <div class="commissionTitle2">Management fees</div>
-        <div class="commissionDescription">Agent platform fees, agent fee of downline member deposit and withdrawal. (Management fees will be charged if the agent has income.)
-            <br><strong>New member commissions and bonuses will be distributed before the 5th of each month.</strong></div>
+        <div class="commissionDescription">Commission = [total amount lost by the customer × commission percentage]</div>
+        <div class="commissionDescription"><strong>New member commissions and bonuses will be distributed every week.</strong></div>
         <div class="commissionTitle2">Net profit</div>
         <div class="commissionDescription">If the agent's profit is positive, it will be deducted from the profit for the next month.</div>
         <div class="commissionTitle2">Note</div>
@@ -218,11 +213,6 @@
             eventToken: 'ymy9b2'
         })
     }
-    function registerButtonClick() {
-        Adjust.trackEvent({
-            eventToken: '1w3pyg'
-        })
-    }
     function startButtonClick() {
         Adjust.trackEvent({
             eventToken: 'ejxg9z'
@@ -234,4 +224,20 @@
         })
     }
 </script>
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '875172710590661');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=875172710590661&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
 </html>

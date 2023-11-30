@@ -18,7 +18,7 @@ body {
     padding: 0;
     color: #5f6c7b;
     font-family: 'Helvetica', sans-serif;
-    background-color: white;
+    background-color: #B5C4FF;
     line-height: 5vw;
     overflow-x: hidden;
 }
@@ -32,8 +32,9 @@ img {
     -webkit-user-drag: none; 
 }
 
+
 .header {
-    background-color: #301e4e;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 3vw 6vw;
@@ -41,9 +42,31 @@ img {
     width: calc(100% - 12vw);
     height: 12vw;
 }
-
+.divContainer {
+    padding: vw;
+    background-color: #F6F8FF;
+    padding: 3vw;
+    border-radius: 2vw;
+    position: relative;
+}
+.divTopContainer {
+    position: absolute;
+    top: 0;
+    height: 10vw;
+    width: 93%;
+    background-image: url('images/Divtop.webp');
+    background-position-x: center;
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 4.5vw;
+}
 .logo {
-    width: 30vw;
+    width: 38vw;
 }
 .registerButton {
     background-color: #FD6914;
@@ -63,7 +86,7 @@ img {
     width: 100%;
 }
 .steps {
-    padding: 0 6vw;
+    padding: 1.5vw 3vw;
 }
 .stepsTitle {
     display: flex;
@@ -97,6 +120,10 @@ img {
     align-items: center;
     height: 8vw;
     padding: 0 2vw;
+    background-image: url('images/编组 11@3x.webp');
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 2vw;
 }
 span {
     color: #3E68D7;
@@ -109,30 +136,29 @@ span {
     font-weight: bold;
 }
 .stepsButton {
-    background-color: #FF7A49;
+    background-color: #EB7233;
     font-size: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 3vw;
     height: 10vw;
     font-weight: bold;
     color: white;
 }
 .credentials {
-    padding: 6vw;
-    background-color: black;
-    background-image: url(images/credentials-background.webp);
+    padding: 1.5vw 3vw;
+    background-color: #B5C4FF;
     background-size: cover;
     background-position: center;
+
 }
 .iconsContainer {
     display: flex;
     justify-content: space-between;
 }
 .credentialIcons {
-    border: 1px solid white;
+    border: 1px solid #206CEA;
     width: 26vw;
     display: flex;
     flex-direction: column;
@@ -140,7 +166,8 @@ span {
     font-size: 3.5vw;
     padding: 2vw 0;
     margin-bottom: 4vw;
-    color: #FFFFFF;
+    color: #333333;
+    background-color: #E1EAFF;
 }
 .credentialIcons img {
     height: 13vw;
@@ -152,18 +179,17 @@ span {
 .credentialsDescription {
     font-size: 3.5vw;
     text-align: justify;
-    color: #FFFFFF;
+    color: #333333;
 }
 .agentsBenefit {
-    padding: 0 6vw;
-    padding-top: 6vw;
+    padding: 1.5vw 3vw;
 }
 .agentsBenefitTitle {
     display: flex;
     justify-content: center;
     font-size: 5vw;
     font-weight: bold;
-    margin-bottom: 7vw;
+    margin-bottom: 12vw;
     margin-top: 1vw;
     color: #1f1135;
 }
@@ -173,7 +199,7 @@ span {
     margin-bottom: 10vw;
 }
 .number {
-    background-color: #e2daeb;
+    background-color: #D1F0FE;
     height: 14vw;
     display: flex;
     align-items: center;
@@ -185,7 +211,7 @@ span {
     font-style: italic;
 }
 .number span {
-    color: #1f1135;
+    color: #3E68D7;
 }
 .rightTitle {
     font-size: 5vw;
@@ -199,11 +225,8 @@ span {
     color: #1b1425;
 }
 .agentsBenefit2 {
-    background-color: #e2daeb;
-    padding: 0 6vw;
-    padding-top: 5vw;
-    padding-bottom: 2vw;
-    
+    background-color: #B5C4FF;
+    padding: 1.5vw 3vw;
 }
 .agentsBenefitSubtitle {
     font-size: 3.75vw;
@@ -223,10 +246,9 @@ span {
 }
 .benefitImg {
     width: 100%;
-    margin-bottom: 3vw;
 }
 .commission {
-    padding: 4vw 6vw;
+    padding: 1.5vw 3vw;
 }
 .commissionTitle {
     display: flex;
@@ -238,7 +260,7 @@ span {
     color: #1f1235;
 }
 .commissionCard {
-    background-color: #463366;
+    background-color: white;
     height: 55vw;
     border-radius: 2vw;
     overflow: hidden;
@@ -246,9 +268,10 @@ span {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3vw;
+    border: 1px solid #5380D5;
 }
 .commissionCard:nth-child(5) {
-    margin-bottom: 6vw;
+    margin-bottom: 0vw;
 }
 .commissionCardTop {
     position: relative;
@@ -267,7 +290,7 @@ span {
     position: absolute;
     top: 0;
     left: 24vw;
-    background-color: #301e4e;
+    background-color: #5380D5;
     height: 20vw;
     width: 40vw;
     border-bottom-left-radius: 25vw;
@@ -284,10 +307,10 @@ span {
     text-align: center;
 }
 .bottomTitle span {
-    color: #FFFFFF;
+    color: #494FDE;
 }
 .bottomDescription {
-    color: #c9bae2;
+    color: #48485D;
     font-size: 3.5vw;
     display: flex;
     justify-content: center;
@@ -297,7 +320,7 @@ span {
     font-size: 3.75vw;
     font-weight: bold;
     margin-bottom: 3vw;
-    color: #1f1235;
+    color: #334E9B;
 }
 .commissionDescription {
     font-size: 3.5vw;
@@ -306,9 +329,8 @@ span {
     color: #1b1425;
 }
 .contact {
-    padding: 4vw 6vw;
-    background-image: url('images/位图@3x.webp');
-    background-size: cover;
+    padding: 1.5vw 3vw;
+    padding-bottom: 3vw;
 }
 .contactTitle {
     font-size: 5vw;
@@ -316,7 +338,7 @@ span {
     justify-content: center;
     display: flex;
     margin-top: 2vw;
-    margin-bottom: 5vw;
+    margin-bottom: 9vw;
     color: #1f1235;
 }
 .contactDescription {
@@ -338,7 +360,7 @@ span {
     align-items: center;
 }
 .contactIcon img {
-    width: 6vw;
+    width: 7vw;
     margin-right: 2vw;
 }
 .contactText {
@@ -356,4 +378,7 @@ span {
     align-items: center;
     border-radius: 1.5vw;
     margin-bottom: 2vw;
+}
+.marginBottomZero {
+    margin-bottom: 0;
 }

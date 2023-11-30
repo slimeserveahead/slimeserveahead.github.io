@@ -41,39 +41,49 @@
     <div class="banner">
         <img alt="Up to 60% Agent Commission" class="logo" src="images/编组 3@3x.webp">
     </div>
+    <div class="desktopBanner">
+        <img alt="Up to 60% Agent Commission" src="images/desktopbanner.webp">
+    </div>
     <div class="steps">
         <div class="divContainer">
             <div class="divTopContainer">Welcome to WIN-WIN!</div>
             <div class="stepsTitle"></div>
             <div class="stepsDescription">WIN-WIN provides players with premier products, optimal payment solutions tailored for the Philippines region, a secure withdrawal process, and highly advantageous agent policies. Partnering with WIN-WIN presents the potential to earn a substantial monthly commission of up to 60%, with limitless earning possibilities. To embark on a journey of shared success and immediate profitability, follow these three simple steps:</div>
-            <div class="steps1to3">
-                <img alt="stepsBackground" class="stepsImg" src="images/编组 11@3x.webp">
-                <div class="stepsTexts">
-                    <div class="stepsText"><span>Step1</span> Register</div>
-                    <div class="stepsText"><span>Step2</span> Approve</div>
-                    <div class="stepsText"><span>Step3</span> Promote</div>
+            <div class="stepsContainer">
+                <div class="steps1to3">
+                    <div class="stepsTexts">
+                        <div class="stepsText"><span>Step1</span> Register</div>
+                        <div class="stepsText"><span>Step2</span> Approve</div>
+                        <div class="stepsText moveMobile"><span>Step3</span> Promote</div>
+                    </div>
                 </div>
+                <div onclick="startButtonClick()" class="stepsButton">Start earning profits</div>
             </div>
-            <div onclick="startButtonClick()" class="stepsButton">Start earning profits</div>
         </div>
     </div>
     <div class="credentials">
         <div class="divContainer">
             <div class="iconsContainer">
                 <div class="credentialIcons">
-                    <div><img alt="Reputation Icon" src="images/icon1@3x.webp"></div>
-                    <div>No. 1</div>
-                    <div>Reputation</div>
+                    <div class="iconImageContainer"><img alt="Reputation Icon" src="images/icon1@3x.webp"></div>
+                    <div class="credentialTexts">
+                        <div>No. 1</div>
+                        <div>Reputation</div>
+                    </div>
                 </div>
                 <div class="credentialIcons">
-                    <div><img alt="Security Icon" src="images/icon2@3x.webp"></div>
-                    <div>No. 2</div>
-                    <div>Security</div>
+                    <div class="iconImageContainer"><img alt="Security Icon" src="images/icon2@3x.webp"></div>
+                    <div class="credentialTexts">
+                        <div>No. 2</div>
+                        <div>Security</div>
+                    </div>
                 </div>
                 <div class="credentialIcons">
-                    <div><img alt="Professional Icon" src="images/编组@3x.webp"></div>
-                    <div>No. 3</div>
-                    <div>Professional</div>
+                    <div class="iconImageContainer"><img alt="Professional Icon" src="images/编组@3x.webp"></div>
+                    <div class="credentialTexts">
+                        <div>No. 3</div>
+                        <div>Professional</div>
+                    </div>
                 </div>
             </div>
             <div class="credentialsDescription">WIN-WIN is a gambling company that is legally registered in the Virgin Islands (UK) and holds licenses for online casinos and sports betting certified by the Philippine Amusement and Gaming Corporation (PAGCOR).</div>
@@ -128,7 +138,7 @@
                     <div class="rightDescription">Explore a captivating array of game genres, ranging from dynamic slots to immersive live experiences, and beyond.</div>
                 </div>
             </div>
-            <div class="benefitsContents marginBottomZero">
+            <div class="benefitsContents marginBottomZero marginBottomZeroMobile">
                 <div class="benefitLeft">
                     <div class="number"><span>6</span></div>
                 </div>
@@ -146,9 +156,9 @@
             <div class="agentsBenefitSubtitle">Why did you choose to become a WIN-WIN agent?</div>
             <div class="benefit2Description"><strong>Win-Win</strong> presents an unparalleled array of premium gambling products, encompassing cutting-edge slots, sophisticated online casinos, and an expansive selection of online games. Renowned as a top-tier gambling company, the Win-Win brand stands as a pinnacle of excellence in the industry.</div>
             <div class="benefit2Description">Our affiliate program boasts enticing commission rates, allowing affiliate agents to earn up to 60% of the profit. Beyond financial incentives, Win-win demonstrates its commitment to agents through regular appreciation activities and exclusive rewards for outstanding performance.</div>
-            <div class="benefit2Description">A dedicated agent page equipped with detailed customer data tracking facilitates efficient management, complemented by comprehensive, real-time statistical reports. Our extensive promotion system is designed to enhance players' gaming experiences, ensuring optimal enjoyment.</div>
-            <div class="benefit2Description">The funding management function empowers agents to recharge for downline members, providing crucial support for promotional activities, member attraction, and overall agent assistance. Our customer support department is characterized by its enthusiasm and swift resolution of agent issues through various channels such as email, Instagram, Facebook, phone, and more.</div>
-            <div class="benefit2Description">In the affiliate operations department, excellence is not only extended to existing agents but also to new affiliate partners. We offer diverse forms of support, including financial assistance, guidance in promotion strategies, effective subordinate management, and various other forms of assistance. At Win-Win, our commitment is to elevate the experience for both agents and players alike.</div>
+            <div class="benefit2Description mobileCompress">A dedicated agent page equipped with detailed customer data tracking facilitates efficient management, complemented by comprehensive, real-time statistical reports. Our extensive promotion system is designed to enhance players' gaming experiences, ensuring optimal enjoyment.</div>
+            <div class="benefit2Description mobileCompress">The funding management function empowers agents to recharge for downline members, providing crucial support for promotional activities, member attraction, and overall agent assistance. Our customer support department is characterized by its enthusiasm and swift resolution of agent issues through various channels such as email, Instagram, Facebook, phone, and more.</div>
+            <div class="benefit2Description marginBottomZeroMobile">In the affiliate operations department, excellence is not only extended to existing agents but also to new affiliate partners. We offer diverse forms of support, including financial assistance, guidance in promotion strategies, effective subordinate management, and various other forms of assistance. At Win-Win, our commitment is to elevate the experience for both agents and players alike.</div>
             <img class="benefitImg" alt="Agents" src="images/img@3x.webp">
         </div>
     </div>
@@ -156,37 +166,44 @@
         <div class="divContainer">
             <div class="divTopContainer">Agent commission statement</div>
             <div class="commissionTitle"></div>
-            <div class="commissionCard">
-                <div class="commissionCardTop">PHP: 50%
-                    <div class="commissionCardTopBG"></div>
+            <div class="commissionCards">
+                <div class="commissionCard">
+                    <div class="commissionCardTop">PHP: 50%
+                        <div class="commissionCardTopBG"></div>
+                    </div>
+                    <div class="commissionCardBottom">
+                        <div class="bottomTitle"><span>Earning over ten thousand</span></div>
+                        <div class="bottomTextContainer">
+                            <div class="bottomDescription">Loss profit ≥20000 PHP</div>
+                            <div class="bottomDescription">5 valid members</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="commissionCardBottom">
-                    <div class="bottomTitle"><span>Earning over ten thousand</span></div>
-                    <div class="bottomDescription">Loss profit ≥20000 PHP</div>
-                    <div class="bottomDescription">5 valid members</div>
+                <div class="commissionCard">
+                    <div class="commissionCardTop">PHP: 55%
+                        <div class="commissionCardTopBG"></div>
+                    </div>
+                    <div class="commissionCardBottom">
+                        <div class="bottomTitle"><span>Earning over one hundred thousand</span></div>
+                        <div class="bottomTextContainer">
+                            <div class="bottomDescription">Loss profit ≥200000 PHP</div>
+                            <div class="bottomDescription">10 valid members</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commissionCard">
+                    <div class="commissionCardTop">PHP: 60%
+                        <div class="commissionCardTopBG"></div>
+                    </div>
+                    <div class="commissionCardBottom">
+                        <div class="bottomTitle"><span>Earning over a million</span></div>
+                        <div class="bottomTextContainer">
+                            <div class="bottomDescription">Loss profit ≥2000000 PHP</div>
+                            <div class="bottomDescription">20 valid members</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="commissionCard">
-                <div class="commissionCardTop">PHP: 55%
-                    <div class="commissionCardTopBG"></div>
-                </div>
-                <div class="commissionCardBottom">
-                    <div class="bottomTitle"><span>Earning over one hundred thousand</span></div>
-                    <div class="bottomDescription">Loss profit ≥200000 PHP</div>
-                    <div class="bottomDescription">10 valid members</div>
-                </div>
-            </div>
-            <div class="commissionCard">
-                <div class="commissionCardTop">PHP: 60%
-                    <div class="commissionCardTopBG"></div>
-                </div>
-                <div class="commissionCardBottom">
-                    <div class="bottomTitle"><span>Earning over a million</span></div>
-                    <div class="bottomDescription">Loss profit ≥2000000 PHP</div>
-                    <div class="bottomDescription">20 valid members</div>
-                </div>
-            </div>
-            
         </div>
     </div>
     <div class="commission">
@@ -199,7 +216,7 @@
             <div class="commissionTitle2">Net profit</div>
             <div class="commissionDescription">If the agent's profit is positive, it will be deducted from the profit for the next month.</div>
             <div class="commissionTitle2">Note</div>
-            <div class="commissionDescription">This agent option does not calculate lottery winnings or losses.</div>
+            <div class="commissionDescription marginBottomZeroMobile">This agent option does not calculate lottery winnings or losses.</div>
         </div>
     </div>
     <div class="contact">
@@ -207,24 +224,26 @@
             <div class="divTopContainer">Contact for cooperation</div>
             <div class="contactTitle"></div>
             <div class="contactDescription">Becoming a VIP agent requires no specific conditions. Your pathway to VIP status is paved through leveraging your existing contacts or implementing strategic promotional efforts. There's no need for extensive time commitments, as you can anticipate profits without concerns about downline losses. Simply initiate contact, and complete the registration process using your Telegram or Gmail account to embark on this exclusive opportunity.</div>
-            <a onclick="emailClick()" href="mailto:winwin.helpdesk1@gmail.com" target="_blank">
-                <div class="contactContainer">
-                    <div class="contactIcon"><img alt="Email Icon" src="images/编组 8@3x.webp"></div>
-                    <div class="contactText">winwin.helpdesk1@gmail.com</div>
-                </div>
-            </a>
-            <a onclick="telegramClick()" href="https://t.me/WinWinAssist" target="_blank">
-                <div class="contactContainer">
-                    <div class="contactIcon"><img alt="Telegram Icon" src="images/编组 9@3x.webp"></div>
-                    <div class="contactText">@WinWinAssist</div>
-                </div>
-            </a>
-            <a onclick="facebookClick()" href="https://www.facebook.com/profile.php?id=61553858753787" target="_blank">
-                <div class="contactContainer">
-                    <div class="contactIcon"><img alt="Facebook Icon" src="images/编组 10@3x.webp"></div>
-                    <div class="contactText">WinWin_Official</div>
-                </div>
-            </a>
+            <div class="socialmedias">
+                <a onclick="emailClick()" href="mailto:winwin.helpdesk1@gmail.com" target="_blank">
+                    <div class="contactContainer">
+                        <div class="contactIcon"><img alt="Email Icon" src="images/编组 8@3x.webp"></div>
+                        <div class="contactText">winwin.helpdesk1@gmail.com</div>
+                    </div>
+                </a>
+                <a onclick="telegramClick()" href="https://t.me/WinWinAssist" target="_blank">
+                    <div class="contactContainer">
+                        <div class="contactIcon"><img alt="Telegram Icon" src="images/编组 9@3x.webp"></div>
+                        <div class="contactText">@WinWinAssist</div>
+                    </div>
+                </a>
+                <a onclick="facebookClick()" href="https://www.facebook.com/profile.php?id=61553858753787" target="_blank">
+                    <div class="contactContainer">
+                        <div class="contactIcon"><img alt="Facebook Icon" src="images/编组 10@3x.webp"></div>
+                        <div class="contactText">WinWin_Official</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <!-- Start of LiveChat (www.livechat.com) code -->

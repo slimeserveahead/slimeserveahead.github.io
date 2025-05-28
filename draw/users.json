@@ -1,15 +1,6 @@
 {
     "names": [
-        "Balonggz",
-        "julakz80",
-        "dyninno",
-        "tinapelarca",
-        "riza1230",
-        "sydney93",
-        "vieljan",
-        "tyronkid",
-        "burnok",
-        "racquel84",
+        "Lazymoney",
         "njafablejr",
         "jhean03",
         "sendonedison",
@@ -11157,6 +11148,15 @@
         "mirasoldanah5",
         "palaboy2089",
         "ilyo1982",
+        "julakz80",
+        "dyninno",
+        "tinapelarca",
+        "riza1230",
+        "sydney93",
+        "vieljan",
+        "tyronkid",
+        "burnok",
+        "racquel84",
         "musicanitea",
         "rgallendo080",
         "rhianangel",
@@ -15109,7 +15109,10 @@
         "ekaaloves30"
     ],
     "winner_history": [
-        
+        {
+        "name":"Lazymoney",
+        "date":"May 28,2025"
+    }, 
         {
         "name":"Balonggz",
         "date":"May 27,2025"

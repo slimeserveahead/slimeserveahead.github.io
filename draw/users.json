@@ -1,15 +1,6 @@
 {
     "names": [
-        "Grapes61",
-        "redboys",
-        "sadat23",
-        "tomas83",
-        "gwolf1",
-        "mustar",
-        "kurela",
-        "kugale",
-        "potpots",
-        "jjmcyrelle08",
+        "Smasher",
         "llynel",
         "jeff0412",
         "nikko28",
@@ -11035,6 +11026,15 @@
         "rgallendo080",
         "rhianangel",
         "justinmark04",
+        "redboys",
+        "sadat23",
+        "tomas83",
+        "gwolf1",
+        "mustar",
+        "kurela",
+        "kugale",
+        "potpots",
+        "jjmcyrelle08",
         "jvinsusi24",
         "mab1323",
         "aris34",
@@ -15109,6 +15109,10 @@
         "ekaaloves30"
     ],
     "winner_history": [
+        { 
+        "name":"Smasher",
+        "date":"June 23,2025"
+    },
         { 
         "name":"Grapes61",
         "date":"June 22,2025"

@@ -1,15 +1,6 @@
 {
     "names": [
-        "ClickNPlay",
-        "jelbertbaron",
-        "jaypeel",
-        "akila19",
-        "tibo1488",
-        "jazz1118",
-        "pompoms123",
-        "jazy1990",
-        "moneydew18",
-        "arvil06",
+        "AJroller",
         "aaroon28",
         "jowie19",
         "lacanilao",
@@ -9923,6 +9914,15 @@
         "robert0804",
         "chafai",
         "naor0113",
+        "jelbertbaron",
+        "jaypeel",
+        "akila19",
+        "tibo1488",
+        "jazz1118",
+        "pompoms123",
+        "jazy1990",
+        "moneydew18",
+        "arvil06",
         "osotsima28",
         "crizelle31",
         "mjhaycamitan",
@@ -15118,6 +15118,10 @@
         "ekaaloves30"
     ],
     "winner_history": [
+        { 
+        "name":"ClickNPlay",
+        "date":"August 24,2025"
+    },
          { 
         "name":"ClickNPlay",
         "date":"August 23,2025"

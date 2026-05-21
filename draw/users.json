@@ -1,15 +1,6 @@
 {
     "names": [
-        "AlexisEv",
-        "mutya10",
-        "milkylawis",
-        "maru07",
-        "zhalyxs",
-        "tobiano",
-        "manzoi",
-        "user19",
-        "azho12345",
-        "jesy1989",
+        "SammyBu",
         "nonoy1984",
         "cause02",
         "jamexte12",
@@ -2272,6 +2263,15 @@
         "panalotto",
         "thundervault0",
         "cjgwapa",
+        "mutya10",
+        "milkylawis",
+        "maru07",
+        "zhalyxs",
+        "tobiano",
+        "manzoi",
+        "user19",
+        "azho12345",
+        "jesy1989",
         "annjulie",
         "nyleve317",
         "markkram18",
@@ -15132,7 +15132,11 @@
         "queenchedel12",
         "ekaaloves30"
     ],
-    "winner_history": [
+    "winner_history": [ 
+        {
+            "name": "SammyBu",
+            "date": "MAY 21, 2026"
+        },
         {
             "name": "AlexisEv",
             "date": "MAY 20, 2026"
